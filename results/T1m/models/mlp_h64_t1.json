@@ -1,0 +1,15 @@
+{
+ "name": "mlp_h64",
+ "kind": "mlp",
+ "cfg": {
+  "h": 64
+ },
+ "seed": 1,
+ "epochs": 25,
+ "params": 55050,
+ "val_acc": 0.9011666666666667,
+ "acc_fp32": 0.885,
+ "train_s": 4.8,
+ "device": "NVIDIA GeForce RTX 5080",
+ "torch": "2.11.0+cu128"
+}

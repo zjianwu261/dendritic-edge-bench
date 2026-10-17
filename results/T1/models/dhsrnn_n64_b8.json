@@ -1,0 +1,36 @@
+{
+ "name": "dhsrnn_n64_b8",
+ "group": "shd",
+ "dataset": "SHD",
+ "model": "dhsrnn",
+ "T": 1000,
+ "dt_ms": 1,
+ "epochs": 100,
+ "seed": 0,
+ "test_acc": 0.8851590106007067,
+ "test_acc_best_epoch": 0.8984098939929329,
+ "params_effective": 51304,
+ "params_stored": 395624,
+ "dhsrnn_params_effective": 51304,
+ "train_minutes": 378.6,
+ "export_seq": {
+  "onnx": "results/T1/models/dhsrnn_n64_b8_seq.onnx",
+  "size_MB": 3.748,
+  "nodes": 27991,
+  "max_abs_err_vs_torch": 3.0994415283203125e-05,
+  "export_s": 13.4
+ },
+ "export_step": {
+  "onnx": "results/T1/models/dhsrnn_n64_b8_step.onnx",
+  "size_MB": 1.504,
+  "nodes": 35,
+  "max_abs_err_vs_torch": 1.6763806343078613e-08,
+  "export_s": 0.0
+ },
+ "export_seqloop": {
+  "onnx": "results/T1/models/dhsrnn_n64_b8_seqloop.onnx",
+  "nodes_top": 10,
+  "max_abs_err_ort_vs_unrolled_torch": 2.288818359375e-05,
+  "max_abs_err_script_vs_torch": 2.288818359375e-05
+ }
+}

@@ -1,0 +1,80 @@
+## 2026-10-11T00:00:25+08:00 label=dssmU_L2_n128_b4_spk_vs_t1__K50 tag=r2_1010234847 engine=dssmU_L2_n128_b4_spk_vs_t1__K50_nocublas_508ac738a421.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 50968
+GPU-therm 49187
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 48968
+SOC1-therm 49781
+SOC2-therm 48968
+tj-therm 51062
+## loadavg
+0.76 0.76 0.50 1/256 945140
+## MemAvailable_MB 5889
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+    260  0.3     0 10-09:18:00 [nvmap-bz]
+   1818  0.3  7412 10-09:17:53 /usr/bin/python3 /usr/local/bin/jtop --force
+     98  0.2     0 10-09:18:10 [kswapd0]
+   1826  0.1  9980 10-09:17:53 /usr/bin/python3 /usr/local/bin/jtop --force
+      1  0.0  8344 10-09:18:11 /sbin/init 2
+      2  0.0     0 10-09:18:11 [kthreadd]
+      3  0.0     0 10-09:18:11 [rcu_gp]
+## trtexec processes
+ 945107       00:00   668 flock /tmp/dn_orin_bench.lock bash -c      avail=$(awk '/MemAvailable/{print int($2/1024)}' /proc/meminfo); echo "MemAvailable_MB $avail" > trt/dend2/nomad_enc_dend2inf_b1_gn
+## 2026-10-11T00:01:26+08:00 label=dssmU_L2_n128_b4_spk_vs_t1__K50 tag=r2_1010234847 engine=dssmU_L2_n128_b4_spk_vs_t1__K50_nocublas_508ac738a421.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 52343
+GPU-therm 50406
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50187
+SOC1-therm 50968
+SOC2-therm 50156
+tj-therm 52156
+## loadavg
+1.25 0.91 0.58 1/261 950042
+## MemAvailable_MB 5887
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+    260  0.3     0 10-09:19:00 [nvmap-bz]
+   1818  0.3  7820 10-09:18:53 /usr/bin/python3 /usr/local/bin/jtop --force
+     98  0.2     0 10-09:19:10 [kswapd0]
+   1826  0.1  9980 10-09:18:53 /usr/bin/python3 /usr/local/bin/jtop --force
+ 945102  0.1     0       02:11 [kworker/u12:2-efi_rts_wq]
+      1  0.0  8344 10-09:19:11 /sbin/init 2
+      2  0.0     0 10-09:19:11 [kthreadd]
+## trtexec processes
+ 945107       01:00   668 flock /tmp/dn_orin_bench.lock bash -c      avail=$(awk '/MemAvailable/{print int($2/1024)}' /proc/meminfo); echo "MemAvailable_MB $avail" > trt/dend2/nomad_enc_dend2inf_b1_gn

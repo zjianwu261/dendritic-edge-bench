@@ -1,0 +1,9 @@
+cfg,family,p50_ms,acc,acc_std,best_baseline_within_lat,baseline_p50_ms,baseline_acc,baseline_acc_std,delta_acc_pp,fastest_baseline_same_acc,its_p50_ms,speedup_vs_it
+adc_h256_k4_ff24,adc_ff24,0.2572,0.8766,0.0048,mlp_h512,0.1761,0.6218,0.0157,25.48,none reaches,,
+adc_h256_k4_ffrand,adc_ffrand,0.2584,0.8779,0.0086,mlp_h512,0.1761,0.6218,0.0157,25.61,none reaches,,
+adc_h512_k4_ff24,adc_ff24,0.2602,0.911,0.0063,mlp_h512,0.1761,0.6218,0.0157,28.92,none reaches,,
+adc_h512_k4_ffrand,adc_ffrand,0.261,0.9121,0.005,mlp_h512,0.1761,0.6218,0.0157,29.03,none reaches,,
+adc_h1024_k4_ff24,adc_ff24,0.2762,0.9344,0.0028,mlp_h512,0.1761,0.6218,0.0157,31.26,none reaches,,
+adc_h1024_k4_ffrand,adc_ffrand,0.3117,0.9313,0.0013,mlp_h512,0.1761,0.6218,0.0157,30.95,none reaches,,
+adc_h2048_k4_ff24,adc_ff24,0.3966,0.9478,0.0022,mlp_h2048,0.3487,0.627,0.012,32.08,none reaches,,
+adc_h2048_k4_ffrand,adc_ffrand,0.4665,0.9469,0.0032,mlp_h2048,0.3487,0.627,0.012,31.99,none reaches,,

@@ -1,0 +1,30 @@
+## 2026-09-30T18:32:32+08:00 label=dann_lrf_d32_s128_nocublas run=1
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+306000000
+624750000
+## cpu cur freq (kHz)
+1497600 1497600 1497600 1497600 729600 729600 
+## cpu governor
+schedutil
+## thermal (type temp_mC)
+CPU-therm 50531
+GPU-therm 48687
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 48218
+SOC1-therm 48875
+SOC2-therm 48531
+tj-therm 50500
+## loadavg
+0.52 0.41 0.68 1/523 10854

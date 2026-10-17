@@ -1,0 +1,20 @@
+## 2026-10-01T14:10:40+08:00 gnm_b1/nocublas r2
+NV Power Mode: 15W
+0
+nvhost_podgov
+612000000
+306000000
+624750000
+CPU-therm 52812
+GPU-therm 51156
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50812
+SOC1-therm 51250
+SOC2-therm 50906
+tj-therm 52906
+1.10 0.97 1.05 1/523 55520
+              total        used        free      shared  buff/cache   available
+Mem:           7451        1644        4690           2        1116        5587
+Swap:          3725         909        2815

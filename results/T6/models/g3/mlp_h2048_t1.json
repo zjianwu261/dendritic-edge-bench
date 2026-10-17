@@ -1,0 +1,34 @@
+{
+ "name": "mlp_h2048_t1",
+ "cfg": "mlp_h2048",
+ "task": "G3",
+ "dataset": "permuted MNIST (10 tasks)",
+ "arch": "mlp",
+ "args": {
+  "arch": "mlp",
+  "h": 2048,
+  "k": 4,
+  "ff": "rand",
+  "seed": 1,
+  "force": false,
+  "check": false
+ },
+ "test_acc": 0.6150199999999999,
+ "final_per_task": [
+  0.2257,
+  0.2799,
+  0.3699,
+  0.4023,
+  0.5174,
+  0.6742,
+  0.8166,
+  0.9395,
+  0.9483,
+  0.9764
+ ],
+ "bwt": -0.40171111111111113,
+ "selection": "none (fixed protocol, final model, as T1/nupic)",
+ "params_effective": 5824522,
+ "params_stored": 5824522,
+ "train_minutes": 0.45
+}

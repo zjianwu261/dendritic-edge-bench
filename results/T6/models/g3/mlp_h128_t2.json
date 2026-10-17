@@ -1,0 +1,34 @@
+{
+ "name": "mlp_h128_t2",
+ "cfg": "mlp_h128",
+ "task": "G3",
+ "dataset": "permuted MNIST (10 tasks)",
+ "arch": "mlp",
+ "args": {
+  "arch": "mlp",
+  "h": 128,
+  "k": 4,
+  "ff": "rand",
+  "seed": 2,
+  "force": false,
+  "check": false
+ },
+ "test_acc": 0.56967,
+ "final_per_task": [
+  0.2051,
+  0.2705,
+  0.316,
+  0.3026,
+  0.5354,
+  0.6042,
+  0.7283,
+  0.8383,
+  0.9298,
+  0.9665
+ ],
+ "bwt": -0.4399111111111111,
+ "selection": "none (fixed protocol, final model, as T1/nupic)",
+ "params_effective": 118282,
+ "params_stored": 118282,
+ "train_minutes": 0.14
+}

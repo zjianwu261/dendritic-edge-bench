@@ -1,0 +1,20 @@
+## 2026-10-01T10:17:54+08:00 nomad_full_explore_b8/default r3
+NV Power Mode: 15W
+0
+nvhost_podgov
+624750000
+306000000
+624750000
+CPU-therm 51312
+GPU-therm 49375
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 49031
+SOC1-therm 49968
+SOC2-therm 49281
+tj-therm 51531
+0.83 0.89 0.83 2/544 41345
+              total        used        free      shared  buff/cache   available
+Mem:           7451        1684        4636           1        1130        5577
+Swap:          3725         948        2777

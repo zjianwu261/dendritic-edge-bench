@@ -1,0 +1,20 @@
+## 2026-10-01T11:27:49+08:00 nomad_enc_explore_b1/nocublas r1
+NV Power Mode: 15W
+0
+nvhost_podgov
+306000000
+306000000
+624750000
+CPU-therm 52593
+GPU-therm 51125
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50656
+SOC1-therm 51312
+SOC2-therm 50687
+tj-therm 52906
+0.89 1.01 4.41 3/538 46292
+              total        used        free      shared  buff/cache   available
+Mem:           7451        1640        4806           2        1003        5622
+Swap:          3725         933        2792

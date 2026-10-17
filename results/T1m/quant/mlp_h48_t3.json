@@ -1,0 +1,33 @@
+{
+ "tag": "mlp_h48_t3",
+ "model": "mlp_h48",
+ "kind": "mlp",
+ "seed": 3,
+ "params": 40522,
+ "acc_fp32": 0.8777,
+ "acc_fp32_numpy": 0.8777,
+ "acc_int8": 0.8775,
+ "cal_acc_int8": 0.8931666666666667,
+ "sh1": 10,
+ "sh2": 9,
+ "acc_bound": 3419957,
+ "table_bytes": 40628,
+ "tables": {
+  "w1": 37632,
+  "w2": 2304,
+  "b1": 96,
+  "b2": 96,
+  "w3": 480,
+  "b3": 20,
+  "total": 40628
+ },
+ "flash_bytes": null,
+ "xdata_bytes": null,
+ "fits": false,
+ "uart_build_ok": false,
+ "uart_link_log": "not built (seed != 1)",
+ "sim_build_ok": false,
+ "sim_flash": null,
+ "pc_bitexact_logits": "10000/10000",
+ "pc_bitexact_class": "10000/10000"
+}

@@ -1,0 +1,80 @@
+## 2026-10-01T18:24:17+08:00 label=active_dend_k4_proto tag=r1_1001181522 engine=active_dend_k4_proto_fp16_nocublas_39bd7413cdf2.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 52093
+GPU-therm 50343
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 49937
+SOC1-therm 50593
+SOC2-therm 50031
+tj-therm 52093
+## loadavg
+0.83 0.97 1.19 1/256 144713
+## MemAvailable_MB 5893
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+   1818  3.0  8088  1-03:41:44 /usr/bin/python3 /usr/local/bin/jtop --force
+     98  2.5     0  1-03:42:01 [kswapd0]
+    260  2.1     0  1-03:41:51 [nvmap-bz]
+    539  0.7  6372  1-03:41:49 /usr/sbin/NetworkManager --no-daemon
+    537  0.5   904  1-03:41:49 /usr/sbin/cron -f
+   1029  0.3  9932  1-03:41:46 /usr/bin/containerd
+   1099  0.3 18920  1-03:41:46 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+## trtexec processes
+ 144531       00:53   660 flock /tmp/dn_orin_bench.lock bash -c      avail=$(awk '/MemAvailable/{print int($2/1024)}' /proc/meminfo); echo "MemAvailable_MB $avail" > trt/nomad_enc_explore_b1_nocublas_
+## 2026-10-01T18:25:17+08:00 label=active_dend_k4_proto tag=r1_1001181522 engine=active_dend_k4_proto_fp16_nocublas_39bd7413cdf2.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 53531
+GPU-therm 51968
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 51625
+SOC1-therm 52312
+SOC2-therm 51687
+tj-therm 53625
+## loadavg
+0.40 0.82 1.13 2/259 149610
+## MemAvailable_MB 5892
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+   1818  3.0  7896  1-03:42:44 /usr/bin/python3 /usr/local/bin/jtop --force
+     98  2.5     0  1-03:43:01 [kswapd0]
+    260  2.1     0  1-03:42:51 [nvmap-bz]
+    539  0.7  6372  1-03:42:49 /usr/sbin/NetworkManager --no-daemon
+    537  0.5   904  1-03:42:49 /usr/sbin/cron -f
+   1029  0.3  9932  1-03:42:46 /usr/bin/containerd
+   1099  0.3 18920  1-03:42:46 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+## trtexec processes
+ 144531       01:53   660 flock /tmp/dn_orin_bench.lock bash -c      avail=$(awk '/MemAvailable/{print int($2/1024)}' /proc/meminfo); echo "MemAvailable_MB $avail" > trt/nomad_enc_explore_b1_nocublas_

@@ -1,0 +1,27 @@
+# Workstation environment (conda env, Python 3.11.16). Versions as used for the paper.
+# torch / torchvision are the CUDA 12.8 builds (pip install --index-url https://download.pytorch.org/whl/cu128 ...);
+# the CPU builds of the same versions work for everything except the GPU timing scripts.
+torch==2.11.0
+torchvision==0.26.0
+numpy==2.4.6
+scipy==1.17.1
+h5py==3.16.0
+matplotlib==3.11.2
+PyYAML==6.0.3
+onnx==1.23.1
+onnxscript==0.7.2
+onnxsim==0.7.3
+onnxruntime-gpu==1.23.2
+# T4a (NoMaD via visualnav-transformer / diffusion_policy, data processing)
+diffusers==0.40.0
+efficientnet_pytorch==0.7.1
+einops==0.8.2
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+rosbags==0.11.5
+requests==2.34.2
+# 8051 board (separate venv in our setup): flashing and UART measurement
+# stcgal==1.10
+# pyserial==3.5
+# On the Jetson Orin (JetPack 5.1.5): TensorRT 8.5.2.2 python bindings from JetPack, jetson-stats (jtop) for power logging.
+# On the Raspberry Pi 4B: onnxruntime==1.30.0 (CPU).

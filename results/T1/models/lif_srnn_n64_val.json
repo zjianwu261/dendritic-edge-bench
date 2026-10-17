@@ -1,0 +1,54 @@
+{
+ "name": "lif_srnn_n64_val",
+ "model": "srnn",
+ "args": {
+  "model": "srnn",
+  "hidden": 0,
+  "lr": 0.003,
+  "dropout": 0.0,
+  "wd": 0.0,
+  "epochs": 100,
+  "seed": 0,
+  "mem_frac": 0.1,
+  "tag": ""
+ },
+ "dataset": "SHD",
+ "split": "train 90% / val 10% (stratified, seed 2026) / official test",
+ "selection": "best validation accuracy epoch (earliest among ties)",
+ "best_epoch": 99,
+ "val_acc": 0.9522058823529411,
+ "test_acc": 0.7853356890459364,
+ "train_acc": 0.9982288828337874,
+ "last_epoch_test_acc": 0.784452296819788,
+ "last_epoch_val_acc": 0.9485294117647058,
+ "max_test_acc_any_epoch_NOT_FOR_SELECTION": 0.8568904593639576,
+ "params_effective": 50344,
+ "params_stored": 50344,
+ "tf32": false,
+ "train_minutes": 159.0,
+ "group": "shd",
+ "source_run": "lif_srnn_n64_s0",
+ "T": 1000,
+ "dt_ms": 1,
+ "selection_note": "epoch chosen on the 10% validation split; test_acc = test accuracy of that epoch",
+ "export_seq": {
+  "onnx": "results/T1/models/lif_srnn_n64_val_seq.onnx",
+  "size_MB": 1.922,
+  "nodes": 21986,
+  "max_abs_err_vs_torch": 0.000164031982421875,
+  "export_s": 25.2
+ },
+ "export_step": {
+  "onnx": "results/T1/models/lif_srnn_n64_val_step.onnx",
+  "size_MB": 0.194,
+  "nodes": 26,
+  "max_abs_err_vs_torch": 5.587935447692871e-07,
+  "export_s": 0.2
+ },
+ "export_seqloop": {
+  "onnx": "results/T1/models/lif_srnn_n64_val_seqloop.onnx",
+  "nodes_top": 10,
+  "max_abs_err_ort_vs_unrolled_torch": 3.0517578125e-05,
+  "max_abs_err_script_vs_torch": 1.52587890625e-05
+ }
+}

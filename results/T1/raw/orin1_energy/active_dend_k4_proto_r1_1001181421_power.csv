@@ -1,0 +1,2 @@
+# jtop 0.1s interval; columns: t_unix,vdd_in_mW,vdd_cpu_gpu_cv_mW,vdd_soc_mW,gpu_freq_hz,temp_tj_C,temp_gpu_C,load1,ram_used_MB,n_trtexec
+t_unix,vdd_in_mW,vdd_cpu_gpu_cv_mW,vdd_soc_mW,gpu_freq_hz,temp_tj_C,temp_gpu_C,load1,ram_used_MB,n_trtexec

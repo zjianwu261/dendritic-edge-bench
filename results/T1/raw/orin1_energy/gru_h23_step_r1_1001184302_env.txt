@@ -1,0 +1,80 @@
+## 2026-10-01T18:43:46+08:00 label=gru_h23_step tag=r1_1001184302 engine=gru_h23_step_fp16_nocublas_1ef13701d651.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 51718
+GPU-therm 50312
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 49625
+SOC1-therm 50343
+SOC2-therm 49750
+tj-therm 52062
+## loadavg
+1.07 1.00 1.00 1/255 176941
+## MemAvailable_MB 5883
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+   1818  3.0  8008  1-04:01:13 /usr/bin/python3 /usr/local/bin/jtop --force
+     98  2.5     0  1-04:01:30 [kswapd0]
+    260  2.1     0  1-04:01:20 [nvmap-bz]
+    539  0.7  5728  1-04:01:18 /usr/sbin/NetworkManager --no-daemon
+    537  0.5  1064  1-04:01:18 /usr/sbin/cron -f
+ 176826  0.4  7564       00:05 sshd: user [priv]
+   1029  0.3  9108  1-04:01:15 /usr/bin/containerd
+## trtexec processes
+ 176880       00:04   696 flock /tmp/dn_orin_bench.lock /usr/src/tensorrt/bin/trtexec --onnx=~/dendritic-edge-bench/T1/models/gru_pm_val_seq.onnx --fp16 --profilingVerbosity=detailed --ex
+## 2026-10-01T18:44:46+08:00 label=gru_h23_step tag=r1_1001184302 engine=gru_h23_step_fp16_nocublas_1ef13701d651.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 51468
+GPU-therm 49562
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 49281
+SOC1-therm 50031
+SOC2-therm 49343
+tj-therm 51343
+## loadavg
+1.86 1.26 1.09 2/258 181834
+## MemAvailable_MB 5883
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+   1818  3.0  8008  1-04:02:13 /usr/bin/python3 /usr/local/bin/jtop --force
+     98  2.5     0  1-04:02:30 [kswapd0]
+    260  2.1     0  1-04:02:20 [nvmap-bz]
+    539  0.7  5728  1-04:02:18 /usr/sbin/NetworkManager --no-daemon
+    537  0.5  1064  1-04:02:18 /usr/sbin/cron -f
+   1029  0.3  9108  1-04:02:15 /usr/bin/containerd
+   1099  0.3 18368  1-04:02:15 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+## trtexec processes
+ 176880       01:04   696 flock /tmp/dn_orin_bench.lock /usr/src/tensorrt/bin/trtexec --onnx=~/dendritic-edge-bench/T1/models/gru_pm_val_seq.onnx --fp16 --profilingVerbosity=detailed --ex

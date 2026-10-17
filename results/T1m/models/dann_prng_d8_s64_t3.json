@@ -1,0 +1,17 @@
+{
+ "name": "dann_prng_d8_s64",
+ "kind": "dann",
+ "cfg": {
+  "d": 8,
+  "s": 64
+ },
+ "seed": 3,
+ "epochs": 25,
+ "params": 9930,
+ "mask_source": "prng",
+ "val_acc": 0.881,
+ "acc_fp32": 0.869,
+ "train_s": 36.6,
+ "device": "cpu",
+ "torch": "2.11.0+cu128"
+}

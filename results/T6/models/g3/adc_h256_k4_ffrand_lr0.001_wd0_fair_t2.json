@@ -1,0 +1,41 @@
+{
+ "name": "adc_h256_k4_ffrand_lr0.001_wd0_fair_t2",
+ "cfg": "adc_h256_k4_ffrand_lr0.001_wd0_fair",
+ "task": "G3",
+ "dataset": "permuted MNIST (10 tasks)",
+ "arch": "ad",
+ "args": {
+  "arch": "ad",
+  "h": 256,
+  "k": 4,
+  "ff": "rand",
+  "seed": 2,
+  "force": false,
+  "check": false,
+  "fair": true,
+  "lr": 0.001,
+  "wd": 0.0
+ },
+ "test_acc": 0.83751,
+ "final_per_task": [
+  0.6786,
+  0.7832,
+  0.6349,
+  0.8148,
+  0.8822,
+  0.8923,
+  0.8742,
+  0.9345,
+  0.9361,
+  0.9443
+ ],
+ "bwt": -0.11591111111111113,
+ "selection": "config chosen on val_acc (final model, mean over tasks; T6-F)",
+ "val_acc": 0.8393166666666667,
+ "params_effective": 1740554,
+ "params_stored": 1874954,
+ "train_minutes": 0.18,
+ "is_2to4": null,
+ "cached_vs_two_input_max_abs_diff": 9.5367431640625e-07,
+ "cached_vs_two_input_argmax_agree": 1.0
+}

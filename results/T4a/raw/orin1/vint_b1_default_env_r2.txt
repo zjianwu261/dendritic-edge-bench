@@ -1,0 +1,20 @@
+## 2026-10-01T13:57:03+08:00 vint_b1/default r2
+NV Power Mode: 15W
+0
+nvhost_podgov
+408000000
+306000000
+624750000
+CPU-therm 52468
+GPU-therm 50656
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50468
+SOC1-therm 51218
+SOC2-therm 50437
+tj-therm 52656
+0.83 0.91 1.24 1/524 54414
+              total        used        free      shared  buff/cache   available
+Mem:           7451        1643        4895           2         912        5597
+Swap:          3725         909        2815

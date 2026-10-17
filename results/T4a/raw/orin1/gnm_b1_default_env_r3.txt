@@ -1,0 +1,20 @@
+## 2026-10-01T14:08:54+08:00 gnm_b1/default r3
+NV Power Mode: 15W
+0
+nvhost_podgov
+510000000
+306000000
+624750000
+CPU-therm 52312
+GPU-therm 50593
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50187
+SOC1-therm 50718
+SOC2-therm 50406
+tj-therm 52187
+1.12 0.95 1.06 1/522 55254
+              total        used        free      shared  buff/cache   available
+Mem:           7451        1643        4718           2        1089        5588
+Swap:          3725         909        2815

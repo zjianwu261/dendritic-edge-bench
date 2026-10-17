@@ -1,0 +1,126 @@
+{
+ "best_fit_official": {
+  "model": "dann_d24_s64",
+  "acc": 0.8839,
+  "std": 0.0029,
+  "flash": 59579,
+  "cyc": 2443107.45
+ },
+ "best_fit_prng": {
+  "model": "dann_prng_d20_s128",
+  "acc": 0.887,
+  "std": 0.0034,
+  "flash": 52757,
+  "cyc": 4838643.35
+ },
+ "best_fit_mlp": {
+  "model": "mlp_h64",
+  "acc": 0.8867,
+  "std": 0.0011,
+  "flash": 57232,
+  "cyc": 4652141.55
+ },
+ "best_acc_diff_prng_minus_mlp_pp": 0.03,
+ "cycles_at_equal_acc_prng_vs_mlp": {
+  "acc": 0.8867,
+  "cycles_prng": 4351534.90000009,
+  "cycles_other": 4652141.55,
+  "ratio_other_over_prng": 1.07
+ },
+ "cycles_at_equal_acc_prng_vs_official": {
+  "acc": 0.8839,
+  "cycles_prng": 3124641.1926470655,
+  "cycles_other": 2443107.45,
+  "ratio_other_over_prng": 0.78
+ },
+ "closest_acc_pairs": [
+  {
+   "prng": "dann_prng_d8_s32",
+   "acc_prng": 0.8584,
+   "flash_prng": 7832,
+   "cyc_prng": 505137.45,
+   "mlp": "mlp_h16",
+   "acc_mlp": 0.8584,
+   "flash_mlp": 15099,
+   "cyc_mlp": 1093843.45,
+   "cyc_ratio_mlp_over_prng": 2.17
+  },
+  {
+   "prng": "dann_prng_d8_s64",
+   "acc_prng": 0.8679,
+   "flash_prng": 13061,
+   "cyc_prng": 1000003.5,
+   "mlp": "mlp_h32",
+   "acc_mlp": 0.8744,
+   "flash_mlp": 28623,
+   "cyc_mlp": 2236091.0,
+   "cyc_ratio_mlp_over_prng": 2.24
+  },
+  {
+   "prng": "dann_prng_d16_s64",
+   "acc_prng": 0.8781,
+   "flash_prng": 22776,
+   "cyc_prng": 1925973.25,
+   "mlp": "mlp_h48",
+   "acc_mlp": 0.8796,
+   "flash_mlp": 42664,
+   "cyc_mlp": 3416854.3,
+   "cyc_ratio_mlp_over_prng": 1.77
+  },
+  {
+   "prng": "dann_prng_d24_s64",
+   "acc_prng": 0.883,
+   "flash_prng": 32504,
+   "cyc_prng": 2858318.5,
+   "mlp": "mlp_h72",
+   "acc_mlp": 0.8824,
+   "flash_mlp": 64734,
+   "cyc_mlp": 5285916.05,
+   "cyc_ratio_mlp_over_prng": 1.85
+  },
+  {
+   "prng": "dann_prng_d16_s128",
+   "acc_prng": 0.8864,
+   "flash_prng": 43008,
+   "cyc_prng": 3864426.45,
+   "mlp": "mlp_h64",
+   "acc_mlp": 0.8867,
+   "flash_mlp": 57232,
+   "cyc_mlp": 4652141.55,
+   "cyc_ratio_mlp_over_prng": 1.2
+  },
+  {
+   "prng": "dann_prng_d20_s128",
+   "acc_prng": 0.887,
+   "flash_prng": 52757,
+   "cyc_prng": 4838643.35,
+   "mlp": "mlp_h64",
+   "acc_mlp": 0.8867,
+   "flash_mlp": 57232,
+   "cyc_mlp": 4652141.55,
+   "cyc_ratio_mlp_over_prng": 0.96
+  },
+  {
+   "prng": "dann_prng_d32_s96",
+   "acc_prng": 0.8861,
+   "flash_prng": 62134,
+   "cyc_prng": 5636030.9,
+   "mlp": "mlp_h64",
+   "acc_mlp": 0.8867,
+   "flash_mlp": 57232,
+   "cyc_mlp": 4652141.55,
+   "cyc_ratio_mlp_over_prng": 0.83
+  },
+  {
+   "prng": "dann_prng_d24_s128",
+   "acc_prng": 0.8864,
+   "flash_prng": 62485,
+   "cyc_prng": 5768173.75,
+   "mlp": "mlp_h64",
+   "acc_mlp": 0.8867,
+   "flash_mlp": 57232,
+   "cyc_mlp": 4652141.55,
+   "cyc_ratio_mlp_over_prng": 0.81
+  }
+ ]
+}

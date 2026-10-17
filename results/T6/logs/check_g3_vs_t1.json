@@ -1,0 +1,7 @@
+{
+ "mine_vs_T1_ADNet_max_abs_diff": 0.0,
+ "init_masks_identical_to_T1_seed0": true,
+ "cached_gemm_vs_two_input_max_abs_diff": 3.814697265625e-06,
+ "cached_gemm_argmax_agree": 1.0,
+ "cached_conv_vs_two_input_max_abs_diff_64": 2.86102294921875e-06
+}

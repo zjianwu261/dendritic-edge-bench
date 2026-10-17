@@ -1,0 +1,37 @@
+{
+ "name": "adc_h512_k4_ffrand_t2",
+ "cfg": "adc_h512_k4_ffrand",
+ "task": "G3",
+ "dataset": "permuted MNIST (10 tasks)",
+ "arch": "ad",
+ "args": {
+  "arch": "ad",
+  "h": 512,
+  "k": 4,
+  "ff": "rand",
+  "seed": 2,
+  "force": false,
+  "check": false
+ },
+ "test_acc": 0.91012,
+ "final_per_task": [
+  0.8299,
+  0.8656,
+  0.8989,
+  0.911,
+  0.9241,
+  0.9168,
+  0.934,
+  0.9347,
+  0.9394,
+  0.9468
+ ],
+ "bwt": -0.041688888888888886,
+ "selection": "none (fixed protocol, final model, as T1/nupic)",
+ "params_effective": 3546634,
+ "params_stored": 3880970,
+ "train_minutes": 0.35,
+ "is_2to4": null,
+ "cached_vs_two_input_max_abs_diff": 1.9073486328125e-06,
+ "cached_vs_two_input_argmax_agree": 1.0
+}

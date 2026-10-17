@@ -1,0 +1,15 @@
+label,build,runs,p50_ms_median,p50_ms_min,p50_ms_max,hz,vm_hwm_MB_max,mem_avail_drop_MB_max,infer_only_p50_ms,host_step_p50_ms,enc_p50_ms,unet_step_p50_ms
+gnm_b1/nocublas,nocublas,3,2.4,2.3991,2.4014,416.6,641.4,299.7,2.334,,,
+nomad_encA_b1_gnd,default,3,15.117,15.0402,15.1253,66.15,2739.3,1687.5,15.018,,,
+nomad_encB_b1_gnd,default,3,0.757,0.7465,0.7626,1321.53,1455.0,755.6,0.732,,,
+nomad_enc_explore_b1_gnd,default,3,16.565,16.5296,16.571,60.37,2775.0,1707.2,16.499,,,
+nomad_unet_b1/default,default,3,2.285,2.2849,2.2893,437.58,2458.5,1306.1,2.253,,,
+nomad_unet_b1/nocublas,nocublas,3,2.292,2.276,2.2952,436.26,2449.5,1367.0,2.26,,,
+nomad_unet_b8/default,default,3,4.513,4.5085,4.5193,221.6,2450.9,1504.1,4.48,,,
+nomad_unet_b8/nocublas,nocublas,3,4.534,4.5271,4.5742,220.57,2442.7,1892.1,4.494,,,
+pipeline_gnd_full_n1,default,3,42.916,42.7146,43.4348,23.3,3418.1,2522.9,,0.115,16.608,2.489
+pipeline_gnd_full_n8,default,3,64.85,64.7057,64.9462,15.42,3418.7,2418.1,,0.122,16.591,4.689
+pipeline_gnd_split_n1,default,3,42.977,42.5111,43.0162,23.27,3420.2,2562.9,,0.114,16.27,2.546
+pipeline_gnd_split_n8,default,3,64.752,64.4954,64.9232,15.44,3415.5,2474.1,,0.12,16.195,4.721
+vint_b1/default,default,3,6.667,6.6293,6.6769,149.98,1505.5,763.5,6.586,,,
+vint_b1/nocublas,nocublas,3,6.686,6.6806,6.7024,149.56,716.3,310.9,6.623,,,

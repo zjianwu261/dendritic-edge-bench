@@ -1,0 +1,72 @@
+## 2026-10-02T07:19:32+08:00 label=mlp_h256_fmnist build=nocublas before run 1
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## cpu governor
+schedutil
+## thermal (type temp_mC)
+CPU-therm 53750
+GPU-therm 52593
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 51906
+SOC1-therm 52781
+SOC2-therm 52062
+tj-therm 54000
+## loadavg
+1.06 0.89 0.65 1/262 837844
+## other GPU/bench processes
+    553 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+   1758 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1818 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1826 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+ 837802 bash            bash bin/run_trt_sync_jetson.sh ~/dendritic-edge-bench/T1/models/mlp_h256_fmnist.onnx fp16 ~/dendritic-edge-be
+## 2026-10-02T07:19:37+08:00 label=mlp_h256_fmnist build=nocublas after run 1
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## cpu governor
+schedutil
+## thermal (type temp_mC)
+CPU-therm 53843
+GPU-therm 52187
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 51812
+SOC1-therm 52593
+SOC2-therm 52062
+tj-therm 54093
+## loadavg
+1.05 0.89 0.65 2/262 837888
+## other GPU/bench processes
+    553 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+   1758 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1818 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1826 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+ 837802 bash            bash bin/run_trt_sync_jetson.sh ~/dendritic-edge-bench/T1/models/mlp_h256_fmnist.onnx fp16 ~/dendritic-edge-be

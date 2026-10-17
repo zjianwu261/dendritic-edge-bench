@@ -1,0 +1,37 @@
+{
+ "chunk_scan_vs_sequential_max_abs_err_fp64": {
+  "K10": 2.4868995751603507e-14,
+  "K25": 2.4868995751603507e-14,
+  "K50": 2.4868995751603507e-14,
+  "K100": 2.842170943040401e-14,
+  "K200": 3.197442310920451e-14
+ },
+ "chunk_scan_vs_sequential_max_abs_err_fp32": {
+  "K25": 6.701448750057182e-05,
+  "K50": 6.960429288049852e-05,
+  "K100": 6.931289202327662e-05
+ },
+ "reference_loop_vs_T1_SRNN_forward_max_abs_err": 0.0,
+ "dhssm_chunked_vs_T1_equations_no_rec_no_reset_spk": {
+  "membrane_max_abs_err": 7.152557373046875e-07,
+  "spike_flips": 0,
+  "spikes_total": 751,
+  "output_max_abs_err": 7.2479248046875e-05
+ },
+ "dhssm_chunked_vs_T1_equations_no_rec_no_reset_cont": {
+  "membrane_max_abs_err": 7.152557373046875e-07,
+  "spike_flips": 0,
+  "spikes_total": 751,
+  "output_max_abs_err": 6.103515625e-05
+ },
+ "export_vs_train_graph_spk": {
+  "K25": 3.814697265625e-06,
+  "K50": 0.0,
+  "K100": 7.62939453125e-06
+ },
+ "export_vs_train_graph_cont": {
+  "K25": 4.57763671875e-05,
+  "K50": 0.0,
+  "K100": 6.103515625e-05
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "rule": "stop-loss rule (pre-registered 2026-10-03): S1 dend2 id <= 0.95 x lora_bank r10 id (test act_mse_gc final avg, 3 seeds) and lower in >= 2/3 seeds; S2 dend2 infer ctx acc >= 0.85  [v3fix: post-hoc supplementary run after the segment-initialisation bug; lr per method selected on seed-0 val]",
+ "dend2_selection": {
+  "rule": "lowest VALIDATION act_mse_gc final_avg (context id, seed 0, v3 main order) among configs with trainable params <= 5% of the backbone; test numbers not looked at",
+  "candidates": [
+   {
+    "kwta": 0.05,
+    "h": 192,
+    "file": "dend2_id_k05_mf10_v3sel_h192_s0.json",
+    "n_trainable": 723072,
+    "trainable_frac": 0.037957182996560306,
+    "eligible": true,
+    "val_act_mse_gc_final_avg": 2.4405160665512087,
+    "val_act_mse_gc_bwt": 0.03894427418708801,
+    "val_act_mse_gc_diag_avg": 2.409360647201538
+   },
+   {
+    "kwta": 0.1,
+    "h": 192,
+    "file": "dend2_id_k10_mf10_v3sel_h192_s0.json",
+    "n_trainable": 723072,
+    "trainable_frac": 0.037957182996560306,
+    "eligible": true,
+    "val_act_mse_gc_final_avg": 2.4607234477996824,
+    "val_act_mse_gc_bwt": 0.06685954332351685,
+    "val_act_mse_gc_diag_avg": 2.4072358131408693
+   },
+   {
+    "kwta": 0.05,
+    "h": 384,
+    "file": "dend2_id_k05_mf10_v3sel_h384_s0.json",
+    "n_trainable": 1446144,
+    "trainable_frac": 0.07591436599312061,
+    "eligible": false,
+    "val_act_mse_gc_final_avg": 2.471131944656372,
+    "val_act_mse_gc_bwt": 0.056847602128982544,
+    "val_act_mse_gc_diag_avg": 2.425653862953186
+   },
+   {
+    "kwta": 0.1,
+    "h": 384,
+    "file": "dend2_id_k10_mf10_v3sel_h384_s0.json",
+    "n_trainable": 1446144,
+    "trainable_frac": 0.07591436599312061,
+    "eligible": false,
+    "val_act_mse_gc_final_avg": 2.462774133682251,
+    "val_act_mse_gc_bwt": 0.03973856568336487,
+    "val_act_mse_gc_diag_avg": 2.430983281135559
+   }
+  ],
+  "selected": {
+   "kwta": 0.05,
+   "h": 192
+  },
+  "best_ignoring_param_cap": {
+   "kwta": 0.05,
+   "h": 192
+  },
+  "final_tag": "_v3new_h192",
+  "time": "2026-10-04 04:59:32"
+ },
+ "v3fix_selection": {
+  "rule": "argmin over lr in {1e-4,3e-4,1e-3} of seed-0 summary_val.act_mse_gc.final_avg, given-ID run",
+  "made": "2026-10-10 21:17:29",
+  "dend2": {
+   "lr": 0.001,
+   "val_final_by_lr": {
+    "0.0001": 2.423615026473999,
+    "0.0003": 2.3922335624694826,
+    "0.001": 2.3808027267456056
+   }
+  },
+  "lora_bank_r10": {
+   "lr": 0.001,
+   "val_final_by_lr": {
+    "0.0001": 2.45423629283905,
+    "0.0003": 2.3268425703048705,
+    "0.001": 2.268163633346558
+   }
+  }
+ },
+ "S1": {
+  "dend2_id": {
+   "0": 2.372468614578247,
+   "1": 2.4112205028533937,
+   "2": 2.3362671375274657
+  },
+  "lora_bank_r10_id": {
+   "0": 2.1281536340713503,
+   "1": 2.269234561920166,
+   "2": 2.2289065599441527
+  },
+  "ratio_of_means": 1.0745,
+  "seed_wins": 0,
+  "pass": false
+ },
+ "S2": {
+  "ctx_infer_acc": {
+   "0": 0.6316000342369079,
+   "1": 0.6316000342369079,
+   "2": 0.6316000342369079
+  },
+  "mean": 0.6316,
+  "pass": false
+ }
+}

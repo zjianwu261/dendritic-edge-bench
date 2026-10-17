@@ -1,0 +1,116 @@
+{"Layers": [{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "x_t",
+    "Location": "Device",
+    "Dimensions": [1,700],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,700],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "h",
+    "Location": "Device",
+    "Dimensions": [1,1,256],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 1 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,1,256],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "{ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+  "LayerType": "Myelin",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,700],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "Reformatted Input Tensor 1 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,1,256],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Output Tensor 0 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,1,256],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "Reformatted Output Tensor 1 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,20],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Output Tensor 1 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "Reformatted Output Tensor 1 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,20],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "out",
+    "Location": "Device",
+    "Dimensions": [1,20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "Reformatted Output Tensor 0 to {ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,1,256],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "h_o",
+    "Location": "Device",
+    "Dimensions": [1,1,256],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x0000000000000000"
+}],
+"Bindings": ["x_t"
+,"h"
+,"h_o"
+,"out"
+]}

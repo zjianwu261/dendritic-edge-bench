@@ -1,0 +1,1980 @@
+## before dann_lrf_d32_s128 run 1 2026-09-30T17:12:55+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=59.9'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+1.31 1.08 1.02 2/392 11903
+top - 17:12:56 up  7:00,  2 users,  load average: 1.31, 1.08, 1.02
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5486.7 free,    640.5 used,   1832.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,00 python3
+  11904 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.23 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dann_lrf_d32_s128 run 1 2026-09-30T17:12:59+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=59.4'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+1.31 1.08 1.02 2/392 11936
+top - 17:12:59 up  7:00,  2 users,  load average: 1.31, 1.08, 1.02
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.6 free,    639.6 used,   1832.4 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,00 python3
+   1750 root      31  11 1343396  47424  30720 S   6.2   0.6   0:33.66 verysync
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.25 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h85_match_d32_s128 run 1 2026-09-30T17:13:00+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=60.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.31 1.08 1.02 2/392 11956
+top - 17:13:00 up  7:00,  2 users,  load average: 1.28, 1.08, 1.02
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5489.3 free,    637.8 used,   1832.4 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,00 python3
+  11957 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.26 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h85_match_d32_s128 run 1 2026-09-30T17:13:01+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=60.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.28 1.08 1.02 2/392 11989
+top - 17:13:01 up  7:00,  2 users,  load average: 1.28, 1.08, 1.02
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.8 free,    638.3 used,   1832.4 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,00 python3
+     60 root      20   0       0      0      0 I   5.9   0.0   0:00.48 kworker+
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.27 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before vann_same_d32_s128 run 1 2026-09-30T17:13:02+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=59.9'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.28 1.08 1.02 2/392 12009
+top - 17:13:02 up  7:00,  2 users,  load average: 1.28, 1.08, 1.02
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.4 free,    638.7 used,   1832.4 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  88.2   0.1      7,00 python3
+  12010 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.29 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after vann_same_d32_s128 run 1 2026-09-30T17:13:05+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.50 1.13 1.04 2/392 12042
+top - 17:13:06 up  7:00,  2 users,  load average: 1.50, 1.13, 1.04
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5489.0 free,    638.1 used,   1832.4 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,00 python3
+  12043 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.30 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before active_dend_k4 run 1 2026-09-30T17:13:06+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.50 1.13 1.04 2/392 12062
+top - 17:13:06 up  7:00,  2 users,  load average: 1.50, 1.13, 1.04
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.6 free,    638.4 used,   1832.4 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,00 python3
+  12063 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.32 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after active_dend_k4 run 1 2026-09-30T17:13:22+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.97 1.26 1.08 2/392 12098
+top - 17:13:22 up  7:01,  2 users,  load average: 1.97, 1.26, 1.08
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.7 free,    639.3 used,   1832.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,00 python3
+  12099 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.34 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h3592_match_k4 run 1 2026-09-30T17:13:22+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=60.3'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+1.97 1.26 1.08 2/392 12118
+top - 17:13:23 up  7:01,  2 users,  load average: 1.97, 1.26, 1.08
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.9 free,    638.1 used,   1832.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,00 python3
+  12119 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.35 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h3592_match_k4 run 1 2026-09-30T17:13:50+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.38 1.65 1.22 2/395 12157
+top - 17:13:50 up  7:01,  2 users,  load average: 3.38, 1.65, 1.22
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 16.7 us, 33.3 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.0 free,    639.8 used,   1832.6 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,01 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.37 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before active_dend_k8 run 1 2026-09-30T17:13:50+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.19 1.64 1.22 2/395 12177
+top - 17:13:50 up  7:01,  2 users,  load average: 3.19, 1.64, 1.22
+Tasks: 223 total,   3 running, 220 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.3 free,    638.5 used,   1832.6 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,01 python3
+  12178 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.38 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after active_dend_k8 run 1 2026-09-30T17:14:15+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.42 1.80 1.28 2/395 12227
+top - 17:14:15 up  7:02,  2 users,  load average: 3.42, 1.80, 1.28
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.0 free,    639.8 used,   1832.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,01 python3
+  12228 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.40 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h4965_match_k8 run 1 2026-09-30T17:14:15+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.22 1.78 1.27 2/395 12247
+top - 17:14:15 up  7:02,  2 users,  load average: 3.22, 1.78, 1.27
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.4 free,    638.3 used,   1832.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,01 python3
+  12248 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.42 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h4965_match_k8 run 1 2026-09-30T17:14:34+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=65.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.40 1.89 1.32 2/394 12289
+top - 17:14:34 up  7:02,  2 users,  load average: 3.40, 1.89, 1.32
+Tasks: 222 total,   2 running, 220 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us, 16.7 sy,  0.0 ni, 33.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.6 free,    638.1 used,   1832.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,02 python3
+  12290 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.43 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dann_lrf_d32_s128 run 2 2026-09-30T17:14:35+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.7'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.40 1.89 1.32 2/394 12309
+top - 17:14:35 up  7:02,  2 users,  load average: 3.40, 1.89, 1.32
+Tasks: 222 total,   2 running, 220 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.0 free,    638.7 used,   1832.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  88.2   0.1      7,02 python3
+     16 root      20   0       0      0      0 S   5.9   0.0   0:00.38 ksoftir+
+  12310 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.44 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dann_lrf_d32_s128 run 2 2026-09-30T17:14:38+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.7'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.36 1.91 1.33 2/395 12343
+top - 17:14:39 up  7:02,  2 users,  load average: 3.36, 1.91, 1.33
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.5 free,    639.2 used,   1832.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,02 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.46 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h85_match_d32_s128 run 2 2026-09-30T17:14:39+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.36 1.91 1.33 2/395 12363
+top - 17:14:39 up  7:02,  2 users,  load average: 3.36, 1.91, 1.33
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us,  0.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5489.0 free,    637.8 used,   1832.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,02 python3
+     17 root      20   0       0      0      0 I   6.2   0.0   0:01.22 rcu_pre+
+  12364 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.48 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h85_match_d32_s128 run 2 2026-09-30T17:14:40+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.42 1.95 1.34 2/395 12396
+top - 17:14:41 up  7:02,  2 users,  load average: 3.42, 1.95, 1.34
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.6 free,    638.1 used,   1832.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,02 python3
+  12397 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.50 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before vann_same_d32_s128 run 2 2026-09-30T17:14:41+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.42 1.95 1.34 2/395 12416
+top - 17:14:41 up  7:02,  2 users,  load average: 3.42, 1.95, 1.34
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.9 free,    638.8 used,   1832.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,02 python3
+  12417 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after vann_same_d32_s128 run 2 2026-09-30T17:14:45+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.8'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.42 1.95 1.34 3/395 12449
+top - 17:14:45 up  7:02,  2 users,  load average: 3.30, 1.95, 1.35
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.6 free,    639.0 used,   1832.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,02 python3
+  12450 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+   1750 root      31  11 1343460  47552  30720 S   6.2   0.6   0:34.02 verysync
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.53 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before active_dend_k4 run 2 2026-09-30T17:14:45+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.8'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.30 1.95 1.35 2/395 12469
+top - 17:14:46 up  7:02,  2 users,  load average: 3.30, 1.95, 1.35
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 33.3 sy,  0.0 ni, 33.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5489.7 free,    637.0 used,   1832.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,02 python3
+   2044 root      20   0 1237800  13760   9856 S  11.8   0.2   0:04.50 contain+
+     32 root      20   0       0      0      0 S   5.9   0.0   0:00.11 ksoftir+
+    690 root      20   0   17276  10240   9088 D   5.9   0.1   0:01.66 wpa_sup+
+  12470 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.54 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+## after active_dend_k4 run 2 2026-09-30T17:15:01+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.8'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.22 2.00 1.37 2/395 12508
+top - 17:15:01 up  7:02,  2 users,  load average: 3.22, 2.00, 1.37
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 28.6 us, 28.6 sy,  0.0 ni, 42.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5489.0 free,    637.7 used,   1832.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,02 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.56 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h3592_match_k4 run 2 2026-09-30T17:15:01+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.22 2.00 1.37 3/395 12528
+top - 17:15:01 up  7:02,  2 users,  load average: 3.22, 2.00, 1.37
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5486.7 free,    639.9 used,   1832.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,02 python3
+  12529 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.57 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h3592_match_k4 run 2 2026-09-30T17:15:14+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.34 2.06 1.40 2/395 12564
+top - 17:15:15 up  7:02,  2 users,  load average: 3.34, 2.06, 1.40
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.6 free,    638.0 used,   1832.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,02 python3
+  12565 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.59 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before active_dend_k8 run 2 2026-09-30T17:15:15+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.34 2.06 1.40 2/395 12584
+top - 17:15:15 up  7:03,  2 users,  load average: 3.15, 2.05, 1.40
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.1 free,    639.5 used,   1832.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,02 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.60 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after active_dend_k8 run 2 2026-09-30T17:15:38+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.7'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.46 2.19 1.46 2/395 12629
+top - 17:15:39 up  7:03,  2 users,  load average: 3.46, 2.19, 1.46
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.1 free,    639.5 used,   1832.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,03 python3
+  12630 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.62 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h4965_match_k8 run 2 2026-09-30T17:15:39+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.46 2.19 1.46 2/395 12649
+top - 17:15:39 up  7:03,  2 users,  load average: 3.46, 2.19, 1.46
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.6 free,    637.9 used,   1833.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,03 python3
+  12650 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.64 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h4965_match_k8 run 2 2026-09-30T17:15:58+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.7'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.49 2.27 1.50 2/395 12691
+top - 17:15:58 up  7:03,  2 users,  load average: 3.49, 2.27, 1.50
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 42.9 us, 14.3 sy,  0.0 ni, 42.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.9 free,    637.6 used,   1833.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,03 python3
+  12692 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.66 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dann_lrf_d32_s128 run 3 2026-09-30T17:15:58+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.2'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.49 2.27 1.50 2/395 12711
+top - 17:15:59 up  7:03,  2 users,  load average: 3.49, 2.27, 1.50
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us,  0.0 sy,  0.0 ni, 66.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.1 free,    638.4 used,   1833.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,03 python3
+  12712 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.67 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dann_lrf_d32_s128 run 3 2026-09-30T17:16:02+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.53 2.30 1.52 2/395 12744
+top - 17:16:02 up  7:03,  2 users,  load average: 3.53, 2.30, 1.52
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.6 free,    638.9 used,   1833.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,03 python3
+  12745 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.68 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h85_match_d32_s128 run 3 2026-09-30T17:16:03+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.8'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.53 2.30 1.52 2/395 12764
+top - 17:16:03 up  7:03,  2 users,  load average: 3.53, 2.30, 1.52
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5486.8 free,    639.7 used,   1833.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,03 python3
+   1750 root      31  11 1343460  47552  30720 S   6.2   0.6   0:34.32 verysync
+  12765 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.69 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h85_match_d32_s128 run 3 2026-09-30T17:16:04+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.53 2.30 1.52 2/395 12797
+top - 17:16:04 up  7:03,  2 users,  load average: 3.53, 2.30, 1.52
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.1 free,    638.3 used,   1833.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,03 python3
+  12798 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.72 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before vann_same_d32_s128 run 3 2026-09-30T17:16:05+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.53 2.30 1.52 2/395 12817
+top - 17:16:05 up  7:03,  2 users,  load average: 3.53, 2.30, 1.52
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.7 free,    637.7 used,   1833.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,03 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.73 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after vann_same_d32_s128 run 3 2026-09-30T17:16:08+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.2'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.33 2.28 1.52 2/395 12850
+top - 17:16:09 up  7:03,  2 users,  load average: 3.33, 2.28, 1.52
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us,  0.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5489.0 free,    637.3 used,   1833.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,03 python3
+  12851 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.75 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before active_dend_k4 run 3 2026-09-30T17:16:09+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.2'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.33 2.28 1.52 2/395 12870
+top - 17:16:09 up  7:03,  2 users,  load average: 3.33, 2.28, 1.52
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.7 free,    637.7 used,   1833.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,03 python3
+  12871 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.76 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after active_dend_k4 run 3 2026-09-30T17:16:24+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.34 2.33 1.55 2/395 12909
+top - 17:16:24 up  7:04,  2 users,  load average: 3.34, 2.33, 1.55
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5486.9 free,    639.4 used,   1833.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,03 python3
+  12910 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.78 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h3592_match_k4 run 3 2026-09-30T17:16:24+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.34 2.33 1.55 2/395 12929
+top - 17:16:24 up  7:04,  2 users,  load average: 3.34, 2.33, 1.55
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.2 free,    639.1 used,   1833.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,03 python3
+  12930 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.79 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h3592_match_k4 run 3 2026-09-30T17:16:36+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.11 2.33 1.56 2/395 12965
+top - 17:16:37 up  7:04,  2 users,  load average: 3.11, 2.33, 1.56
+Tasks: 223 total,   3 running, 220 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5486.2 free,    640.0 used,   1833.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,04 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before active_dend_k8 run 3 2026-09-30T17:16:37+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.2'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.11 2.33 1.56 2/395 12985
+top - 17:16:37 up  7:04,  2 users,  load average: 3.11, 2.33, 1.56
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5488.0 free,    638.2 used,   1833.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,04 python3
+  12986 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.82 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after active_dend_k8 run 3 2026-09-30T17:17:00+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=65.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.36 2.44 1.61 2/395 13033
+top - 17:17:00 up  7:04,  2 users,  load average: 3.36, 2.44, 1.61
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5489.2 free,    637.1 used,   1833.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,04 python3
+  13034 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.85 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before mlp_h4965_match_k8 run 3 2026-09-30T17:17:00+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.7'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.18 2.42 1.61 2/395 13053
+top - 17:17:00 up  7:04,  2 users,  load average: 3.18, 2.42, 1.61
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 33.3 sy,  0.0 ni, 33.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5487.8 free,    638.5 used,   1833.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      7,04 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.86 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after mlp_h4965_match_k8 run 3 2026-09-30T17:17:19+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=65.2'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.43 2.51 1.65 2/396 13104
+top - 17:17:19 up  7:05,  2 users,  load average: 3.43, 2.51, 1.65
+Tasks: 224 total,   2 running, 222 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us,  0.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5485.4 free,    640.8 used,   1833.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      7,04 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.87 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before gru_h23_seq run 1 2026-09-30T18:25:21+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.00 1.00 1.00 2/392 14537
+top - 18:25:21 up  8:13,  2 users,  load average: 1.00, 1.00, 1.00
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5484.0 free,    639.5 used,   1835.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,12 python3
+  14538 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:02.98 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after gru_h23_seq run 1 2026-09-30T18:25:27+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.8'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+1.24 1.05 1.02 2/392 14570
+top - 18:25:27 up  8:13,  2 users,  load average: 1.24, 1.05, 1.02
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5485.7 free,    637.8 used,   1836.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,12 python3
+  14571 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.00 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before gru_h23_step run 1 2026-09-30T18:25:28+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.24 1.05 1.02 2/392 14590
+top - 18:25:28 up  8:13,  2 users,  load average: 1.24, 1.05, 1.02
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5486.0 free,    637.5 used,   1836.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,13 python3
+  14591 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.01 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after gru_h23_step run 1 2026-09-30T18:25:29+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.46 1.10 1.03 2/392 14623
+top - 18:25:29 up  8:13,  2 users,  load average: 1.46, 1.10, 1.03
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 40.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5484.3 free,    639.2 used,   1836.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,13 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.03 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before gru_h23_seq run 2 2026-09-30T18:25:30+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.46 1.10 1.03 2/392 14643
+top - 18:25:30 up  8:13,  2 users,  load average: 1.46, 1.10, 1.03
+Tasks: 220 total,   3 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5484.0 free,    639.5 used,   1836.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      8,13 python3
+  14644 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.04 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after gru_h23_seq run 2 2026-09-30T18:25:36+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.7'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+1.66 1.15 1.05 2/392 14676
+top - 18:25:36 up  8:13,  2 users,  load average: 1.66, 1.15, 1.05
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5485.3 free,    638.2 used,   1836.0 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      8,13 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.06 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before gru_h23_step run 2 2026-09-30T18:25:36+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=63.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.66 1.15 1.05 2/392 14696
+top - 18:25:37 up  8:13,  2 users,  load average: 1.66, 1.15, 1.05
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5485.7 free,    637.8 used,   1836.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,13 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.07 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after gru_h23_step run 2 2026-09-30T18:25:38+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.66 1.15 1.05 2/392 14729
+top - 18:25:38 up  8:13,  2 users,  load average: 1.66, 1.15, 1.05
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5486.3 free,    637.2 used,   1836.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7172.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,13 python3
+  14730 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.09 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before gru_h23_seq run 3 2026-09-30T18:25:38+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.3'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+1.85 1.20 1.06 2/392 14749
+top - 18:25:39 up  8:13,  2 users,  load average: 1.85, 1.20, 1.06
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5483.0 free,    640.4 used,   1836.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,13 python3
+  14750 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.11 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after gru_h23_seq run 3 2026-09-30T18:25:45+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=65.2'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+2.02 1.25 1.08 2/392 14782
+top - 18:25:45 up  8:13,  2 users,  load average: 2.02, 1.25, 1.08
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5484.1 free,    639.2 used,   1836.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,13 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.12 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before gru_h23_step run 3 2026-09-30T18:25:45+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.02 1.25 1.08 2/392 14802
+top - 18:25:45 up  8:13,  2 users,  load average: 2.02, 1.25, 1.08
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 16.7 us, 33.3 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5484.8 free,    638.5 used,   1836.3 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,13 python3
+  14803 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.13 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after gru_h23_step run 3 2026-09-30T18:25:47+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=62.3'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.02 1.25 1.08 2/391 14835
+top - 18:25:47 up  8:13,  2 users,  load average: 2.02, 1.25, 1.08
+Tasks: 219 total,   2 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us,  0.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5483.8 free,    639.4 used,   1836.3 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      8,13 python3
+  14836 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_seqloop run 1 2026-09-30T19:23:57+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=59.4'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+1.08 1.02 1.01 2/392 16101
+top - 19:23:57 up  9:11,  2 users,  load average: 1.08, 1.02, 1.01
+Tasks: 220 total,   3 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.3 free,    638.8 used,   1840.3 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,11 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.25 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_seqloop run 1 2026-09-30T19:24:39+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=68.1'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.50 1.39 1.13 2/391 16149
+top - 19:24:39 up  9:12,  2 users,  load average: 2.50, 1.39, 1.13
+Tasks: 219 total,   2 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 60.0 us,  0.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.3 free,    638.9 used,   1840.3 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  93.8   0.1      9,12 python3
+  16150 user  20   0   11676   4864   2816 R  12.5   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.28 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_step run 1 2026-09-30T19:24:40+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=67.2'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.50 1.39 1.13 2/391 16169
+top - 19:24:40 up  9:12,  2 users,  load average: 2.50, 1.39, 1.13
+Tasks: 219 total,   2 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.6 free,    638.6 used,   1840.3 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      9,12 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.29 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_step run 1 2026-09-30T19:24:41+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=65.2'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.50 1.39 1.13 2/391 16202
+top - 19:24:41 up  9:12,  2 users,  load average: 2.46, 1.40, 1.14
+Tasks: 219 total,   3 running, 216 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.9 free,    638.3 used,   1840.3 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,12 python3
+  16203 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.31 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_seq run 1 2026-09-30T19:24:42+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=65.2'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+2.46 1.40 1.14 2/391 16222
+top - 19:24:42 up  9:12,  2 users,  load average: 2.46, 1.40, 1.14
+Tasks: 219 total,   2 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.6 free,    638.5 used,   1840.3 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      9,12 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.32 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_seq run 1 2026-09-30T19:25:37+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=68.6'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.81 1.66 1.24 2/392 16274
+top - 19:25:37 up  9:13,  2 users,  load average: 2.81, 1.66, 1.24
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.0 free,    639.0 used,   1840.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      9,13 python3
+  16275 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.34 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_seqloop run 2 2026-09-30T19:25:37+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=67.2'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+2.81 1.66 1.24 2/393 16295
+top - 19:25:37 up  9:13,  2 users,  load average: 2.81, 1.66, 1.24
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us, 16.7 sy,  0.0 ni, 33.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5479.4 free,    639.6 used,   1840.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,13 python3
+     32 root      20   0       0      0      0 S   6.2   0.0   0:00.15 ksoftir+
+  16296 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.35 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_seqloop run 2 2026-09-30T19:26:20+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.1'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.43 1.97 1.37 2/393 16343
+top - 19:26:20 up  9:14,  2 users,  load average: 3.43, 1.97, 1.37
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.9 free,    638.0 used,   1840.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,13 python3
+  16344 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.37 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_step run 2 2026-09-30T19:26:20+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=68.6'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.43 1.97 1.37 2/393 16363
+top - 19:26:21 up  9:14,  2 users,  load average: 3.43, 1.97, 1.37
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5478.5 free,    640.4 used,   1840.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,13 python3
+  16364 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.38 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_step run 2 2026-09-30T19:26:22+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=69.1'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.32 1.97 1.37 2/393 16396
+top - 19:26:22 up  9:14,  2 users,  load average: 3.32, 1.97, 1.37
+Tasks: 221 total,   3 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.2 free,    638.5 used,   1840.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,13 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.41 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_seq run 2 2026-09-30T19:26:22+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=67.6'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.32 1.97 1.37 2/393 16416
+top - 19:26:23 up  9:14,  2 users,  load average: 3.32, 1.97, 1.37
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5479.9 free,    638.9 used,   1840.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      9,13 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.42 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_seq run 2 2026-09-30T19:27:20+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=71.1'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.38 2.19 1.48 2/393 16470
+top - 19:27:21 up  9:15,  2 users,  load average: 3.38, 2.19, 1.48
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 60.0 us,  0.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5479.0 free,    639.7 used,   1840.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,14 python3
+  16471 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.44 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_seqloop run 3 2026-09-30T19:27:21+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.1'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.38 2.19 1.48 2/393 16490
+top - 19:27:21 up  9:15,  2 users,  load average: 3.38, 2.19, 1.48
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 16.7 us, 33.3 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.0 free,    638.7 used,   1840.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,14 python3
+  16491 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.45 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_seqloop run 3 2026-09-30T19:28:05+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=72.0'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.47 2.37 1.57 2/392 16538
+top - 19:28:05 up  9:15,  2 users,  load average: 3.47, 2.37, 1.57
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5479.5 free,    639.2 used,   1840.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,15 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.46 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_step run 3 2026-09-30T19:28:05+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.6'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.47 2.37 1.57 2/392 16558
+top - 19:28:05 up  9:15,  2 users,  load average: 3.47, 2.37, 1.57
+Tasks: 220 total,   3 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5479.9 free,    638.7 used,   1840.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1      9,15 python3
+  16559 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.47 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_step run 3 2026-09-30T19:28:07+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=68.6'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.43 2.38 1.58 2/394 16593
+top - 19:28:07 up  9:15,  2 users,  load average: 3.43, 2.38, 1.58
+Tasks: 222 total,   2 running, 220 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 42.9 us, 14.3 sy,  0.0 ni, 42.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5480.1 free,    638.6 used,   1840.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7171.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,15 python3
+  16594 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.50 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before lif_srnn_n64_seq run 3 2026-09-30T19:28:07+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.6'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.43 2.38 1.58 2/394 16613
+top - 19:28:07 up  9:15,  2 users,  load average: 3.43, 2.38, 1.58
+Tasks: 222 total,   2 running, 220 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us,  0.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5479.3 free,    639.3 used,   1840.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,15 python3
+  16614 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after lif_srnn_n64_seq run 3 2026-09-30T19:29:04+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.6'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.40 2.52 1.68 2/394 16666
+top - 19:29:04 up  9:16,  2 users,  load average: 3.40, 2.52, 1.68
+Tasks: 222 total,   2 running, 220 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 20.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5479.6 free,    639.0 used,   1840.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1      9,16 python3
+  16667 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.53 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_seqloop run 1 2026-09-30T23:58:12+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=57.9'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+1.01 1.01 1.00 2/392 22092
+top - 23:58:12 up 13:45,  2 users,  load average: 1.01, 1.01, 1.00
+Tasks: 219 total,   2 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us,  0.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5463.7 free,    639.1 used,   1856.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  88.2   0.1     13,45 python3
+  22093 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.01 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.78 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_seqloop run 1 2026-09-30T23:59:16+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=67.6'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.69 1.51 1.17 2/393 22141
+top - 23:59:17 up 13:47,  2 users,  load average: 2.69, 1.51, 1.17
+Tasks: 220 total,   3 running, 217 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us,  0.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5463.6 free,    639.1 used,   1856.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,46 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.80 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_step run 1 2026-09-30T23:59:17+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=67.2'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.69 1.51 1.17 2/394 22162
+top - 23:59:17 up 13:47,  2 users,  load average: 2.69, 1.51, 1.17
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5463.4 free,    639.3 used,   1856.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,46 python3
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.82 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_step run 1 2026-09-30T23:59:19+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=65.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.69 1.51 1.17 2/394 22195
+top - 23:59:19 up 13:47,  2 users,  load average: 2.69, 1.51, 1.17
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5463.4 free,    639.3 used,   1856.8 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,46 python3
+  22196 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.84 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_seq run 1 2026-09-30T23:59:19+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=65.7'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+2.69 1.51 1.17 2/394 22215
+top - 23:59:19 up 13:47,  2 users,  load average: 2.55, 1.50, 1.17
+Tasks: 221 total,   2 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 40.0 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5463.2 free,    639.5 used,   1856.9 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,46 python3
+  22216 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11460   8260 S   0.0   0.1   0:03.84 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_seq run 1 2026-10-01T00:00:53+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=68.6'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.21 1.94 1.36 3/396 22490
+top - 00:00:54 up 13:48,  2 users,  load average: 3.21, 1.94, 1.36
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 33.3 us, 16.7 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5460.1 free,    641.9 used,   1857.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7168.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1     13,48 python3
+  22491 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:03.97 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_seqloop run 2 2026-10-01T00:00:54+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=67.6'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.21 1.94 1.36 2/396 22510
+top - 00:00:54 up 13:48,  2 users,  load average: 3.21, 1.94, 1.36
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 42.9 us, 14.3 sy,  0.0 ni, 42.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5462.3 free,    639.7 used,   1857.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7170.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,48 python3
+   1750 root      31  11 1344612  48540  30720 S   6.2   0.6   0:59.57 verysync
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:03.97 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_seqloop run 2 2026-10-01T00:01:59+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=71.1'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.36 2.22 1.50 2/396 22558
+top - 00:01:59 up 13:49,  2 users,  load average: 3.36, 2.22, 1.50
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 42.9 us, 14.3 sy,  0.0 ni, 42.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5462.0 free,    640.0 used,   1857.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1     13,49 python3
+  22559 user  20   0   11676   4864   2816 R   5.9   0.1   0:00.02 top
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.00 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_step run 2 2026-10-01T00:01:59+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.1'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.36 2.22 1.50 2/396 22578
+top - 00:01:59 up 13:49,  2 users,  load average: 3.36, 2.22, 1.50
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5461.4 free,    640.6 used,   1857.5 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1     13,49 python3
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.01 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_step run 2 2026-10-01T00:02:01+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=68.6'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.57 2.29 1.52 2/396 22611
+top - 00:02:01 up 13:49,  2 users,  load average: 3.57, 2.29, 1.52
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5461.3 free,    640.5 used,   1857.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,49 python3
+  22612 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.03 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_seq run 2 2026-10-01T00:02:02+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=68.6'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.57 2.29 1.52 2/396 22631
+top - 00:02:02 up 13:49,  2 users,  load average: 3.57, 2.29, 1.52
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us,  0.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5460.2 free,    641.6 used,   1857.7 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7168.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,49 python3
+  22632 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.04 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_seq run 2 2026-10-01T00:03:36+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.1'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.63 2.59 1.71 2/398 22698
+top - 00:03:36 up 13:51,  2 users,  load average: 3.63, 2.59, 1.71
+Tasks: 225 total,   2 running, 223 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5458.8 free,    642.7 used,   1858.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7167.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,51 python3
+  22699 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.08 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_seqloop run 3 2026-10-01T00:03:36+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.6'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.63 2.59 1.71 2/398 22718
+top - 00:03:37 up 13:51,  2 users,  load average: 3.63, 2.59, 1.71
+Tasks: 225 total,   2 running, 223 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5460.0 free,    641.4 used,   1858.1 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7168.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,51 python3
+  22719 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.09 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_seqloop run 3 2026-10-01T00:04:40+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=73.0'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.77 2.85 1.86 2/396 22767
+top - 00:04:41 up 13:52,  2 users,  load average: 3.77, 2.85, 1.86
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5461.1 free,    640.2 used,   1858.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,52 python3
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.11 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_step run 3 2026-10-01T00:04:41+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=71.5'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.77 2.85 1.86 2/397 22788
+top - 00:04:41 up 13:52,  2 users,  load average: 3.77, 2.85, 1.86
+Tasks: 224 total,   2 running, 222 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5461.2 free,    640.2 used,   1858.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1     13,52 python3
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.12 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_step run 3 2026-10-01T00:04:43+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=72.0'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.77 2.85 1.86 2/397 22821
+top - 00:04:43 up 13:52,  2 users,  load average: 3.77, 2.85, 1.86
+Tasks: 224 total,   2 running, 222 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5461.2 free,    640.1 used,   1858.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R 100.0   0.1     13,52 python3
+  22822 user  20   0   11676   4864   2816 R   6.2   0.1   0:00.02 top
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.14 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## before dhsrnn_n64_b8_seq run 3 2026-10-01T00:04:43+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=70.1'C
+frequency(48)=1800404352
+throttled=0x0
+ondemand
+3.77 2.85 1.86 2/397 22841
+top - 00:04:44 up 13:52,  2 users,  load average: 3.77, 2.85, 1.86
+Tasks: 224 total,   2 running, 222 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 20.0 us, 20.0 sy,  0.0 ni, 60.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5460.6 free,    640.7 used,   1858.2 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7169.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1     13,52 python3
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+## after dhsrnn_n64_b8_seq run 3 2026-10-01T00:06:17+08:00
+garbage.service pid=745 active=active psr= 1 pcpu=99.9
+temp=74.0'C
+frequency(48)=1800457088
+throttled=0x0
+ondemand
+3.54 2.94 1.99 2/396 22900
+top - 00:06:17 up 13:54,  2 users,  load average: 3.54, 2.94, 1.99
+Tasks: 223 total,   2 running, 221 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.0 us, 25.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7809.9 total,   5459.7 free,    641.5 used,   1858.3 buff/cache     
+MiB Swap:    200.0 total,    200.0 free,      0.0 used.   7168.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    745 root      20   0   16196   8320   4864 R  94.1   0.1     13,53 python3
+      1 root      20   0  169020  11588   8260 S   0.0   0.1   0:04.17 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+

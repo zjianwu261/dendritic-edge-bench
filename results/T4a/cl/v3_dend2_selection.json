@@ -1,0 +1,59 @@
+{
+ "rule": "lowest VALIDATION act_mse_gc final_avg (context id, seed 0, v3 main order) among configs with trainable params <= 5% of the backbone; test numbers not looked at",
+ "candidates": [
+  {
+   "kwta": 0.05,
+   "h": 192,
+   "file": "dend2_id_k05_mf10_v3sel_h192_s0.json",
+   "n_trainable": 723072,
+   "trainable_frac": 0.037957182996560306,
+   "eligible": true,
+   "val_act_mse_gc_final_avg": 2.4405160665512087,
+   "val_act_mse_gc_bwt": 0.03894427418708801,
+   "val_act_mse_gc_diag_avg": 2.409360647201538
+  },
+  {
+   "kwta": 0.1,
+   "h": 192,
+   "file": "dend2_id_k10_mf10_v3sel_h192_s0.json",
+   "n_trainable": 723072,
+   "trainable_frac": 0.037957182996560306,
+   "eligible": true,
+   "val_act_mse_gc_final_avg": 2.4607234477996824,
+   "val_act_mse_gc_bwt": 0.06685954332351685,
+   "val_act_mse_gc_diag_avg": 2.4072358131408693
+  },
+  {
+   "kwta": 0.05,
+   "h": 384,
+   "file": "dend2_id_k05_mf10_v3sel_h384_s0.json",
+   "n_trainable": 1446144,
+   "trainable_frac": 0.07591436599312061,
+   "eligible": false,
+   "val_act_mse_gc_final_avg": 2.471131944656372,
+   "val_act_mse_gc_bwt": 0.056847602128982544,
+   "val_act_mse_gc_diag_avg": 2.425653862953186
+  },
+  {
+   "kwta": 0.1,
+   "h": 384,
+   "file": "dend2_id_k10_mf10_v3sel_h384_s0.json",
+   "n_trainable": 1446144,
+   "trainable_frac": 0.07591436599312061,
+   "eligible": false,
+   "val_act_mse_gc_final_avg": 2.462774133682251,
+   "val_act_mse_gc_bwt": 0.03973856568336487,
+   "val_act_mse_gc_diag_avg": 2.430983281135559
+  }
+ ],
+ "selected": {
+  "kwta": 0.05,
+  "h": 192
+ },
+ "best_ignoring_param_cap": {
+  "kwta": 0.05,
+  "h": 192
+ },
+ "final_tag": "_v3new_h192",
+ "time": "2026-10-04 04:59:32"
+}

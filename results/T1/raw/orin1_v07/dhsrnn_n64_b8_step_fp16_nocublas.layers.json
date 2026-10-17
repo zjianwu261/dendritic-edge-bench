@@ -1,0 +1,78 @@
+{"Layers": [{
+  "Name": "{ForeignNode[m.tau_m...Identity_42]}",
+  "LayerType": "Myelin",
+  "Inputs": [
+  {
+    "Name": "mem",
+    "Location": "Device",
+    "Dimensions": [1,64],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "d",
+    "Location": "Device",
+    "Dimensions": [1,64,8],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "x_t",
+    "Location": "Device",
+    "Dimensions": [1,700],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "spk",
+    "Location": "Device",
+    "Dimensions": [1,64],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "ro",
+    "Location": "Device",
+    "Dimensions": [1,20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "d_o",
+    "Location": "Device",
+    "Dimensions": [1,64,8],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "mem_o",
+    "Location": "Device",
+    "Dimensions": [1,64],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "spk_o",
+    "Location": "Device",
+    "Dimensions": [1,64],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "out",
+    "Location": "Device",
+    "Dimensions": [1,20],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "ro_o",
+    "Location": "Device",
+    "Dimensions": [1,20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+}],
+"Bindings": ["x_t"
+,"d"
+,"mem"
+,"spk"
+,"ro"
+,"d_o"
+,"mem_o"
+,"spk_o"
+,"out"
+,"ro_o"
+]}

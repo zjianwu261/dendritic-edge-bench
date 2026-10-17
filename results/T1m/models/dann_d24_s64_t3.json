@@ -1,0 +1,16 @@
+{
+ "name": "dann_d24_s64",
+ "kind": "dann",
+ "cfg": {
+  "d": 24,
+  "s": 64
+ },
+ "seed": 3,
+ "epochs": 25,
+ "params": 28362,
+ "val_acc": 0.8945,
+ "acc_fp32": 0.8837,
+ "train_s": 6.8,
+ "device": "NVIDIA GeForce RTX 5080",
+ "torch": "2.11.0+cu128"
+}

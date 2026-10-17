@@ -1,0 +1,29 @@
+# T1 main-table energy configs (Orin #1, nocublas engines). label | spec (see src/bench/energy_chain.sh)
+# G2 *_val_* labels fall back to the v0.5-weight engine of the same graph until T1r has built the val engine;
+# the chain then adds 3 runs on the val engine (final pass). gru_acc_val_* have no fallback.
+dann_lrf_d32_s128 | t1:dann_lrf_d32_s128
+mlp_h85_match_d32_s128 | t1:mlp_h85_match_d32_s128
+vann_same_d32_s128 | t1:vann_same_d32_s128
+mlp_h256_fmnist | t1:mlp_h256_fmnist
+mlp_h512_fmnist | t1:mlp_h512_fmnist
+mlp_h1024_fmnist | t1:mlp_h1024_fmnist
+active_dend_k4 | t1:active_dend_k4
+mlp_h3592_match_k4 | t1:mlp_h3592_match_k4
+mlp_h3941_matchstored_k4 | t1:mlp_h3941_matchstored_k4
+active_dend_k8 | t1:active_dend_k8
+mlp_h4965_match_k8 | t1:mlp_h4965_match_k8
+mlp_h5230_matchstored_k8 | t1:mlp_h5230_matchstored_k8
+active_dend_k4_proto | t1:active_dend_k4_proto
+active_dend_k4_cached | t1:active_dend_k4_cached
+active_dend_k8_proto | t1:active_dend_k8_proto
+active_dend_k8_cached | t1:active_dend_k8_cached
+dhsrnn_n64_b8_step | t1:dhsrnn_n64_b8_step
+lif_srnn_n64_step | t1:lif_srnn_n64_step
+gru_h23_step | t1:gru_h23_step
+gru_acc_val_step | t1:gru_acc_val_step
+dhsrnn_n64_b8_val_seqloop | t1:dhsrnn_n64_b8_seqloop,dhsrnn_n64_b8_val_seqloop
+lif_srnn_n64_val_seqloop | t1:lif_srnn_n64_seqloop,lif_srnn_n64_val_seqloop
+gru_pm_val_seqloop | t1:gru_h23_seqloop,gru_pm_val_seqloop
+gru_pm_val_seq | t1:gru_h23_seq,gru_pm_val_seq
+gru_acc_val_seqloop | t1:gru_acc_val_seqloop
+gru_acc_val_seq | t1:gru_acc_val_seq

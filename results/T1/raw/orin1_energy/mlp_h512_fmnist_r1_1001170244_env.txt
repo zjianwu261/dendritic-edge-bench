@@ -1,0 +1,80 @@
+## 2026-10-01T17:04:18+08:00 label=mlp_h512_fmnist tag=r1_1001170244 engine=mlp_h512_fmnist_fp16_nocublas_54eec6ed5d62.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 51562
+GPU-therm 49718
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 49343
+SOC1-therm 50156
+SOC2-therm 49406
+tj-therm 51750
+## loadavg
+0.99 0.95 0.88 1/539 99446
+## MemAvailable_MB 5576
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+     98  2.7     0  1-02:22:02 [kswapd0]
+    260  2.1     0  1-02:21:52 [nvmap-bz]
+   2051  1.7 43116  1-02:21:44 /usr/bin/gnome-shell
+   2605  1.6  1924  1-02:20:40 update-notifier
+    539  0.8  6392  1-02:21:50 /usr/sbin/NetworkManager --no-daemon
+   2382  0.6  1876  1-02:21:41 /usr/libexec/gsd-color
+    537  0.5  1156  1-02:21:50 /usr/sbin/cron -f
+## trtexec processes
+  99385       00:04   768 flock /tmp/dn_orin_bench.lock /usr/src/tensorrt/bin/trtexec --onnx=~/dendritic-edge-bench/T1/models/lif_srnn_n64_val_seqloop.onnx --fp16 --profilingVerbosity=det
+## 2026-10-01T17:05:18+08:00 label=mlp_h512_fmnist tag=r1_1001170244 engine=mlp_h512_fmnist_fp16_nocublas_54eec6ed5d62.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 52312
+GPU-therm 50968
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50343
+SOC1-therm 50906
+SOC2-therm 50312
+tj-therm 52312
+## loadavg
+1.14 1.02 0.91 1/544 104445
+## MemAvailable_MB 6318
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+     98  2.7     0  1-02:23:02 [kswapd0]
+    260  2.1     0  1-02:22:52 [nvmap-bz]
+   2051  1.7 43116  1-02:22:44 /usr/bin/gnome-shell
+   2605  1.6  1924  1-02:21:40 update-notifier
+    539  0.8  6392  1-02:22:50 /usr/sbin/NetworkManager --no-daemon
+   2382  0.6  1876  1-02:22:41 /usr/libexec/gsd-color
+  76615  0.6     0       14:01 [kworker/0:0-pm]
+## trtexec processes
+  99385       01:05   768 flock /tmp/dn_orin_bench.lock /usr/src/tensorrt/bin/trtexec --onnx=~/dendritic-edge-bench/T1/models/lif_srnn_n64_val_seqloop.onnx --fp16 --profilingVerbosity=det

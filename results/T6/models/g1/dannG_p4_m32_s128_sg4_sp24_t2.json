@@ -1,0 +1,72 @@
+{
+ "name": "dannG_p4_m32_s128_sg4_sp24_t2",
+ "cfg": "dannG_p4_m32_s128_sg4_sp24",
+ "task": "G1",
+ "dataset": "Fashion-MNIST",
+ "arch": "dannG",
+ "args": {
+  "arch": "dannG",
+  "p": 4,
+  "m": 32,
+  "s": 128,
+  "sg": 4,
+  "sp24": true,
+  "D": 2048,
+  "h": 256,
+  "seed": 2,
+  "epochs": 25,
+  "dense_epochs": 5,
+  "no_export": false,
+  "check": false,
+  "force": false
+ },
+ "test_acc": 0.8976,
+ "val_acc_last": 0.904,
+ "val_hist": [
+  0.8611666666666666,
+  0.8698333333333333,
+  0.8761666666666666,
+  0.879,
+  0.8855,
+  0.8911666666666667,
+  0.8975,
+  0.895,
+  0.8921666666666667,
+  0.8951666666666667,
+  0.8991666666666667,
+  0.8893333333333333,
+  0.8995,
+  0.898,
+  0.8998333333333334,
+  0.8981666666666667,
+  0.8998333333333334,
+  0.903,
+  0.8995,
+  0.9025,
+  0.9026666666666666,
+  0.9016666666666666,
+  0.901,
+  0.905,
+  0.904
+ ],
+ "params_effective": 40618,
+ "params_stored": 78250,
+ "is_2to4": true,
+ "train_minutes": 0.17,
+ "export": {
+  "conv": {
+   "onnx": "dannG_p4_m32_s128_sg4_sp24_t2_conv.onnx",
+   "size_MB": 0.3,
+   "nodes": 17,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 3.814697265625e-06
+  },
+  "bmm": {
+   "onnx": "dannG_p4_m32_s128_sg4_sp24_t2_bmm.onnx",
+   "size_MB": 0.3,
+   "nodes": 19,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 1.430511474609375e-06
+  }
+ }
+}

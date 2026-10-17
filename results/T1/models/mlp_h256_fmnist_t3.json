@@ -1,0 +1,22 @@
+{
+ "name": "mlp_h256_fmnist_t3",
+ "group": "dann_fmnist",
+ "dataset": "Fashion-MNIST",
+ "model": "mlp",
+ "dends": 32,
+ "soma": 128,
+ "synapses": 16,
+ "epochs": 25,
+ "trial": 3,
+ "test_acc": 0.8875,
+ "val_acc_last": 0.8988333333333334,
+ "params_effective": 269322,
+ "params_stored": 269322,
+ "dann_params_effective": 75146,
+ "shape": [
+  784,
+  256,
+  256,
+  10
+ ]
+}

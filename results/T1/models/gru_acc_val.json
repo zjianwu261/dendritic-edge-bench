@@ -1,0 +1,56 @@
+{
+ "name": "gru_acc_val",
+ "model": "gru",
+ "args": {
+  "model": "gru",
+  "hidden": 256,
+  "lr": 0.003,
+  "dropout": 0.3,
+  "wd": 0.01,
+  "epochs": 60,
+  "seed": 0,
+  "mem_frac": 0.1,
+  "micro": 4,
+  "tag": ""
+ },
+ "dataset": "SHD",
+ "split": "train 90% / val 10% (stratified, seed 2026) / official test",
+ "selection": "best validation accuracy epoch (earliest among ties)",
+ "best_epoch": 48,
+ "val_acc": 0.9779411764705882,
+ "test_acc": 0.8520318021201413,
+ "train_acc": 1.0,
+ "last_epoch_test_acc": 0.8564487632508834,
+ "last_epoch_val_acc": 0.9705882352941176,
+ "max_test_acc_any_epoch_NOT_FOR_SELECTION": 0.8652826855123675,
+ "params_effective": 740884,
+ "params_stored": 740884,
+ "tf32": false,
+ "train_minutes": 49.8,
+ "group": "shd",
+ "source_run": "gru_h256_lr0.003_do0.3_wd0.01_s0",
+ "T": 1000,
+ "dt_ms": 1,
+ "selection_note": "epoch chosen on the 10% validation split; test_acc = test accuracy of that epoch",
+ "export_seq": {
+  "onnx": "results/T1/models/gru_acc_val_seq.onnx",
+  "size_MB": 2.829,
+  "nodes": 23,
+  "max_abs_err_vs_torch": 7.62939453125e-06,
+  "export_s": 0.5
+ },
+ "export_step": {
+  "onnx": "results/T1/models/gru_acc_val_step.onnx",
+  "size_MB": 2.827,
+  "nodes": 10,
+  "max_abs_err_vs_torch": 1.9073486328125e-06,
+  "export_s": 0.0
+ },
+ "export_seqloop": {
+  "onnx": "results/T1/models/gru_acc_val_seqloop.onnx",
+  "nodes_top": 12,
+  "source_state_dict": "results/T1/models/gru_acc_val.pt",
+  "max_abs_err_ort_vs_torch_gru": 7.62939453125e-06,
+  "max_abs_err_script_vs_torch_gru": 7.62939453125e-06
+ }
+}

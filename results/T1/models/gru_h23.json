@@ -1,0 +1,37 @@
+{
+ "name": "gru_h23",
+ "group": "shd",
+ "dataset": "SHD",
+ "model": "gru",
+ "T": 1000,
+ "dt_ms": 1,
+ "epochs": 100,
+ "seed": 0,
+ "test_acc": 0.6263250883392226,
+ "test_acc_best_epoch": 0.6934628975265018,
+ "params_effective": 50505,
+ "params_stored": 50505,
+ "dhsrnn_params_effective": 51304,
+ "train_minutes": 71.8,
+ "export_seq": {
+  "onnx": "results/T1/models/gru_h23_seq.onnx",
+  "size_MB": 0.195,
+  "nodes": 23,
+  "max_abs_err_vs_torch": 1.049041748046875e-05,
+  "export_s": 0.1
+ },
+ "export_step": {
+  "onnx": "results/T1/models/gru_h23_step.onnx",
+  "size_MB": 0.194,
+  "nodes": 10,
+  "max_abs_err_vs_torch": 4.76837158203125e-07,
+  "export_s": 0.0
+ },
+ "export_seqloop": {
+  "onnx": "results/T1/models/gru_h23_seqloop.onnx",
+  "nodes_top": 12,
+  "source_state_dict": "../../results/T1/models/gru_h23.pt",
+  "max_abs_err_ort_vs_torch_gru": 1.33514404296875e-05,
+  "max_abs_err_script_vs_torch_gru": 1.1444091796875e-05
+ }
+}

@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+# third-party checkouts (fetched by src/third_party/fetch.sh)
+src/third_party/*/
+# on-device evaluation sets (rebuilt by src/t1/device_acc.py)
+results/T1/data/eval_*.npz
+results/T6/data/eval_*.npz
+# trained weights, exported graphs, engines, firmware builds (not released)
+*.onnx
+*.engine
+*.plan
+*.pt
+*.pth
+*.npz
+*.npy
+*.ihx
+*.hex
+*.bin
+*.rel
+results/T1m/build/
+# generated figures
+*.png
+# task runner state
+work/
+# datasets (default $DEB_DATA = ./data)
+/data/

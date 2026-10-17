@@ -1,0 +1,23 @@
+{
+ "eps_mse_gc": 0.024531779810786247,
+ "eps_mse_uc": 0.027701402083039284,
+ "act_mse_gc": 2.289219379425049,
+ "act_cos_gc": 0.920420229434967,
+ "act_mse_uc": 2.722935438156128,
+ "final_err_m": 0.3594658672809601,
+ "dist_mse": 13.28403091430664,
+ "n": 1000,
+ "n_masked": 759,
+ "task": "gostanford",
+ "light": "normal",
+ "ref_mean_traj": {
+  "act_mse": 3.3762145042419434,
+  "final_err_m": 0.4990111291408539
+ },
+ "seconds": 72.5,
+ "device": "cpu",
+ "peak_gpu_MB": 0,
+ "model": "nomad (official ckpt)",
+ "torch": "2.11.0+cu128",
+ "tf32": false
+}

@@ -1,0 +1,13 @@
+# T6 key energy comparisons (Orin #1, nocublas engines built by the T6 chain). label | spec (see src/bench/energy_chain.sh)
+# G2: DH-SSM 2x128x4 (spk / cont, K=25) vs GRU h64 / h256 (fused ONNX GRU op) vs T1 DH-SRNN Loop
+dhssm_L2_n128_b4_spk__K25 | t6:~/dendritic-edge-bench/T6/onnx/g2/dhssm_L2_n128_b4_spk__K25.onnx
+gru_h64__seq | t6:~/dendritic-edge-bench/T6/onnx/g2/gru_h64__seq.onnx
+t1_dhsrnn_n64_b8_seqloop | t1:dhsrnn_n64_b8_seqloop,dhsrnn_n64_b8_val_seqloop
+dhssm_L2_n128_b4_cont__K25 | t6:~/dendritic-edge-bench/T6/onnx/g2/dhssm_L2_n128_b4_cont__K25.onnx
+gru_h256__seq | t6:~/dendritic-edge-bench/T6/onnx/g2/gru_h256__seq.onnx
+# G3: AD-cache vs MLP (Gemm form)
+g3_adc_h1024_ffrand__gemm | t6:~/dendritic-edge-bench/T6/onnx/g3/adc_h1024_ffrand__gemm.onnx
+g3_adc_h2048_ffrand__gemm | t6:~/dendritic-edge-bench/T6/onnx/g3/adc_h2048_ffrand__gemm.onnx
+g3_mlp_h1024__gemm | t6:~/dendritic-edge-bench/T6/onnx/g3/mlp_h1024__gemm.onnx
+g3_mlp_h2048__gemm | t6:~/dendritic-edge-bench/T6/onnx/g3/mlp_h2048__gemm.onnx
+g3_mlp_h4096__gemm | t6:~/dendritic-edge-bench/T6/onnx/g3/mlp_h4096__gemm.onnx

@@ -1,0 +1,36 @@
+{"Layers": [{
+  "Name": "{ForeignNode[(Unnamed Layer* 26) [Constant]...(Unnamed Layer* 66) [ElementWise]]}",
+  "LayerType": "Myelin",
+  "Inputs": [
+  {
+    "Name": "x_t",
+    "Location": "Device",
+    "Dimensions": [1,700],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "h",
+    "Location": "Device",
+    "Dimensions": [1,1,23],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "h_o",
+    "Location": "Device",
+    "Dimensions": [1,1,23],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "out",
+    "Location": "Device",
+    "Dimensions": [1,20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+}],
+"Bindings": ["x_t"
+,"h"
+,"h_o"
+,"out"
+]}

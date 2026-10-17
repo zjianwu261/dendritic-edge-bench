@@ -1,0 +1,4 @@
+# G-S2 (2026-10-10): fair-protocol G2 models, seed-1 trained weights, nocublas engines of the lut_g2x batch. label | spec
+lru_L2_H64_N128_lr0.001_vs_t1__K50 | t6:~/dendritic-edge-bench/T6/onnx/g2x/lru_L2_H64_N128_lr0.001_vs_t1__K50.onnx
+dssmU_L2_n128_b4_spk_vs_t1__K50 | t6:~/dendritic-edge-bench/T6/onnx/g2x/dssmU_L2_n128_b4_spk_vs_t1__K50.onnx
+gru_h768_lr0.003_vs_t1__seq | t6:~/dendritic-edge-bench/T6/onnx/g2x/gru_h768_lr0.003_vs_t1__seq.onnx

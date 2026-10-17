@@ -1,0 +1,17 @@
+{
+ "name": "dann_prng_d20_s128",
+ "kind": "dann",
+ "cfg": {
+  "d": 20,
+  "s": 128
+ },
+ "seed": 2,
+ "epochs": 25,
+ "params": 47498,
+ "mask_source": "prng",
+ "val_acc": 0.8963333333333333,
+ "acc_fp32": 0.8911,
+ "train_s": 380.9,
+ "device": "cpu",
+ "torch": "2.11.0+cu128"
+}

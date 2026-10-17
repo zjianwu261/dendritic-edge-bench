@@ -1,0 +1,21 @@
+cfg,family,p50_ms,acc,acc_std,best_baseline_within_lat,baseline_p50_ms,baseline_acc,baseline_acc_std,delta_acc_pp,fastest_baseline_same_acc,its_p50_ms,speedup_vs_it
+dhssm_L1_n64_b1_cont,dhssm_cont_nb1,1.1168,0.7612,0.0103,,,,,,gru_h32_r1,13.4188,12.02
+dhssm_L1_n64_b1_spk,dhssm_spk_nb1,1.1184,0.7459,0.0224,,,,,,gru_h32_r1,13.4188,12.0
+dhssm_L1_n64_b4_cont,dhssm_cont,1.3572,0.8388,0.0106,,,,,,gru_h128_r1,21.6913,15.98
+dhssm_L1_n64_b4_spk,dhssm_spk,1.3733,0.8195,0.0282,,,,,,gru_h128_r1,21.6913,15.8
+dhssm_L1_n128_b1_spk,dhssm_spk_nb1,1.3858,0.7466,0.0083,,,,,,gru_h32_r1,13.4188,9.68
+dhssm_L1_n128_b1_cont,dhssm_cont_nb1,1.4015,0.7789,0.019,,,,,,gru_h64_r1,17.0439,12.16
+dhssm_L2_n64_b1_cont,dhssm_cont_nb1,1.4465,0.8712,0.0138,,,,,,gru_h256_r1,24.051,16.63
+dhssm_L2_n64_b1_spk,dhssm_spk_nb1,1.4924,0.8375,0.0219,,,,,,gru_h128_r1,21.6913,14.53
+dhssm_L1_n64_b8_cont,dhssm_cont,1.5676,0.8637,0.0081,,,,,,gru_h256_r1,24.051,15.34
+dhssm_L1_n64_b8_spk,dhssm_spk,1.5886,0.8497,0.0127,,,,,,gru_h256_r1,24.051,15.14
+dhssm_L2_n128_b1_spk,dhssm_spk_nb1,1.8773,0.8547,0.0082,,,,,,gru_h256_r1,24.051,12.81
+dhssm_L2_n64_b4_cont,dhssm_cont,1.9482,0.8862,0.0052,,,,,,none reaches,,
+dhssm_L2_n64_b4_spk,dhssm_spk,1.996,0.8722,0.0045,,,,,,gru_h256_r1,24.051,12.05
+dhssm_L2_n128_b2_spk,dhssm_spk,2.2156,0.8735,0.0068,,,,,,gru_h256_r1,24.051,10.86
+dhssm_L2_n128_b4_cont,dhssm_cont,2.5917,0.9024,0.0074,,,,,,none reaches,,
+dhssm_L2_n128_b4_spk,dhssm_spk,2.7327,0.8771,0.0095,,,,,,none reaches,,
+dhssm_L2_n256_b1_spk,dhssm_spk_nb1,3.0023,0.86,0.02,,,,,,gru_h256_r1,24.051,8.01
+dhssm_L2_n256_b1_cont,dhssm_cont_nb1,3.0329,0.8796,0.0207,,,,,,none reaches,,
+dhssm_L2_n128_b8_cont,dhssm_cont,3.7776,0.9037,0.0116,,,,,,none reaches,,
+dhssm_L2_n256_b4_cont,dhssm_cont,4.1782,0.9106,0.0063,,,,,,none reaches,,

@@ -1,0 +1,20 @@
+## 2026-10-01T14:07:03+08:00 vint_b1/nocublas r3
+NV Power Mode: 15W
+0
+nvhost_podgov
+306000000
+306000000
+624750000
+CPU-therm 52593
+GPU-therm 50812
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50625
+SOC1-therm 51312
+SOC2-therm 50718
+tj-therm 52531
+0.84 0.87 1.05 2/523 54885
+              total        used        free      shared  buff/cache   available
+Mem:           7451        1646        4786           2        1018        5585
+Swap:          3725         909        2815

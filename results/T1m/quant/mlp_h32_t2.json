@@ -1,0 +1,33 @@
+{
+ "tag": "mlp_h32_t2",
+ "model": "mlp_h32",
+ "kind": "mlp",
+ "seed": 2,
+ "params": 26506,
+ "acc_fp32": 0.8785,
+ "acc_fp32_numpy": 0.8785,
+ "acc_int8": 0.8798,
+ "cal_acc_int8": 0.8848333333333334,
+ "sh1": 12,
+ "sh2": 6,
+ "acc_bound": 4060549,
+ "table_bytes": 26580,
+ "tables": {
+  "w1": 25088,
+  "w2": 1024,
+  "b1": 64,
+  "b2": 64,
+  "w3": 320,
+  "b3": 20,
+  "total": 26580
+ },
+ "flash_bytes": null,
+ "xdata_bytes": null,
+ "fits": false,
+ "uart_build_ok": false,
+ "uart_link_log": "not built (seed != 1)",
+ "sim_build_ok": false,
+ "sim_flash": null,
+ "pc_bitexact_logits": "10000/10000",
+ "pc_bitexact_class": "10000/10000"
+}

@@ -1,0 +1,38 @@
+{
+ "name": "mlpctx_h512_lr0.001_wd0_fair_t3",
+ "cfg": "mlpctx_h512_lr0.001_wd0_fair",
+ "task": "G3",
+ "dataset": "permuted MNIST (10 tasks)",
+ "arch": "mlpctx",
+ "args": {
+  "arch": "mlpctx",
+  "h": 512,
+  "k": 4,
+  "ff": "rand",
+  "seed": 3,
+  "force": false,
+  "check": false,
+  "fair": true,
+  "lr": 0.001,
+  "wd": 0.0
+ },
+ "test_acc": 0.5314099999999999,
+ "final_per_task": [
+  0.1851,
+  0.2621,
+  0.2023,
+  0.3105,
+  0.3921,
+  0.5213,
+  0.6574,
+  0.8896,
+  0.9213,
+  0.9724
+ ],
+ "bwt": -0.4917888888888889,
+ "selection": "config chosen on val_acc (final model, mean over tasks; T6-F)",
+ "val_acc": 0.5337500000000001,
+ "params_effective": 674826,
+ "params_stored": 674826,
+ "train_minutes": 0.1
+}

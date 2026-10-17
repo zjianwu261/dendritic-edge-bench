@@ -1,0 +1,37 @@
+{
+ "name": "adc_h256_k4_ff24_t3",
+ "cfg": "adc_h256_k4_ff24",
+ "task": "G3",
+ "dataset": "permuted MNIST (10 tasks)",
+ "arch": "ad",
+ "args": {
+  "arch": "ad",
+  "h": 256,
+  "k": 4,
+  "ff": "24",
+  "seed": 3,
+  "force": false,
+  "check": false
+ },
+ "test_acc": 0.8750300000000001,
+ "final_per_task": [
+  0.7799,
+  0.8203,
+  0.8364,
+  0.8796,
+  0.8939,
+  0.8857,
+  0.8967,
+  0.9142,
+  0.9138,
+  0.9298
+ ],
+ "bwt": -0.05999999999999998,
+ "selection": "none (fixed protocol, final model, as T1/nupic)",
+ "params_effective": 1740554,
+ "params_stored": 1874954,
+ "train_minutes": 0.26,
+ "is_2to4": true,
+ "cached_vs_two_input_max_abs_diff": 9.5367431640625e-07,
+ "cached_vs_two_input_argmax_agree": 1.0
+}

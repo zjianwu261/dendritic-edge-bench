@@ -1,0 +1,3 @@
+# T6 follow-up energy (GRU h256 to 3 runs; DH-SSM L2 n256 b4 cont). label | spec (src/bench/energy_chain.sh)
+gru_h256__seq | t6:~/dendritic-edge-bench/T6/onnx/g2/gru_h256__seq.onnx
+dhssm_L2_n256_b4_cont__K25 | t6:~/dendritic-edge-bench/T6/onnx/g2/dhssm_L2_n256_b4_cont__K25.onnx

@@ -1,0 +1,23 @@
+{
+ "eps_mse_gc": 0.057517290115356445,
+ "eps_mse_uc": 0.060656338930130005,
+ "act_mse_gc": 4.971513271331787,
+ "act_cos_gc": 0.8988895416259766,
+ "act_mse_uc": 5.701079845428467,
+ "final_err_m": 1.090968370437622,
+ "dist_mse": 41.23603057861328,
+ "n": 1000,
+ "n_masked": 736,
+ "task": "huron_soda3",
+ "light": "dark",
+ "ref_mean_traj": {
+  "act_mse": 4.815962791442871,
+  "final_err_m": 1.124503493309021
+ },
+ "seconds": 71.0,
+ "device": "cpu",
+ "peak_gpu_MB": 0,
+ "model": "nomad (official ckpt)",
+ "torch": "2.11.0+cu128",
+ "tf32": false
+}

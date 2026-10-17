@@ -1,0 +1,62 @@
+{
+ "huron_bww8": {
+  "test": {
+   "act_mse": 3.4556429386138916,
+   "final_err_m": 0.9173262119293213
+  },
+  "val": {
+   "act_mse": 2.6896984577178955,
+   "final_err_m": 0.8445011377334595
+  },
+  "eval_n": 500,
+  "holdout_val": true
+ },
+ "huron_cory1": {
+  "test": {
+   "act_mse": 2.5078442096710205,
+   "final_err_m": 0.6981794834136963
+  },
+  "val": {
+   "act_mse": 3.4669599533081055,
+   "final_err_m": 0.8930812478065491
+  },
+  "eval_n": 500,
+  "holdout_val": true
+ },
+ "recon": {
+  "test": {
+   "act_mse": 1.676957130432129,
+   "final_err_m": 0.7113747000694275
+  },
+  "val": {
+   "act_mse": 1.7114067077636719,
+   "final_err_m": 0.7233018279075623
+  },
+  "eval_n": 500,
+  "holdout_val": true
+ },
+ "gostanford": {
+  "test": {
+   "act_mse": 3.349240303039551,
+   "final_err_m": 0.4944148063659668
+  },
+  "val": {
+   "act_mse": 3.4542019367218018,
+   "final_err_m": 0.48795023560523987
+  },
+  "eval_n": 500,
+  "holdout_val": true
+ },
+ "huron_bww12": {
+  "test": {
+   "act_mse": 2.652081251144409,
+   "final_err_m": 0.8434244394302368
+  },
+  "val": {
+   "act_mse": 4.23336935043335,
+   "final_err_m": 1.0411217212677002
+  },
+  "eval_n": 500,
+  "holdout_val": true
+ }
+}

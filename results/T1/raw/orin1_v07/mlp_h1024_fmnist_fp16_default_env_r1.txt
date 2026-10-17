@@ -1,0 +1,121 @@
+## 2026-10-01T11:04:02+08:00 label=mlp_h1024_fmnist build=default before run 1
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+612000000
+306000000
+624750000
+## cpu cur freq (kHz)
+1497600 1497600 1497600 1497600 1510400 1510400 
+## cpu governor
+schedutil
+## thermal (type temp_mC)
+CPU-therm 52343
+GPU-therm 50625
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50031
+SOC1-therm 50625
+SOC2-therm 50218
+tj-therm 52468
+## loadavg
+0.85 7.13 17.21 5/539 43974
+## other GPU/bench processes
+    553 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+   1758 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1818 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1826 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   2476 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2559 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2560 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2561 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2562 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2563 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2564 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2565 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2566 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2567 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2568 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2569 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2570 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2571 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2572 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2573 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2574 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2575 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2576 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2577 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+  17504 update-manager  /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+  43476 bash            bash bin/run_trt_sync_jetson.sh ~/dendritic-edge-bench/T1/models/mlp_h1024_fmnist.onnx fp16 ~/dendritic-edge-b
+  43894 flock           flock /tmp/dn_orin_bench.lock /usr/src/tensorrt/bin/trtexec --onnx=~/dendritic-edge-bench/T6/onnx/g1/mlp_h64__conv.onnx --f
+  43905 flock           flock /tmp/dn_orin_bench.lock /usr/src/tensorrt/bin/trtexec --onnx=~/dendritic-edge-bench/T6/onnx/g2/gru_h64__seq.onnx --fp
+  43935 flock           flock /tmp/dn_orin_bench.lock bash -c s=$(date +%s); /usr/src/tensorrt/bin/trtexec --onnx=models/nomad_enc_explore_b1.onnx --fp16  --sav
+## 2026-10-01T11:04:08+08:00 label=mlp_h1024_fmnist build=default after run 1
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+306000000
+624750000
+## cpu cur freq (kHz)
+806400 806400 806400 806400 729600 729600 
+## cpu governor
+schedutil
+## thermal (type temp_mC)
+CPU-therm 52312
+GPU-therm 50531
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50187
+SOC1-therm 50718
+SOC2-therm 50250
+tj-therm 52312
+## loadavg
+0.87 6.93 17.04 2/543 44111
+## other GPU/bench processes
+    553 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+   1758 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1818 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1826 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   2476 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2559 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2560 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2561 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2562 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2563 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2564 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2565 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2566 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2567 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2568 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2569 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2570 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2571 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2572 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2573 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2574 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2575 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2576 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+   2577 python3         python3 /usr/share/nvpmodel_indicator/nvpmodel_indicator.py
+  17504 update-manager  /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+  43476 bash            bash bin/run_trt_sync_jetson.sh ~/dendritic-edge-bench/T1/models/mlp_h1024_fmnist.onnx fp16 ~/dendritic-edge-b
+  43894 flock           flock /tmp/dn_orin_bench.lock /usr/src/tensorrt/bin/trtexec --onnx=~/dendritic-edge-bench/T6/onnx/g1/mlp_h64__conv.onnx --f
+  43905 flock           flock /tmp/dn_orin_bench.lock /usr/src/tensorrt/bin/trtexec --onnx=~/dendritic-edge-bench/T6/onnx/g2/gru_h64__seq.onnx --fp
+  43935 flock           flock /tmp/dn_orin_bench.lock bash -c s=$(date +%s); /usr/src/tensorrt/bin/trtexec --onnx=models/nomad_enc_explore_b1.onnx --fp16  --sav
+  44079 flock           flock /tmp/dn_orin_bench.lock python3 dendritic-edge-bench/T1/bin/trt_eval.py dendritic-edge-bench/T1/trt_v07/vann_same_d32_s128_fp16_no

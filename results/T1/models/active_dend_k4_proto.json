@@ -1,0 +1,25 @@
+{
+ "group": "active_dend_pmnist",
+ "dataset": "permuted MNIST (10 tasks)",
+ "model": "ad",
+ "segments": 4,
+ "seed": 0,
+ "test_acc": 0.9516600000000001,
+ "bwt": -0.018511111111111107,
+ "task_inference_acc": 1.0,
+ "params_effective": 15759370,
+ "params_stored": 18669578,
+ "name": "active_dend_k4_proto",
+ "derived_from": "active_dend_k4",
+ "variant": "proto",
+ "argmax_agreement_vs_two_input_model_eval_subset": 1.0,
+ "max_abs_logit_diff_vs_two_input_model_2000": 0.0,
+ "export": {
+  "onnx": "results/T1/models/active_dend_k4_proto.onnx",
+  "size_MB": 71.284,
+  "nodes": 49,
+  "max_abs_err_vs_torch": 9.5367431640625e-07,
+  "export_s": 1.4
+ },
+ "params_stored_deployed": 18677428
+}

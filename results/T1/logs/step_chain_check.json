@@ -1,0 +1,29 @@
+{
+ "dhsrnn_n64_b8": {
+  "n": 200,
+  "max_abs_diff": 0.32926177978515625,
+  "median_abs_diff": 6.4849853515625e-05,
+  "argmax_agreement": 1.0,
+  "acc_step_chained": 0.87,
+  "acc_seqloop": 0.87,
+  "reference": "dhsrnn_n64_b8_seqloop.onnx"
+ },
+ "lif_srnn_n64": {
+  "n": 200,
+  "max_abs_diff": 0.00019073486328125,
+  "median_abs_diff": 7.2479248046875e-05,
+  "argmax_agreement": 1.0,
+  "acc_step_chained": 0.82,
+  "acc_seqloop": 0.82,
+  "reference": "lif_srnn_n64_seqloop.onnx"
+ },
+ "gru_h23": {
+  "n": 200,
+  "max_abs_diff": 0.000186920166015625,
+  "median_abs_diff": 1.52587890625e-05,
+  "argmax_agreement": 1.0,
+  "acc_step_chained": 0.635,
+  "acc_seqloop": 0.635,
+  "reference": "gru_h23_seqloop.onnx"
+ }
+}

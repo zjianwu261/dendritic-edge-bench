@@ -1,0 +1,7 @@
+# Third-party repositories used by src/ (not redistributed; fetch with src/third_party/fetch.sh).
+# path | upstream | commit | licence | use
+src/third_party/dendritic_anns | https://github.com/Poirazi-Lab/dendritic_anns.git | fadc3846174bc7a67b284a76b0989ed2cef2767e | GPL-3.0 | imported at run time (opt.make_masks) by src/t1/dann_fmnist.py, src/mcu/common.py
+src/third_party/DH-SNN | https://github.com/eva1801/DH-SNN.git | 79ab1fb7a5944535f4395ffdc2c5487d343f365c | MIT | reference for the PyTorch port in src/t1/shd.py (not imported)
+src/third_party/diffusion_policy | https://github.com/real-stanford/diffusion_policy.git | 5ba07ac6661db573af695b419a7947ecb704690f | MIT | imported by src/t4a/common.py (ConditionalUnet1D)
+src/third_party/nupic.research | https://github.com/numenta/nupic.research.git | 7a287be0bc2b0ee79eda28cd07af4603c04a4ded | AGPL-3.0 | reference for the re-implementation in src/t1/active_dendrites.py (not imported, no code copied)
+src/third_party/visualnav-transformer | https://github.com/robodhruv/visualnav-transformer.git | dca79815b704e5aa9c6bdc3082351f9e3b2848c2 | MIT | imported by src/t4a/* (NoMaD model, data processing helpers)

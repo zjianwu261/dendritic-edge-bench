@@ -1,0 +1,20 @@
+## 2026-10-01T12:10:32+08:00 nomad_unet_b1/nocublas r3
+NV Power Mode: 15W
+0
+nvhost_podgov
+624750000
+306000000
+624750000
+CPU-therm 51468
+GPU-therm 49968
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 49437
+SOC1-therm 50218
+SOC2-therm 49562
+tj-therm 51468
+0.85 0.94 1.18 2/541 51996
+              total        used        free      shared  buff/cache   available
+Mem:           7451        1639        4293           3        1518        5619
+Swap:          3725         937        2788

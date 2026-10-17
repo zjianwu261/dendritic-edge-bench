@@ -1,0 +1,33 @@
+{
+ "tag": "mlp_h64_t3",
+ "model": "mlp_h64",
+ "kind": "mlp",
+ "seed": 3,
+ "params": 55050,
+ "acc_fp32": 0.8881,
+ "acc_fp32_numpy": 0.8881,
+ "acc_int8": 0.8877,
+ "cal_acc_int8": 0.8986666666666666,
+ "sh1": 12,
+ "sh2": 6,
+ "acc_bound": 3697372,
+ "table_bytes": 55188,
+ "tables": {
+  "w1": 50176,
+  "w2": 4096,
+  "b1": 128,
+  "b2": 128,
+  "w3": 640,
+  "b3": 20,
+  "total": 55188
+ },
+ "flash_bytes": null,
+ "xdata_bytes": null,
+ "fits": false,
+ "uart_build_ok": false,
+ "uart_link_log": "not built (seed != 1)",
+ "sim_build_ok": false,
+ "sim_flash": null,
+ "pc_bitexact_logits": "10000/10000",
+ "pc_bitexact_class": "10000/10000"
+}

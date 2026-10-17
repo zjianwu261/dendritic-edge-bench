@@ -1,0 +1,22 @@
+{
+ "tag": "cnn_c8_16_t3",
+ "cfg": "cnn_c8_16_lr0.001_wd0_fair",
+ "seed": 3,
+ "C1": 8,
+ "C2": 16,
+ "params": 9098,
+ "val_acc_last_fp32": 0.9046666666666666,
+ "acc_fp32": 0.8907,
+ "acc_fp32_numpy": 0.8908,
+ "acc_int8": 0.8911,
+ "cal_acc_int8": 0.9046666666666666,
+ "sh1": 8,
+ "sh2": 9,
+ "acc_bound": 1217480,
+ "fused_fc": false,
+ "macs": {
+  "conv1": 13448,
+  "conv2": 51200,
+  "fc": 7840
+ }
+}

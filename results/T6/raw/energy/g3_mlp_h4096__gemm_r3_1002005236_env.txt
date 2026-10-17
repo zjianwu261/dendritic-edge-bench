@@ -1,0 +1,79 @@
+## 2026-10-02T00:55:43+08:00 label=g3_mlp_h4096__gemm tag=r3_1002005236 engine=mlp_h4096__gemm_nocublas_633d8a614ccf.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 52250
+GPU-therm 50312
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 49937
+SOC1-therm 50562
+SOC2-therm 50062
+tj-therm 52125
+## loadavg
+0.96 0.81 0.83 2/254 745529
+## MemAvailable_MB 5940
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+   1818  2.5  7760  1-10:13:10 /usr/bin/python3 /usr/local/bin/jtop --force
+    260  2.2     0  1-10:13:17 [nvmap-bz]
+     98  2.0     0  1-10:13:27 [kswapd0]
+   1826  1.1  9972  1-10:13:10 /usr/bin/python3 /usr/local/bin/jtop --force
+    539  0.6  6584  1-10:13:15 /usr/sbin/NetworkManager --no-daemon
+    130  0.4     0  1-10:13:23 [irq/124-host_sy]
+    537  0.4  1064  1-10:13:15 /usr/sbin/cron -f
+## trtexec processes
+## 2026-10-02T00:56:43+08:00 label=g3_mlp_h4096__gemm tag=r3_1002005236 engine=mlp_h4096__gemm_nocublas_633d8a614ccf.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 54312
+GPU-therm 52437
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 52250
+SOC1-therm 52781
+SOC2-therm 52187
+tj-therm 53968
+## loadavg
+0.42 0.68 0.78 2/256 750424
+## MemAvailable_MB 5937
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+   1818  2.5  7760  1-10:14:10 /usr/bin/python3 /usr/local/bin/jtop --force
+    260  2.2     0  1-10:14:17 [nvmap-bz]
+     98  2.0     0  1-10:14:27 [kswapd0]
+   1826  1.1  9972  1-10:14:10 /usr/bin/python3 /usr/local/bin/jtop --force
+    539  0.6  6584  1-10:14:15 /usr/sbin/NetworkManager --no-daemon
+    130  0.4     0  1-10:14:23 [irq/124-host_sy]
+    537  0.4  1064  1-10:14:15 /usr/sbin/cron -f
+## trtexec processes
+ 745545       01:00   672 flock /tmp/dn_orin_bench.lock bash -c [ $(awk '/MemAvailable/ {print int($2/1024)}' /proc/meminfo) -ge 2048 ] || { echo 'SKIP: low memory after acquiring the lock'; exit 3; }

@@ -1,0 +1,18 @@
+{
+ "task": "huron_bww8:normal",
+ "n": 200,
+ "engines": [
+  "trt/nomad_enc_explore_b1_gnd_fp16.engine",
+  "trt/nomad_unet_b8_fp16_default.engine"
+ ],
+ "enc_abs_err_max": 0.03427696228027344,
+ "enc_abs_err_mean": 0.003732370212674141,
+ "enc_rel_err_l2_mean": 0.0010713782394304872,
+ "enc_cos_min": 0.9999976754188538,
+ "wp_abs_err_mean_norm_units": 0.0017211532685905695,
+ "wp_abs_err_max_norm_units": 0.034603118896484375,
+ "final_wp_err_median_norm_units": 0.0036403778940439224,
+ "act_mse_uc_pytorch": 0.7752004861831665,
+ "act_mse_uc_trt": 0.7763183116912842,
+ "n_masked": 148
+}

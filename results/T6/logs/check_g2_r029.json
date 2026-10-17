@@ -1,0 +1,21 @@
+{
+ "lru_chunk_scan_vs_sequential_fp64_K25": 4.263256414560601e-13,
+ "lru_chunk_scan_vs_sequential_fp64_K50": 4.121147867408581e-13,
+ "lru_export_vs_train_K25": 1.52587890625e-05,
+ "dssmU_export_vs_train_K25": 0.0,
+ "lstm_forward_shape": [
+  1,
+  20
+ ],
+ "dssmU_proj_groups": 1,
+ "speaker_split": {
+  "rule": "validation = all training samples of speakers 3 and 6 (the two smallest training speakers)",
+  "val_speakers": [
+   3,
+   6
+  ],
+  "n_val": 1169,
+  "n_train": 6987,
+  "val_classes_present": 20
+ }
+}

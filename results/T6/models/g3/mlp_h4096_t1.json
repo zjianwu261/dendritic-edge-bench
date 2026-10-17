@@ -1,0 +1,34 @@
+{
+ "name": "mlp_h4096_t1",
+ "cfg": "mlp_h4096",
+ "task": "G3",
+ "dataset": "permuted MNIST (10 tasks)",
+ "arch": "mlp",
+ "args": {
+  "arch": "mlp",
+  "h": 4096,
+  "k": 4,
+  "ff": "rand",
+  "seed": 1,
+  "force": false,
+  "check": false
+ },
+ "test_acc": 0.6293,
+ "final_per_task": [
+  0.2346,
+  0.2795,
+  0.3819,
+  0.3774,
+  0.5993,
+  0.7164,
+  0.8423,
+  0.9408,
+  0.9449,
+  0.9759
+ ],
+ "bwt": -0.38647777777777775,
+ "selection": "none (fixed protocol, final model, as T1/nupic)",
+ "params_effective": 20037642,
+ "params_stored": 20037642,
+ "train_minutes": 1.13
+}

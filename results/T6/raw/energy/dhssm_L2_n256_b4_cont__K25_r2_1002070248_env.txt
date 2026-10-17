@@ -1,0 +1,80 @@
+## 2026-10-02T07:03:03+08:00 label=dhssm_L2_n256_b4_cont__K25 tag=r2_1002070248 engine=dhssm_L2_n256_b4_cont__K25_nocublas_9336805c92ab.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 51875
+GPU-therm 49968
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 49593
+SOC1-therm 50531
+SOC2-therm 49750
+tj-therm 52125
+## loadavg
+1.09 0.43 0.16 2/266 812918
+## MemAvailable_MB 5910
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+   1818  2.1  7776  1-16:20:31 /usr/bin/python3 /usr/local/bin/jtop --force
+    260  2.0     0  1-16:20:38 [nvmap-bz]
+     98  1.7     0  1-16:20:48 [kswapd0]
+   1826  1.0  9884  1-16:20:31 /usr/bin/python3 /usr/local/bin/jtop --force
+    539  0.5  6464  1-16:20:36 /usr/sbin/NetworkManager --no-daemon
+ 801243  0.5     0       08:26 [kworker/0:0-events]
+    130  0.4     0  1-16:20:44 [irq/124-host_sy]
+## trtexec processes
+ 812903       00:00   720 flock /tmp/dn_orin_bench.lock bash -c [ $(awk '/MemAvailable/ {print int($2/1024)}' /proc/meminfo) -ge 2048 ] || { echo 'SKIP: low memory after acquiring the lock'; exit 3; }
+## 2026-10-02T07:04:03+08:00 label=dhssm_L2_n256_b4_cont__K25 tag=r2_1002070248 engine=dhssm_L2_n256_b4_cont__K25_nocublas_9336805c92ab.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 53000
+GPU-therm 51593
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 51156
+SOC1-therm 51937
+SOC2-therm 51218
+tj-therm 53218
+## loadavg
+1.32 0.61 0.24 2/269 817820
+## MemAvailable_MB 5908
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+   1818  2.1  7776  1-16:21:31 /usr/bin/python3 /usr/local/bin/jtop --force
+    260  2.0     0  1-16:21:38 [nvmap-bz]
+     98  1.7     0  1-16:21:48 [kswapd0]
+   1826  1.0  9884  1-16:21:31 /usr/bin/python3 /usr/local/bin/jtop --force
+ 801243  0.6     0       09:26 [kworker/0:0-events]
+    539  0.5  6464  1-16:21:36 /usr/sbin/NetworkManager --no-daemon
+    130  0.4     0  1-16:21:44 [irq/124-host_sy]
+## trtexec processes
+ 812903       01:00   720 flock /tmp/dn_orin_bench.lock bash -c [ $(awk '/MemAvailable/ {print int($2/1024)}' /proc/meminfo) -ge 2048 ] || { echo 'SKIP: low memory after acquiring the lock'; exit 3; }

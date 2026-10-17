@@ -1,0 +1,78 @@
+## 2026-10-01T17:08:09+08:00 label=active_dend_k4 tag=r1_1001170645 engine=active_dend_k4_fp16_nocublas_2985b0c1112b.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 52062
+GPU-therm 50250
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50062
+SOC1-therm 50687
+SOC2-therm 50062
+tj-therm 52125
+## loadavg
+0.90 0.97 0.91 1/541 110169
+## MemAvailable_MB 5602
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+     98  2.6     0  1-02:25:53 [kswapd0]
+    260  2.1     0  1-02:25:43 [nvmap-bz]
+   2051  1.7 43116  1-02:25:35 /usr/bin/gnome-shell
+   2605  1.6  1924  1-02:24:31 update-notifier
+    539  0.8  6392  1-02:25:41 /usr/sbin/NetworkManager --no-daemon
+   2382  0.6  1888  1-02:25:32 /usr/libexec/gsd-color
+  76615  0.6     0       16:52 [kworker/0:0-events]
+## trtexec processes
+## 2026-10-01T17:09:09+08:00 label=active_dend_k4 tag=r1_1001170645 engine=active_dend_k4_fp16_nocublas_2985b0c1112b.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 53406
+GPU-therm 51812
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 51812
+SOC1-therm 52312
+SOC2-therm 51656
+tj-therm 53875
+## loadavg
+0.47 0.84 0.87 2/544 115068
+## MemAvailable_MB 5603
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+     98  2.6     0  1-02:26:54 [kswapd0]
+    260  2.1     0  1-02:26:44 [nvmap-bz]
+   2051  1.7 43116  1-02:26:36 /usr/bin/gnome-shell
+   2605  1.6  1924  1-02:25:32 update-notifier
+    539  0.8  6392  1-02:26:42 /usr/sbin/NetworkManager --no-daemon
+  76615  0.7     0       17:53 [kworker/0:0-events]
+   2382  0.6  1888  1-02:26:33 /usr/libexec/gsd-color
+## trtexec processes

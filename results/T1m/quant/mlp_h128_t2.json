@@ -1,0 +1,33 @@
+{
+ "tag": "mlp_h128_t2",
+ "model": "mlp_h128",
+ "kind": "mlp",
+ "seed": 2,
+ "params": 118282,
+ "acc_fp32": 0.8907,
+ "acc_fp32_numpy": 0.8907,
+ "acc_int8": 0.8904,
+ "cal_acc_int8": 0.8965,
+ "sh1": 11,
+ "sh2": 8,
+ "acc_bound": 2646186,
+ "table_bytes": 118548,
+ "tables": {
+  "w1": 100352,
+  "w2": 16384,
+  "b1": 256,
+  "b2": 256,
+  "w3": 1280,
+  "b3": 20,
+  "total": 118548
+ },
+ "flash_bytes": null,
+ "xdata_bytes": null,
+ "fits": false,
+ "uart_build_ok": false,
+ "uart_link_log": "not built (seed != 1)",
+ "sim_build_ok": false,
+ "sim_flash": null,
+ "pc_bitexact_logits": "10000/10000",
+ "pc_bitexact_class": "10000/10000"
+}

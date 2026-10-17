@@ -1,0 +1,4 @@
+model,cfg,params,n_seeds,acc_fp32,acc_fp32_std,acc_int8,acc_int8_std,acc_int8_seed1,table_bytes,flash_bytes,xdata_bytes,fits,fused_fc,macs,pc_bitexact_seed1,ucsim_bitexact_seed1,cycles_ucsim_mc,ucsim_mc_per_mac,board_over_ucsim_assumed,board_cycles_ESTIMATE,board_ms_ESTIMATE_35MHz
+cnn_c16_32,cnn_c16_32_lr0.001_wd0_fair,20490,3,0.8996,0.0021,0.899,0.0019,0.8969,20548,27122,5569,True,False,247376,10000/10000,5/5,17683718,71.5,0.811,14341495,409.8
+cnn_c32_64,cnn_c32_64_lr0.001_wd0.01_fair,50186,3,0.907,0.0015,0.9065,0.0006,0.907,50292,56794,7127,True,True,904352,10000/10000,5/5,63370224,70.1,0.811,51393251,1468.4
+cnn_c8_16,cnn_c8_16_lr0.001_wd0_fair,9098,3,0.8902,0.0013,0.8903,0.0007,0.8902,9132,15683,3217,True,False,72488,10000/10000,5/5,5544144,76.5,0.811,4496301,128.5

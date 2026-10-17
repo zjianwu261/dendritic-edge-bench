@@ -1,0 +1,34 @@
+{
+ "name": "mlpctx_h4096_t2",
+ "cfg": "mlpctx_h4096",
+ "task": "G3",
+ "dataset": "permuted MNIST (10 tasks)",
+ "arch": "mlpctx",
+ "args": {
+  "arch": "mlpctx",
+  "h": 4096,
+  "k": 4,
+  "ff": "rand",
+  "seed": 2,
+  "force": false,
+  "check": false
+ },
+ "test_acc": 0.62557,
+ "final_per_task": [
+  0.237,
+  0.2662,
+  0.3414,
+  0.4726,
+  0.5713,
+  0.6916,
+  0.8342,
+  0.9166,
+  0.9474,
+  0.9774
+ ],
+ "bwt": -0.3896666666666666,
+ "selection": "none (fixed protocol, final model, as T1/nupic)",
+ "params_effective": 20078602,
+ "params_stored": 20078602,
+ "train_minutes": 0.8
+}
