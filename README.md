@@ -2,7 +2,7 @@
 
 Code and every per-run result behind the paper
 **When Do Dendritic Networks Pay Off on Robot Edge Hardware? A Deployment and Adaptation Study** (Jianwu Zhang, Jinxu Wang, Yaxin Lu, Xiang Luo;
-Hefei University; submitted to Neurocomputing, 2026). The question: do the parameter-efficiency and
+School of Artificial Intelligence and Big Data, Hefei University; submitted to Neurocomputing, 2026). The question: do the parameter-efficiency and
 continual-learning benefits reported for dendritic neural networks survive deployment on robot edge hardware?
 Three dendritic families (dANN with local receptive fields, DH-SNN, active dendrites) are audited against matched dense
 baselines on a Jetson Orin Nano (TensorRT FP16, synchronous end-to-end latency and measured energy), a Raspberry Pi 4B

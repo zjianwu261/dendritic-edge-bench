@@ -5,16 +5,16 @@ type: software
 authors:
   - family-names: Zhang
     given-names: Jianwu
-    affiliation: Hefei University
+    affiliation: "School of Artificial Intelligence and Big Data, Hefei University"
   - family-names: Wang
     given-names: Jinxu
-    affiliation: Hefei University
+    affiliation: "School of Artificial Intelligence and Big Data, Hefei University"
   - family-names: Lu
     given-names: Yaxin
-    affiliation: Hefei University
+    affiliation: "School of Artificial Intelligence and Big Data, Hefei University"
   - family-names: Luo
     given-names: Xiang
-    affiliation: Hefei University
+    affiliation: "School of Artificial Intelligence and Big Data, Hefei University"
 repository-code: "https://github.com/zjianwu261/dendritic-edge-bench"
 url: "https://github.com/zjianwu261/dendritic-edge-bench"
 license: MIT
@@ -30,15 +30,15 @@ preferred-citation:
   authors:
     - family-names: Zhang
       given-names: Jianwu
-      affiliation: Hefei University
+      affiliation: "School of Artificial Intelligence and Big Data, Hefei University"
     - family-names: Wang
       given-names: Jinxu
-      affiliation: Hefei University
+      affiliation: "School of Artificial Intelligence and Big Data, Hefei University"
     - family-names: Lu
       given-names: Yaxin
-      affiliation: Hefei University
+      affiliation: "School of Artificial Intelligence and Big Data, Hefei University"
     - family-names: Luo
       given-names: Xiang
-      affiliation: Hefei University
+      affiliation: "School of Artificial Intelligence and Big Data, Hefei University"
   year: 2026
   notes: "Submitted to Neurocomputing"
