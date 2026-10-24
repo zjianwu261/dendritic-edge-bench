@@ -1,4 +1,4 @@
-"""Fig. 5: v3 continual low-light benchmark - final act_mse_gc (test, mean over 5 tasks after the last task,
+"""Fig. 4: v3 continual low-light benchmark - final act_mse_gc (test, mean over 5 tasks after the last task,
 main order) per method, horizontal bars = 3-seed mean (seeds 0-2), dots = individual seeds.  Vertical lines: zero-shot
 and the per-task mean-trajectory reference.  Lower is better.
 

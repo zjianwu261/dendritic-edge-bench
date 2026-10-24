@@ -1,4 +1,4 @@
-"""Fig. 2: dendritic / dense ratio of Orin latency and energy per matched pair, grouped diverging bars from the y = 1 baseline, log y.
+"""Fig. 1: dendritic / dense ratio of Orin latency and energy per matched pair, grouped diverging bars from the y = 1 baseline, log y.
 
 Source CSVs:
   results/T1/results.csv               T1 pairs (Orin Nano #1, TRT FP16, batch 1): latency_p50_locked if present else

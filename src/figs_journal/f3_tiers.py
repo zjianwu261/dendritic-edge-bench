@@ -1,4 +1,4 @@
-"""Fig. 3: hardware tiers.
+"""Fig. 2: hardware tiers.
  (a) Orin Nano vs RPi 4B p50 latency, log-log, y = x; each dense baseline is linked to its dendritic model (baseline_of).
  (b) 8051 (STC8A8K64D4): int8 test acc vs flash (63.5 KiB limit), marker area ~ ucsim cycles, filled = board-measured,
      hollow = ucsim / PC only, dANN / MLP / CNN shapes, Pareto fronts without and with CNNs.

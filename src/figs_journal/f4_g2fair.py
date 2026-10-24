@@ -1,4 +1,4 @@
-"""Fig. 4: G2 SHD fair protocol - test accuracy (3 seeds, mean +- SD) vs Orin Nano p50 (log x).
+"""Fig. 3: G2 SHD fair protocol - test accuracy (3 seeds, mean +- SD) vs Orin Nano p50 (log x).
 
 Marker shape = dendritic (circle) vs non-dendritic (square / triangle); colour = scan model
 (chunked parallel scan: DH-SSM, diagonal SSM, LRU) vs step RNN (GRU, sequential); filled = validation-selected points
