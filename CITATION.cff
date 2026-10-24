@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper below."
+title: "dendritic-edge-bench: code and results for 'When Do Dendritic Networks Pay Off on Robot Edge Hardware? A Deployment and Adaptation Study'"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Jianwu
+    affiliation: Hefei University
+  - family-names: Wang
+    given-names: Jinxu
+    affiliation: Hefei University
+  - family-names: Lu
+    given-names: Yaxin
+    affiliation: Hefei University
+  - family-names: Luo
+    given-names: Xiang
+    affiliation: Hefei University
+repository-code: "https://github.com/zjianwu261/dendritic-edge-bench"
+url: "https://github.com/zjianwu261/dendritic-edge-bench"
+license: MIT
+keywords:
+  - dendritic neural networks
+  - edge deployment
+  - embedded systems
+  - microcontrollers
+  - continual learning
+preferred-citation:
+  type: article
+  title: "When Do Dendritic Networks Pay Off on Robot Edge Hardware? A Deployment and Adaptation Study"
+  authors:
+    - family-names: Zhang
+      given-names: Jianwu
+      affiliation: Hefei University
+    - family-names: Wang
+      given-names: Jinxu
+      affiliation: Hefei University
+    - family-names: Lu
+      given-names: Yaxin
+      affiliation: Hefei University
+    - family-names: Luo
+      given-names: Xiang
+      affiliation: Hefei University
+  year: 2026
+  notes: "Submitted to Neurocomputing"

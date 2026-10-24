@@ -1,0 +1,14 @@
+{
+ "g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv": {
+  "dir": "g1f",
+  "onnx_sha256": "20dbc303fdd35cde777d58a1f49133e075523772104596dd175b0602d4f00dcb"
+ },
+ "g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv": {
+  "dir": "g1f",
+  "onnx_sha256": "da2ef2368c2c810a805728750326935b3378f481429b937392d35a4565170669"
+ },
+ "g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv": {
+  "dir": "g1f",
+  "onnx_sha256": "a56e40ad7d9074c8358f7a9c126090614f4d7af2ac03a7d3125f31669ef106f5"
+ }
+}

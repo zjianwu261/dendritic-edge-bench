@@ -1,0 +1,38 @@
+2026-10-19T22:48:30+08:00 batch start work_g1v2/g1v2_manifest.txt
+2026-10-19T22:49:23+08:00 built g1v2_mlp_h32__gemm
+2026-10-19T22:50:16+08:00 built g1v2_mlp_h32__conv
+2026-10-19T22:51:08+08:00 built g1v2_mlp_h64__gemm
+2026-10-19T22:52:01+08:00 built g1v2_mlp_h64__conv
+2026-10-19T22:52:53+08:00 built g1v2_mlp_h128__gemm
+2026-10-19T22:53:46+08:00 built g1v2_mlp_h128__conv
+2026-10-19T22:54:41+08:00 built g1v2_mlp_h256__gemm
+2026-10-19T22:55:37+08:00 built g1v2_mlp_h256__conv
+2026-10-19T22:56:41+08:00 built g1v2_mlp_h512__gemm
+2026-10-19T22:57:46+08:00 built g1v2_mlp_h512__conv
+2026-10-19T22:58:49+08:00 built g1v2_mlp_h1024__gemm
+2026-10-19T22:59:52+08:00 built g1v2_mlp_h1024__conv
+2026-10-19T23:01:22+08:00 built g1v2_mlp_h2048__gemm
+2026-10-19T23:02:54+08:00 built g1v2_mlp_h2048__conv
+2026-10-19T23:05:57+08:00 built g1v2_mlp_h4096__gemm
+2026-10-19T23:09:01+08:00 built g1v2_mlp_h4096__conv
+2026-10-19T23:10:00+08:00 built g1x2_lrelu_shz_h256__gemm
+2026-10-19T23:10:57+08:00 built g1x2_lrelu_dsb_h256__gemm
+2026-10-19T23:11:39+08:00 built g1x2_relu_shz_h256__gemm
+2026-10-19T23:12:19+08:00 built g1x2_relu_dsb_h256__gemm
+2026-10-19T23:13:25+08:00 built g1x2_lrelu_shz_h512__gemm
+2026-10-19T23:14:29+08:00 built g1x2_lrelu_dsb_h512__gemm
+2026-10-19T23:15:18+08:00 built g1x2_relu_shz_h512__gemm
+2026-10-19T23:16:06+08:00 built g1x2_relu_dsb_h512__gemm
+2026-10-19T23:16:06+08:00 built mlp_h256__gemm
+2026-10-19T23:16:06+08:00 built dannG_p4_m64_s64_sg1__bmm
+2026-10-19T23:20:53+08:00 round 1 done
+2026-10-19T23:25:39+08:00 round 2 done
+2026-10-19T23:30:25+08:00 round 3 done
+2026-10-19T23:35:11+08:00 round 4 done
+2026-10-19T23:39:58+08:00 round 5 done
+2026-10-19T23:44:44+08:00 round 6 done
+2026-10-19T23:49:30+08:00 round 7 done
+2026-10-19T23:54:16+08:00 round 8 done
+2026-10-19T23:59:02+08:00 round 9 done
+2026-10-20T00:03:48+08:00 round 10 done
+2026-10-20T00:03:48+08:00 batch done work_g1v2/g1v2_manifest.txt

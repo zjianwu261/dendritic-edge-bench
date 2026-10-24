@@ -1,0 +1,22 @@
+{
+ "tag": "cnn_c4_8_t3",
+ "cfg": "cnn_c4_8_lr0.001_wd0_fair",
+ "seed": 3,
+ "C1": 4,
+ "C2": 8,
+ "params": 4266,
+ "val_acc_last_fp32": 0.8871666666666667,
+ "acc_fp32": 0.8708,
+ "acc_fp32_numpy": 0.8708,
+ "acc_int8": 0.8688,
+ "cal_acc_int8": 0.8816666666666667,
+ "sh1": 8,
+ "sh2": 7,
+ "acc_bound": 639319,
+ "fused_fc": false,
+ "macs": {
+  "conv1": 6724,
+  "conv2": 12800,
+  "fc": 3920
+ }
+}

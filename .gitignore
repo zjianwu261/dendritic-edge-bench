@@ -24,3 +24,7 @@ results/T1m/build/
 work/
 # datasets (default $DEB_DATA = ./data)
 /data/
+# backups written by some scripts before they overwrite a table
+*.bak*
+# optional figure not used in the paper (src/figs_journal/f3_tiers.py)
+results/T6/figs_journal/f3b-alt-latency.pdf

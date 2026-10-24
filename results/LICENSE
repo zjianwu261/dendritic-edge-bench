@@ -1,5 +1,5 @@
 The result files in this directory (results/) are licensed under the Creative Commons Attribution 4.0 International
 License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
-Copyright (c) 2026 Jianwu Zhang, Jinxu Wang, Xin Ruan, Zhize Wang, Zhixing Wang, Yaxin Lu.
+Copyright (c) 2026 Jianwu Zhang, Jinxu Wang, Yaxin Lu, Xiang Luo.
 They contain measurements on third-party datasets (Fashion-MNIST, MNIST, SHD, RECON, SACSoN/HuRoN) and with the public
 NoMaD weights, which keep their own terms.

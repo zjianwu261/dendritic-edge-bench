@@ -1,13 +1,13 @@
 cfg,family,p50_ms,acc,acc_std,best_baseline_within_lat,baseline_p50_ms,baseline_acc,baseline_acc_std,delta_acc_pp,fastest_baseline_same_acc,its_p50_ms,speedup_vs_it
-dannG_p4_m8_s64_sg1,dannG,0.1149,0.8944,0.0013,mlp_h256,0.1167,0.8923,0.0016,0.21,none reaches,,
-dannG_p4_m16_s64_sg1,dannG,0.1158,0.8986,0.001,mlp_h256,0.1167,0.8923,0.0016,0.63,none reaches,,
-dann24_D512_s128,dann24,0.1167,0.8927,0.0031,mlp_h256,0.1167,0.8923,0.0016,0.04,mlp_h512,0.1761,1.51
-dannG_p4_m32_s64_sg1,dannG,0.1192,0.9033,0.0024,mlp_h256,0.1167,0.8923,0.0016,1.1,none reaches,,
-dannG_p4_m16_s128_sg4_sp24,dannG_sp24,0.1222,0.8921,0.0027,mlp_h256,0.1167,0.8923,0.0016,-0.02,mlp_h256,0.1167,0.95
-dannG_p4_m64_s64_sg1,dannG,0.1229,0.9034,0.0011,mlp_h256,0.1167,0.8923,0.0016,1.11,none reaches,,
-dann24_D512_s256,dann24,0.1248,0.8945,0.0032,mlp_h256,0.1167,0.8923,0.0016,0.22,none reaches,,
-dannG_p4_m64_s128_sg4_sp24,dannG_sp24,0.125,0.9024,0.0016,mlp_h256,0.1167,0.8923,0.0016,1.01,none reaches,,
-dannG_p4_m64_s128_sg4,dannG,0.127,0.9035,0.0024,mlp_h256,0.1167,0.8923,0.0016,1.12,none reaches,,
-dannG_p4_m32_s256_sg4,dannG,0.132,0.9041,0.0029,mlp_h256,0.1167,0.8923,0.0016,1.18,none reaches,,
-dann24_D1024_s128,dann24,0.1457,0.8962,0.0027,mlp_h256,0.1167,0.8923,0.0016,0.39,none reaches,,
-dann24_D4096_s128,dann24,0.2496,0.8976,0.0006,mlp_h1024,0.2143,0.8929,0.0004,0.47,none reaches,,
+dannG_p4_m8_s64_sg1,dannG,0.1149,0.8944,0.0013,mlp_h256,0.104,0.8923,0.0016,0.21,none reaches,,
+dannG_p4_m16_s64_sg1,dannG,0.1158,0.8986,0.001,mlp_h256,0.104,0.8923,0.0016,0.63,none reaches,,
+dann24_D512_s128,dann24,0.1167,0.8927,0.0031,mlp_h256,0.104,0.8923,0.0016,0.04,mlp_h512,0.1656,1.42
+dannG_p4_m32_s64_sg1,dannG,0.1192,0.9033,0.0024,mlp_h256,0.104,0.8923,0.0016,1.1,none reaches,,
+dannG_p4_m16_s128_sg4_sp24,dannG_sp24,0.1222,0.8921,0.0027,mlp_h256,0.104,0.8923,0.0016,-0.02,mlp_h256,0.104,0.85
+dannG_p4_m64_s64_sg1,dannG,0.1229,0.9034,0.0011,mlp_h256,0.104,0.8923,0.0016,1.11,none reaches,,
+dann24_D512_s256,dann24,0.1248,0.8945,0.0032,mlp_h256,0.104,0.8923,0.0016,0.22,none reaches,,
+dannG_p4_m64_s128_sg4_sp24,dannG_sp24,0.125,0.9024,0.0016,mlp_h256,0.104,0.8923,0.0016,1.01,none reaches,,
+dannG_p4_m64_s128_sg4,dannG,0.127,0.9035,0.0024,mlp_h256,0.104,0.8923,0.0016,1.12,none reaches,,
+dannG_p4_m32_s256_sg4,dannG,0.132,0.9041,0.0029,mlp_h256,0.104,0.8923,0.0016,1.18,none reaches,,
+dann24_D1024_s128,dann24,0.1457,0.8962,0.0027,mlp_h256,0.104,0.8923,0.0016,0.39,none reaches,,
+dann24_D4096_s128,dann24,0.2496,0.8976,0.0006,mlp_h1024,0.2042,0.8929,0.0004,0.47,none reaches,,

@@ -1,0 +1,1176 @@
+{
+ "graphs": {
+  "g1v2_mlp_h32__gemm": {
+   "onnx": "g1v2_mlp_h32__gemm.onnx",
+   "size_MB": 0.102,
+   "nodes": 5,
+   "export_s": 0.1,
+   "max_abs_err_vs_torch": 3.203749656677246e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "d33088bc4756ea5a2cb9a52fe7babe6ff0b9002de1b9335b3a517956794cd5ae",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.034912534058094025,
+    0.17607833445072174,
+    0.13415905833244324
+   ]
+  },
+  "g1v2_mlp_h32__conv": {
+   "onnx": "g1v2_mlp_h32__conv.onnx",
+   "size_MB": 0.102,
+   "nodes": 9,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 4.470348358154297e-07,
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "127dbcf7c027357ba1d833c2eaec3911e199cc5279514421e9519e32bca20ffb",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "conv",
+   "check_ok": true,
+   "bias_absmax": [
+    0.034912534058094025,
+    0.17607833445072174,
+    0.13415905833244324
+   ]
+  },
+  "g1v2_mlp_h64__gemm": {
+   "onnx": "g1v2_mlp_h64__gemm.onnx",
+   "size_MB": 0.211,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 2.384185791015625e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "7b6e909f8a3f433e9eae86d40569e9535d15e281aaec661ecd8c1605b6f1920d",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03557319939136505,
+    0.12458311021327972,
+    0.11604686081409454
+   ]
+  },
+  "g1v2_mlp_h64__conv": {
+   "onnx": "g1v2_mlp_h64__conv.onnx",
+   "size_MB": 0.211,
+   "nodes": 9,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 4.76837158203125e-07,
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "1afd045a9cbcebc98f6201e7be87c2b1188e48f9f3d079efb9e241980482ed7c",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "conv",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03557319939136505,
+    0.12458311021327972,
+    0.11604686081409454
+   ]
+  },
+  "g1v2_mlp_h128__gemm": {
+   "onnx": "g1v2_mlp_h128__gemm.onnx",
+   "size_MB": 0.452,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.066394805908203e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "e29f66da5913590ee1292c44b1999bc75da9d4d735dded8cee40bee80df85b33",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03559517487883568,
+    0.08822086453437805,
+    0.08647806197404861
+   ]
+  },
+  "g1v2_mlp_h128__conv": {
+   "onnx": "g1v2_mlp_h128__conv.onnx",
+   "size_MB": 0.452,
+   "nodes": 9,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 3.2782554626464844e-07,
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "2f9f7083ca9cc10f30cb7b23e51446d5ca2aef29ccb9fa4d06ad31ab4e6c63b6",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "conv",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03559517487883568,
+    0.08822086453437805,
+    0.08647806197404861
+   ]
+  },
+  "g1v2_mlp_h256__gemm": {
+   "onnx": "g1v2_mlp_h256__gemm.onnx",
+   "size_MB": 1.028,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.364418029785156e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "7029c18c216cfa089737f3f8712650f63adcff20e69ce6a37b45e79757c89a12",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03564661368727684,
+    0.06208676099777222,
+    0.06180354952812195
+   ]
+  },
+  "g1v2_mlp_h256__conv": {
+   "onnx": "g1v2_mlp_h256__conv.onnx",
+   "size_MB": 1.029,
+   "nodes": 9,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 2.980232238769531e-07,
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "6de83e142530a7a15c5bdc7f82a9afb9eab74181d230e4df749819375cb0cf50",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "conv",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03564661368727684,
+    0.06208676099777222,
+    0.06180354952812195
+   ]
+  },
+  "g1v2_mlp_h512__gemm": {
+   "onnx": "g1v2_mlp_h512__gemm.onnx",
+   "size_MB": 2.555,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.960464477539062e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "4fc75b89d5cdbb33f22b1c5f5e31ee10350e0d7d88adf1ab8ba4136408b49def",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03564661368727684,
+    0.0441865399479866,
+    0.04328768327832222
+   ]
+  },
+  "g1v2_mlp_h512__conv": {
+   "onnx": "g1v2_mlp_h512__conv.onnx",
+   "size_MB": 2.556,
+   "nodes": 9,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.066394805908203e-07,
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "0e3fbb5d554f318a48554e499b08260686a013c8960fed9484aaf4fa071fd8f1",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "conv",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03564661368727684,
+    0.0441865399479866,
+    0.04328768327832222
+   ]
+  },
+  "g1v2_mlp_h1024__gemm": {
+   "onnx": "g1v2_mlp_h1024__gemm.onnx",
+   "size_MB": 7.11,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 3.8743019104003906e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "f46bf88952e5698142cb5100d74f0034f2b23552d2c17947897fd6ef0818612f",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.035708118230104446,
+    0.031241953372955322,
+    0.031044598668813705
+   ]
+  },
+  "g1v2_mlp_h1024__conv": {
+   "onnx": "g1v2_mlp_h1024__conv.onnx",
+   "size_MB": 7.111,
+   "nodes": 9,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 4.172325134277344e-07,
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "689ac8e7b9e8b2a4cb97e5fdc5737e5770f1112608ba8aadc27164f0c2f4c3b8",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "conv",
+   "check_ok": true,
+   "bias_absmax": [
+    0.035708118230104446,
+    0.031241953372955322,
+    0.031044598668813705
+   ]
+  },
+  "g1v2_mlp_h2048__gemm": {
+   "onnx": "g1v2_mlp_h2048__gemm.onnx",
+   "size_MB": 22.219,
+   "nodes": 5,
+   "export_s": 0.1,
+   "max_abs_err_vs_torch": 2.3469328880310059e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "d643c1a0b97c0371326e7b1c57b6641290f318d1ddf0fb18092a7802db5c03df",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.035708118230104446,
+    0.022082703188061714,
+    0.021722089499235153
+   ]
+  },
+  "g1v2_mlp_h2048__conv": {
+   "onnx": "g1v2_mlp_h2048__conv.onnx",
+   "size_MB": 22.22,
+   "nodes": 9,
+   "export_s": 0.1,
+   "max_abs_err_vs_torch": 2.1979212760925293e-07,
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "c03806a124d789978cefb09c90da2eaabb8723008dd7907d024b5194c7a9380a",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "conv",
+   "check_ok": true,
+   "bias_absmax": [
+    0.035708118230104446,
+    0.022082703188061714,
+    0.021722089499235153
+   ]
+  },
+  "g1v2_mlp_h4096__gemm": {
+   "onnx": "g1v2_mlp_h4096__gemm.onnx",
+   "size_MB": 76.438,
+   "nodes": 5,
+   "export_s": 0.3,
+   "max_abs_err_vs_torch": 3.725290298461914e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "47613135e65751e61cf18f8b4e5a4be86eedd82da5e2c34f362c7dbae7d8b681",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.035708118230104446,
+    0.015620965510606766,
+    0.014414317905902863
+   ]
+  },
+  "g1v2_mlp_h4096__conv": {
+   "onnx": "g1v2_mlp_h4096__conv.onnx",
+   "size_MB": 76.439,
+   "nodes": 9,
+   "export_s": 0.5,
+   "max_abs_err_vs_torch": 4.76837158203125e-07,
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "4e80031095dffc6237acd0b549f08cdcae77dab0d8b5d1ec9edab504838f6c6f",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "conv",
+   "check_ok": true,
+   "bias_absmax": [
+    0.035708118230104446,
+    0.015620965510606766,
+    0.014414317905902863
+   ]
+  },
+  "g1x2_lrelu_shz_h256__gemm": {
+   "onnx": "g1x2_lrelu_shz_h256__gemm.onnx",
+   "size_MB": 1.027,
+   "nodes": 6,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.960464477539062e-07,
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "2cb85cdb41c1873718b607aae7c1f606c9818e3df2eb1540a848d4d0cc56a8b1",
+   "act": "lrelu",
+   "bias": "shz",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "g1x2_lrelu_dsb_h256__gemm": {
+   "onnx": "g1x2_lrelu_dsb_h256__gemm.onnx",
+   "size_MB": 1.028,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.364418029785156e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "7029c18c216cfa089737f3f8712650f63adcff20e69ce6a37b45e79757c89a12",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03564661368727684,
+    0.06208676099777222,
+    0.06180354952812195
+   ]
+  },
+  "g1x2_relu_shz_h256__gemm": {
+   "onnx": "g1x2_relu_shz_h256__gemm.onnx",
+   "size_MB": 1.027,
+   "nodes": 6,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.960464477539062e-07,
+   "ops": [
+    "Identity",
+    "Gemm",
+    "Relu",
+    "Gemm",
+    "Relu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "c8ef27279e24a341604f646a3df99c46f5fac0da9afff977ca1dc62eff638f33",
+   "act": "relu",
+   "bias": "shz",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "g1x2_relu_dsb_h256__gemm": {
+   "onnx": "g1x2_relu_dsb_h256__gemm.onnx",
+   "size_MB": 1.028,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.364418029785156e-07,
+   "ops": [
+    "Gemm",
+    "Relu",
+    "Gemm",
+    "Relu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "016d9e3c8e0800a29c8b513ebafdfc1358d4cbb8c5f1784f65a5af3c42b588aa",
+   "act": "relu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03564661368727684,
+    0.06208676099777222,
+    0.06180354952812195
+   ]
+  },
+  "g1x2_lrelu_shz_h512__gemm": {
+   "onnx": "g1x2_lrelu_shz_h512__gemm.onnx",
+   "size_MB": 2.553,
+   "nodes": 6,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 6.854534149169922e-07,
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "2b90b336d245d877ab583123644cfdb4f752ab93704e1e9bc1a8d29deec15aa2",
+   "act": "lrelu",
+   "bias": "shz",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "g1x2_lrelu_dsb_h512__gemm": {
+   "onnx": "g1x2_lrelu_dsb_h512__gemm.onnx",
+   "size_MB": 2.555,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 5.960464477539062e-07,
+   "ops": [
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "4fc75b89d5cdbb33f22b1c5f5e31ee10350e0d7d88adf1ab8ba4136408b49def",
+   "act": "lrelu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03564661368727684,
+    0.0441865399479866,
+    0.04328768327832222
+   ]
+  },
+  "g1x2_relu_shz_h512__gemm": {
+   "onnx": "g1x2_relu_shz_h512__gemm.onnx",
+   "size_MB": 2.553,
+   "nodes": 6,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 3.8743019104003906e-07,
+   "ops": [
+    "Identity",
+    "Gemm",
+    "Relu",
+    "Gemm",
+    "Relu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "cf6f863219580c216b9ab95627f6eeb96891b74954e5f09e2a888baed7e56752",
+   "act": "relu",
+   "bias": "shz",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "g1x2_relu_dsb_h512__gemm": {
+   "onnx": "g1x2_relu_dsb_h512__gemm.onnx",
+   "size_MB": 2.555,
+   "nodes": 5,
+   "export_s": 0.0,
+   "max_abs_err_vs_torch": 2.980232238769531e-07,
+   "ops": [
+    "Gemm",
+    "Relu",
+    "Gemm",
+    "Relu",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "l1.bias",
+    "l2.bias",
+    "out.bias"
+   ],
+   "onnx_sha256": "5469c407690337321b0e10c2faf4653a9da818b05b63ae8b39151aba2712ec13",
+   "act": "relu",
+   "bias": "dsb",
+   "impl": "gemm",
+   "check_ok": true,
+   "bias_absmax": [
+    0.03564661368727684,
+    0.0441865399479866,
+    0.04328768327832222
+   ]
+  },
+  "mlp_h256__gemm": {
+   "anchor": true,
+   "onnx_sha256": "2cb85cdb41c1873718b607aae7c1f606c9818e3df2eb1540a848d4d0cc56a8b1",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "dannG_p4_m64_s64_sg1__bmm": {
+   "anchor": true,
+   "onnx_sha256": "f8c05293b9416a71f68abd0f8623f9aa21c97dd8c8c39703fb8d68efe2edcc60",
+   "ops": [
+    "Constant",
+    "Reshape",
+    "Transpose",
+    "Constant",
+    "Reshape",
+    "MatMul",
+    "Add",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Transpose",
+    "Constant",
+    "Reshape",
+    "MatMul",
+    "Add",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": false,
+   "shared_init": [],
+   "bias_init": [
+    "out.bias"
+   ]
+  }
+ },
+ "old_g1": {
+  "mlp_h32__gemm": {
+   "onnx_sha256": "30fce79546a34955a90ee02fca0424446293e602dadea83be2ae9c560c713955",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h32__conv": {
+   "onnx_sha256": "b16936584f05b4cc2a08eea0df99bfa6b3d65b9e76bfb645148fdd715415e938",
+   "ops": [
+    "Identity",
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h64__gemm": {
+   "onnx_sha256": "de3ec290032697064161d6afe66f40a984b4ca546e51a7ff3f60115e924ae790",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h64__conv": {
+   "onnx_sha256": "462b9c379e968550e0f10527f351ee68e3f262601cb211ba51bcdd41c8fa0a83",
+   "ops": [
+    "Identity",
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h128__gemm": {
+   "onnx_sha256": "23debd12373d620689fba10e8228cba95ceef7f8e17f9755d4d9683fe1557963",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h128__conv": {
+   "onnx_sha256": "84ed1eb4c2d2daed3395b9b8cbd3a6e28bd6df6615ea70f8b545f4fbc1ab3b1a",
+   "ops": [
+    "Identity",
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h256__gemm": {
+   "onnx_sha256": "2cb85cdb41c1873718b607aae7c1f606c9818e3df2eb1540a848d4d0cc56a8b1",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h256__conv": {
+   "onnx_sha256": "0110f3e8961c452fc9629c6ff51441c52426f2183cd1145d6f316e23d2e31eeb",
+   "ops": [
+    "Identity",
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h512__gemm": {
+   "onnx_sha256": "2b90b336d245d877ab583123644cfdb4f752ab93704e1e9bc1a8d29deec15aa2",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h512__conv": {
+   "onnx_sha256": "4df9de9682e542457c256ec2ecb09cce1e8e18292eba493f2186d1a2691e14e3",
+   "ops": [
+    "Identity",
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h1024__gemm": {
+   "onnx_sha256": "42d547186ed8f907d772c5ed7688fd820fbe2a25ab4ae5b679636b1698923b10",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h1024__conv": {
+   "onnx_sha256": "a267676d239333b143c42ca56ae9803c8f354e6727fe546d811aecb3bbfc4cbc",
+   "ops": [
+    "Identity",
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h2048__gemm": {
+   "onnx_sha256": "6c829d4d8bf7d3b3e4cfd0e16bc1a5934d5944cf2db65088803b332a66f9b4bc",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h2048__conv": {
+   "onnx_sha256": "5ade11e62fcf71cbb7bd5b212c601407d121851f4d6757ffc02d866500e51c29",
+   "ops": [
+    "Identity",
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h4096__gemm": {
+   "onnx_sha256": "733c05167fac8da05f114a494c95ba035f358e055e055fdb58f503639b1e281c",
+   "ops": [
+    "Identity",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm",
+    "LeakyRelu",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  },
+  "mlp_h4096__conv": {
+   "onnx_sha256": "058fefb9faef49d083e22d6444da81537d0dc830c473c0d41b4a412dc34e81db",
+   "ops": [
+    "Identity",
+    "Constant",
+    "Reshape",
+    "Conv",
+    "LeakyRelu",
+    "Conv",
+    "LeakyRelu",
+    "Constant",
+    "Reshape",
+    "Gemm"
+   ],
+   "identity": true,
+   "shared_init": [
+    "l1.bias"
+   ],
+   "bias_init": [
+    "l1.bias",
+    "out.bias"
+   ]
+  }
+ }
+}

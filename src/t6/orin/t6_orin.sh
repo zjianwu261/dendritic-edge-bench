@@ -14,6 +14,8 @@
 # To protect the 8 GB board: builder workspace limited to 1 GB (--memPoolSize=workspace:1024);
 # before every build MemAvailable is checked and the build is SKIPPED (logged to skipped.txt) if it
 # is < MIN_AVAIL_MB (2048). Engines built before 2026-10-01 16:10 had no workspace limit.
+# Clock-lock check: if REQUIRE_LOCK_HZ is set, a timed run whose GPU devfreq min/cur/max is not
+# all == REQUIRE_LOCK_HZ is skipped and logged to $wd/unlocked.txt (default: unset = old behaviour).
 set -uo pipefail
 TRTEXEC=/usr/src/tensorrt/bin/trtexec
 LOCK=/tmp/dn_orin_bench.lock
@@ -47,6 +49,16 @@ one_run() {  # $1 engine $2 label $3 build $4 run $5 sha $6 wd  (called under th
   local eng=$1 lab=$2 b=$3 r=$4 sha=$5 wd=$6
   local base; base=$(basename "$eng" .engine)
   env_dump "before $lab $b run $r" > "$wd/env/${base}_r$r.txt"
+  if [ -n "${REQUIRE_LOCK_HZ:-}" ]; then  # skip the run unless min = cur = max = REQUIRE_LOCK_HZ
+    local G=/sys/devices/gpu.0/devfreq/17000000.ga10b mn cu mx
+    mn=$(cat $G/min_freq); cu=$(cat $G/cur_freq); mx=$(cat $G/max_freq)
+    if [ "$mn" != "$REQUIRE_LOCK_HZ" ] || [ "$cu" != "$REQUIRE_LOCK_HZ" ] || [ "$mx" != "$REQUIRE_LOCK_HZ" ]; then
+      echo "$(date -Iseconds) UNLOCKED_SKIP $base r$r min=$mn cur=$cu max=$mx" >> "$wd/unlocked.txt"
+      echo "## LOCK_CHECK FAIL min=$mn cur=$cu max=$mx -> run skipped" >> "$wd/env/${base}_r$r.txt"
+      return 0
+    fi
+    echo "## LOCK_CHECK OK $mn" >> "$wd/env/${base}_r$r.txt"
+  fi
   tegrastats --interval 100 > "$wd/tegra/${base}_r$r.txt" 2>&1 &
   local tp=$!
   python3 "$HERE/t6_sync_bench.py" "$eng" --label "$lab" --precision fp16 --build "$b" \

@@ -9,6 +9,8 @@ Inputs (read-only):
                                            previous flash's reading)
   results/T1m/results_all.csv          per-seed int8 / fp32 accuracy (10k test images), flash, ucsim cycles
   results/T1m/results.csv              3-seed mean int8 accuracy
+  results/T1m/cnn/<cfg>_t<seed>.json    per-seed CNN numbers (int8/fp32 acc, flash, ucsim cycles) for cnn_* tags
+  results/T1m/cnn/cnn_results.csv       3-seed mean CNN int8 accuracy
 Outputs:
   results/T1m/board_summary.csv        one row per flashed model
   results/T1m/board_per_image.csv      all images of all models, ms recomputed at the stcgal frequency
@@ -16,6 +18,7 @@ Usage: python make_board_summary.py
 """
 import csv
 import glob
+import json
 import os
 import re
 import statistics as st
@@ -33,6 +36,13 @@ def adjusted_mhz(tag):
 def main():
     allr = {r["tag"]: r for r in csv.DictReader(open(f"{EXP}/results_all.csv"))}
     mean = {r["model"]: r for r in csv.DictReader(open(f"{EXP}/results.csv"))}
+    # CNN tags (cnn_c8_16_t1 ...) live in results/T1m/cnn/, not results_all.csv
+    for r in csv.DictReader(open(f"{EXP}/cnn/cnn_results.csv")):
+        mean[r["model"]] = {"acc_int8": r["acc_int8"], "acc_int8_std": r["acc_int8_std"], "n_seeds": r["n_seeds"]}
+        for jf in glob.glob(f"{EXP}/cnn/{r['cfg']}_t*.json"):
+            j = json.load(open(jf))
+            allr.setdefault(j["tag"], {"mask_source": "cnn", "acc_int8": j["acc_int8"], "acc_fp32": j["acc_fp32"],
+                                       "flash_bytes": j.get("flash_bytes", -1), "cycles_ucsim_mc": j.get("cycles_ucsim_mc", "nan")})
     rows, per_img = [], []
     for f in sorted(glob.glob(f"{EXP}/board_*_t*.csv")):
         tag = os.path.basename(f)[len("board_"):-len(".csv")]

@@ -1,0 +1,13 @@
+cfg,in_old,in_new,p50_ms_old,p50_ms_new,best_baseline_within_lat_old,best_baseline_within_lat_new,baseline_p50_ms_old,baseline_p50_ms_new,delta_acc_pp_old,delta_acc_pp_new,fastest_baseline_same_acc_old,fastest_baseline_same_acc_new,its_p50_ms_old,its_p50_ms_new,speedup_vs_it_old,speedup_vs_it_new
+dannG_p4_m8_s64_sg1,True,True,0.1149,0.1149,mlp_h256,mlp_h256,0.1177,0.104,0.21,0.21,none reaches,none reaches,,,,
+dannG_p4_m16_s64_sg1,True,True,0.1158,0.1158,mlp_h256,mlp_h256,0.1177,0.104,0.63,0.63,none reaches,none reaches,,,,
+dann24_D512_s128,True,True,0.1167,0.1167,mlp_h256,mlp_h256,0.1177,0.104,0.04,0.04,mlp_h512,mlp_h512,0.1797,0.1656,1.54,1.42
+dannG_p4_m32_s64_sg1,True,True,0.1192,0.1192,mlp_h256,mlp_h256,0.1177,0.104,1.1,1.1,none reaches,none reaches,,,,
+dannG_p4_m16_s128_sg4_sp24,True,True,0.1222,0.1222,mlp_h256,mlp_h256,0.1177,0.104,-0.02,-0.02,mlp_h256,mlp_h256,0.1177,0.104,0.96,0.85
+dannG_p4_m64_s64_sg1,True,True,0.1229,0.1229,mlp_h256,mlp_h256,0.1177,0.104,1.11,1.11,none reaches,none reaches,,,,
+dann24_D512_s256,True,True,0.1248,0.1248,mlp_h256,mlp_h256,0.1177,0.104,0.22,0.22,none reaches,none reaches,,,,
+dannG_p4_m64_s128_sg4_sp24,True,True,0.125,0.125,mlp_h256,mlp_h256,0.1177,0.104,1.01,1.01,none reaches,none reaches,,,,
+dannG_p4_m64_s128_sg4,True,True,0.127,0.127,mlp_h256,mlp_h256,0.1177,0.104,1.12,1.12,none reaches,none reaches,,,,
+dannG_p4_m32_s256_sg4,True,True,0.132,0.132,mlp_h256,mlp_h256,0.1177,0.104,1.18,1.18,none reaches,none reaches,,,,
+dann24_D1024_s128,True,True,0.1457,0.1457,mlp_h256,mlp_h256,0.1177,0.104,0.39,0.39,none reaches,none reaches,,,,
+dann24_D4096_s128,True,True,0.2496,0.2496,mlp_h1024,mlp_h1024,0.2145,0.2042,0.47,0.47,none reaches,none reaches,,,,

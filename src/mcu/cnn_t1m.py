@@ -242,11 +242,18 @@ def process(cfg, seeds, data, n_sim):
 def summary():
     """cnn_results.csv: per CNN the 3-seed int8 accuracy, seed-1 build / ucsim numbers, and an ESTIMATED board time.
     The board estimate is analytic, not measured: ucsim machine cycles x the board/ucsim ratio measured on the
-    STC8A8K64D4 for the dense-kernel MLPs (board_summary.csv, mlp rows), at 35.0 MHz."""
+    STC8A8K64D4 for the dense-kernel MLPs (board_summary.csv, mlp rows), at 35.0 MHz.  These MLP-factor columns are
+    superseded (*_superseded); board_cycles / board_ms / board_ms_source are board-measured where board_summary.csv
+    has the CNN, else ucsim x the board/ucsim factor measured for cnn_c8_16."""
     import glob
     import statistics as st
     bs = [r for r in csv.DictReader(open(f"{EXP}/board_summary.csv")) if r["model"].startswith("mlp_")]
     k = st.mean(float(r["board_over_ucsim"]) for r in bs)
+    # the CNN board/ucsim ratio measured on the board for cnn_c8_16 (board_summary.csv, 0.854); taken from the
+    # cnn_c8_16 row by name (the c4_8 / c6_12 rows, 0.852, are listed first)
+    kc = [float(r["board_over_ucsim"]) for r in csv.DictReader(open(f"{EXP}/board_summary.csv")) if r["model"].startswith("cnn_c8_16_")]
+    kc = kc[0] if kc else None
+    bsum = {r["model"].rsplit("_t", 1)[0]: r for r in csv.DictReader(open(f"{EXP}/board_summary.csv")) if r["model"].startswith("cnn_")}
     by = {}
     for f in sorted(glob.glob(f"{OUT}/cnn_*_t*.json")):
         d = json.load(open(f))
@@ -266,9 +273,23 @@ def summary():
                      "macs": sum(s1["macs"].values()), "pc_bitexact_seed1": s1.get("pc_bitexact_logits"),
                      "ucsim_bitexact_seed1": s1.get("ucsim_bitexact_logits"), "cycles_ucsim_mc": round(cyc) if cyc else "",
                      "ucsim_mc_per_mac": round(cyc / sum(s1["macs"].values()), 1) if cyc else "",
-                     "board_over_ucsim_assumed": round(k, 3),
-                     "board_cycles_ESTIMATE": round(cyc * k) if cyc else "",
-                     "board_ms_ESTIMATE_35MHz": round(cyc * k / 35e3, 1) if cyc else ""})
+                     # the MLP-factor (0.811) estimate is superseded by the CNN-measured factor; kept, renamed
+                     "board_over_ucsim_mlp_superseded": round(k, 3),
+                     "board_cycles_ESTIMATE_mlpfactor_superseded": round(cyc * k) if cyc else "",
+                     "board_ms_ESTIMATE_35MHz_mlpfactor_superseded": round(cyc * k / 35e3, 1) if cyc else "",
+                     "board_over_ucsim_cnn_measured": kc,
+                     "board_ms_ESTIMATE_35MHz_cnnfactor": round(cyc * kc / 35e3, 1) if (cyc and kc) else ""})
+        # board_* = board-measured (seed 1, board_summary.csv) where available, else ucsim x CNN-measured factor
+        m = rows[-1]["model"]
+        if m in bsum:
+            b = bsum[m]
+            rows[-1].update({"board_cycles": b["board_cycles_median"], "board_ms": b["board_ms"],
+                             "board_ms_source": f"measured_seed{b['seed']}_{b['f_mhz']}MHz"})
+        elif cyc and kc:
+            rows[-1].update({"board_cycles": round(round(cyc) * kc), "board_ms": round(round(cyc) * kc / 35e3, 1),
+                             "board_ms_source": f"estimate_ucsim_x{kc:g}_35MHz"})
+        else:
+            rows[-1].update({"board_cycles": "", "board_ms": "", "board_ms_source": ""})
     keys = list(rows[0])
     with open(f"{OUT}/cnn_results.csv", "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=keys); w.writeheader(); w.writerows(rows)

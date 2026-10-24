@@ -1,0 +1,22 @@
+{
+ "tag": "cnn_c6_12_t2",
+ "cfg": "cnn_c6_12_lr0.001_wd0_fair",
+ "seed": 2,
+ "C1": 6,
+ "C2": 12,
+ "params": 6610,
+ "val_acc_last_fp32": 0.8881666666666667,
+ "acc_fp32": 0.8813,
+ "acc_fp32_numpy": 0.8813,
+ "acc_int8": 0.8812,
+ "cal_acc_int8": 0.8896666666666667,
+ "sh1": 9,
+ "sh2": 7,
+ "acc_bound": 866318,
+ "fused_fc": false,
+ "macs": {
+  "conv1": 10086,
+  "conv2": 28800,
+  "fc": 5880
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "rule": "argmin over lr of seed-0 summary_val.act_mse_gc.final_avg, given-ID run (as v3fix_select.py)",
+ "started": "2026-10-17 16:31:21",
+ "dend2": {
+  "step1_grid": [
+   "0.0001",
+   "0.0003",
+   "0.001",
+   "0.003"
+  ],
+  "step1_val": {
+   "0.0001": 2.423615026473999,
+   "0.0003": 2.3922335624694826,
+   "0.001": 2.3808027267456056
+  },
+  "step1_lr": 0.001,
+  "step1_excluded_assert_own": {
+   "0.003": {
+    "after": "huron_cory1:dark",
+    "own_seg_frac_out": {
+     "huron_bww8:dark": 0.895833432674408,
+     "recon:occl": 0.9479167461395264,
+     "huron_cory1:dark": 0.9947917461395264
+    },
+    "threshold": 0.9
+   }
+  },
+  "final_lr": 0.001,
+  "changed": false,
+  "diag_noassert": {
+   "0.003": {
+    "val_final": 2.4522305727005005,
+    "own_seg_frac_final": 0.9677083849906921
+   }
+  }
+ },
+ "lora_bank_r10": {
+  "step1_grid": [
+   "0.0001",
+   "0.0003",
+   "0.001",
+   "0.003"
+  ],
+  "step1_val": {
+   "0.0001": 2.45423629283905,
+   "0.0003": 2.3268425703048705,
+   "0.001": 2.268163633346558,
+   "0.003": 2.7381542205810545
+  },
+  "step1_lr": 0.001,
+  "step1_excluded_assert_own": {},
+  "final_lr": 0.001,
+  "changed": false
+ },
+ "rerun_jobs": [],
+ "e3_handoff": [
+  [
+   "raise",
+   "t4a_v3fix_dend2_id_lr0.001_s3"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_dend2_infer_lr0.001_s3"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_dend2_random_lr0.001_s3"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_lora_bank_r10_id_lr0.001_s3"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_lora_bank_r10_infer_lr0.001_s3"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_dend2_id_lr0.001_s4"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_dend2_infer_lr0.001_s4"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_dend2_random_lr0.001_s4"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_lora_bank_r10_id_lr0.001_s4"
+  ],
+  [
+   "raise",
+   "t4a_v3fix_lora_bank_r10_infer_lr0.001_s4"
+  ]
+ ],
+ "e3_appended": 0,
+ "made": "2026-10-17 17:06:21"
+}

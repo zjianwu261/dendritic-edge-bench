@@ -135,22 +135,64 @@ def sparsity_info(log):
     return {"eligible": elig[-1].strip() if elig else "", "picked": picks[-1].strip() if picks else ""}
 
 
-def table(task):
+def _sha(path):
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for blk in iter(lambda: f.read(1 << 20), b""):
+            h.update(blk)
+    return h.hexdigest()
+
+
+# The LUT sessions are 2026-10-01..02; later runs of the same labels (g2x anchors 10-08, G1 anchors re-timed
+# on 10-19) are other sessions and must not enter the LUT tables.
+LUT_UNTIL = "2026-10-03"
+G1_MLP_V2 = f"{LUT}/lut_g1v2.csv"
+
+
+def table(task, until=LUT_UNTIL):
+    """Grouping key = (label, onnx_sha256, build).  Labels are not unique across tasks (e.g. mlp_h256__gemm exists
+    in g1 (784-in) and g3 (permuted-MNIST graph) with different ONNX); grouping by (label, build) alone would pool
+    both graphs into lut_g1 and lut_g3.  The sha of lut/onnx/<task>/<label>.onnx selects the runs;
+    if that file is missing and the label has >1 sha, every sha becomes its own row (impl suffix '@sha12')."""
     rows = [json.loads(l) for l in open(f"{RAW}/results.jsonl")] if os.path.exists(f"{RAW}/results.jsonl") else []
+    rows = [r for r in rows if not until or r.get("time", "") < until]
     by = {}
     for r in rows:
-        by.setdefault((r["label"], r["build"]), []).append(r)
-    labels = sorted({l for l, _ in by})
+        by.setdefault((r["label"], r["onnx_sha256"], r["build"]), []).append(r)
+    shas = {}
+    for l, s, _ in by:
+        shas.setdefault(l, set()).add(s)
     cfgs = {c[0] for c in configs(task)}
-    out = []
-    for lab in labels:
-        cfg, impl = lab.split("__")
+    groups = []   # (label, sha, row-suffix)
+    for lab in sorted(shas):
+        cfg = lab.split("__")[0]
         if cfg not in cfgs:
             continue
-        rec = {"cfg": cfg, "impl": impl}
+        onnx = f"{LUT}/onnx/{task}/{lab}.onnx"
+        want = _sha(onnx) if os.path.exists(onnx) else None
+        if want:
+            if want not in shas[lab]:
+                print(f"WARNING {task} {lab}: no runs with the sha of {onnx} ({want[:12]}); have "
+                      f"{sorted(s[:12] for s in shas[lab])} -> skipped", flush=True)
+                continue
+            if len(shas[lab]) > 1:
+                print(f"WARNING {task} {lab}: {len(shas[lab])} shas under one label; using {want[:12]} "
+                      f"(= {onnx}), dropping {sorted(s[:12] for s in shas[lab] if s != want)}", flush=True)
+            groups.append((lab, want, ""))
+        else:
+            if len(shas[lab]) > 1:
+                print(f"WARNING {task} {lab}: {len(shas[lab])} shas and no task ONNX -> separate rows", flush=True)
+            for s in sorted(shas[lab]):
+                groups.append((lab, s, f"@{s[:12]}" if len(shas[lab]) > 1 else ""))
+    out = []
+    for lab, sha, suf in groups:
+        cfg, impl = lab.split("__")
+        rec = {"cfg": cfg, "impl": impl + suf}
+        rec_by = {(lab, b): v for (l, s, b), v in by.items() if l == lab and s == sha}
         best = None
         for b in ("default", "nocublas", "sp_default", "sp_nocublas"):
-            rs = by.get((lab, b), [])[-10:]   # G1 has >= 10 runs per engine; others 3
+            rs = rec_by.get((lab, b), [])[-10:]   # G1 has >= 10 runs per engine; others 3
             if not rs:
                 continue
             p50 = float(np.median([r["p50_ms"] for r in rs]))
@@ -174,13 +216,24 @@ def table(task):
               if rec.get(f"p50_fmax_{b}") not in (None, "")]
         rec["p50_fmax_ms"], rec["build_fmax"] = min(fm) if fm else ("", "")
         rec["n_runs_fmax"] = sum(1 for b in ("default", "nocublas", "sp_default", "sp_nocublas")
-                                 for r in by.get((lab, b), [])[-10:] if r.get("gpu_freq_timed_frac_at_max", 0) >= 0.9)
+                                 for r in rec_by.get((lab, b), [])[-10:] if r.get("gpu_freq_timed_frac_at_max", 0) >= 0.9)
         rs = best[2]
         rec.update({"p50_ms": round(best[0], 4), "build": best[1],
                     "p95_ms": round(float(np.median([r["p95_ms"] for r in rs])), 4),
                     "infer_only_p50_ms": round(float(np.median([r["infer_only_p50_ms"] for r in rs])), 4),
-                    "engine_file_MB": rs[0]["engine_file_MB"]})
+                    "engine_file_MB": rs[0]["engine_file_MB"], "onnx_sha256": sha[:12]})
         out.append(rec)
+    if task == "g1" and os.path.exists(G1_MLP_V2):
+        # The lut/onnx/g1 mlp_h* graphs carry the shared-zero-bias Identity export artifact; their rows
+        # are replaced by the re-exported graphs (distinct non-zero biases, LeakyReLU) of the locked g1v2 session
+        # (g1v2_orin.py; lut/lut_g1v2.csv).
+        v2 = [dict(r) for r in csv.DictReader(open(G1_MLP_V2))]
+        for r in v2:
+            for k in ("label", "n_runs_excluded_unlocked"):
+                r.pop(k, None)
+        out = [r for r in out if not r["cfg"].startswith("mlp_h")] + v2
+        out.sort(key=lambda r: f"{r['cfg']}__{r['impl']}")
+        print(f"g1: {len(v2)} mlp_h* rows from {G1_MLP_V2}", flush=True)
     keys = []
     for r in out:
         for k in r:

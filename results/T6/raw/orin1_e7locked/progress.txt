@@ -1,0 +1,29 @@
+2026-10-19T21:36:44+08:00 batch start work_e7l/g1f_manifest.txt
+2026-10-19T21:40:08+08:00 built g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm
+2026-10-19T21:43:32+08:00 built g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm
+2026-10-19T21:46:59+08:00 built g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm
+2026-10-19T21:50:28+08:00 built g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm
+2026-10-19T21:51:21+08:00 built g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm
+2026-10-19T21:52:13+08:00 built g1f_mlp_h128_lr0.001_wd0_fair_t1__conv
+2026-10-19T21:53:09+08:00 built g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm
+2026-10-19T21:54:05+08:00 built g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv
+2026-10-19T21:55:09+08:00 built g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm
+2026-10-19T21:56:13+08:00 built g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__conv
+2026-10-19T21:57:16+08:00 built g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm
+2026-10-19T21:58:19+08:00 built g1f_mlp_h1024_lr0.0003_wd0_fair_t1__conv
+2026-10-19T21:58:53+08:00 built g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv
+2026-10-19T21:59:28+08:00 built g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv
+2026-10-19T22:00:05+08:00 built g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv
+2026-10-19T22:00:05+08:00 built mlp_h256__gemm
+2026-10-19T22:00:05+08:00 built dannG_p4_m64_s64_sg1__bmm
+2026-10-19T22:03:15+08:00 round 1 done
+2026-10-19T22:06:24+08:00 round 2 done
+2026-10-19T22:09:33+08:00 round 3 done
+2026-10-19T22:12:42+08:00 round 4 done
+2026-10-19T22:15:51+08:00 round 5 done
+2026-10-19T22:19:00+08:00 round 6 done
+2026-10-19T22:22:09+08:00 round 7 done
+2026-10-19T22:25:18+08:00 round 8 done
+2026-10-19T22:28:27+08:00 round 9 done
+2026-10-19T22:31:36+08:00 round 10 done
+2026-10-19T22:31:36+08:00 batch done work_e7l/g1f_manifest.txt
