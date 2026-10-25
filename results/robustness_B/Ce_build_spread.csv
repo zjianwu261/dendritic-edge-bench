@@ -1,0 +1,67 @@
+claim,section,item,n,value,lo,hi,holds,source,note
+C-e,build,g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv nocublas: max/min p50 over fresh builds,5,1.218,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm nocublas: max/min p50 over fresh builds,5,1.217,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1v2_mlp_h256__gemm nocublas: max/min p50 over fresh builds,5,1.213,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1v2_mlp_h256__conv nocublas: max/min p50 over fresh builds,5,1.206,,,,T6/lut/buildvar_summary.csv,
+C-e,build,mlp_h256__gemm nocublas: max/min p50 over fresh builds,5,1.196,,,,T6/lut/buildvar_summary.csv,
+C-e,build,dannG_p4_m64_s64_sg1__bmm default: max/min p50 over fresh builds,5,1.178,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm nocublas: max/min p50 over fresh builds,5,1.174,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm default: max/min p50 over fresh builds,5,1.165,,,,T6/lut/buildvar_summary.csv,
+C-e,build,dann24_D512_s128__conv default: max/min p50 over fresh builds,5,1.134,,,,T6/lut/buildvar_summary.csv,
+C-e,build,dannG_p4_m64_s64_sg1__bmm nocublas: max/min p50 over fresh builds,5,1.105,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm default: max/min p50 over fresh builds,5,1.089,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1v2_mlp_h512__gemm nocublas: max/min p50 over fresh builds,5,1.086,,,,T6/lut/buildvar_summary.csv,
+C-e,build,dann24_D512_s128__conv nocublas: max/min p50 over fresh builds,5,1.085,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__conv default: max/min p50 over fresh builds,5,1.08,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm nocublas: max/min p50 over fresh builds,5,1.075,,,,T6/lut/buildvar_summary.csv,
+C-e,build,mlp_h256__gemm default: max/min p50 over fresh builds,5,1.07,,,,T6/lut/buildvar_summary.csv,
+C-e,build,dannG_p4_m16_s128_sg4_sp24__bmm default: max/min p50 over fresh builds,5,1.07,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm default: max/min p50 over fresh builds,5,1.067,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm default: max/min p50 over fresh builds,5,1.063,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv default: max/min p50 over fresh builds,5,1.06,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1v2_mlp_h512__gemm default: max/min p50 over fresh builds,5,1.058,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1v2_mlp_h512__conv nocublas: max/min p50 over fresh builds,5,1.044,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1v2_mlp_h256__gemm default: max/min p50 over fresh builds,5,1.044,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm default: max/min p50 over fresh builds,5,1.041,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h128_lr0.001_wd0_fair_t1__conv nocublas: max/min p50 over fresh builds,5,1.037,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1v2_mlp_h256__conv default: max/min p50 over fresh builds,5,1.036,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm default: max/min p50 over fresh builds,5,1.036,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv default: max/min p50 over fresh builds,5,1.036,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h1024_lr0.0003_wd0_fair_t1__conv nocublas: max/min p50 over fresh builds,5,1.032,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm nocublas: max/min p50 over fresh builds,5,1.03,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1v2_mlp_h512__conv default: max/min p50 over fresh builds,5,1.026,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm nocublas: max/min p50 over fresh builds,5,1.026,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h128_lr0.001_wd0_fair_t1__conv default: max/min p50 over fresh builds,5,1.022,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm nocublas: max/min p50 over fresh builds,5,1.021,,,,T6/lut/buildvar_summary.csv,
+C-e,build,dannG_p4_m16_s128_sg4_sp24__bmm nocublas: max/min p50 over fresh builds,5,1.021,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm default: max/min p50 over fresh builds,5,1.02,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__conv nocublas: max/min p50 over fresh builds,5,1.018,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv nocublas: max/min p50 over fresh builds,5,1.017,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h1024_lr0.0003_wd0_fair_t1__conv default: max/min p50 over fresh builds,5,1.015,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv nocublas: max/min p50 over fresh builds,5,1.015,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv nocublas: max/min p50 over fresh builds,5,1.015,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm default: max/min p50 over fresh builds,5,1.014,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm nocublas: max/min p50 over fresh builds,5,1.014,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv default: max/min p50 over fresh builds,5,1.014,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm nocublas: max/min p50 over fresh builds,5,1.012,,,,T6/lut/buildvar_summary.csv,
+C-e,build,g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv default: max/min p50 over fresh builds,5,1.006,,,,T6/lut/buildvar_summary.csv,
+C-e,summary,G1 + CNN graph x flag cells: spread distribution,46,1.042,1.006,1.218,,,cells > 1.05: 21; > 1.10: 10; max = g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv nocublas
+C-e,build,G3 adc_h1024_ffrand__conv default: max/min p50 over fresh builds,5,1.062,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.3518
+C-e,build,G3 adc_h1024_ffrand__conv nocublas: max/min p50 over fresh builds,5,1.013,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.3339
+C-e,build,G3 adc_h1024_ffrand__gemm default: max/min p50 over fresh builds,5,1.037,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.3077
+C-e,build,G3 adc_h1024_ffrand__gemm nocublas: max/min p50 over fresh builds,5,1.013,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.3089
+C-e,build,G3 adc_h2048_ffrand__conv default: max/min p50 over fresh builds,5,1.011,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.4803
+C-e,build,G3 adc_h2048_ffrand__conv nocublas: max/min p50 over fresh builds,5,1.043,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.4863
+C-e,build,G3 adc_h2048_ffrand__gemm default: max/min p50 over fresh builds,5,1.035,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.4695
+C-e,build,G3 adc_h2048_ffrand__gemm nocublas: max/min p50 over fresh builds,5,1.006,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.468
+C-e,build,G3 mlp_h1024__conv default: max/min p50 over fresh builds,5,1.02,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.1984
+C-e,build,G3 mlp_h1024__conv nocublas: max/min p50 over fresh builds,5,1.018,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.1988
+C-e,build,G3 mlp_h1024__gemm default: max/min p50 over fresh builds,5,1.016,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.1957
+C-e,build,G3 mlp_h1024__gemm nocublas: max/min p50 over fresh builds,5,1.048,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.1975
+C-e,build,G3 mlp_h2048__conv default: max/min p50 over fresh builds,5,1.007,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.3268
+C-e,build,G3 mlp_h2048__conv nocublas: max/min p50 over fresh builds,5,1.032,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.3242
+C-e,build,G3 mlp_h2048__gemm default: max/min p50 over fresh builds,5,1.014,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.3274
+C-e,build,G3 mlp_h2048__gemm nocublas: max/min p50 over fresh builds,5,1.027,,,,robustness_B/g3_buildvar_builds.csv,orig 10-02 engine re-timed 0.3295
+C-e,summary,G3 graph x flag cells: spread distribution,16,1.019,1.006,1.062,,,
+C-e,seed,seed axis,,,,,,,not applicable (same ONNX graph rebuilt); G1 graphs carry seed-1 weights
+C-e,sensitivity,precision,,,,,,,"FP16 picked only by MLP h1024 (20/20) and CNN c32_64 (9/10); the large spreads are FP32 tactic flips (xmma_gemm_as_conv1x1 vs fprop_conv1x1), see T6/lut/buildvar_builds_p*.csv"

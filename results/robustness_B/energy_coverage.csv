@@ -1,0 +1,24 @@
+family,tier,energy_measured,configs_with_energy,latency_measured,note
+"dANN-LRF (T1, mask)",Orin,yes,dann_lrf_d32_s128,yes,"T1/energy_orin1.csv, 3 runs, locked"
+vANN same-shape (T1),Orin,yes,vann_same_d32_s128,yes,T1/energy_orin1.csv
+MLP G1 (T1 recipe),Orin,yes,"h85, h256, h512, h1024",yes,T1/energy_orin1.csv
+dANN-G grouped GEMM (T6 G1 fair),Orin,no,-,yes (5 builds),fair_summary orin_energy = not_measured
+MLP G1 fair (T6),Orin,no,-,yes (5 builds),
+CNN G1 fair (T6),Orin,no,-,yes (5 builds),
+dann24 / dense_D / dANN-G sp24 LUT (T6 G1),Orin,no,-,yes,
+sparse MLP h1024 (E-4),Orin,no,-,no,accuracy only
+DH-SRNN (T1),Orin,yes,"val seqloop, step",yes,
+LIF-SRNN (T1),Orin,yes,"val seqloop, step",yes,
+"GRU T1 (pm/acc; loop, fused, step)",Orin,yes,all 5 seq + 2 step,yes,
+DH-SSM (T6 G2),Orin,partial,"L2 n128 b4 spk/cont K25, L2 n256 b4 cont K25 (lut_g2 graphs)","yes (LUT, 1 engine/flag)",no energy for K50/K100 or other configs
+diag-SSM dssmU (T6 G2),Orin,partial,L2 n128 b4 spk K50 (seed 1),partial,
+LRU (T6 G2),Orin,partial,L2 H64 N128 K50 (seed 1),partial,H128 N256 not timed
+GRU T6 G2,Orin,partial,"h64, h256 (lut_g2), h768 (seed 1)",partial,h128 no energy; h512 not timed
+LSTM (T6 G2),Orin,no,-,no,
+AD naive / proto / cached (T1 G3),Orin,yes,"k4, k8 x 3 variants",yes,
+AD-cache (T6 G3),Orin,partial,"h1024, h2048 ffrand gemm",yes (LUT; 5 builds h1024/h2048 in this audit),"h256/h512/h4096, ff24, conv: no energy"
+MLP G3 (T6),Orin,partial,"h1024, h2048, h4096 gemm",yes,
+mlpctx (T6 G3),Orin,no,-,yes (LUT),
+all T1 models,RPi 4B,no,-,"yes (ORT FP32, 3 threads)",no power meter on the Pi
+all T6 models,RPi 4B,no,-,no,T6 has no Pi timing
+"dANN / PRNG-dANN / MLP / CNN (T1m, E-10)",8051,no,-,"yes (9 board, 15 ucsim est.)",no current measurement

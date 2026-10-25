@@ -1,0 +1,89 @@
+claim,section,item,n,value,lo,hi,holds,source,note
+C-c,build,"dANN d32 / MLP h85 [param-matched]: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",2.922,,,,T1/results.csv,in F2: True
+C-c,build,"dANN d32 / MLP h85 [param-matched]: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,2.088,2.043,2.6,True,T1/results_orin_builds.csv,default/default 2.106; lo = fastest dendritic / slowest dense
+C-c,sensitivity,dANN d32 / MLP h85 [param-matched]: clock locked vs DVFS (nocublas),3,2.922,,,,T1/results.csv,DVFS 2.088
+C-c,sensitivity,dANN d32 / MLP h85 [param-matched]: locked-clock mean latency from the energy window,3 x 30 s,2.902,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,dANN d32 / MLP h85 [param-matched]: energy ratio,"3 runs each, 1 engine",10.594,10.418,10.724,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"dANN d32 / MLP h85 [param-matched]: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,60.813,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"dANN d32 / vANN: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",0.993,,,,T1/results.csv,in F2: True
+C-c,build,"dANN d32 / vANN: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.003,0.939,1.028,False,T1/results_orin_builds.csv,default/default 0.966; lo = fastest dendritic / slowest dense
+C-c,sensitivity,dANN d32 / vANN: clock locked vs DVFS (nocublas),3,0.993,,,,T1/results.csv,DVFS 1.003
+C-c,sensitivity,dANN d32 / vANN: locked-clock mean latency from the energy window,3 x 30 s,1.002,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,dANN d32 / vANN: energy ratio,"3 runs each, 1 engine",0.866,0.864,0.872,False,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"dANN d32 / vANN: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.002,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"dANN d32 / MLP h1024: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",1.296,,,,T1/results.csv,in F2: True
+C-c,build,"dANN d32 / MLP h1024: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.03,1.02,1.336,True,T1/results_orin_builds.csv,default/default 1.168; lo = fastest dendritic / slowest dense
+C-c,sensitivity,dANN d32 / MLP h1024: clock locked vs DVFS (nocublas),3,1.296,,,,T1/results.csv,DVFS 1.030
+C-c,sensitivity,dANN d32 / MLP h1024: locked-clock mean latency from the energy window,3 x 30 s,1.316,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,dANN d32 / MLP h1024: energy ratio,"3 runs each, 1 engine",1.585,1.579,1.587,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"dANN d32 / MLP h1024: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.874,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"DH-SRNN / LIF-SRNN (loop): Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",1.141,,,,T1/results.csv,in F2: True
+C-c,build,"DH-SRNN / LIF-SRNN (loop): DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.141,1.128,1.163,True,T1/results_orin_builds.csv,default/default 1.155; lo = fastest dendritic / slowest dense
+C-c,sensitivity,DH-SRNN / LIF-SRNN (loop): locked-clock mean latency from the energy window,3 x 30 s,1.142,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,DH-SRNN / LIF-SRNN (loop): energy ratio,"3 runs each, 1 engine",1.402,1.365,1.429,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"DH-SRNN / LIF-SRNN (loop): RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.476,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"DH-SRNN / GRU-pm (loop) [param-matched]: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",2.115,,,,T1/results.csv,in F2: True
+C-c,build,"DH-SRNN / GRU-pm (loop) [param-matched]: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,2.115,1.716,2.13,True,T1/results_orin_builds.csv,default/default 1.735; lo = fastest dendritic / slowest dense
+C-c,sensitivity,DH-SRNN / GRU-pm (loop) [param-matched]: locked-clock mean latency from the energy window,3 x 30 s,2.123,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,DH-SRNN / GRU-pm (loop) [param-matched]: energy ratio,"3 runs each, 1 engine",2.556,2.519,2.593,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"DH-SRNN / GRU-pm (loop) [param-matched]: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.508,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"DH-SRNN / GRU-pm (fused op) [param-matched; not in F2]: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",5.847,,,,T1/results.csv,in F2: False
+C-c,build,"DH-SRNN / GRU-pm (fused op) [param-matched; not in F2]: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,5.847,5.772,5.908,True,T1/results_orin_builds.csv,default/default 5.826; lo = fastest dendritic / slowest dense
+C-c,sensitivity,DH-SRNN / GRU-pm (fused op) [param-matched; not in F2]: locked-clock mean latency from the energy window,3 x 30 s,5.848,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,DH-SRNN / GRU-pm (fused op) [param-matched; not in F2]: energy ratio,"3 runs each, 1 engine",5.774,5.705,5.835,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"DH-SRNN / GRU-pm (fused op) [param-matched; not in F2]: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,13.352,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"DH-SRNN / GRU-acc (fused): Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",2.867,,,,T1/results.csv,in F2: True
+C-c,build,"DH-SRNN / GRU-acc (fused): DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,2.867,2.832,3.012,True,T1/results_orin_builds.csv,default/default 2.982; lo = fastest dendritic / slowest dense
+C-c,sensitivity,DH-SRNN / GRU-acc (fused): locked-clock mean latency from the energy window,3 x 30 s,2.88,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,DH-SRNN / GRU-acc (fused): energy ratio,"3 runs each, 1 engine",1.752,1.721,1.768,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"DH-SRNN / GRU-acc (fused): RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.243,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"DH-SRNN / LIF (step): Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",1.008,,,,T1/results.csv,in F2: True
+C-c,build,"DH-SRNN / LIF (step): DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.001,0.854,1.559,False,T1/results_orin_builds.csv,default/default 1.158; lo = fastest dendritic / slowest dense
+C-c,sensitivity,DH-SRNN / LIF (step): clock locked vs DVFS (nocublas),3,1.008,,,,T1/results.csv,DVFS 1.001
+C-c,sensitivity,DH-SRNN / LIF (step): locked-clock mean latency from the energy window,3 x 30 s,0.985,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,DH-SRNN / LIF (step): energy ratio,"3 runs each, 1 engine",1.139,1.099,1.171,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"DH-SRNN / LIF (step): RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,6.062,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"DH-SRNN / GRU h23 (step) [param-matched; not in F2]: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",1.076,,,,T1/results.csv,in F2: False
+C-c,build,"DH-SRNN / GRU h23 (step) [param-matched; not in F2]: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.305,1.116,1.603,True,T1/results_orin_builds.csv,default/default 1.490; lo = fastest dendritic / slowest dense
+C-c,sensitivity,DH-SRNN / GRU h23 (step) [param-matched; not in F2]: clock locked vs DVFS (nocublas),3,1.076,,,,T1/results.csv,DVFS 1.305
+C-c,sensitivity,DH-SRNN / GRU h23 (step) [param-matched; not in F2]: locked-clock mean latency from the energy window,3 x 30 s,1.121,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,DH-SRNN / GRU h23 (step) [param-matched; not in F2]: energy ratio,"3 runs each, 1 engine",1.342,1.294,1.38,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"DH-SRNN / GRU h23 (step) [param-matched; not in F2]: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,7.325,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"DH-SRNN / GRU-acc (step): Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",0.402,,,,T1/results.csv,in F2: True
+C-c,build,"DH-SRNN / GRU-acc (step): DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,0.528,0.471,0.667,False,T1/results_orin_builds.csv,default/default 0.651; lo = fastest dendritic / slowest dense
+C-c,sensitivity,DH-SRNN / GRU-acc (step): clock locked vs DVFS (nocublas),3,0.402,,,,T1/results.csv,DVFS 0.528
+C-c,sensitivity,DH-SRNN / GRU-acc (step): locked-clock mean latency from the energy window,3 x 30 s,0.406,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,DH-SRNN / GRU-acc (step): energy ratio,"3 runs each, 1 engine",0.158,0.152,0.159,False,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"DH-SRNN / GRU-acc (step): RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,0.63,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"AD k4 / MLP h3592 [param-matched]: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",1.362,,,,T1/results.csv,in F2: True
+C-c,build,"AD k4 / MLP h3592 [param-matched]: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.362,1.303,1.702,True,T1/results_orin_builds.csv,default/default 1.681; lo = fastest dendritic / slowest dense
+C-c,sensitivity,AD k4 / MLP h3592 [param-matched]: locked-clock mean latency from the energy window,3 x 30 s,1.383,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,AD k4 / MLP h3592 [param-matched]: energy ratio,"3 runs each, 1 engine",1.136,1.133,1.143,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"AD k4 / MLP h3592 [param-matched]: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.217,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"AD k8 / MLP h4965 [param-matched]: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",1.247,,,,T1/results.csv,in F2: True
+C-c,build,"AD k8 / MLP h4965 [param-matched]: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.247,1.21,1.467,True,T1/results_orin_builds.csv,default/default 1.456; lo = fastest dendritic / slowest dense
+C-c,sensitivity,AD k8 / MLP h4965 [param-matched]: locked-clock mean latency from the energy window,3 x 30 s,1.244,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,AD k8 / MLP h4965 [param-matched]: energy ratio,"3 runs each, 1 engine",1.048,1.045,1.051,True,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"AD k8 / MLP h4965 [param-matched]: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.113,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"AD k4 / MLP h3941 [stored-matched; not in F2]: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",1.207,,,,T1/results.csv,in F2: False
+C-c,build,"AD k4 / MLP h3941 [stored-matched; not in F2]: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.207,1.197,1.515,True,T1/results_orin_builds.csv,default/default 1.509; lo = fastest dendritic / slowest dense
+C-c,sensitivity,AD k4 / MLP h3941 [stored-matched; not in F2]: locked-clock mean latency from the energy window,3 x 30 s,1.226,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,AD k4 / MLP h3941 [stored-matched; not in F2]: energy ratio,"3 runs each, 1 engine",0.916,0.912,0.918,False,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"AD k4 / MLP h3941 [stored-matched; not in F2]: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.071,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,build,"AD k8 / MLP h5230 [stored-matched; not in F2]: Orin latency ratio as in F2 (locked if present, else DVFS; nocublas)","1 seed, 1 build/flag, 3 runs",1.188,,,,T1/results.csv,in F2: False
+C-c,build,"AD k8 / MLP h5230 [stored-matched; not in F2]: DVFS ratio default/default, nocublas/nocublas; worst/best over flags x runs",2 flags x 3 runs,1.188,1.132,1.392,True,T1/results_orin_builds.csv,default/default 1.327; lo = fastest dendritic / slowest dense
+C-c,sensitivity,AD k8 / MLP h5230 [stored-matched; not in F2]: locked-clock mean latency from the energy window,3 x 30 s,1.182,,,,T1/energy_orin1.csv,mean not p50; same nocublas engine
+C-c,energy,AD k8 / MLP h5230 [stored-matched; not in F2]: energy ratio,"3 runs each, 1 engine",1.002,0.999,1.006,False,T1/energy_orin1.csv,"locked 624.75 MHz, net of idle; nocublas engine only"
+C-c,sensitivity,"AD k8 / MLP h5230 [stored-matched; not in F2]: RPi 4B (ORT FP32, 3 threads) latency ratio",3 runs,1.052,,,,T1/results.csv,"tier sensitivity; thread count fixed at 3, no thread sweep for these models"
+C-c,summary,param-/stored-matched naive pairs: Orin latency ratio range (F2 rule),8,,1.076,5.847,,,dANN d32 / MLP h85 2.92; DH-SRNN / GRU-pm (loop) 2.12; DH-SRNN / GRU-pm (fused op) 5.85; DH-SRNN / GRU h23 (step) 1.08; AD k4 / MLP h3592 1.36; AD k8 / MLP h4965 1.25; AD k4 / MLP h3941 1.21; AD k8 / MLP h5230 1.19
+C-c,summary,"same, worst/best over flags x runs (min of lo, max of hi)",,,1.116,5.908,,,
+C-c,summary,param-/stored-matched naive pairs: energy ratio range,8,,0.916,10.594,,,dANN d32 / MLP h85 10.59 [10.42-10.72]; DH-SRNN / GRU-pm (loop) 2.56 [2.52-2.59]; DH-SRNN / GRU-pm (fused op) 5.77 [5.71-5.84]; DH-SRNN / GRU h23 (step) 1.34 [1.29-1.38]; AD k4 / MLP h3592 1.14 [1.13-1.14]; AD k8 / MLP h4965 1.05 [1.05-1.05]; AD k4 / MLP h3941 0.92 [0.91-0.92]; AD k8 / MLP h5230 1.00 [1.00-1.01]
+C-c,seed,T1 pairs: seeds,1,,,,,,every T1 dendritic model and its baseline is one trained seed (MLP h256/h512 have 3 seeds but are not in F2); accuracy SD unknown; latency/energy for that seed only
+C-c,build,"T6 G1 dannG_p4_m8_s64_sg1 / mlp_h128 median, worst, best",5 x 5,1.164,1.155,1.199,,buildvar_builds_p1.csv,energy not measured
+C-c,build,"T6 G1 dannG_p4_m32_s64_sg1 / mlp_h512 median, worst, best",5 x 5,0.703,0.689,0.711,,buildvar_builds_p1.csv,energy not measured
+C-c,build,"T6 G1 dannG_p4_m32_s64_sg1 / mlp_h1024 median, worst, best",5 x 5,0.575,0.569,0.589,,buildvar_builds_p1.csv,energy not measured
+C-c,energy,T6 DH-SSM spk n128 / GRU h64: energy ratio,3 runs each,0.726,0.718,0.73,,T6/energy_compare.csv,
+C-c,energy,T6 DH-SSM cont n128 / GRU h256: energy ratio,3 runs each,0.311,0.309,0.316,,T6/energy_compare.csv,
+C-c,energy,T6 DH-SSM n256 / GRU h768: energy ratio,3 runs each,0.044,0.043,0.044,,T6/energy_compare.csv,
+C-c,energy,T6 AD-cache h1024 / MLP h1024: energy ratio,3 runs each,1.119,1.114,1.127,,T6/energy_compare.csv,
+C-c,energy,T6 AD-cache h2048 / MLP h2048: energy ratio,3 runs each,1.016,1.012,1.022,,T6/energy_compare.csv,

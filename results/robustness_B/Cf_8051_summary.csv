@@ -1,0 +1,47 @@
+claim,section,item,n,value,lo,hi,holds,source,note
+C-f,sensitivity,primary_int8val_ddof1: dann_d16_s64 -> cnn_c3_6 time ratio CNN/X,,0.755,,,,T1m/e10/matched.csv,acc 0.8832+-0.0065 vs 0.8693+-0.0027; ucsim ratio 0.786; X ms measured_seed1_35.004MHz
+C-f,sensitivity,primary_int8val_ddof1: dann_prng_d20_s128 -> cnn_c6_12 time ratio CNN/X,,0.688,,,,T1m/e10/matched.csv,acc 0.8927+-0.0005 vs 0.8812+-0.0052; ucsim ratio 0.736; X ms measured_seed1_35.018MHz
+C-f,sensitivity,primary_int8val_ddof1: dann_d8_s32 -> cnn_c2_4 time ratio CNN/X,,1.655,,,,T1m/e10/matched.csv,acc 0.8628+-0.0019 vs 0.8555+-0.0066; ucsim ratio 1.79; X ms measured_seed1_e10bbuild_35.004MHz
+C-f,sensitivity,primary_int8val_ddof1: dann_d8_s64 -> cnn_c3_6 time ratio CNN/X,,1.456,,,,T1m/e10/matched.csv,acc 0.8757+-0.0072 vs 0.8693+-0.0027; ucsim ratio 1.521; X ms measured_seed1_e10bbuild_35.004MHz
+C-f,sensitivity,primary_int8val_ddof1: dann_prng_d32_s96 -> cnn_c8_16 time ratio CNN/X,,0.916,,,,T1m/e10/matched.csv,acc 0.8942+-0.0029 vs 0.8919+-0.0035; ucsim ratio 0.984; X ms estimate_ucsimE10build_x0.9115_35.004MHz
+C-f,sensitivity,int8val_ddof0: dann_d16_s64 -> cnn_c4_8 time ratio CNN/X,,1.112,,,,T1m/e10/matched.csv,acc 0.8832+-0.0053 vs 0.8747+-0.003; ucsim ratio 1.162; X ms measured_seed1_35.004MHz
+C-f,sensitivity,int8val_ddof0: dann_prng_d20_s128 -> cnn_c8_16 time ratio CNN/X,,1.074,,,,T1m/e10/matched.csv,acc 0.8927+-0.0004 vs 0.8919+-0.0028; ucsim ratio 1.146; X ms measured_seed1_35.018MHz
+C-f,sensitivity,int8val_ddof0: dann_d8_s32 -> cnn_c2_4 time ratio CNN/X,,1.655,,,,T1m/e10/matched.csv,acc 0.8628+-0.0016 vs 0.8555+-0.0054; ucsim ratio 1.79; X ms measured_seed1_e10bbuild_35.004MHz
+C-f,sensitivity,int8val_ddof0: dann_d8_s64 -> cnn_c3_6 time ratio CNN/X,,1.456,,,,T1m/e10/matched.csv,acc 0.8757+-0.0059 vs 0.8693+-0.0022; ucsim ratio 1.521; X ms measured_seed1_e10bbuild_35.004MHz
+C-f,sensitivity,int8val_ddof0: dann_prng_d32_s96 -> cnn_c8_16 time ratio CNN/X,,0.916,,,,T1m/e10/matched.csv,acc 0.8942+-0.0023 vs 0.8919+-0.0028; ucsim ratio 0.984; X ms estimate_ucsimE10build_x0.9115_35.004MHz
+C-f,sensitivity,fp32val_ddof1: dann_d16_s64 -> cnn_c3_6 time ratio CNN/X,,0.755,,,,T1m/e10/matched.csv,acc 0.8832+-0.0065 vs 0.8693+-0.0027; ucsim ratio 0.786; X ms measured_seed1_35.004MHz
+C-f,sensitivity,fp32val_ddof1: dann_prng_d20_s128 -> cnn_c6_12 time ratio CNN/X,,0.688,,,,T1m/e10/matched.csv,acc 0.8927+-0.0005 vs 0.8812+-0.0052; ucsim ratio 0.736; X ms measured_seed1_35.018MHz
+C-f,sensitivity,fp32val_ddof1: dann_d8_s32 -> cnn_c2_4 time ratio CNN/X,,1.655,,,,T1m/e10/matched.csv,acc 0.8628+-0.0019 vs 0.856+-0.0074; ucsim ratio 1.79; X ms measured_seed1_e10bbuild_35.004MHz
+C-f,sensitivity,fp32val_ddof1: dann_d8_s64 -> cnn_c3_6 time ratio CNN/X,,1.456,,,,T1m/e10/matched.csv,acc 0.8757+-0.0072 vs 0.8693+-0.0027; ucsim ratio 1.521; X ms measured_seed1_e10bbuild_35.004MHz
+C-f,sensitivity,fp32val_ddof1: dann_prng_d32_s96 -> cnn_c8_16 time ratio CNN/X,,0.916,,,,T1m/e10/matched.csv,acc 0.8942+-0.0029 vs 0.8919+-0.0035; ucsim ratio 0.984; X ms estimate_ucsimE10build_x0.9115_35.004MHz
+C-f,sensitivity,fp32val_ddof0: dann_d16_s64 -> cnn_c6_12 time ratio CNN/X,,2.039,,,,T1m/e10/matched.csv,acc 0.8832+-0.0053 vs 0.8812+-0.0042; ucsim ratio 2.129; X ms measured_seed1_35.004MHz
+C-f,sensitivity,fp32val_ddof0: dann_prng_d20_s128 -> cnn_c8_16 time ratio CNN/X,,1.074,,,,T1m/e10/matched.csv,acc 0.8927+-0.0004 vs 0.8919+-0.0028; ucsim ratio 1.146; X ms measured_seed1_35.018MHz
+C-f,sensitivity,fp32val_ddof0: dann_d8_s32 -> cnn_c2_4 time ratio CNN/X,,1.655,,,,T1m/e10/matched.csv,acc 0.8628+-0.0016 vs 0.856+-0.0061; ucsim ratio 1.79; X ms measured_seed1_e10bbuild_35.004MHz
+C-f,sensitivity,fp32val_ddof0: dann_d8_s64 -> cnn_c3_6 time ratio CNN/X,,1.456,,,,T1m/e10/matched.csv,acc 0.8757+-0.0059 vs 0.8693+-0.0022; ucsim ratio 1.521; X ms measured_seed1_e10bbuild_35.004MHz
+C-f,sensitivity,fp32val_ddof0: dann_prng_d32_s96 -> cnn_c8_16 time ratio CNN/X,,0.916,,,,T1m/e10/matched.csv,acc 0.8942+-0.0023 vs 0.8919+-0.0028; ucsim ratio 0.984; X ms estimate_ucsimE10build_x0.9115_35.004MHz
+C-f,seed,dann_d16_s64 int8 test,3,0.8832,,,,T1m/e10/results.csv,SD ddof1 0.0065 (ddof0 0.0053); ucsim first-run->E10 build -0.0004; board 42.51 ms (measured_seed1_35.004MHz)
+C-f,seed,dann_prng_d16_s128 int8 test,3,0.8903,,,,T1m/e10/results.csv,SD ddof1 0.0013 (ddof0 0.0011); ucsim first-run->E10 build 0.00834; board 100.59 ms (measured_seed1_34.99MHz)
+C-f,seed,dann_prng_d20_s128 int8 test,3,0.8927,,,,T1m/e10/results.csv,SD ddof1 0.0005 (ddof0 0.0004); ucsim first-run->E10 build 0.01098; board 125.95 ms (measured_seed1_35.018MHz)
+C-f,seed,mlp_h48 int8 test,3,0.8794,,,,T1m/e10/results.csv,SD ddof1 0.0069 (ddof0 0.0057); ucsim first-run->E10 build 0.00099; board 79.13 ms (measured_seed1_35.004MHz)
+C-f,seed,mlp_h64 int8 test,3,0.8816,,,,T1m/e10/results.csv,SD ddof1 0.0051 (ddof0 0.0041); ucsim first-run->E10 build 0.00262; board 107.74 ms (measured_seed1_35.004MHz)
+C-f,seed,dann_d8_s32 int8 test,3,0.8628,,,,T1m/e10/results.csv,SD ddof1 0.0019 (ddof0 0.0016); ucsim first-run->E10 build 0.03176; board 11.31 ms (measured_seed1_e10bbuild_35.004MHz)
+C-f,seed,dann_prng_d8_s32 int8 test,3,0.8616,,,,T1m/e10/results.csv,SD ddof1 0.0063 (ddof0 0.0051); ucsim first-run->E10 build -0.00458; board 13.09 ms (estimate_ucsimE10build_x0.9115_35.004MHz)
+C-f,seed,dann_prng_d8_s64 int8 test,3,0.8745,,,,T1m/e10/results.csv,SD ddof1 0.0046 (ddof0 0.0038); ucsim first-run->E10 build 0.00557; board 26.18 ms (estimate_ucsimE10build_x0.9115_35.004MHz)
+C-f,seed,dann_d8_s64 int8 test,3,0.8757,,,,T1m/e10/results.csv,SD ddof1 0.0072 (ddof0 0.0059); ucsim first-run->E10 build 0.00866; board 22.04 ms (measured_seed1_e10bbuild_35.004MHz)
+C-f,seed,mlp_h16 int8 test,3,0.8606,,,,T1m/e10/results.csv,SD ddof1 0.0026 (ddof0 0.0021); ucsim first-run->E10 build 0.00375; board 25.44 ms (estimate_ucsimE10build_x0.811_35.004MHz)
+C-f,seed,dann_prng_d16_s64 int8 test,3,0.8805,,,,T1m/e10/results.csv,SD ddof1 0.0027 (ddof0 0.0022); ucsim first-run->E10 build 0.01021; board 50.66 ms (estimate_ucsimE10build_x0.9115_35.004MHz)
+C-f,seed,mlp_h32 int8 test,3,0.8752,,,,T1m/e10/results.csv,SD ddof1 0.003 (ddof0 0.0025); ucsim first-run->E10 build 0.00243; board 51.93 ms (estimate_ucsimE10build_x0.811_35.004MHz)
+C-f,seed,dann_d24_s64 int8 test,3,0.8849,,,,T1m/e10/results.csv,SD ddof1 0.0014 (ddof0 0.0011); ucsim first-run->E10 build 0.02224; board 63.5 ms (estimate_ucsimE10build_x0.89_35.004MHz)
+C-f,seed,dann_prng_d24_s64 int8 test,3,0.8855,,,,T1m/e10/results.csv,SD ddof1 0.0014 (ddof0 0.0011); ucsim first-run->E10 build 0.01213; board 75.33 ms (estimate_ucsimE10build_x0.9115_35.004MHz)
+C-f,seed,dann_prng_d32_s96 int8 test,3,0.8942,,,,T1m/e10/results.csv,SD ddof1 0.0029 (ddof0 0.0023); ucsim first-run->E10 build 0.00644; board 147.71 ms (estimate_ucsimE10build_x0.9115_35.004MHz)
+C-f,seed,dann_prng_d24_s128 int8 test,3,0.8902,,,,T1m/e10/results.csv,SD ddof1 0.0014 (ddof0 0.0012); ucsim first-run->E10 build 0.0051; board 150.97 ms (estimate_ucsimE10build_x0.9115_35.004MHz)
+C-f,seed,mlp_h72 int8 test,3,0.8856,,,,T1m/e10/results.csv,SD ddof1 0.0007 (ddof0 0.0006); ucsim first-run->E10 build -0.00088; board 122.36 ms (estimate_ucsimE10build_x0.811_35.004MHz)
+C-f,seed,cnn_c2_4 int8 test,3,0.8555,,,,T1m/e10/results.csv,SD ddof1 0.0066 (ddof0 0.0054); ucsim first-run->E10 build -0.00101; board 18.72 ms (measured_seed1_e10bbuild_34.99MHz)
+C-f,seed,cnn_c3_6 int8 test,3,0.8693,,,,T1m/e10/results.csv,SD ddof1 0.0027 (ddof0 0.0022); ucsim first-run->E10 build 0.00518; board 32.08 ms (measured_seed1_e10bbuild_34.997MHz)
+C-f,seed,cnn_c4_8 int8 test,3,0.8747,,,,T1m/e10/results.csv,SD ddof1 0.0036 (ddof0 0.003); ucsim first-run->E10 build 0.01315; board 47.26 ms (measured_seed1_35.004MHz)
+C-f,seed,cnn_c6_12 int8 test,3,0.8812,,,,T1m/e10/results.csv,SD ddof1 0.0052 (ddof0 0.0042); ucsim first-run->E10 build 0.01071; board 86.68 ms (measured_seed1_35.004MHz)
+C-f,seed,cnn_c8_16 int8 test,3,0.8919,,,,T1m/e10/results.csv,SD ddof1 0.0035 (ddof0 0.0028); ucsim first-run->E10 build 0.00586; board 135.32 ms (measured_seed1_35.004MHz)
+C-f,seed,cnn_c16_32 int8 test,3,0.8986,,,,T1m/e10/results.csv,SD ddof1 0.0025 (ddof0 0.002); ucsim first-run->E10 build -0.00254; board 430.34 ms (estimate_ucsimE10build_x0.854_35.004MHz)
+C-f,seed,cnn_c32_64 int8 test,3,0.905,,,,T1m/e10/results.csv,SD ddof1 0.0019 (ddof0 0.0016); ucsim first-run->E10 build 0.00325; board 1551.09 ms (estimate_ucsimE10build_x0.854_35.004MHz)
+C-f,build,TRT builds,,,,,,,"not applicable; the analogue (first-run vs E-10 build ucsim cycles) is -0.46 % to +3.18 %, fronts unchanged; board/ucsim factors confirmed within 0.75 % on 4 new boards"
+C-f,energy,8051 energy,,,,,,,not measured on any 8051 model (no current measurement); latency = board cycles at 35 MHz or ucsim estimate

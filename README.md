@@ -28,11 +28,13 @@ replaced by `~/` and `orin`.
 | `src/figs_journal/` | Figures of the paper (`f2_decomp.py`, `f3_tiers.py`, `f4_g2fair.py`, `f5_v3.py`; shared `style.py`), written to `results/T6/figs_journal/` |
 | `src/t4a/` | T4a, functional benchmark (RQ3): HuRoN / RECON processing, benchmark builder, synthetic low light (`lowlight.py`) and occlusion (`bench_data.py`), zero-shot NoMaD, continual-learning methods (`cl_methods.py`, `cl_run.py`, dendritic adapter `cl_dend2.py`), selection scripts, verdict (`v3_verdict.py`), Orin deployment latency and FP16 check |
 | `src/bench/` | Shared device benchmarks: TensorRT synchronous timing (`trt_sync_bench.py`), on-device evaluation, energy loop / power logger / parser, onnxruntime timing for the RPi |
+| `src/robustness_B/` | Robustness audit of the headline claims (Supplementary Section S6): per-claim audit over the stored result files (`audit.py`), G3 AD-cache / MLP TensorRT rebuild session on the Orin (`bv_g3.py`, protocol of `src/t6/buildvar_orin.py`) |
 | `src/tools/run_tasks.py` | Sequential runner for the training task file written by `src/t6/make_tasks.py` and the `src/t4a/*select*.py` scripts |
 | `src/third_party/fetch.sh` | Clones the third-party code at the pinned commits of `src/third_party_VERSIONS.txt` |
 | `results/T1/` | T1 tables (`results.csv`, `results_orin_builds.csv`, `energy_orin1*.csv`), model metadata (`models/*.json`), raw device JSON lines and environment logs (`raw/`), SHD validation split |
 | `results/T1m/` | 8051 tables (`results.csv`, `results_all.csv`, `board_summary.csv`, per-image board logs `board_<model>_t1.csv` of the twelve timed models, `board_per_image.csv`, flashing logs `logs/stcgal_*.log`), equal-budget protocol (`e10/`: `PROTOCOL.md`, per-cell results `cells.csv`, selected models `results.csv` and its pre-board-run version `results_preboard.csv`, `matched.csv`, `fronts_e10.csv`, `verify.json`, `verify_seeds.json`, `ucsim.json`, grid / selection / report logs), small-CNN records and table (`cnn/`), per-model quantisation / build / ucsim records (`quant/`), training records (`models/`), PRNG unit-test record |
 | `results/T6/` | Fair-protocol summaries, latency LUTs and the locked-clock G1 tables (`lut/`, incl. `buildvar_*.csv`, `lut_g1f.csv`, `lut_g1v2*.csv`), energy, device FP16 accuracy, Pareto and latency-matched tables, per-run training records (`models/g1..g3/`), raw Orin data (`raw/`: `orin1/` LUT sessions; `orin1_e7locked/`, `orin1_g1v2/`, `orin1_bv1/`, `orin1_bv2/` locked-clock sessions with per-run environment logs in `env/`), paper figures (`figs_journal/`) |
+| `results/robustness_B/` | Audit summary (`summary.md`), per-claim tables `Ca_g1_dannG_vs_mlp.csv`, `Cb_g2_scan_vs_gru.csv`, `Cc_naive_pairs.csv`, `Cd_g3_adcache.csv`, `Ce_build_spread.csv`, `Cf_8051_summary.csv`, energy coverage matrix `energy_coverage.csv`, G3 rebuild table `g3_buildvar_builds.csv` (one row per engine) and session log `bv_g3_run.log`; raw Orin data of the G3 rebuild session (`raw_orin1_bvg3/`: `results.jsonl`, manifests, `progress.txt`, per-run environment logs in `env/`) |
 | `results/T4a/` | Zero-shot, continual-learning per-run records (`cl/`), summaries, verdicts, Orin latency (`orin_latency.csv`, `dend2_orin/`), FP16 check, single-task gain check |
 
 Not included: datasets, trained weights and ONNX/engine files, firmware images, TensorRT build logs and per-layer
@@ -41,7 +43,7 @@ engine dumps, third-party code (see below).
 ## Paper → data → code
 
 Numbers follow the submitted manuscript: Table 1–7, Fig. 1–4 and Sec. 1–10 are in the main paper; extended methods
-and secondary results are in the supplementary file (Supplementary Tables S1–S6, Sections S1–S5). Result files are
+and secondary results are in the supplementary file (Supplementary Tables S1–S8, Sections S1–S6). Result files are
 relative to `results/`, scripts to `src/`.
 
 | Paper item | Result file(s) (`results/...`) | Produced by (`src/...`) |
@@ -65,6 +67,7 @@ relative to `results/`, scripts to `src/`.
 | Sec. 6.2–6.3, Table 6, Fig. 4 (`f5-v3.pdf`), Supplementary Table S6 (Section S4.1): v3fix outcome, paired seed differences, segment gains | `T4a/v3fix_verdict.json`, `T4a/v3fix_summary.csv`, `T4a/cl_summary.csv`, `T4a/cl/dend2_id_k05_mf10_v3fix_lr0.001_s*.json`; figure `T6/figs_journal/f5-v3.pdf` | `t4a/v3fix_select.py` + `tools/run_tasks.py`; `t4a/v3_verdict.py --fix`; `t4a/make_tables.py`; figure `figs_journal/f5_v3.py` |
 | Sec. 6.3, Supplementary Section S4.2: learning-rate grid extended to 3×10⁻³ (selection file, assertion failure at 3×10⁻³, diagnostic run without the assertion) | `T4a/cl/e1_selection.json`, `T4a/cl/lora_bank_id_v3fix_r10_lr0.003_s0.json`, `T4a/cl/FAILED_dend2_id_v3fix_lr0.003_s0.json`, `T4a/cl/dend2_id_k05_mf10_v3fix_noassert_lr0.003_s0.json` | the seed-0 selection runs of `t4a/v3fix_select.py` at lr 3e-3 (`t4a/cl_dend2.py ... --assert_own 0.9`, and `--assert_own 0` for the diagnostic run; `t4a/cl_run.py --method lora_bank`) |
 | Sec. 6.4 (and Sec. 3.7 for the single-task gain), other methods, mean-trajectory reference, single-task gain | `T4a/zero_shot.csv`, `T4a/gain_check*.csv`, `T4a/gain_check/`, `T4a/v3_mean_traj_ref.json` | `t4a/zero_shot.py`, `t4a/gain_check.py`, `t4a/v3_ref.py`, `t4a/make_tables.py`; context features `t4a/ctx_feat_diag.py`, `t4a/ctx_feat_eval.py` |
+| Sec. 3.8 (Robustness paragraph), Supplementary Section S6 and Tables S7–S8: robustness audit of the headline claims C-a to C-f (seeds, rebuilds, sensitivity, energy coverage) and the new G3 rebuild session (Orin #1, 2026-10-25, 96 engines × 5 runs, locked clock) | Table S7: `robustness_B/Ca_g1_dannG_vs_mlp.csv`, `Cb_g2_scan_vs_gru.csv`, `Cc_naive_pairs.csv`, `Cd_g3_adcache.csv`, `Ce_build_spread.csv`, `Cf_8051_summary.csv`, summary `robustness_B/summary.md`; Table S8: `robustness_B/energy_coverage.csv`; G3 rebuilds: `robustness_B/g3_buildvar_builds.csv`, `robustness_B/bv_g3_run.log`, `robustness_B/raw_orin1_bvg3/`; inputs are the released T1, T1m and T6 files cited in the rows above | `robustness_B/audit.py` (reads only stored result files); `robustness_B/bv_g3.py` (`run`, then `table`; Orin side `t6/orin/t6_orin.sh` with `REQUIRE_LOCK_HZ`) |
 | Supplementary Section S4.4, NoMaD / adapter latency on the Orin, FP16 check | `T4a/orin_latency.csv`, `T4a/dend2_orin/dend2_latency.csv`, `T4a/fp16_check.json` | `t4a/export_onnx.py`, `t4a/export_enc_v2.py`, `t4a/export_dend2_onnx.py`; `t4a/orin_run*.sh` (`trt_pipeline_bench.py`, `trt_sync_bench.py`); `t4a/dend2_orin_table.py`, `t4a/make_tables.py`; `t4a/fp16_check.py`, `t4a/fp16_check_orin.py` |
 
 The numbers of the subsection "Degraded inputs" (Sec. 6.5: SCI enhancer in front of NoMaD, and the single-task LoRA
@@ -79,7 +82,11 @@ A first session of the G1 fair-protocol graphs ran with the GPU clock not locked
 included. Rebuilding `lut_<task>.csv` with `t6/lut.py table` needs the exported graphs in `results/T6/lut/onnx/<task>/`
 (their hashes select the runs; every LUT row carries `onnx_sha256`). `t6/buildvar_orin.py table` needs the TensorRT
 per-layer dumps, which are not included; its result is `buildvar_builds_p*.csv`, from which `summary`, `ratios` and
-`cited_csv` rebuild the other build-variance tables.
+`cited_csv` rebuild the other build-variance tables. Likewise `robustness_B/bv_g3.py table` fills the per-layer tactic
+columns of `g3_buildvar_builds.csv` only when the per-layer dumps are present; its latency columns are rebuilt from
+`raw_orin1_bvg3/`. `robustness_B/audit.py` also reports two descriptive ratios from the void unlocked G1 session
+(rows "clock: unlocked DVFS session" of `Ca_g1_dannG_vs_mlp.csv`); since that session is not included, a re-run
+without it omits these two rows and leaves every other row unchanged.
 
 ## Setup
 
@@ -136,6 +143,7 @@ Rebuild the tables from the released per-run files (CPU, minutes; T4a needs the 
 (cd src/t6  && python fair_summary.py && python g2_fair_summary.py && python energy_table.py)
 (cd src/figs_journal && for f in f2_decomp f3_tiers f4_g2fair f5_v3; do python $f.py; done)
 (cd src/t4a && python make_tables.py && python v3_verdict.py && python v3_verdict.py --fix)
+python src/robustness_B/audit.py              # results/robustness_B/C*.csv, energy_coverage.csv
 ```
 
 Re-running experiments:

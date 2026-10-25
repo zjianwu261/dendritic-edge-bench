@@ -1,0 +1,34 @@
+{
+ "adc_h1024_ffrand__gemm": {
+  "dir": "g3",
+  "onnx_sha256": "32742cb8a3ded6cd00bf4e5b4222cc6a0b218d9d1e0cf25b44bf2fadec41c2c8"
+ },
+ "adc_h1024_ffrand__conv": {
+  "dir": "g3",
+  "onnx_sha256": "4172f4b68a308889d5081445fed46c390a9b3eb61169d5c1a9857bdde98a02cf"
+ },
+ "adc_h2048_ffrand__gemm": {
+  "dir": "g3",
+  "onnx_sha256": "81ec0d48f5a473345cce382304be2151144063f75b3a57188f40b8a9d6ae253e"
+ },
+ "adc_h2048_ffrand__conv": {
+  "dir": "g3",
+  "onnx_sha256": "750b9bb37cdb71a821174ab08260d9049cfde4fedb718c3d92348554f3bbb872"
+ },
+ "mlp_h1024__gemm": {
+  "dir": "g3",
+  "onnx_sha256": "edb9aed9cb2a312c851072796e7d41f06c7848eb9c826b24dff6c339396927b8"
+ },
+ "mlp_h1024__conv": {
+  "dir": "g3",
+  "onnx_sha256": "a1c3fa4b375ba8f4285d8fe5d9201f1300ab86f3d6a71b31f0a1ec1378eb19b1"
+ },
+ "mlp_h2048__gemm": {
+  "dir": "g3",
+  "onnx_sha256": "a430849e8476f11ccd3ab3a062e9bf68ac29fc946764f362b900a7c0927544cf"
+ },
+ "mlp_h2048__conv": {
+  "dir": "g3",
+  "onnx_sha256": "326f9d9c8c872b12a7c72633f222a47a05a349ed5ee2906608d9b41dbf9861cb"
+ }
+}

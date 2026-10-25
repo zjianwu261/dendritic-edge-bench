@@ -1,0 +1,51 @@
+claim,section,item,n,value,lo,hi,holds,source,note
+C-a,seed,test acc m32 (dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair),3,0.9033,0.9028,0.9039,,T6/models/g1/dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t*.json,SD(ddof1)=0.0006; per-seed 0.9039 0.9028 0.9032; fair_summary test_mean 0.9033
+C-a,seed,test acc h128 (mlp_h128_lr0.001_wd0_fair),3,0.8895,0.888,0.8925,,T6/models/g1/mlp_h128_lr0.001_wd0_fair_t*.json,SD(ddof1)=0.0026; per-seed 0.8880 0.8880 0.8925; fair_summary test_mean 0.8895
+C-a,seed,test acc h256 (mlp_h256_lr0.0003_wd0_fair),3,0.8929,0.892,0.894,,T6/models/g1/mlp_h256_lr0.0003_wd0_fair_t*.json,SD(ddof1)=0.0010; per-seed 0.8928 0.8920 0.8940; fair_summary test_mean 0.8929
+C-a,seed,test acc h512 (mlp_h512_lr0.0003_wd0.01_fair),3,0.8952,0.8925,0.8975,,T6/models/g1/mlp_h512_lr0.0003_wd0.01_fair_t*.json,SD(ddof1)=0.0025; per-seed 0.8925 0.8957 0.8975; fair_summary test_mean 0.8952
+C-a,seed,test acc h1024 (mlp_h1024_lr0.0003_wd0_fair),3,0.8953,0.8928,0.8971,,T6/models/g1/mlp_h1024_lr0.0003_wd0_fair_t*.json,SD(ddof1)=0.0022; per-seed 0.8960 0.8928 0.8971; fair_summary test_mean 0.8953
+C-a,seed,test acc c32_64 (cnn_c32_64_lr0.001_wd0.01_fair),3,0.907,0.9056,0.9086,,T6/models/g1/cnn_c32_64_lr0.001_wd0.01_fair_t*.json,SD(ddof1)=0.0015; per-seed 0.9056 0.9068 0.9086; fair_summary test_mean 0.907
+C-a,seed,gap m32 - MLP h128 (pp),3 vs 3,1.38,1.03,1.59,True,per-seed json,"lo = worst seed pairing (min m32 - max MLP), hi = best pairing; Welch t = 9.0"
+C-a,seed,gap m32 - MLP h256 (pp),3 vs 3,1.0367,0.88,1.19,True,per-seed json,"lo = worst seed pairing (min m32 - max MLP), hi = best pairing; Welch t = 15.6"
+C-a,seed,gap m32 - MLP h512 (pp),3 vs 3,0.8067,0.53,1.14,True,per-seed json,"lo = worst seed pairing (min m32 - max MLP), hi = best pairing; Welch t = 5.4"
+C-a,seed,gap m32 - MLP h1024 (pp),3 vs 3,0.8,0.57,1.11,True,per-seed json,"lo = worst seed pairing (min m32 - max MLP), hi = best pairing; Welch t = 6.0"
+C-a,seed,claimed range 0.8-1.4 pp above every MLP width,,0.8,0.8,1.38,True,,mean gaps; latency/ timing used seed-1 weights only (g1f_*_t1 graphs); no per-seed latency
+C-a,sensitivity,selection rule: test-oracle best grid cell MLP h128 vs val-selected m32 (pp),4,1.38,,,True,T6/models/g1,oracle cell mlp_h128_lr0.001_wd0_fair test 0.8895
+C-a,sensitivity,selection rule: test-oracle best grid cell MLP h256 vs val-selected m32 (pp),4,1.0367,,,True,T6/models/g1,oracle cell mlp_h256_lr0.0003_wd0_fair test 0.8929
+C-a,sensitivity,selection rule: test-oracle best grid cell MLP h512 vs val-selected m32 (pp),4,0.8067,,,True,T6/models/g1,oracle cell mlp_h512_lr0.0003_wd0.01_fair test 0.8952
+C-a,sensitivity,selection rule: test-oracle best grid cell MLP h1024 vs val-selected m32 (pp),4,0.8,,,True,T6/models/g1,oracle cell mlp_h1024_lr0.0003_wd0_fair test 0.8953
+C-a,build,latency ratio m32 / mlp_h256 median of 5 builds (cited cells),5 x 5,1.125,,,,T6/lut/buildvar_builds_p1.csv,claimed 1.12; cells g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm|nocublas / g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv|nocublas
+C-a,build,"latency ratio m32 / mlp_h256 worst / best pairing, cited cells",5 x 5,1.147,0.929,1.147,False,T6/lut/buildvar_builds_p1.csv,value = hi = worst case for dANN-G (slowest m32 build / fastest mlp_h256 build); lo = best case (fastest m32 / slowest mlp_h256); m32 builds 0.1178 0.1180 0.1164 0.1168 0.1171; mlp_h256 builds 0.1041 0.1035 0.1042 0.1029 0.1253; holds = dANN-G still slower (ratio > 1) in the best case
+C-a,build,"latency ratio m32 / mlp_h256 per build index, fastest cell each side",5,,1.117,1.14,True,T6/lut/buildvar_builds_p1.csv,
+C-a,build,latency ratio m32 / mlp_h256 best-of-5 builds (deployer keeps fastest engine),5 x 2-4 cells,1.131,,,True,T6/lut/buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 (bmm|nocublas) / mlp_h256 conv|default (medians),,1.035,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 (bmm|nocublas) / mlp_h256 conv|nocublas (medians),,1.125,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 (bmm|nocublas) / mlp_h256 gemm|default (medians),,1.024,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 (bmm|nocublas) / mlp_h256 gemm|nocublas (medians),,1.125,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 bmm|default / mlp_h256 (conv|nocublas) (medians),,1.304,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 bmm|nocublas / mlp_h256 (conv|nocublas) (medians),,1.125,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,timing scope infer_only_p50_ms: m32 / mlp_h256,5 builds,1.151,,,,raw/orin1_bv1/results.jsonl,0.1031 / 0.0896 ms (median over builds)
+C-a,sensitivity,timing scope p95_ms: m32 / mlp_h256,5 builds,1.173,,,,raw/orin1_bv1/results.jsonl,0.1414 / 0.1205 ms (median over builds)
+C-a,build,latency ratio m32 / mlp_h128 median of 5 builds (cited cells),5 x 5,1.196,,,,T6/lut/buildvar_builds_p1.csv,claimed 1.2; cells g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm|nocublas / g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm|nocublas
+C-a,build,"latency ratio m32 / mlp_h128 worst / best pairing, cited cells",5 x 5,1.216,1.185,1.216,True,T6/lut/buildvar_builds_p1.csv,value = hi = worst case for dANN-G (slowest m32 build / fastest mlp_h128 build); lo = best case (fastest m32 / slowest mlp_h128); m32 builds 0.1178 0.1180 0.1164 0.1168 0.1171; mlp_h128 builds 0.0979 0.0979 0.0980 0.0970 0.0982; holds = dANN-G still slower (ratio > 1) in the best case
+C-a,build,"latency ratio m32 / mlp_h128 per build index, fastest cell each side",5,,1.188,1.205,True,T6/lut/buildvar_builds_p1.csv,
+C-a,build,latency ratio m32 / mlp_h128 best-of-5 builds (deployer keeps fastest engine),5 x 2-4 cells,1.2,,,True,T6/lut/buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 (bmm|nocublas) / mlp_h128 conv|default (medians),,1.116,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 (bmm|nocublas) / mlp_h128 conv|nocublas (medians),,1.164,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 (bmm|nocublas) / mlp_h128 gemm|default (medians),,1.057,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 (bmm|nocublas) / mlp_h128 gemm|nocublas (medians),,1.196,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 bmm|default / mlp_h128 (gemm|nocublas) (medians),,1.386,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,impl|flag: m32 bmm|nocublas / mlp_h128 (gemm|nocublas) (medians),,1.196,,,,buildvar_builds_p1.csv,
+C-a,sensitivity,timing scope infer_only_p50_ms: m32 / mlp_h128,5 builds,1.241,,,,raw/orin1_bv1/results.jsonl,0.1031 / 0.0831 ms (median over builds)
+C-a,sensitivity,timing scope p95_ms: m32 / mlp_h128,5 builds,1.303,,,,raw/orin1_bv1/results.jsonl,0.1414 / 0.1085 ms (median over builds)
+C-a,build,"context: m32 / mlp_h512 median, worst, best",5 x 5,0.703,0.689,0.711,True,buildvar_builds_p1.csv,
+C-a,build,"context: m32 / mlp_h1024 median, worst, best",5 x 5,0.575,0.569,0.589,True,buildvar_builds_p1.csv,
+C-a,sensitivity,"E-7 single session (one build, 10 runs, locked): m32 / h128",,1.159,,,,T6/lut/lut_g1f.csv,0.1168 / 0.1008 ms
+C-a,sensitivity,random-weight LUT graphs (one build): dannG_p4_m32_s64_sg1 / mlp_h128 (g1v2),,1.205,,,,T6/lut/lut_g1.csv (mlp rows = lut_g1v2),"0.1192 / 0.0989 ms; weights = random init, not seed-1"
+C-a,sensitivity,clock: unlocked DVFS session 10-19 (not comparable): m32 / h128,,1.199,,,,T6/lut/lut_g1f_unlocked.csv,"governor picked ~306 MHz for these graphs; confounded, descriptive only"
+C-a,sensitivity,"E-7 single session (one build, 10 runs, locked): m32 / h256",,1.127,,,,T6/lut/lut_g1f.csv,0.1168 / 0.1036 ms
+C-a,sensitivity,random-weight LUT graphs (one build): dannG_p4_m32_s64_sg1 / mlp_h256 (g1v2),,1.146,,,,T6/lut/lut_g1.csv (mlp rows = lut_g1v2),"0.1192 / 0.104 ms; weights = random init, not seed-1"
+C-a,sensitivity,clock: unlocked DVFS session 10-19 (not comparable): m32 / h256,,1.096,,,,T6/lut/lut_g1f_unlocked.csv,"governor picked ~306 MHz for these graphs; confounded, descriptive only"
+C-a,sensitivity,batch size / power mode / FP32 / Pi thread count,,,,,,,"not in the data: batch 1, 15 W, FP16-allowed builds only; no Pi timing of the fair G1 models"
+C-a,sensitivity,on-device FP16 accuracy of the fair G1 models,,,,,,,not measured (orin_test_acc_t1 is the PyTorch seed-1 accuracy); T1 dANN-LRF FP16 delta was -0.01 pp
+C-a,energy,energy dANN-G / MLP (fair G1),,,,,,,not measured (fair_summary orin_energy = not_measured); claim states latency only

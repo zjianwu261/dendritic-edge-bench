@@ -1,0 +1,62 @@
+claim,section,item,n,value,lo,hi,holds,source,note
+C-d,build,"h1024: AD-cache / MLP latency, LUT (one engine per impl x flag, 3 runs)",1 build/flag,1.613,,,,T6/lut/lut_g3.csv,0.3117 / 0.1932 ms; claimed 1.4-1.6
+C-d,build,"h1024: AD-cache / MLP, LUT runs, worst/best over impl x flag x runs (fastest-cell rule)",,,1.514,1.894,,,lo = fastest AD-cache run / slowest MLP run; spans slow cells too
+C-d,build,"h2048: AD-cache / MLP latency, LUT (one engine per impl x flag, 3 runs)",1 build/flag,1.431,,,,T6/lut/lut_g3.csv,0.4665 / 0.3259 ms; claimed 1.4-1.6
+C-d,build,"h2048: AD-cache / MLP, LUT runs, worst/best over impl x flag x runs (fastest-cell rule)",,,1.408,1.499,,,lo = fastest AD-cache run / slowest MLP run; spans slow cells too
+C-d,build,h1024: AD-cache / MLP median of 5 fresh builds (cited cells),5 x 5,1.563,,,,robustness_B/g3_buildvar_builds.csv,"cells gemm|nocublas / gemm|nocublas; AD 0.3077 [0.3057-0.3097], MLP 0.1969 [0.1909-0.2000]"
+C-d,build,"h1024: AD-cache / MLP worst / best pairing, cited cells",,1.622,1.528,1.622,True,,worst for AD-cache = slowest AD build / fastest MLP build; holds = AD-cache still slower in the best case
+C-d,build,h1024: AD-cache / MLP best-of-builds over all impl x flag,,1.601,,,,,
+C-d,build,"h1024: AD-cache / MLP per build index, fastest cell each side",5,,1.554,1.601,,,
+C-d,build,adc_h1024_ffrand__gemm default: fresh builds p50 (ms),5,0.3169,0.3114,0.3228,,,spread 1.037; builds 0.3176 0.3169 0.3151 0.3114 0.3228; original 10-02 engine re-timed now: 0.3077; LUT 10-02: 0.3126
+C-d,build,adc_h1024_ffrand__gemm nocublas: fresh builds p50 (ms),5,0.3077,0.3057,0.3097,,,spread 1.013; builds 0.3077 0.3097 0.3084 0.3057 0.3059; original 10-02 engine re-timed now: 0.3089; LUT 10-02: 0.3117
+C-d,build,adc_h1024_ffrand__conv default: fresh builds p50 (ms),5,0.3331,0.3315,0.352,,,spread 1.062; builds 0.3463 0.3331 0.3520 0.3315 0.3322; original 10-02 engine re-timed now: 0.3518; LUT 10-02: 0.3499
+C-d,build,adc_h1024_ffrand__conv nocublas: fresh builds p50 (ms),5,0.332,0.3294,0.3337,,,spread 1.013; builds 0.3335 0.3337 0.3303 0.3320 0.3294; original 10-02 engine re-timed now: 0.3339; LUT 10-02: 0.3334
+C-d,build,mlp_h1024__gemm default: fresh builds p50 (ms),5,0.1978,0.1969,0.2,,,spread 1.016; builds 0.1988 0.1978 0.1973 0.2000 0.1969; original 10-02 engine re-timed now: 0.1957; LUT 10-02: 0.2008
+C-d,build,mlp_h1024__gemm nocublas: fresh builds p50 (ms),5,0.1969,0.1909,0.2,,,spread 1.048; builds 0.1967 0.1969 0.1994 0.1909 0.2000; original 10-02 engine re-timed now: 0.1975; LUT 10-02: 0.1932
+C-d,build,mlp_h1024__conv default: fresh builds p50 (ms),5,0.1973,0.1942,0.198,,,spread 1.020; builds 0.1951 0.1979 0.1942 0.1973 0.1980; original 10-02 engine re-timed now: 0.1984; LUT 10-02: 0.1995
+C-d,build,mlp_h1024__conv nocublas: fresh builds p50 (ms),5,0.1974,0.1955,0.199,,,spread 1.018; builds 0.1955 0.1990 0.1977 0.1957 0.1974; original 10-02 engine re-timed now: 0.1988; LUT 10-02: 0.1997
+C-d,build,h2048: AD-cache / MLP median of 5 fresh builds (cited cells),5 x 5,1.417,,,,robustness_B/g3_buildvar_builds.csv,"cells gemm|default / gemm|nocublas; AD 0.4641 [0.4623-0.4787], MLP 0.3276 [0.3260-0.3347]"
+C-d,build,"h2048: AD-cache / MLP worst / best pairing, cited cells",,1.468,1.381,1.468,True,,worst for AD-cache = slowest AD build / fastest MLP build; holds = AD-cache still slower in the best case
+C-d,build,h2048: AD-cache / MLP best-of-builds over all impl x flag,,1.419,,,,,
+C-d,build,"h2048: AD-cache / MLP per build index, fastest cell each side",5,,1.414,1.438,,,
+C-d,build,adc_h2048_ffrand__gemm default: fresh builds p50 (ms),5,0.4641,0.4623,0.4787,,,spread 1.035; builds 0.4771 0.4641 0.4623 0.4787 0.4626; original 10-02 engine re-timed now: 0.4695; LUT 10-02: 0.4695
+C-d,build,adc_h2048_ffrand__gemm nocublas: fresh builds p50 (ms),5,0.4671,0.4659,0.4685,,,spread 1.006; builds 0.4685 0.4661 0.4659 0.4673 0.4671; original 10-02 engine re-timed now: 0.468; LUT 10-02: 0.4665
+C-d,build,adc_h2048_ffrand__conv default: fresh builds p50 (ms),5,0.4796,0.4781,0.4832,,,spread 1.011; builds 0.4826 0.4832 0.4788 0.4796 0.4781; original 10-02 engine re-timed now: 0.4803; LUT 10-02: 0.4817
+C-d,build,adc_h2048_ffrand__conv nocublas: fresh builds p50 (ms),5,0.4852,0.4823,0.5029,,,spread 1.043; builds 0.5029 0.4894 0.4852 0.4843 0.4823; original 10-02 engine re-timed now: 0.4863; LUT 10-02: 0.4845
+C-d,build,mlp_h2048__gemm default: fresh builds p50 (ms),5,0.3283,0.3259,0.3303,,,spread 1.014; builds 0.3259 0.3303 0.3283 0.3296 0.3283; original 10-02 engine re-timed now: 0.3274; LUT 10-02: 0.3259
+C-d,build,mlp_h2048__gemm nocublas: fresh builds p50 (ms),5,0.3276,0.326,0.3347,,,spread 1.027; builds 0.3347 0.3270 0.3287 0.3276 0.3260; original 10-02 engine re-timed now: 0.3295; LUT 10-02: 0.3278
+C-d,build,mlp_h2048__conv default: fresh builds p50 (ms),5,0.3276,0.3267,0.329,,,spread 1.007; builds 0.3285 0.3290 0.3269 0.3267 0.3276; original 10-02 engine re-timed now: 0.3268; LUT 10-02: 0.3278
+C-d,build,mlp_h2048__conv nocublas: fresh builds p50 (ms),5,0.3287,0.3265,0.3371,,,spread 1.032; builds 0.3279 0.3292 0.3287 0.3265 0.3371; original 10-02 engine re-timed now: 0.3242; LUT 10-02: 0.33
+C-d,sensitivity,width h256: AD-cache ffrand / MLP (LUT best),,2.8,,,,,0.2584 / 0.0923
+C-d,sensitivity,width h512: AD-cache ffrand / MLP (LUT best),,1.694,,,,,0.261 / 0.1541
+C-d,sensitivity,width h1024: AD-cache ffrand / MLP (LUT best),,1.613,,,,,0.3117 / 0.1932
+C-d,sensitivity,width h2048: AD-cache ffrand / MLP (LUT best),,1.431,,,,,0.4665 / 0.3259
+C-d,sensitivity,width h4096: AD-cache ffrand / MLP (LUT best),,1.25,,,,,0.9867 / 0.7896
+C-d,sensitivity,"2:4 sparse gates (ff24, sparse build) h1024: AD-cache / MLP",,1.43,,,,,0.2762 / 0.1932; ff24 accuracy not re-checked here
+C-d,sensitivity,"2:4 sparse gates (ff24, sparse build) h2048: AD-cache / MLP",,1.217,,,,,0.3966 / 0.3259; ff24 accuracy not re-checked here
+C-d,sensitivity,"2:4 sparse gates (ff24, sparse build) h4096: AD-cache / MLP",,0.964,,,,,0.7613 / 0.7896; ff24 accuracy not re-checked here
+C-d,sensitivity,comparator = dense MLP with context input (mlpctx) h1024,,1.229,,,,,
+C-d,sensitivity,h1024 impl gemm flag default: AD-cache / MLP,,1.557,,,,lut_g3.csv,
+C-d,sensitivity,h1024 impl gemm flag nocublas: AD-cache / MLP,,1.613,,,,lut_g3.csv,
+C-d,sensitivity,h1024 impl conv flag default: AD-cache / MLP,,1.754,,,,lut_g3.csv,
+C-d,sensitivity,h1024 impl conv flag nocublas: AD-cache / MLP,,1.67,,,,lut_g3.csv,
+C-d,sensitivity,comparator = dense MLP with context input (mlpctx) h2048,,1.159,,,,,
+C-d,sensitivity,h2048 impl gemm flag default: AD-cache / MLP,,1.441,,,,lut_g3.csv,
+C-d,sensitivity,h2048 impl gemm flag nocublas: AD-cache / MLP,,1.423,,,,lut_g3.csv,
+C-d,sensitivity,h2048 impl conv flag default: AD-cache / MLP,,1.469,,,,lut_g3.csv,
+C-d,sensitivity,h2048 impl conv flag nocublas: AD-cache / MLP,,1.468,,,,lut_g3.csv,
+C-d,sensitivity,"T1 active_dend_k4 / mlp_h3592_match_k4: Orin DVFS p50, locked energy-window mean, energy, RPi",,1.362,1.362,1.383,,,locked mean 1.383; energy 1.136; RPi 1.217; 1 seed
+C-d,sensitivity,"T1 active_dend_k4_cached / mlp_h3592_match_k4: Orin DVFS p50, locked energy-window mean, energy, RPi",,0.664,0.664,0.673,,,locked mean 0.673; energy 0.369; RPi 0.394; 1 seed
+C-d,sensitivity,"T1 active_dend_k8 / mlp_h4965_match_k8: Orin DVFS p50, locked energy-window mean, energy, RPi",,1.247,1.244,1.247,,,locked mean 1.244; energy 1.048; RPi 1.113; 1 seed
+C-d,sensitivity,"T1 active_dend_k8_cached / mlp_h4965_match_k8: Orin DVFS p50, locked energy-window mean, energy, RPi",,0.417,0.417,0.422,,,locked mean 0.422; energy 0.191; RPi 0.219; 1 seed
+C-d,seed,test acc adc_h256_k4_ffrand_lr0.0005_wd0_fair,3,0.8736,,,,,SD 0.0128; latency graphs are random-weight LUT graphs (not trained weights)
+C-d,seed,test acc adc_h512_k4_ffrand_lr0.0005_wd0_fair,3,0.9093,,,,,SD 0.0017; latency graphs are random-weight LUT graphs (not trained weights)
+C-d,seed,test acc adc_h1024_k4_ffrand_lr0.001_wd0_fair,3,0.9256,,,,,SD 0.0017; latency graphs are random-weight LUT graphs (not trained weights)
+C-d,seed,test acc adc_h2048_k4_ffrand_lr0.0005_wd0_fair,3,0.9474,,,,,SD 0.0006; latency graphs are random-weight LUT graphs (not trained weights)
+C-d,seed,test acc mlpctx_h256_lr0.0005_wd0.01_fair,3,0.6178,,,,,SD 0.018; latency graphs are random-weight LUT graphs (not trained weights)
+C-d,seed,test acc mlpctx_h512_lr0.0005_wd0.01_fair,3,0.6273,,,,,SD 0.0323; latency graphs are random-weight LUT graphs (not trained weights)
+C-d,seed,test acc mlpctx_h1024_lr0.0005_wd0.01_fair,3,0.5878,,,,,SD 0.0173; latency graphs are random-weight LUT graphs (not trained weights)
+C-d,seed,test acc mlpctx_h2048_lr0.0005_wd0_fair,3,0.6313,,,,,SD 0.0097; latency graphs are random-weight LUT graphs (not trained weights)
+C-d,energy,"h1024: AD-cache / MLP energy (gemm, nocublas engine)","3 runs each, 1 engine",1.119,1.114,1.127,,T6/energy_compare.csv,0.7083 vs 0.6331 mJ; energy-window mean latency ratio 1.587
+C-d,energy,"h2048: AD-cache / MLP energy (gemm, nocublas engine)","3 runs each, 1 engine",1.016,1.012,1.022,,T6/energy_compare.csv,1.7967 vs 1.7678 mJ; energy-window mean latency ratio 1.417
+C-d,energy,"AD-cache energy at h256/h512/h4096, ff24, conv form",,,,,,,not measured

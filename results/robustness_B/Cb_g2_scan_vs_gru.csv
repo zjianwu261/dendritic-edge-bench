@@ -1,0 +1,54 @@
+claim,section,item,n,value,lo,hi,holds,source,note
+C-b,seed,LRU H64 N128: val / test,3,0.8928,0.8697,0.917,,T6/models/g2/lru_L2_H64_N128_lr0.001_vs_t*.json,val 0.8708+-0.0150 (per seed 0.885 0.872 0.855); test 0.8928+-0.0236 (per seed 0.870 0.917 0.892)
+C-b,seed,GRU h768: val / test,3,0.8707,0.8551,0.8812,,T6/models/g2/gru_h768_lr0.003_vs_t*.json,val 0.8537+-0.0146 (per seed 0.849 0.842 0.870); test 0.8707+-0.0138 (per seed 0.881 0.876 0.855)
+C-b,seed,DH-SSM n256 b4 cont: val / test,3,0.8501,0.8158,0.8701,,T6/models/g2/dhssm_L2_n256_b4_cont_vs_t*.json,val 0.8184+-0.0180 (per seed 0.798 0.832 0.825); test 0.8501+-0.0298 (per seed 0.816 0.864 0.870)
+C-b,seed,diag-SSM n128 spk: val / test,3,0.8709,0.8436,0.8913,,T6/models/g2/dssmU_L2_n128_b4_spk_vs_t*.json,val 0.8224+-0.0047 (per seed 0.822 0.818 0.827); test 0.8709+-0.0246 (per seed 0.878 0.891 0.844)
+C-b,seed,DH-SSM n128 b4 cont: val / test,3,0.8797,0.8587,0.8958,,T6/models/g2/dhssm_L2_n128_b4_cont_vs_t*.json,val 0.8147+-0.0348 (per seed 0.803 0.854 0.787); test 0.8797+-0.0191 (per seed 0.885 0.896 0.859)
+C-b,seed,DH-SSM n128 b4 spk: val / test,3,0.8601,0.8379,0.8728,,T6/models/g2/dhssm_L2_n128_b4_spk_vs_t*.json,val 0.8141+-0.0249 (per seed 0.843 0.803 0.796); test 0.8601+-0.0193 (per seed 0.873 0.870 0.838)
+C-b,seed,LSTM h512: val / test,3,0.8591,0.8516,0.8701,,T6/models/g2/lstm_h512_lr0.003_vs_t*.json,val 0.8095+-0.0158 (per seed 0.814 0.823 0.792); test 0.8591+-0.0098 (per seed 0.870 0.856 0.852)
+C-b,seed,val-best config in each seed (all speaker-split configs),3,,,,False,,seed 1: lru_L2_H64_N128_lr0.001 0.8854; seed 2: lru_L2_H64_N128_lr0.001 0.8717; seed 3: gru_h768_lr0.003 0.8700
+C-b,seed,"val gap LRU - GRU h768 (pp), paired by seed",3,1.7109,-1.4542,3.5928,False,,Welch t = 1.4
+C-b,seed,"test gap LRU - GRU h768 (pp), paired by seed",3,2.2085,-1.1484,4.1078,,,Welch t = 1.4
+C-b,sensitivity,lr: LRU H64 at lr 3e-3 instead of 1e-3,,0.7873,,,,,val 0.7873 (test 0.8182); LRU H128 N256 lr3e-3 collapses (val 0.387): LRU is val-best only at lr 1e-3; GRU h768 lr1e-3 val 0.8278
+C-b,build,LRU H64 N128 default engine p50 (ms),"1 build, 3 runs",2.78,2.7794,2.7871,,T6/raw/orin1/results.jsonl,label lru_L2_H64_N128_lr0.001_vs_t1__K50; sessions 2026-10-08; all runs at 624.75 MHz
+C-b,build,LRU H64 N128 nocublas engine p50 (ms),"1 build, 3 runs",2.7771,2.7746,2.7784,,T6/raw/orin1/results.jsonl,label lru_L2_H64_N128_lr0.001_vs_t1__K50; sessions 2026-10-08; all runs at 624.75 MHz
+C-b,build,diag-SSM n128 spk default engine p50 (ms),"1 build, 3 runs",3.5363,3.53,3.539,,T6/raw/orin1/results.jsonl,label dssmU_L2_n128_b4_spk_vs_t1__K50; sessions 2026-10-08; all runs at 624.75 MHz
+C-b,build,diag-SSM n128 spk nocublas engine p50 (ms),"1 build, 3 runs",3.5319,3.5296,3.5368,,T6/raw/orin1/results.jsonl,label dssmU_L2_n128_b4_spk_vs_t1__K50; sessions 2026-10-08; all runs at 624.75 MHz
+C-b,build,DH-SSM n128 b4 cont default engine p50 (ms),"1 build, 3 runs",2.5925,2.5891,2.5938,,T6/raw/orin1/results.jsonl,label dhssm_L2_n128_b4_cont__K25; sessions 2026-10-02; all runs at 624.75 MHz
+C-b,build,DH-SSM n128 b4 cont nocublas engine p50 (ms),"1 build, 3 runs",2.5917,2.5904,2.5989,,T6/raw/orin1/results.jsonl,label dhssm_L2_n128_b4_cont__K25; sessions 2026-10-02; all runs at 624.75 MHz
+C-b,build,DH-SSM n128 b4 spk default engine p50 (ms),"1 build, 6 runs",2.7417,2.7116,2.7593,,T6/raw/orin1/results.jsonl,label dhssm_L2_n128_b4_spk__K25; sessions 2026-10-01 2026-10-02; all runs at 624.75 MHz
+C-b,build,DH-SSM n128 b4 spk nocublas engine p50 (ms),"1 build, 6 runs",2.7327,2.7117,2.9487,,T6/raw/orin1/results.jsonl,label dhssm_L2_n128_b4_spk__K25; sessions 2026-10-01 2026-10-02; all runs at 624.75 MHz
+C-b,build,DH-SSM n256 b4 cont default engine p50 (ms),"1 build, 3 runs",4.1782,4.1768,4.1793,,T6/raw/orin1/results.jsonl,label dhssm_L2_n256_b4_cont__K25; sessions 2026-10-02; all runs at 624.75 MHz
+C-b,build,DH-SSM n256 b4 cont nocublas engine p50 (ms),"1 build, 3 runs",4.1868,4.1852,4.1926,,T6/raw/orin1/results.jsonl,label dhssm_L2_n256_b4_cont__K25; sessions 2026-10-02; all runs at 624.75 MHz
+C-b,build,GRU h768 default engine p50 (ms),"1 build, 3 runs",88.4487,88.1587,88.7584,,T6/raw/orin1/results.jsonl,label gru_h768_lr0.003_vs_t1__seq; sessions 2026-10-08; all runs at 624.75 MHz
+C-b,build,GRU h768 nocublas engine p50 (ms),"1 build, 3 runs",91.3283,91.3144,91.5802,,T6/raw/orin1/results.jsonl,label gru_h768_lr0.003_vs_t1__seq; sessions 2026-10-08; all runs at 624.75 MHz
+C-b,build,"scan family bests (LRU, diag-SSM, DH-SSM n256) latency range, best flag (ms)",,,2.7771,4.1782,,,claimed 2.8-4.2 ms
+C-b,build,GRU h768 / scan model latency ratio: worst (slowest scan run vs fastest GRU run) / best,,21.17,21.03,33.01,True,,value = GRU best flag / slowest family best
+C-b,build,TRT build-to-build spread not measured for G2,,,,,,,"each G2 graph x flag has exactly one engine (the 10-08 re-runs reused the 10-02 engines); G1 data show up to 1.22x per rebuild, which cannot close a 20-33x gap but can move the LRU vs DH-SSM n128 comparison"
+C-b,build,LRU / DH-SSM n128 b4 cont latency (best flag; run-range extremes),,1.072,1.068,1.076,,,LRU graph is K50; DH-SSM rows K25
+C-b,build,LRU / DH-SSM n128 b4 spk latency (best flag; run-range extremes),,1.016,0.941,1.028,,,LRU graph is K50; DH-SSM rows K25
+C-b,build,LRU / DH-SSM n256 b4 cont latency (best flag; run-range extremes),,0.665,0.662,0.667,,,LRU graph is K50; DH-SSM rows K25
+C-b,build,LRU / diag-SSM n128 spk latency (best flag; run-range extremes),,0.786,0.784,0.79,,,LRU graph is K50; DH-SSM rows K25
+C-b,sensitivity,chunk length K: dhssm_L2_n128_b4_cont,,2.5917,2.5917,2.7631,,T6/lut/lut_g2.csv,K25=2.5917 K50=2.7631; LRU K50 = 2.7771
+C-b,sensitivity,chunk length K: dhssm_L2_n128_b4_spk,,2.7327,2.7327,3.976,,T6/lut/lut_g2.csv,K100=3.976 K25=2.7327 K50=2.8063; LRU K50 = 2.7771
+C-b,sensitivity,chunk length K: dhssm_L2_n256_b4_cont,,4.1782,4.1782,4.4332,,T6/lut/lut_g2.csv,K25=4.1782 K50=4.4332; LRU K50 = 2.7771
+C-b,sensitivity,LRU / DH-SSM n128 cont at equal K=50,,1.005,,,,,2.7771 / 2.7631 ms
+C-b,sensitivity,scan range over all K (family bests + n128 DH-SSM),,,2.5917,4.4332,,,K100 DH-SSM spk 3.98 ms; widens the claimed 2.8-4.2 to about 2.6-4.5 ms
+C-b,sensitivity,weights timed,,,,,,,"LRU / diag-SSM / GRU h768: seed-1 speaker-split weights (g2x); DH-SSM rows: lut_g2 graphs (T1r-era weights, not the speaker-split models). Scan latency is weight-independent in structure, but not re-timed per seed"
+C-b,sensitivity,"on-device FP16 vs FP32 accuracy, seed 1: lru_L2_H64_N128_lr0.001_vs_t1 (pp)",2264,0.0,,,,T6/device_fp16_acc.csv,
+C-b,sensitivity,"on-device FP16 vs FP32 accuracy, seed 1: dssmU_L2_n128_b4_spk_vs_t1 (pp)",2264,0.0,,,,T6/device_fp16_acc.csv,
+C-b,sensitivity,"on-device FP16 vs FP32 accuracy, seed 1: gru_h768_lr0.003_vs_t1 (pp)",2264,-0.13,,,,T6/device_fp16_acc.csv,
+C-b,sensitivity,"on-device FP16 vs FP32 accuracy, seed 1: dhssm_L2_n128_b4_cont_vs_t1 (pp)",2264,0.0,,,,T6/device_fp16_acc.csv,
+C-b,sensitivity,"on-device FP16 vs FP32 accuracy, seed 1: dhssm_L2_n256_b4_cont_vs_t1 (pp)",2264,0.09,,,,T6/device_fp16_acc.csv,
+C-b,sensitivity,GRU h768 flag: default 88.45 vs nocublas 91.33 ms,,1.033,,,,,ratio nocublas/default; energy run (nocublas) mean 91.4 ms
+C-b,energy,LRU H64 N128 E_net (mJ/inference),"3 runs, 1 engine (nocublas)",13.057,13.06,13.18,,T6/energy_compare.csv,"locked 624.75 MHz, net of idle"
+C-b,energy,diag-SSM n128 spk E_net (mJ/inference),"3 runs, 1 engine (nocublas)",19.7381,19.71,19.77,,T6/energy_compare.csv,"locked 624.75 MHz, net of idle"
+C-b,energy,DH-SSM n128 b4 cont E_net (mJ/inference),"3 runs, 1 engine (nocublas)",13.5992,13.57,13.61,,T6/energy_compare.csv,"locked 624.75 MHz, net of idle"
+C-b,energy,DH-SSM n128 b4 spk E_net (mJ/inference),"3 runs, 1 engine (nocublas)",13.6792,13.67,13.69,,T6/energy_compare.csv,"locked 624.75 MHz, net of idle"
+C-b,energy,DH-SSM n256 b4 cont E_net (mJ/inference),"3 runs, 1 engine (nocublas)",24.3033,24.0,24.31,,T6/energy_compare.csv,"locked 624.75 MHz, net of idle"
+C-b,energy,GRU h768 E_net (mJ/inference),"3 runs, 1 engine (nocublas)",555.4877,554.4,556.8,,T6/energy_compare.csv,"locked 624.75 MHz, net of idle"
+C-b,energy,energy ratio LRU / DH-SSM n128 b4 cont,,0.96,0.96,0.971,,,lo/hi = run-range extremes
+C-b,energy,energy ratio LRU / DH-SSM n128 b4 spk,,0.955,0.954,0.964,,,lo/hi = run-range extremes
+C-b,energy,energy ratio LRU / DH-SSM n256 b4 cont,,0.537,0.537,0.549,,,lo/hi = run-range extremes
+C-b,energy,energy ratio LRU / diag-SSM n128 spk,,0.662,0.661,0.669,,,lo/hi = run-range extremes
+C-b,energy,energy ratio LRU / GRU h768,,0.024,0.023,0.024,,,lo/hi = run-range extremes
