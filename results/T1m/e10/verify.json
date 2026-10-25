@@ -1,0 +1,218 @@
+{
+ "dann_d16_s64": {
+  "tag": "dann_d16_s64_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 40661,
+  "xdata_bytes": 913,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_prng_d16_s128": {
+  "tag": "dann_prng_d16_s128_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 43018,
+  "xdata_bytes": 979,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_prng_d20_s128": {
+  "tag": "dann_prng_d20_s128_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 52768,
+  "xdata_bytes": 979,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "mlp_h48": {
+  "tag": "mlp_h48_lr0.001_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 42710,
+  "xdata_bytes": 957,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "mlp_h64": {
+  "tag": "mlp_h64_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 57201,
+  "xdata_bytes": 987,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "cnn_c2_4": {
+  "tag": "cnn_c2_4_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 8666,
+  "xdata_bytes": 1453,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "cnn_c3_6": {
+  "tag": "cnn_c3_6_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 9788,
+  "xdata_bytes": 1747,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "cnn_c4_8": {
+  "tag": "cnn_c4_8_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 10895,
+  "xdata_bytes": 2041,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "cnn_c6_12": {
+  "tag": "cnn_c6_12_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 13245,
+  "xdata_bytes": 2629,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "cnn_c8_16": {
+  "tag": "cnn_c8_16_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 15720,
+  "xdata_bytes": 3217,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "mlp_h72": {
+  "tag": "mlp_h72_lr0.001_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 64749,
+  "xdata_bytes": 1005,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "cnn_c16_32": {
+  "tag": "cnn_c16_32_lr0.001_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 27112,
+  "xdata_bytes": 5569,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_prng_d32_s96": {
+  "tag": "dann_prng_d32_s96_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 62126,
+  "xdata_bytes": 949,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_prng_d24_s128": {
+  "tag": "dann_prng_d24_s128_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 62463,
+  "xdata_bytes": 979,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "cnn_c32_64": {
+  "tag": "cnn_c32_64_lr0.001_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 56809,
+  "xdata_bytes": 7127,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_d24_s64": {
+  "tag": "dann_d24_s64_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 59627,
+  "xdata_bytes": 913,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_prng_d24_s64": {
+  "tag": "dann_prng_d24_s64_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 32530,
+  "xdata_bytes": 915,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_prng_d16_s64": {
+  "tag": "dann_prng_d16_s64_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 22801,
+  "xdata_bytes": 915,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "mlp_h32": {
+  "tag": "mlp_h32_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 28652,
+  "xdata_bytes": 923,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_d8_s64": {
+  "tag": "dann_d8_s64_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 21716,
+  "xdata_bytes": 913,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_prng_d8_s64": {
+  "tag": "dann_prng_d8_s64_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 13070,
+  "xdata_bytes": 915,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_d8_s32": {
+  "tag": "dann_d8_s32_lr0.01_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 11879,
+  "xdata_bytes": 881,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "dann_prng_d8_s32": {
+  "tag": "dann_prng_d8_s32_lr0.003_wd0.01_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 7827,
+  "xdata_bytes": 883,
+  "uart_build_ok": true,
+  "fits": true
+ },
+ "mlp_h16": {
+  "tag": "mlp_h16_lr0.003_wd0_t1",
+  "pc_bitexact_logits": "10000/10000",
+  "pc_bitexact_class": "10000/10000",
+  "flash_bytes": 15083,
+  "xdata_bytes": 891,
+  "uart_build_ok": true,
+  "fits": true
+ }
+}

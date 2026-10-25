@@ -29,10 +29,12 @@ def main():
     ap.add_argument("--port", default="/dev/ttyUSB0")
     ap.add_argument("--baud", type=int, default=115200)
     ap.add_argument("--f_mhz", type=float, required=True, help="actual SYSclk after stcgal trim")
+    ap.add_argument("--bdir", default=None, help="build dir with pc_infer (default results/T1m/build/<tag>); "
+                    "E-10b board runs pass results/T1m/e10/build/<cell>_t1")
     a = ap.parse_args()
     import serial  # pyserial
 
-    bdir = f"{EXP}/build/{a.tag}"
+    bdir = a.bdir or f"{EXP}/build/{a.tag}"
     xte, yte = load_fmnist_u8()["test"]
     x = xte[:a.n]
     # expected logits from the PC build of the same C code

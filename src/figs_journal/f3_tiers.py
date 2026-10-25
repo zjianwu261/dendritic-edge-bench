@@ -11,10 +11,26 @@ Source CSVs:
   results/T1m/results.csv         (b) all T1m dANN / MLP models: flash_bytes, acc_int8 (3-seed mean), cycles_ucsim_mc
   results/T1m/cnn/cnn_results.csv (b) CNNs: same columns
   results/T1m/board_summary.csv   (b) which models are board-measured; f3b-alt-latency.pdf: board_ms vs flash_bytes
+  results/T1m/e10/results.csv     (b) E-10 (default): for its 10 models acc = test_int8_mean, flash = flash_bytes_e10
+                                      (cycles unchanged); `--no-e10` = the pre-E-10 figure, written as f3-tiers-noe10.pdf.
+                                      Fronts: src/mcu/fronts_e10.py.
 """
 import csv
+import sys
 
 from style import COL1, COL2, OI, ROOT, plt, save
+
+E10 = "--no-e10" not in sys.argv
+
+
+def e10_rows():
+    """model -> (acc, flash_bytes, ucsim cycles) from E-10 / E-10b, or {} with --no-e10.
+    E-10b (2026-10-25): e10/results.csv covers all 24 deployable rows; cycles = E-10/E-10b seed-1 build (R-101)."""
+    if not E10:
+        return {}
+    return {r["model"]: (float(r["test_int8_mean"]), float(r["flash_bytes_e10"]),
+                         r.get("ucsim_cycles_e10build") or r["ucsim_cycles"])
+            for r in csv.DictReader(open(f"{ROOT}/results/T1m/e10/results.csv"))}
 
 GROUPS = {"G1 dANN / Fashion-MNIST": ("G1 Fashion-MNIST (locked)", OI["blue"]),
           "G2 SHD (full sequence T=1000)": ("G2 SHD sequence (DVFS)", OI["vermillion"]),
@@ -59,8 +75,9 @@ def main():
     panel_b(b)
     b.set_title("(b) 8051 MCU: int8 accuracy vs flash", loc="left")
     fig.tight_layout(w_pad=1.5)
-    save(fig, "f3-tiers.pdf")
-    alt_latency()
+    save(fig, "f3-tiers.pdf" if E10 else "f3-tiers-noe10.pdf")
+    if E10:
+        alt_latency()
 
 
 def pareto(pts):
@@ -81,6 +98,9 @@ def panel_b(b):
     board = {r["model"].rsplit("_t", 1)[0] for r in csv.DictReader(open(f"{ROOT}/results/T1m/board_summary.csv"))}
     P = [(r["model"], r["kind"], float(r["flash_bytes"]) / 1024, float(r["acc_int8"]), r["cycles_ucsim_mc"]) for r in res]
     P += [(r["model"], "cnn", float(r["flash_bytes"]) / 1024, float(r["acc_int8"]), r["cycles_ucsim_mc"]) for r in cnn]
+    E = e10_rows()
+    P = [(m, k, E[m][1] / 1024, E[m][0], E[m][2]) if m in E else (m, k, x, y, c) for m, k, x, y, c in P]
+    assert not E10 or sum(m in E for m, *_ in P) == 24
     STY = {"dann": (OI["blue"], "o", "dANN"), "mlp": (OI["orange"], "s", "MLP"), "cnn": (OI["green"], "^", "CNN")}
     size = lambda c: 8 + 12 * (float(c) / 1e6) ** 0.5 if c else 14  # noqa: E731  (no ucsim run: does not fit)
     for m, k, x, y, cyc in P:
@@ -96,19 +116,28 @@ def panel_b(b):
     b.axvline(63.5, color=OI["vermillion"], lw=0.7, ls=":")
     b.text(66, 84.75, "63.5 KiB flash limit", fontsize=7, ha="left", va="bottom", color=OI["vermillion"])
     # label text positions in data coordinates (KiB, %), chosen by hand to avoid overlap; leader lines to the points
-    # PRNG labels split onto two lines and placed clear of the dashed front's vertical step (x = 26.5 KiB) and of the
-    # 63.5 KiB line; labels also for the board-measured CNNs c4-8 / c6-12.
-    LAB = {"cnn_c8_16": ("CNN c8-16", (11.5, 89.5), "center"), "cnn_c6_12": ("CNN c6-12", (9.0, 88.65), "center"),
-           "cnn_c4_8": ("CNN c4-8", (8.6, 87.6), "center"),
-           "dann_prng_d16_s128": ("dANN-PRNG\nd16 s128", (28.5, 89.42), "left"),
-           "dann_prng_d20_s128": ("dANN-PRNG\nd20 s128", (67, 89.95), "left"), "mlp_h64": ("MLP h64", (80, 88.25), "left"),
-           "dann_d16_s64": ("dANN d16 s64", (80, 87.65), "left"), "mlp_h48": ("MLP h48", (30, 86.95), "center")}
+    # R-088: PRNG labels split onto two lines and moved clear of the dashed front's vertical step (x = 26.5 KiB) and of the
+    # 63.5 KiB line; labels added for the board-measured E-9 CNNs c4-8 / c6-12.
+    LAB_OLD = {"cnn_c8_16": ("CNN c8-16", (11.5, 89.5), "center"), "cnn_c6_12": ("CNN c6-12", (9.0, 88.65), "center"),
+               "cnn_c4_8": ("CNN c4-8", (8.6, 87.6), "center"),
+               "dann_prng_d16_s128": ("dANN-PRNG\nd16 s128", (28.5, 89.42), "left"),
+               "dann_prng_d20_s128": ("dANN-PRNG\nd20 s128", (67, 89.95), "left"), "mlp_h64": ("MLP h64", (80, 88.25), "left"),
+               "dann_d16_s64": ("dANN d16 s64", (80, 87.65), "left"), "mlp_h48": ("MLP h48", (30, 86.95), "center")}
+    # E-10 positions (re-placed 2026-10-25: d20_s128 now 89.27 %, next to c8_16 89.19 %; h64 88.16 % below d16_s64 88.32 %)
+    LAB_E10 = {"cnn_c8_16": ("CNN c8-16", (11.5, 89.5), "center"), "cnn_c6_12": ("CNN c6-12", (9.0, 88.65), "center"),
+               "cnn_c4_8": ("CNN c4-8", (8.6, 87.6), "center"),
+               "dann_prng_d16_s128": ("dANN-PRNG\nd16 s128", (17.5, 88.68), "left"),
+               "dann_prng_d20_s128": ("dANN-PRNG\nd20 s128", (67, 89.95), "left"), "mlp_h64": ("MLP h64", (80, 87.65), "left"),
+               "dann_d16_s64": ("dANN d16 s64", (30, 86.62), "center"), "mlp_h48": ("MLP h48", (41, 87.3), "left")}
+    # E-10b (2026-10-25): PRNG d32_s96 (60.7 KiB, 89.42 %) now sits under the d20_s128 leader -> label raised
+    LAB_E10["dann_prng_d20_s128"] = ("dANN-PRNG\nd20 s128", (35, 90.2), "center")
+    LAB = LAB_E10 if E10 else LAB_OLD
     for m, k, x, y, _ in P:
         if m in LAB:
             t, (tx, ty), ha = LAB[m]
             b.annotate(t, (x, 100 * y), xytext=(tx, ty), textcoords="data", fontsize=7, ha=ha, va="center",
                        arrowprops=dict(arrowstyle="-", lw=0.4, color="0.45", shrinkA=1, shrinkB=3), zorder=5)
-    b.set_xscale("log"); b.set_xlim(7, 170); b.set_ylim(84.6, 91.2)  # lower limit below cnn_c2_4 (84.93%)
+    b.set_xscale("log"); b.set_xlim(7, 170); b.set_ylim(84.6, 91.2)  # R-088: was 85.2, which clipped cnn_c2_4 (84.93%)
     b.set_xticks([8, 16, 32, 63.5, 128]); b.set_xticklabels(["8", "16", "32", "63.5", "128"])
     b.minorticks_off()
     b.set_xlabel("8051 flash (KiB, log)"); b.set_ylabel("int8 test accuracy (%)")
@@ -128,10 +157,17 @@ def alt_latency():
     fig, b = plt.subplots(figsize=(COL1, 2.5))
     br = list(csv.DictReader(open(f"{ROOT}/results/T1m/board_summary.csv")))
     LAB = {"cnn_c8_16_t1": "CNN c8-16", "cnn_c4_8_t1": "CNN c4-8", "cnn_c6_12_t1": "CNN c6-12", "dann_d16_s64_t1": "dANN d16 s64", "dann_prng_d16_s128_t1": "dANN-PRNG d16 s128",
-           "dann_prng_d20_s128_t1": "dANN-PRNG d20 s128", "mlp_h48_t1": "MLP h48", "mlp_h64_t1": "MLP h64"}
+           "dann_prng_d20_s128_t1": "dANN-PRNG d20 s128", "mlp_h48_t1": "MLP h48", "mlp_h64_t1": "MLP h64",
+           # E-10b board runs 2026-10-25 (E-10b seed-1 builds)
+           "dann_d8_s32_t1": "dANN d8 s32", "dann_d8_s64_t1": "dANN d8 s64", "cnn_c2_4_t1": "CNN c2-4", "cnn_c3_6_t1": "CNN c3-6"}
     OFF = {"cnn_c8_16_t1": (6, 0), "cnn_c4_8_t1": (6, 0), "cnn_c6_12_t1": (6, 0), "dann_d16_s64_t1": (6, 0), "dann_prng_d16_s128_t1": (-6, 0),
-           "dann_prng_d20_s128_t1": (-6, 0), "mlp_h48_t1": (-6, 0), "mlp_h64_t1": (0, -9)}
+           "dann_prng_d20_s128_t1": (0, 6), "mlp_h48_t1": (0, -7), "mlp_h64_t1": (0, -9),  # E-10b: log y -> re-placed
+           "dann_d8_s32_t1": (6, 0), "dann_d8_s64_t1": (6, 0), "cnn_c2_4_t1": (6, 0), "cnn_c3_6_t1": (6, 0)}
+    E = e10_rows()
     for r in br:
+        m0 = r["model"].rsplit("_t", 1)[0]
+        if m0 in E:  # E-10 accuracy / flash (board_ms unchanged)
+            r["acc_int8_mean3"], r["flash_bytes"] = E[m0][:2]
         d = r["model"].startswith("dann")
         c = OI["blue"] if d else (OI["orange"] if r["model"].startswith("mlp") else OI["green"])
         x, y = float(r["flash_bytes"]) / 1024, float(r["board_ms"])
@@ -140,10 +176,11 @@ def alt_latency():
         dx, dy = OFF[r["model"]]
         b.annotate(f"{LAB[r['model']]}, {100 * float(r['acc_int8_mean3']):.1f}%", (x, y), xytext=(dx, dy),
                    textcoords="offset points", fontsize=7, ha="left" if dx > 0 else ("right" if dx < 0 else "center"),
-                   va="center" if dy == 0 else "top")
+                   va="center" if dy == 0 else ("bottom" if dy > 0 else "top"))
     b.axvline(63.5, color=OI["vermillion"], lw=0.6, ls=":")
-    b.text(62.8, 158, "63.5 KiB", fontsize=7, rotation=90, ha="right", va="top", color=OI["vermillion"])
-    b.set_xlim(5, 68); b.set_ylim(20, 160)
+    b.text(62.8, 8.5, "63.5 KiB", fontsize=7, rotation=90, ha="right", va="bottom", color=OI["vermillion"])
+    b.set_xlim(5, 68); b.set_ylim(8, 200); b.set_yscale("log")  # E-10b: 11 ms point added -> log y
+    b.set_yticks([10, 20, 50, 100, 200]); b.set_yticklabels(["10", "20", "50", "100", "200"]); b.minorticks_off()
     b.set_xlabel("flash (KiB)"); b.set_ylabel("board latency per image (ms, 35 MHz)")
     save(fig, "f3b-alt-latency.pdf")
 

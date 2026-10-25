@@ -253,7 +253,9 @@ def summary():
     # cnn_c8_16 row by name (the c4_8 / c6_12 rows, 0.852, are listed first)
     kc = [float(r["board_over_ucsim"]) for r in csv.DictReader(open(f"{EXP}/board_summary.csv")) if r["model"].startswith("cnn_c8_16_")]
     kc = kc[0] if kc else None
-    bsum = {r["model"].rsplit("_t", 1)[0]: r for r in csv.DictReader(open(f"{EXP}/board_summary.csv")) if r["model"].startswith("cnn_")}
+    # E-10b (2026-10-25): cnn_c2_4 / c3_6 board rows timed the E-10 cell builds, not these first-run (fair-cfg) models -> skip
+    bsum = {r["model"].rsplit("_t", 1)[0]: r for r in csv.DictReader(open(f"{EXP}/board_summary.csv"))
+            if r["model"].startswith("cnn_") and r.get("build", "first-run") == "first-run"}
     by = {}
     for f in sorted(glob.glob(f"{OUT}/cnn_*_t*.json")):
         d = json.load(open(f))
