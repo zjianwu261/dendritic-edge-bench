@@ -17,7 +17,7 @@ import csv
 from style import COL1, OI, ROOT, plt, save
 
 SCAN, STEP = OI["blue"], OI["vermillion"]
-FAM = {"dhssm": ("DH-SSM", SCAN, "o", True), "dssmU": ("diag. SSM", SCAN, "s", False), "lru": ("LRU", SCAN, "D", False),
+FAM = {"dhssm": ("DH-SSM", SCAN, "o", True), "dssmU": ("dssmU (diag. SSM)", SCAN, "s", False), "lru": ("LRU", SCAN, "D", False),
        "gru": ("GRU", STEP, "^", False), "lstm": ("LSTM", STEP, "v", False)}
 REF = {"dhssm_L2_n128_b4_cont", "dhssm_L2_n128_b4_spk"}
 
@@ -53,7 +53,7 @@ def main():
     # n128 cont label placed up-left so it does not run into the LRU marker / error bar; its leader
     # starts at the label's lower-right corner (REL) so it passes above the grey context error bar at 1.95 ms
     # labels: text positions in data coords (ms, %), offset sideways from error bars; leader lines
-    LAB = {"lru_L2_H64_N128": ("LRU", (5.0, 91.2)), "dssmU_L2_n128_b4_spk": ("diag. SSM", (7.0, 88.9)),
+    LAB = {"lru_L2_H64_N128": ("LRU", (5.0, 91.2)), "dssmU_L2_n128_b4_spk": ("dssmU\n(diag. SSM)", (7.0, 88.9)),
            "dhssm_L2_n256_b4_cont": ("DH-SSM n256\n(val-best)", (8.5, 82.3)),
            "dhssm_L2_n128_b4_cont": ("DH-SSM\nn128 cont", (1.36, 91.0)), "dhssm_L2_n128_b4_spk": ("n128 spk", (1.3, 84.9)),
            "gru_h768": ("GRU h768", (60, 89.6)), "gru_h256": ("h256", (31, 84.2)), "gru_h128": ("h128", (29, 78.0))}
