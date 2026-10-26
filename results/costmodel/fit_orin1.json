@@ -1,0 +1,138 @@
+{
+ "tier": "orin1",
+ "model": "T = a + kappa*K + F/phi + B/beta",
+ "n_calib": 81,
+ "calib_graphs": [
+  "dense_D1024_s128__conv",
+  "dense_D1024_s256__conv",
+  "dense_D2048_s128__conv",
+  "dense_D2048_s128__gemm",
+  "dense_D2048_s256__conv",
+  "dense_D2048_s256__gemm",
+  "dense_D4096_s128__conv",
+  "dense_D4096_s128__gemm",
+  "dense_D4096_s256__conv",
+  "dense_D4096_s256__gemm",
+  "dense_D512_s128__conv",
+  "dense_D512_s256__conv",
+  "dssmU_L2_n128_b4_spk_vs_t1__K50",
+  "g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv",
+  "g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv",
+  "g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv",
+  "g1f_mlp_h1024_lr0.0003_wd0_fair_t1__conv",
+  "g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm",
+  "g1f_mlp_h128_lr0.001_wd0_fair_t1__conv",
+  "g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm",
+  "g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv",
+  "g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm",
+  "g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__conv",
+  "g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm",
+  "g1v2_mlp_h1024__conv",
+  "g1v2_mlp_h1024__gemm",
+  "g1v2_mlp_h128__conv",
+  "g1v2_mlp_h128__gemm",
+  "g1v2_mlp_h2048__conv",
+  "g1v2_mlp_h2048__gemm",
+  "g1v2_mlp_h256__conv",
+  "g1v2_mlp_h256__gemm",
+  "g1v2_mlp_h32__conv",
+  "g1v2_mlp_h32__gemm",
+  "g1v2_mlp_h4096__conv",
+  "g1v2_mlp_h4096__gemm",
+  "g1v2_mlp_h512__conv",
+  "g1v2_mlp_h512__gemm",
+  "g1v2_mlp_h64__conv",
+  "g1v2_mlp_h64__gemm",
+  "g1x2_lrelu_dsb_h256__gemm",
+  "g1x2_lrelu_dsb_h512__gemm",
+  "g1x2_lrelu_shz_h256__gemm",
+  "g1x2_lrelu_shz_h512__gemm",
+  "g1x2_relu_dsb_h256__gemm",
+  "g1x2_relu_dsb_h512__gemm",
+  "g1x2_relu_shz_h256__gemm",
+  "g1x2_relu_shz_h512__gemm",
+  "gru_acc_val_seqloop",
+  "gru_h23_seqloop",
+  "gru_pm_val_seqloop",
+  "lif_srnn_n64_seqloop",
+  "lif_srnn_n64_step",
+  "lif_srnn_n64_val_seqloop",
+  "lru_L2_H64_N128_lr0.001_vs_t1__K50",
+  "mlp_h1024__conv",
+  "mlp_h1024__gemm",
+  "mlp_h1024_fmnist",
+  "mlp_h128__conv",
+  "mlp_h128__gemm",
+  "mlp_h2048__conv",
+  "mlp_h2048__gemm",
+  "mlp_h256__conv",
+  "mlp_h256__gemm",
+  "mlp_h256_fmnist",
+  "mlp_h3592_match_k4",
+  "mlp_h3941_matchstored_k4",
+  "mlp_h4096__conv",
+  "mlp_h4096__gemm",
+  "mlp_h4965_match_k8",
+  "mlp_h512__conv",
+  "mlp_h512__gemm",
+  "mlp_h512_fmnist",
+  "mlp_h5230_matchstored_k8",
+  "mlp_h85_match_d32_s128",
+  "mlpctx_h1024__gemm",
+  "mlpctx_h2048__gemm",
+  "mlpctx_h256__gemm",
+  "mlpctx_h4096__gemm",
+  "mlpctx_h512__gemm",
+  "vann_same_d32_s128"
+ ],
+ "fit_info": {
+  "nnls_init": [
+   0.3249119356156574,
+   0.0018195520618065901,
+   0.0,
+   2.6724260800461966e-08
+  ],
+  "cost": 1.3059303775152449,
+  "status": 2,
+  "rmse_log": 0.17956946986208222
+ },
+ "constants": {
+  "a_ms": 0.09686565424353297,
+  "kappa_ms_per_node": 0.0018154942883362943,
+  "inv_phi_ms_per_MAC": 8.768634044437815e-09,
+  "inv_beta_ms_per_weight": 3.3168053889362165e-08
+ },
+ "derived": {
+  "phi_MAC_per_ms": 114042848.05731258,
+  "beta_weights_per_ms": 30149492.74189178
+ },
+ "bootstrap": {
+  "n": 1000,
+  "seed": "numpy default_rng(20261026)",
+  "ci95": {
+   "a_ms": [
+    0.08789966007574472,
+    0.10497530726327876
+   ],
+   "kappa_ms_per_node": [
+    0.001250539812245015,
+    0.0029067078477078606
+   ],
+   "inv_phi_ms_per_MAC": [
+    1.4526184419730346e-33,
+    1.4615610704915484e-08
+   ],
+   "inv_beta_ms_per_weight": [
+    2.5858983593892047e-08,
+    4.232758973773012e-08
+   ]
+  },
+  "median": {
+   "a_ms": 0.09688368010743655,
+   "kappa_ms_per_node": 0.001817294317339179,
+   "inv_phi_ms_per_MAC": 8.684803295830283e-09,
+   "inv_beta_ms_per_weight": 3.325502070147773e-08
+  }
+ },
+ "protocol_sha256": "bb3f0e1d660d3930f3ece6a135f03ba0d8220bbbde3f4fc2a49add465694c148"
+}

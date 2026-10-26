@@ -1,0 +1,48 @@
+## captured 2026-10-26T08:25:14+08:00 on orin (read-only; jetson_clocks / nvpmodel not run)
+## /etc/nv_tegra_release
+# R36 (release), REVISION: 4.3, GCID: 38968081, BOARD: generic, EABI: aarch64, DATE: Wed Jan  8 01:49:37 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia
+## nvidia-l4t-core / jetpack packages
+cuda-runtime-12-6 12.6.11-1
+libcudnn9-cuda-12 9.6.0.74-1
+libnvinfer10 10.7.0.23-1+cuda12.6
+nvidia-l4t-core 36.4.3-20250107174145
+tensorrt 10.7.0.23-1+cuda12.6
+## python TensorRT
+10.7.0 1.26.4 3.10.12
+## trtexec
+&&&& RUNNING TensorRT.trtexec [TensorRT v100700] [b23] # /usr/src/tensorrt/bin/trtexec --help
+## nvpmodel -q
+NV Power Mode: MAXN_SUPER
+2
+## GPU devfreq governor min cur max available
+nvhost_podgov
+306000000
+306000000
+1020000000
+306000000 408000000 510000000 612000000 714000000 816000000 918000000 1020000000
+## CPU cpufreq per cpu: governor min cur max
+cpu0 schedutil 729600 1728000 1728000
+cpu1 schedutil 729600 1728000 1728000
+cpu2 schedutil 729600 1728000 1728000
+cpu3 schedutil 729600 1728000 1728000
+cpu4 schedutil 729600 729600 1728000
+cpu5 schedutil 729600 729600 1728000
+## jetson_clocks --show (needs root; not attempted)
+## EMC
+cat: /sys/kernel/debug/bpmp/debug/clk/emc/rate: Permission denied
+## uname
+Linux orin 5.15.148-tegra #1 SMP PREEMPT Tue Jan 7 17:14:38 PST 2025 aarch64 aarch64 aarch64 GNU/Linux
+## memory
+               total        used        free      shared  buff/cache   available
+Mem:            7619        4181         169         137        3268        3063
+Swap:          12001         659       11342
+## pre-existing processes of note (not touched)
+   2124 Fri Sep 25 15:16:48 2026 /bin/sh -c python3 ~/software/oled_orin/orin_oled.pyc
+   2144 Fri Sep 25 15:16:48 2026 python3 ~/software/oled_orin/orin_oled.pyc
+3294776 Mon Sep 28 13:11:33 2026 tegrastats --interval 200 --logfile logs/iat_480x640_fp16.tegrastats
+3377965 Mon Sep 28 13:40:54 2026 /opt/ros/humble/lib/joy/joy_node --ros-args
+3377967 Mon Sep 28 13:40:54 2026 /usr/bin/python3 ~/orincar_ros2_ws/orincar_ws/install/orincar_ctrl/lib/orincar_ctrl/orin_joy_M1 --ros-args
+3377969 Mon Sep 28 13:40:54 2026 /usr/bin/python3 ~/orincar_ros2_ws/orincar_ws/install/orincar_bringup/lib/orincar_bringup/Mcnamu_driver_M1 --ros-args

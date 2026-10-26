@@ -4,7 +4,8 @@
  * receptive fields regenerated on chip by rf_gen(), no index tables) or MODEL_MLP, the shift
  * constants SH1/SH2, the layer sizes and the weight tables (all const, placed in __code).
  * MODEL_CNN = conv3x3 s2 p1 (1->C1) - ReLU - conv3x3 s2 p1 (C1->C2) - ReLU - fc,
- * integer semantics in src/mcu/cnn_t1m.py (ref_forward_cnn). */
+ * integer semantics in src/mcu/cnn_t1m.py (ref_forward_cnn). MODEL_CNNVAR = the CNN variants of
+ * src/mcu/cnnvar.py (infer_cnnvar_defs.inc / infer_cnnvar.inc, generated per model). */
 #include "infer.h"
 #include "model.h"
 #ifdef MODEL_DANN_PRNG
@@ -13,7 +14,7 @@
 
 XDATA int32_t logits[N_OUT];
 const CODE char model_name[] = MODEL_NAME;
-#ifndef MODEL_CNN
+#if !defined(MODEL_CNN) && !defined(MODEL_CNNVAR)
 static XDATA int8_t a2[H2];
 #endif
 #ifdef MODEL_CNN
@@ -58,7 +59,7 @@ static int32_t dot_s8(const CODE int8_t *w, const XDATA int8_t *x, uint16_t n, i
     return a;
 }
 
-#if defined(MODEL_MLP) || (defined(MODEL_CNN) && !defined(CNN_FUSED))
+#if defined(MODEL_MLP) || (defined(MODEL_CNN) && !defined(CNN_FUSED)) || defined(MODEL_CNNVAR)
 /* dense dot product, uint8 input (first layer: raw pixels) */
 static int32_t dot_u8(const CODE int8_t *w, const XDATA uint8_t *x, uint16_t n, int32_t acc)
 {
@@ -75,7 +76,7 @@ static int32_t dot_u8(const CODE int8_t *w, const XDATA uint8_t *x, uint16_t n, 
 }
 #endif
 
-#ifdef MODEL_CNN
+#if defined(MODEL_CNN) || defined(MODEL_CNNVAR)
 /* shifted accumulator -> ReLU activation 0..127 */
 static uint8_t relu8(int32_t t)
 {
@@ -95,6 +96,10 @@ static uint8_t relu8(int32_t t)
 #define TAPS_TOP(W) do { T(0, 3); T(1, 4); T(2, 5); T(W, 6); T(W + 1, 7); T(W + 2, 8); } while (0)
 #define TAPS_LEFT(W) do { T(0, 1); T(1, 2); T(W, 4); T(W + 1, 5); T(2 * W, 7); T(2 * W + 1, 8); } while (0)
 #define TAPS_CORNER(W) do { T(0, 4); T(1, 5); T(W, 7); T(W + 1, 8); } while (0)
+#endif
+
+#ifdef MODEL_CNNVAR
+#include "infer_cnnvar_defs.inc"
 #endif
 
 uint8_t infer(const XDATA uint8_t *x)
@@ -227,6 +232,8 @@ uint8_t infer(const XDATA uint8_t *x)
             best = c;
     }
     return best;
+#elif defined(MODEL_CNNVAR)
+#include "infer_cnnvar.inc"
 #else
     const CODE int8_t *pw = w1;
     for (j = 0; j < H1; j++, pw += N_IN)
@@ -235,7 +242,7 @@ uint8_t infer(const XDATA uint8_t *x)
     for (j = 0; j < H2; j++, pw += H1)
         a2[j] = act((dot_s8(pw, a1, H1, b2[j]) + RND(SH2)) >> SH2);
 #endif
-#ifndef MODEL_CNN
+#if !defined(MODEL_CNN) && !defined(MODEL_CNNVAR)
     best = 0;
     for (c = 0; c < N_OUT; c++) {
         logits[c] = dot_s8(w3 + (uint16_t)c * H2, a2, H2, b3[c]);

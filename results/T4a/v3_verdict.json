@@ -1,5 +1,5 @@
 {
- "rule": "stop-loss rule (pre-registered 2026-10-03): S1 dend2 id <= 0.95 x lora_bank r10 id (test act_mse_gc final avg, 3 seeds) and lower in >= 2/3 seeds; S2 dend2 infer ctx acc >= 0.85",
+ "rule": "stop-loss rule (pre-specified in the internal project plan, 2026-10-03): S1 dend2 id <= 0.95 x lora_bank r10 id (test act_mse_gc final avg, 3 seeds) and lower in >= 2/3 seeds; S2 dend2 infer ctx acc >= 0.85",
  "dend2_selection": {
   "rule": "lowest VALIDATION act_mse_gc final_avg (context id, seed 0, v3 main order) among configs with trainable params <= 5% of the backbone; test numbers not looked at",
   "candidates": [

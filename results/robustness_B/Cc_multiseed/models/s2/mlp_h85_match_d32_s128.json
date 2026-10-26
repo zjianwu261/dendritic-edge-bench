@@ -1,0 +1,29 @@
+{
+ "name": "mlp_h85_match_d32_s128",
+ "group": "dann_fmnist",
+ "dataset": "Fashion-MNIST",
+ "model": "mlp",
+ "dends": 32,
+ "soma": 128,
+ "synapses": 16,
+ "epochs": 25,
+ "trial": 2,
+ "test_acc": 0.889,
+ "val_acc_last": 0.8965,
+ "params_effective": 74895,
+ "params_stored": 74895,
+ "dann_params_effective": 75146,
+ "shape": [
+  784,
+  85,
+  85,
+  10
+ ],
+ "export": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/mlp_h85_match_d32_s128.onnx",
+  "size_MB": 0.286,
+  "nodes": 5,
+  "max_abs_err_vs_torch": 2.86102294921875e-06,
+  "export_s": 0.2
+ }
+}

@@ -1,0 +1,78 @@
+## 2026-10-26T18:19:15+08:00 label=s1b0_dann_lrf_d32_s128 tag=r1_1026181910 engine=s1b0_dann_lrf_d32_s128_fp16_nocublas_d124a47749c7.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 49125
+GPU-therm 47468
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 47125
+SOC1-therm 48000
+SOC2-therm 47093
+tj-therm 49250
+## loadavg
+0.08 0.26 0.50 1/248 515023
+## MemAvailable_MB 6178
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+ 514633  2.1  8868       00:07 /lib/systemd/systemd --user
+    258  0.3     0  7-08:30:17 [nvmap-bz]
+ 514920  0.2  7592       00:05 sshd: maverick [priv]
+    129  0.1     0  7-08:30:25 [irq/124-host_sy]
+      1  0.0  7652  7-08:30:29 /sbin/init 2
+      2  0.0     0  7-08:30:29 [kthreadd]
+      3  0.0     0  7-08:30:29 [rcu_gp]
+## trtexec processes
+## 2026-10-26T18:20:16+08:00 label=s1b0_dann_lrf_d32_s128 tag=r1_1026181910 engine=s1b0_dann_lrf_d32_s128_fp16_nocublas_d124a47749c7.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 50781
+GPU-therm 48843
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 48750
+SOC1-therm 49656
+SOC2-therm 48687
+tj-therm 51218
+## loadavg
+1.00 0.49 0.57 2/253 519913
+## MemAvailable_MB 6163
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+    258  0.3     0  7-08:31:17 [nvmap-bz]
+ 514633  0.2  8868       01:07 /lib/systemd/systemd --user
+    129  0.1     0  7-08:31:25 [irq/124-host_sy]
+      1  0.0  7760  7-08:31:29 /sbin/init 2
+      2  0.0     0  7-08:31:29 [kthreadd]
+      3  0.0     0  7-08:31:29 [rcu_gp]
+      4  0.0     0  7-08:31:29 [rcu_par_gp]
+## trtexec processes

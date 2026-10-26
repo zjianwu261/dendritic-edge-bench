@@ -1,0 +1,41 @@
+{
+ "cnnpool_c16_32": {
+  "tag": "cnnpool_c16_32_lr0.003_wd0_t1",
+  "n": 5,
+  "cycles": 13731111.4,
+  "cycles_min": 13729650,
+  "cycles_max": 13732909,
+  "instr": 9895096.2,
+  "sim_flash": 16919,
+  "sim_xdata": 1383,
+  "ucsim_bitexact_logits": "5/5",
+  "ucsim_bitexact_class": "5/5",
+  "macs": 177744
+ },
+ "cnnpool_c2_4": {
+  "tag": "cnnpool_c2_4_lr0.003_wd0.01_t1",
+  "n": 5,
+  "cycles": 591959.0,
+  "cycles_min": 591774,
+  "cycles_max": 592191,
+  "instr": 416273.6,
+  "sim_flash": 9639,
+  "sim_xdata": 445,
+  "ucsim_bitexact_logits": "5/5",
+  "ucsim_bitexact_class": "5/5",
+  "macs": 6034
+ },
+ "cnns4_c2_4": {
+  "tag": "cnns4_c2_4_lr0.01_wd0_t1",
+  "n": 5,
+  "cycles": 555284.2,
+  "cycles_min": 554951,
+  "cycles_max": 555549,
+  "instr": 394986.4,
+  "sim_flash": 10023,
+  "sim_xdata": 373,
+  "ucsim_bitexact_logits": "5/5",
+  "ucsim_bitexact_class": "5/5",
+  "macs": 6416
+ }
+}

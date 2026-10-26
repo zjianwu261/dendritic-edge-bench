@@ -1,0 +1,15 @@
+test_danng_m32 (src.costmodel.tests.test_costmodel_features.HandCountedGraphs.test_danng_m32) ... ok
+test_dhsrnn_loop (src.costmodel.tests.test_costmodel_features.HandCountedGraphs.test_dhsrnn_loop) ... ok
+test_mlp_h128 (src.costmodel.tests.test_costmodel_features.HandCountedGraphs.test_mlp_h128) ... ok
+test_cnn_c2_4 (src.costmodel.tests.test_costmodel_features.MCUCounts.test_cnn_c2_4) ... ok
+test_cnns4_c2_4 (src.costmodel.tests.test_costmodel_features.MCUCounts.test_cnns4_c2_4) ... ok
+test_dann_d16_s64 (src.costmodel.tests.test_costmodel_features.MCUCounts.test_dann_d16_s64) ... ok
+test_mlp_h48 (src.costmodel.tests.test_costmodel_features.MCUCounts.test_mlp_h48) ... ok
+test_prng_d16_s128 (src.costmodel.tests.test_costmodel_features.MCUCounts.test_prng_d16_s128) ... ok
+test_grouped_conv_and_masked_gemm (src.costmodel.tests.test_costmodel_features.SyntheticGraphs.test_grouped_conv_and_masked_gemm) ... ok
+test_loop_multiplies_body (src.costmodel.tests.test_costmodel_features.SyntheticGraphs.test_loop_multiplies_body) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.514s
+
+OK

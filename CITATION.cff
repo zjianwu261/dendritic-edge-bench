@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or these results, please cite the paper below."
-title: "dendritic-edge-bench: code and results for 'When Do Dendritic Networks Pay Off on Robot Edge Hardware? A Deployment and Adaptation Study'"
+title: "dendritic-edge-bench: code and results for 'When Do Dendritic Networks Pay Off on Robot Edge Hardware? A Mapping-Aware Cost Model Tested on GPU, CPU and 8-bit MCU'"
 type: software
 authors:
   - family-names: Zhang
@@ -27,7 +27,7 @@ keywords:
   - continual learning
 preferred-citation:
   type: article
-  title: "When Do Dendritic Networks Pay Off on Robot Edge Hardware? A Deployment and Adaptation Study"
+  title: "When Do Dendritic Networks Pay Off on Robot Edge Hardware? A Mapping-Aware Cost Model Tested on GPU, CPU and 8-bit MCU"
   authors:
     - family-names: Zhang
       given-names: Jianwu

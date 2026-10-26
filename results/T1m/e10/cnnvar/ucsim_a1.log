@@ -1,0 +1,2 @@
+cnnpool_c32_64 {'tag': 'cnnpool_c32_64_lr0.001_wd0.01_t1', 'n': 5, 'cycles': 47379396.4, 'cycles_min': 47373007, 'cycles_max': 47387622, 'instr': 34159607.8, 'sim_flash': 33852, 'sim_xdata': 2455, 'ucsim_bitexact_logits': '5/5', 'ucsim_bitexact_class': '5/5', 'macs': 651424}
+cnns4_c8_16 {'tag': 'cnns4_c8_16_lr0.001_wd0_t1', 'n': 5, 'cycles': 4605462.4, 'cycles_min': 4604816, 'cycles_max': 4606043, 'instr': 3299893.2, 'sim_flash': 17119, 'sim_xdata': 1255, 'ucsim_bitexact_logits': '5/5', 'ucsim_bitexact_class': '5/5', 'macs': 60320}

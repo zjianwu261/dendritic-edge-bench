@@ -1,4 +1,4 @@
-"""E-10 (REVIEW R-089): one AdamW grid + int8-val selection for every 8051 model in the matched-accuracy comparison.
+"""E-10: one AdamW grid + int8-val selection for every 8051 model in the matched-accuracy comparison.
 
 Protocol: results/T1m/e10/PROTOCOL.md (written before any run).
   grid   lr {3e-4, 1e-3, 3e-3} (+1e-2 if 3e-3 is selected) x wd {0, 1e-2} x seeds 1-3, AdamW, batch 128, 25 epochs
@@ -25,11 +25,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import EXP, ensure, load_fmnist_u8  # noqa: E402
 
 E10 = f"{EXP}/e10"
-RUNS = f"{E10}/runs"
+RUNS = os.environ.get("E10_RUNS", f"{E10}/runs")  # CNN variants (PROTOCOL_cnnvar.md): results/T1m/e10/cnnvar/runs
 SFX = os.environ.get("E10_SFX", "")  # verify/ucsim output suffix for a second concurrent process (merged afterwards)
 NONCNN_E10 = ["dann_d16_s64", "dann_prng_d16_s128", "dann_prng_d20_s128", "mlp_h48", "mlp_h64"]
 CNNS_E10 = ["cnn_c2_4", "cnn_c3_6", "cnn_c4_8", "cnn_c6_12", "cnn_c8_16"]
-# E-10b (planner 2026-10-25, REVIEW R-100): same protocol for every other deployable Table-3 row (T1m/results.csv fits=1)
+# E-10b (2026-10-25): same protocol for every other deployable Table-3 row (T1m/results.csv fits=1)
 NONCNN_E10B = ["dann_d8_s32", "dann_prng_d8_s32", "dann_prng_d8_s64", "dann_d8_s64", "mlp_h16", "dann_prng_d16_s64",
                "mlp_h32", "dann_d24_s64", "dann_prng_d24_s64", "dann_prng_d32_s96", "dann_prng_d24_s128", "mlp_h72"]
 CNNS_E10B = ["cnn_c16_32", "cnn_c32_64"]
@@ -43,7 +43,7 @@ WDS = [0.0, 1e-2]
 SEEDS = [1, 2, 3]
 EPOCHS = 25
 T_RULE = 2.48
-CNN_K = 0.854   # R-105 (E-10b): board/ucsim of cnn_c8_16, as in cnn_results.csv / Table 3 (E-10 used 0.853 = mean of 3 CNNs)
+CNN_K = 0.854   # E-10b: board/ucsim of cnn_c8_16, as in cnn_results.csv / Table 3 (E-10 used 0.853 = mean of 3 CNNs)
 # never-board-measured dANN / MLP rows (E-10b): board/ucsim measured on the same kind (board_summary.csv), labelled estimate
 KIND_K = {"official": 0.890, "prng": 0.9115, "mlp": 0.811}
 F_MHZ = 35.004
@@ -56,6 +56,8 @@ def tag_of(model, lr, wd, seed):
 
 
 def parse(model):
+    if model.startswith(("cnnpool_", "cnns4_", "cnnds_")):  # cnnvar (PROTOCOL_cnnvar.md)
+        return "cnnvar", dict(name=model), ""
     if model.startswith("cnn_"):
         c1, c2 = model[5:].split("_")
         return "cnn", dict(c1=int(c1), c2=int(c2)), ""
@@ -75,7 +77,10 @@ def build_model(model, seed):
     torch.manual_seed(seed)
     np.random.seed(seed)
     m1 = m2 = None
-    if kind == "cnn":
+    if kind == "cnnvar":
+        from cnnvar import build_net
+        net = build_net(model)
+    elif kind == "cnn":
         sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "t6"))
         from dann_g import SmallCNN
         net = SmallCNN(cfg["c1"], cfg["c2"])
@@ -137,7 +142,13 @@ def train_eval(job):
         assert net.l2.weight.detach()[net.masks[1] == 0].abs().max().item() == 0.0
     sd = {k: v.detach().cpu().numpy().astype(np.float64) for k, v in net.state_dict().items()}
     xv, yv = xtr_u8[va_idx], ytr[va_idx]
-    if kind == "cnn":
+    if kind == "cnnvar":
+        from cnnvar import quantize_var, ref_forward_var
+        q = quantize_var(model, sd, xv, yv)
+        val_i8 = float((ref_forward_var(q, xv).argmax(1) == yv).mean())
+        te_i8 = float((ref_forward_var(q, xte_u8).argmax(1) == yte).mean())
+        np.savez_compressed(f"{RUNS}/{tag}.npz", **sd)
+    elif kind == "cnn":
         from cnn_t1m import quantize_cnn, ref_forward_cnn
         q = quantize_cnn(sd, xv, yv)
         val_i8 = float((ref_forward_cnn(q, xv).argmax(1) == yv).mean())
@@ -159,6 +170,8 @@ def train_eval(job):
                 val_fp32_last=hist[-1], val_hist=hist, test_fp32=te_fp32, val_int8=val_i8, test_int8=te_i8,
                 sh1=int(q["sh1"]), sh2=int(q["sh2"]), sh_off=list(q["sh_off"]), train_s=round(time.time() - t0, 1),
                 torch=torch.__version__, threads=torch.get_num_threads())
+    if "shifts" in q:  # cnnvar: all requant shifts / offsets
+        meta.update(shifts=[int(v) for v in q["shifts"]], offsets=[int(v) for v in q["offsets"]])
     json.dump(meta, open(f"{RUNS}/{tag}.json", "w"), indent=1)
     return tag, f"val_i8 {val_i8:.4f} test_i8 {te_i8:.4f} ({meta['train_s']} s)"
 
@@ -273,7 +286,7 @@ def board_info():
             out[m] = dict(board_ms=round(uc * k / (F_MHZ * 1e3), 2), board_cycles=round(uc * k),
                           ucsim_cycles=uc, flash_old=int(t["flash_bytes"]), board_ms_source=f"estimate_ucsim_x{k}_{F_MHZ}MHz",
                           acc_int8_old=float(t["acc_int8"]), acc_int8_sd_old=float(t["acc_int8_std"]))
-        # planner 2026-10-25: never-board-measured rows are estimated from the ucsim cycles of the E-10/E-10b selected
+        # never-board-measured rows are estimated from the ucsim cycles of the E-10/E-10b selected
         # seed-1 build (ucsim.json cycles_e10) x the same per-kind factor; ucsim_cycles stays the first-run value.
         if m not in bs and m not in e10b:
             ue = json.load(open(f"{E10}/ucsim.json"))[m]["cycles_e10"]
@@ -282,7 +295,11 @@ def board_info():
                           board_cycles=round(ue * k), board_ms_source=f"estimate_ucsimE10build_x{k}_{F_MHZ}MHz")
         if m in e10b:
             b = e10b[m]
+            # also keep the E-10-build ucsim estimate (what results.csv showed before the last 12 board runs)
+            ue = json.load(open(f"{E10}/ucsim.json"))[m]["cycles_e10"]
+            k = CNN_K if m in cr else KIND_K["mlp" if tr[m]["kind"] == "mlp" else tr[m]["mask_source"]]
             out[m].update(board_ms_preboard_estimate=out[m]["board_ms"], board_ms=float(b["board_ms"]),
+                          board_ms_e10build_estimate=round(ue * k / (F_MHZ * 1e3), 2),
                           board_cycles=float(b["board_cycles_median"]),
                           board_ms_source=f"measured_seed1_e10bbuild_{b['f_mhz']}MHz")
         if m in cr:  # CNN old sd is ddof=1 already (statistics.stdev)
@@ -371,7 +388,7 @@ def stored_ucsim():
 
 
 def cmd_ucsim(a):
-    """R-101: ucsim cycles of the E-10/E-10b seed-1 selected builds on the same first test images as the stored values
+    """ucsim cycles of the E-10/E-10b seed-1 selected builds on the same first test images as the stored values
     (dANN/MLP 20 images, CNN 5 images), bit-exact check against the Python int8 reference."""
     import run_t1m as R
     from cnn_t1m import SIM_XDATA
@@ -448,7 +465,8 @@ def cmd_report(a):
                          ucsim_e10build_bitexact=uc[m]["ucsim_bitexact_logits"] if m in uc else "",
                          board_cycles=b["board_cycles"], board_ms=b["board_ms"],
                          board_ms_source=b["board_ms_source"],
-                         board_ms_preboard_estimate=b.get("board_ms_preboard_estimate", "")))
+                         board_ms_preboard_estimate=b.get("board_ms_preboard_estimate", ""),
+                         board_ms_e10build_estimate=b.get("board_ms_e10build_estimate", "")))
         accs[m] = dict(mean=s["test_int8"], sd1=s["test_int8_sd"], sd0=s["test_int8_sd0"])
         accs_f[m] = dict(mean=sf["test_int8"], sd1=sf["test_int8_sd"], sd0=float(np.std(sf["test_int8_seeds"])))
     with open(f"{E10}/results.csv", "w", newline="") as fh:

@@ -1,0 +1,36 @@
+{
+ "name": "dhsrnn_n64_b8",
+ "group": "shd",
+ "dataset": "SHD",
+ "model": "dhsrnn",
+ "T": 1000,
+ "dt_ms": 1,
+ "epochs": 100,
+ "seed": 2,
+ "test_acc": 0.9037102473498233,
+ "test_acc_best_epoch": 0.9200530035335689,
+ "params_effective": 51304,
+ "params_stored": 395624,
+ "dhsrnn_params_effective": 51304,
+ "train_minutes": 458.7,
+ "export_seq": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/dhsrnn_n64_b8_seq.onnx",
+  "size_MB": 3.773,
+  "nodes": 27993,
+  "max_abs_err_vs_torch": 7.43865966796875e-05,
+  "export_s": 16.9
+ },
+ "export_step": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/dhsrnn_n64_b8_step.onnx",
+  "size_MB": 1.504,
+  "nodes": 35,
+  "max_abs_err_vs_torch": 1.8998980522155762e-07,
+  "export_s": 0.0
+ },
+ "export_seqloop": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/dhsrnn_n64_b8_seqloop.onnx",
+  "nodes_top": 10,
+  "max_abs_err_ort_vs_unrolled_torch": 3.0517578125e-05,
+  "max_abs_err_script_vs_torch": 1.1444091796875e-05
+ }
+}

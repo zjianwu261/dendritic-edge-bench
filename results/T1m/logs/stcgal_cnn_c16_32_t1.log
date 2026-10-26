@@ -1,0 +1,40 @@
+# E-10b build: ~/research/dendritic-edge/experiments/T1m/e10/build/cnn_c16_32_lr0.001_wd0_t1/uart_35M.hex
+Cycling power: done
+Waiting for MCU: done
+Target model:
+  Name: STC8A8K64D4
+  Magic: F7F4
+  Code flash: 63.5 KB
+  EEPROM flash: 0.5 KB
+Target frequency: 34.982 MHz
+Target BSL version: 7.4.2U
+Target wakeup frequency: 35.275 KHz
+Target ref. voltage: 1182 mV
+Target mfg. date: 2021-12-27
+Target options:
+  reset_pin_enabled=True
+  clock_gain=high
+  watchdog_por_enabled=False
+  watchdog_stop_idle=True
+  watchdog_prescale=256
+  low_voltage_reset=True
+  low_voltage_threshold=0
+  eeprom_erase_enabled=True
+  bsl_pindetect_enabled=False
+  por_reset_delay=long
+  rstout_por_state=high
+  uart1_remap=False
+  uart2_passthrough=True
+  uart2_pin_mode=push-pull
+  epwm_open_drain=True
+  program_eeprom_split=65024
+Loading flash: 27112 bytes (Intel HEX)
+Target frequency: Target 35.000 MHz
+Adjusted frequency: 35.004 MHz(0.011%)
+Switching to 115200 baud: done
+Erasing flash: done
+Writing flash:   0%|          | 0/27136 [00:00<?, ? Bytes/s]Writing flash:   2%|▏         | 576/27136 [00:00<00:04, 5566.24 Bytes/s]Writing flash:   4%|▍         | 1152/27136 [00:00<00:05, 5172.82 Bytes/s]Writing flash:   6%|▋         | 1728/27136 [00:00<00:05, 5056.60 Bytes/s]Writing flash:   8%|▊         | 2240/27136 [00:00<00:04, 5007.90 Bytes/s]Writing flash:  10%|█         | 2752/27136 [00:00<00:04, 4974.91 Bytes/s]Writing flash:  12%|█▏        | 3264/27136 [00:00<00:04, 4963.53 Bytes/s]Writing flash:  14%|█▍        | 3776/27136 [00:00<00:04, 4951.28 Bytes/s]Writing flash:  16%|█▌        | 4288/27136 [00:00<00:04, 4938.15 Bytes/s]Writing flash:  18%|█▊        | 4800/27136 [00:00<00:04, 4935.13 Bytes/s]Writing flash:  20%|█▉        | 5312/27136 [00:01<00:04, 4929.37 Bytes/s]Writing flash:  21%|██▏       | 5824/27136 [00:01<00:04, 4920.98 Bytes/s]Writing flash:  23%|██▎       | 6336/27136 [00:01<00:04, 4932.39 Bytes/s]Writing flash:  25%|██▌       | 6848/27136 [00:01<00:04, 4938.91 Bytes/s]Writing flash:  27%|██▋       | 7360/27136 [00:01<00:04, 4939.44 Bytes/s]Writing flash:  29%|██▉       | 7872/27136 [00:01<00:03, 4952.65 Bytes/s]Writing flash:  31%|███       | 8384/27136 [00:01<00:03, 4956.63 Bytes/s]Writing flash:  33%|███▎      | 8896/27136 [00:01<00:03, 4947.57 Bytes/s]Writing flash:  35%|███▍      | 9408/27136 [00:01<00:03, 4923.70 Bytes/s]Writing flash:  37%|███▋      | 9920/27136 [00:01<00:03, 4935.06 Bytes/s]Writing flash:  38%|███▊      | 10432/27136 [00:02<00:03, 4944.68 Bytes/s]Writing flash:  40%|████      | 10944/27136 [00:02<00:03, 4953.24 Bytes/s]Writing flash:  42%|████▏     | 11456/27136 [00:02<00:03, 4952.16 Bytes/s]Writing flash:  44%|████▍     | 11968/27136 [00:02<00:03, 4967.39 Bytes/s]Writing flash:  46%|████▌     | 12480/27136 [00:02<00:02, 4981.50 Bytes/s]Writing flash:  48%|████▊     | 12992/27136 [00:02<00:02, 4982.22 Bytes/s]Writing flash:  50%|████▉     | 13504/27136 [00:02<00:02, 4984.77 Bytes/s]Writing flash:  52%|█████▏    | 14016/27136 [00:02<00:02, 4977.51 Bytes/s]Writing flash:  54%|█████▎    | 14528/27136 [00:02<00:02, 4981.57 Bytes/s]Writing flash:  55%|█████▌    | 15040/27136 [00:03<00:02, 4989.39 Bytes/s]Writing flash:  57%|█████▋    | 15552/27136 [00:03<00:02, 4989.99 Bytes/s]Writing flash:  59%|█████▉    | 16064/27136 [00:03<00:02, 4990.69 Bytes/s]Writing flash:  61%|██████    | 16576/27136 [00:03<00:02, 4991.34 Bytes/s]Writing flash:  63%|██████▎   | 17088/27136 [00:03<00:02, 4995.67 Bytes/s]Writing flash:  65%|██████▍   | 17600/27136 [00:03<00:01, 4985.84 Bytes/s]Writing flash:  67%|██████▋   | 18112/27136 [00:03<00:01, 4975.62 Bytes/s]Writing flash:  69%|██████▊   | 18624/27136 [00:03<00:01, 4967.67 Bytes/s]Writing flash:  71%|███████   | 19136/27136 [00:03<00:01, 4964.27 Bytes/s]Writing flash:  72%|███████▏  | 19648/27136 [00:03<00:01, 4967.64 Bytes/s]Writing flash:  74%|███████▍  | 20160/27136 [00:04<00:01, 4972.26 Bytes/s]Writing flash:  76%|███████▌  | 20672/27136 [00:04<00:01, 4975.80 Bytes/s]Writing flash:  78%|███████▊  | 21184/27136 [00:04<00:01, 4979.94 Bytes/s]Writing flash:  80%|███████▉  | 21696/27136 [00:04<00:01, 4981.21 Bytes/s]Writing flash:  82%|████████▏ | 22208/27136 [00:04<00:00, 4984.50 Bytes/s]Writing flash:  84%|████████▎ | 22720/27136 [00:04<00:00, 4983.84 Bytes/s]Writing flash:  86%|████████▌ | 23232/27136 [00:04<00:00, 4976.41 Bytes/s]Writing flash:  88%|████████▊ | 23744/27136 [00:04<00:00, 4975.88 Bytes/s]Writing flash:  89%|████████▉ | 24256/27136 [00:04<00:00, 4973.59 Bytes/s]Writing flash:  91%|█████████▏| 24768/27136 [00:04<00:00, 4983.77 Bytes/s]Writing flash:  93%|█████████▎| 25280/27136 [00:05<00:00, 4988.76 Bytes/s]Writing flash:  95%|█████████▌| 25792/27136 [00:05<00:00, 4989.87 Bytes/s]Writing flash:  97%|█████████▋| 26304/27136 [00:05<00:00, 4990.26 Bytes/s]Writing flash:  99%|█████████▉| 26816/27136 [00:05<00:00, 4985.42 Bytes/s]Writing flash: 27200 Bytes [00:05, 4987.92 Bytes/s]                       
+Finishing write: done
+Setting options: done
+Target UID: F7F4C519049A17
+Disconnected!

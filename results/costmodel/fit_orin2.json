@@ -1,0 +1,66 @@
+{
+ "tier": "orin2",
+ "model": "T = a + kappa*K + F/phi + B/beta",
+ "n_calib": 9,
+ "calib_graphs": [
+  "g1f_mlp_h128_lr0.001_wd0_fair_t1__conv",
+  "g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm",
+  "g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv",
+  "g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm",
+  "lif_srnn_n64_val_seqloop",
+  "lru_L2_H64_N128_lr0.001_vs_t1__K50",
+  "mlp_h1024__gemm",
+  "mlp_h2048__gemm",
+  "mlp_h85_match_d32_s128"
+ ],
+ "fit_info": {
+  "nnls_init": [
+   0.09994207088270517,
+   0.0020887108248443405,
+   5.03673725311867e-09,
+   6.0946674972969e-08
+  ],
+  "cost": 0.07783764934137218,
+  "status": 2,
+  "rmse_log": 0.13151903059707298
+ },
+ "constants": {
+  "a_ms": 0.08418062354781024,
+  "kappa_ms_per_node": 0.002095303132899378,
+  "inv_phi_ms_per_MAC": 4.8144833092938104e-09,
+  "inv_beta_ms_per_weight": 7.759199232733663e-08
+ },
+ "derived": {
+  "phi_MAC_per_ms": 207706608.53047597,
+  "beta_weights_per_ms": 12887927.864789309
+ },
+ "bootstrap": {
+  "n": 1000,
+  "seed": "numpy default_rng(20261026)",
+  "ci95": {
+   "a_ms": [
+    0.04371736173196868,
+    0.10148497291534817
+   ],
+   "kappa_ms_per_node": [
+    8.263056162999829e-13,
+    0.008286325902667658
+   ],
+   "inv_phi_ms_per_MAC": [
+    1.747388411490622e-33,
+    1.3339139841383787e-07
+   ],
+   "inv_beta_ms_per_weight": [
+    3.1421211362225962e-27,
+    1.3575668189627248e-07
+   ]
+  },
+  "median": {
+   "a_ms": 0.08059333514775455,
+   "kappa_ms_per_node": 0.0021010572695985457,
+   "inv_phi_ms_per_MAC": 3.868262046348426e-09,
+   "inv_beta_ms_per_weight": 7.650663271747791e-08
+  }
+ },
+ "protocol_sha256": "bb3f0e1d660d3930f3ece6a135f03ba0d8220bbbde3f4fc2a49add465694c148"
+}

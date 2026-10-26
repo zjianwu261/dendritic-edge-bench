@@ -1,0 +1,173 @@
+== new CNNs (int8 test, 3 seeds, sample SD; board ms = ESTIMATE ucsim x 0.854 / 35.004 MHz)
+  cnnpool_c2_4     0.003/0.01 acc 80.98±0.64 flash 9833 cyc 591959 (98.1/MAC) est 14.44 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnpool_c4_8     0.01/0 TOP acc 84.11±1.20 flash 10471 cyc 1526358 (91.4/MAC) est 37.24 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnpool_c8_16    0.003/0 acc 87.81±0.39 flash 12095 cyc 4308318 (83.0/MAC) est 105.11 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnpool_c16_32   0.003/0 acc 88.84±0.10 flash 17113 cyc 13731111 (77.3/MAC) est 335.0 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnpool_c32_64   0.001/0.01 acc 90.11±0.37 flash 34046 cyc 47379396 (72.7/MAC) est 1155.93 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnds_c4         0.003/0 acc 73.04±1.73 flash 12653 cyc 1211798 (104.7/MAC) est 29.56 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnds_c8         0.003/0 acc 79.84±0.18 flash 12943 cyc 2664183 (101.4/MAC) est 65.0 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnds_c16        0.003/0 acc 84.00±1.64 flash 13702 cyc 6260469 (96.2/MAC) est 152.74 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnds_c32        0.001/0.01 acc 86.11±0.88 flash 15961 cyc 16317368 (90.5/MAC) est 398.1 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnnds_c64        0.001/0.01 acc 88.55±0.64 flash 23653 cyc 47942827 (85.4/MAC) est 1169.67 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnns4_c2_4       0.01/0 TOP acc 84.96±1.20 flash 10217 cyc 555284 (86.5/MAC) est 13.55 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnns4_c4_8       0.003/0 acc 87.52±0.42 flash 12440 cyc 1513182 (81.3/MAC) est 36.92 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnns4_c8_16      0.001/0 acc 88.11±0.29 flash 17313 cyc 4605462 (76.4/MAC) est 112.36 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnns4_c16_32     0.001/0 acc 89.56±0.60 flash 28800 cyc 15646511 (73.4/MAC) est 381.73 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+  cnns4_c32_64     0.001/0.01 acc 90.39±0.70 flash 58645 cyc 56852260 (71.4/MAC) est 1387.04 ms pc 10000/10000 10000/10000 10000/10000 ucsim 5/5
+== matched, primary_int8val_ddof1
+  d16_s64        88.32±0.65  plain c3_6 0.755 (flash 0.241)  ->  all cnn_c3_6 0.755 (ucsim 0.791, flash 0.241)
+  PRNG d16_s128  89.03±0.13  plain c6_12 0.862 (flash 0.308)  ->  all cnn_c6_12 0.862 (ucsim 0.923, flash 0.308)
+  PRNG d20_s128  89.27±0.05  plain c6_12 0.688 (flash 0.251)  ->  all cnn_c6_12 0.688 (ucsim 0.735, flash 0.251)
+  mlp h48        87.94±0.69  plain c3_6 0.405 (flash 0.229)  ->  all cnn_c3_6 0.405 (ucsim 0.386, flash 0.229)
+  mlp h64        88.16±0.51  plain c3_6 0.298 (flash 0.171)  ->  all cnn_c3_6 0.298 (ucsim 0.283, flash 0.171)
+  d8_s32         86.28±0.19  plain c2_4 1.655 (flash 0.73)  ->  all cnns4_c2_4 1.198 (ucsim 1.245, flash 0.86)  CHANGED
+  PRNG d8_s32    86.16±0.63  plain c2_4 1.436 (flash 1.107)  ->  all cnns4_c2_4 1.039 (ucsim 1.104, flash 1.305)  CHANGED
+  PRNG d8_s64    87.45±0.46  plain c3_6 1.229 (flash 0.749)  ->  all cnns4_c2_4 0.519 (ucsim 0.552, flash 0.782)  CHANGED
+  d8_s64         87.57±0.72  plain c3_6 1.456 (flash 0.451)  ->  all cnns4_c2_4 0.615 (ucsim 0.637, flash 0.47)  CHANGED
+  mlp h16        86.06±0.26  plain c2_4 0.737 (flash 0.575)  ->  all cnns4_c2_4 0.533 (ucsim 0.506, flash 0.677)  CHANGED
+  PRNG d16_s64   88.05±0.27  plain c4_8 0.934 (flash 0.478)  ->  all cnns4_c4_8 0.73 (ucsim 0.778, flash 0.546)  CHANGED
+  mlp h32        87.52±0.30  plain c3_6 0.618 (flash 0.342)  ->  all cnns4_c2_4 0.261 (ucsim 0.248, flash 0.357)  CHANGED
+  d24_s64        88.49±0.14  plain c6_12 1.364 (flash 0.222)  ->  all cnns4_c4_8 0.581 (ucsim 0.606, flash 0.209)  CHANGED
+  PRNG d24_s64   88.55±0.14  plain c6_12 1.153 (flash 0.407)  ->  all cnns4_c4_8 0.491 (ucsim 0.523, flash 0.382)  CHANGED
+  PRNG d32_s96   89.42±0.29  plain c8_16 0.91 (flash 0.253)  ->  all cnn_c8_16 0.91 (ucsim 0.983, flash 0.253)
+  PRNG d24_s128  89.02±0.14  plain c6_12 0.575 (flash 0.212)  ->  all cnn_c6_12 0.575 (ucsim 0.621, flash 0.212)
+  mlp h72        88.56±0.07  plain c6_12 0.708 (flash 0.205)  ->  all cnns4_c4_8 0.302 (ucsim 0.287, flash 0.192)  CHANGED
+    diag mean>=X: d16_s64        plain c8_16 3.183 (flash 0.387) -> all c8_16 3.183 (flash 0.387)
+    diag mean>=X: PRNG d16_s128  plain c8_16 1.345 (flash 0.365) -> all c8_16 1.345 (flash 0.365)
+    diag mean>=X: PRNG d20_s128  plain c16_32 3.437 (flash 0.514) -> all cnns4_c16_32 3.031 (flash 0.546)
+    diag mean>=X: mlp h48        plain c6_12 1.095 (flash 0.31) -> all c6_12 1.095 (flash 0.31)
+    diag mean>=X: mlp h64        plain c8_16 1.256 (flash 0.275) -> all c8_16 1.256 (flash 0.275)
+    diag mean>=X: d8_s32         plain c3_6 2.836 (flash 0.824) -> all c3_6 2.836 (flash 0.824)
+    diag mean>=X: PRNG d8_s32    plain c3_6 2.46 (flash 1.251) -> all c3_6 2.46 (flash 1.251)
+    diag mean>=X: PRNG d8_s64    plain c4_8 1.811 (flash 0.834) -> all cnns4_c4_8 1.415 (flash 0.952)
+    diag mean>=X: d8_s64         plain c6_12 3.933 (flash 0.61) -> all c6_12 3.933 (flash 0.61)
+    diag mean>=X: mlp h16        plain c3_6 1.262 (flash 0.649) -> all c3_6 1.262 (flash 0.649)
+    diag mean>=X: PRNG d16_s64   plain c6_12 1.713 (flash 0.581) -> all c6_12 1.713 (flash 0.581)
+    diag mean>=X: mlp h32        plain c6_12 1.671 (flash 0.462) -> all cnns4_c4_8 0.712 (flash 0.434)
+    diag mean>=X: d24_s64        plain c8_16 2.129 (flash 0.264) -> all c8_16 2.129 (flash 0.264)
+    diag mean>=X: PRNG d24_s64   plain c8_16 1.799 (flash 0.483) -> all c8_16 1.799 (flash 0.483)
+    diag mean>=X: PRNG d32_s96   plain c16_32 2.909 (flash 0.436) -> all cnns4_c16_32 2.566 (flash 0.464)
+    diag mean>=X: PRNG d24_s128  plain c8_16 0.898 (flash 0.252) -> all c8_16 0.898 (flash 0.252)
+    diag mean>=X: mlp h72        plain c8_16 1.105 (flash 0.243) -> all c8_16 1.105 (flash 0.243)
+  MLP: plain ratio 0.298-0.737 | all-family ratio 0.261-0.533 | all-family flash share 0.171-0.677 | ratio>1: []
+  dANN: plain ratio 0.575-1.655 | all-family ratio 0.491-1.198 | all-family flash share 0.209-1.305 | ratio>1: ['d8_s32', 'PRNG d8_s32']
+== matched, int8val_ddof0
+  d16_s64        88.32±0.53  plain c4_8 1.112 (flash 0.268)  ->  all cnns4_c4_8 0.869 (ucsim 0.906, flash 0.306)  CHANGED
+  PRNG d16_s128  89.03±0.11  plain c6_12 0.862 (flash 0.308)  ->  all cnn_c6_12 0.862 (ucsim 0.923, flash 0.308)
+  PRNG d20_s128  89.27±0.04  plain c8_16 1.074 (flash 0.298)  ->  all cnn_c8_16 1.074 (ucsim 1.14, flash 0.298)
+  mlp h48        87.94±0.57  plain c3_6 0.405 (flash 0.229)  ->  all cnn_c3_6 0.405 (ucsim 0.386, flash 0.229)
+  mlp h64        88.16±0.41  plain c4_8 0.439 (flash 0.19)  ->  all cnns4_c4_8 0.343 (ucsim 0.324, flash 0.217)  CHANGED
+  d8_s32         86.28±0.16  plain c2_4 1.655 (flash 0.73)  ->  all cnns4_c2_4 1.198 (ucsim 1.245, flash 0.86)  CHANGED
+  PRNG d8_s32    86.16±0.51  plain c2_4 1.436 (flash 1.107)  ->  all cnns4_c2_4 1.039 (ucsim 1.104, flash 1.305)  CHANGED
+  PRNG d8_s64    87.45±0.38  plain c3_6 1.229 (flash 0.749)  ->  all cnn_c3_6 1.229 (ucsim 1.314, flash 0.749)
+  d8_s64         87.57±0.59  plain c3_6 1.456 (flash 0.451)  ->  all cnn_c3_6 1.456 (ucsim 1.516, flash 0.451)
+  mlp h16        86.06±0.21  plain c2_4 0.737 (flash 0.575)  ->  all cnns4_c2_4 0.533 (ucsim 0.506, flash 0.677)  CHANGED
+  PRNG d16_s64   88.05±0.22  plain c4_8 0.934 (flash 0.478)  ->  all cnns4_c4_8 0.73 (ucsim 0.778, flash 0.546)  CHANGED
+  mlp h32        87.52±0.25  plain c3_6 0.618 (flash 0.342)  ->  all cnn_c3_6 0.618 (ucsim 0.589, flash 0.342)
+  d24_s64        88.49±0.11  plain c6_12 1.364 (flash 0.222)  ->  all cnn_c6_12 1.364 (ucsim 1.441, flash 0.222)
+  PRNG d24_s64   88.55±0.11  plain c6_12 1.153 (flash 0.407)  ->  all cnn_c6_12 1.153 (ucsim 1.244, flash 0.407)
+  PRNG d32_s96   89.42±0.23  plain c8_16 0.91 (flash 0.253)  ->  all cnn_c8_16 0.91 (ucsim 0.983, flash 0.253)
+  PRNG d24_s128  89.02±0.12  plain c6_12 0.575 (flash 0.212)  ->  all cnn_c6_12 0.575 (ucsim 0.621, flash 0.212)
+  mlp h72        88.56±0.06  plain c6_12 0.708 (flash 0.205)  ->  all cnn_c6_12 0.708 (ucsim 0.681, flash 0.205)
+    diag mean>=X: d16_s64        plain c8_16 3.183 (flash 0.387) -> all c8_16 3.183 (flash 0.387)
+    diag mean>=X: PRNG d16_s128  plain c8_16 1.345 (flash 0.365) -> all c8_16 1.345 (flash 0.365)
+    diag mean>=X: PRNG d20_s128  plain c16_32 3.437 (flash 0.514) -> all cnns4_c16_32 3.031 (flash 0.546)
+    diag mean>=X: mlp h48        plain c6_12 1.095 (flash 0.31) -> all c6_12 1.095 (flash 0.31)
+    diag mean>=X: mlp h64        plain c8_16 1.256 (flash 0.275) -> all c8_16 1.256 (flash 0.275)
+    diag mean>=X: d8_s32         plain c3_6 2.836 (flash 0.824) -> all c3_6 2.836 (flash 0.824)
+    diag mean>=X: PRNG d8_s32    plain c3_6 2.46 (flash 1.251) -> all c3_6 2.46 (flash 1.251)
+    diag mean>=X: PRNG d8_s64    plain c4_8 1.811 (flash 0.834) -> all cnns4_c4_8 1.415 (flash 0.952)
+    diag mean>=X: d8_s64         plain c6_12 3.933 (flash 0.61) -> all c6_12 3.933 (flash 0.61)
+    diag mean>=X: mlp h16        plain c3_6 1.262 (flash 0.649) -> all c3_6 1.262 (flash 0.649)
+    diag mean>=X: PRNG d16_s64   plain c6_12 1.713 (flash 0.581) -> all c6_12 1.713 (flash 0.581)
+    diag mean>=X: mlp h32        plain c6_12 1.671 (flash 0.462) -> all cnns4_c4_8 0.712 (flash 0.434)
+    diag mean>=X: d24_s64        plain c8_16 2.129 (flash 0.264) -> all c8_16 2.129 (flash 0.264)
+    diag mean>=X: PRNG d24_s64   plain c8_16 1.799 (flash 0.483) -> all c8_16 1.799 (flash 0.483)
+    diag mean>=X: PRNG d32_s96   plain c16_32 2.909 (flash 0.436) -> all cnns4_c16_32 2.566 (flash 0.464)
+    diag mean>=X: PRNG d24_s128  plain c8_16 0.898 (flash 0.252) -> all c8_16 0.898 (flash 0.252)
+    diag mean>=X: mlp h72        plain c8_16 1.105 (flash 0.243) -> all c8_16 1.105 (flash 0.243)
+  MLP: plain ratio 0.405-0.737 | all-family ratio 0.343-0.708 | all-family flash share 0.205-0.677 | ratio>1: []
+  dANN: plain ratio 0.575-1.655 | all-family ratio 0.575-1.456 | all-family flash share 0.212-1.305 | ratio>1: ['PRNG d20_s128', 'd8_s32', 'PRNG d8_s32', 'PRNG d8_s64', 'd8_s64', 'd24_s64', 'PRNG d24_s64']
+== matched, fp32val_ddof1
+  d16_s64        88.32±0.65  plain c3_6 0.755 (flash 0.241)  ->  all cnnds_c4 0.695 (ucsim 0.725, flash 0.311)  CHANGED
+  PRNG d16_s128  89.03±0.13  plain c6_12 0.862 (flash 0.308)  ->  all cnnds_c4 0.294 (ucsim 0.311, flash 0.294)  CHANGED
+  PRNG d20_s128  89.27±0.05  plain c6_12 0.688 (flash 0.251)  ->  all cnnds_c4 0.235 (ucsim 0.248, flash 0.24)  CHANGED
+  mlp h48        87.94±0.69  plain c3_6 0.405 (flash 0.229)  ->  all cnnds_c4 0.374 (ucsim 0.354, flash 0.296)  CHANGED
+  mlp h64        88.06±0.34  plain c4_8 0.439 (flash 0.19)  ->  all cnnds_c4 0.274 (ucsim 0.26, flash 0.221)  CHANGED
+  d8_s32         86.28±0.19  plain c2_4 1.655 (flash 0.73)  ->  all cnns4_c2_4 1.198 (ucsim 1.245, flash 0.86)  CHANGED
+  PRNG d8_s32    86.16±0.63  plain c2_4 1.436 (flash 1.107)  ->  all cnns4_c2_4 1.039 (ucsim 1.104, flash 1.305)  CHANGED
+  PRNG d8_s64    87.33±0.53  plain c2_4 0.717 (flash 0.663)  ->  all cnns4_c2_4 0.519 (ucsim 0.552, flash 0.782)  CHANGED
+  d8_s64         87.57±0.72  plain c3_6 1.456 (flash 0.451)  ->  all cnns4_c2_4 0.615 (ucsim 0.637, flash 0.47)  CHANGED
+  mlp h16        85.73±0.36  plain c2_4 0.737 (flash 0.575)  ->  all cnns4_c2_4 0.533 (ucsim 0.506, flash 0.677)  CHANGED
+  PRNG d16_s64   88.05±0.27  plain c4_8 0.934 (flash 0.478)  ->  all cnnds_c4 0.584 (ucsim 0.623, flash 0.555)  CHANGED
+  mlp h32        87.52±0.30  plain c3_6 0.618 (flash 0.342)  ->  all cnns4_c2_4 0.261 (ucsim 0.248, flash 0.357)  CHANGED
+  d24_s64        88.49±0.14  plain c6_12 1.364 (flash 0.222)  ->  all cnnds_c4 0.465 (ucsim 0.485, flash 0.212)  CHANGED
+  PRNG d24_s64   88.57±0.14  plain c6_12 1.153 (flash 0.407)  ->  all cnnds_c4 0.393 (ucsim 0.419, flash 0.389)  CHANGED
+  PRNG d32_s96   89.42±0.29  plain c8_16 0.91 (flash 0.253)  ->  all cnnds_c4 0.199 (ucsim 0.214, flash 0.204)  CHANGED
+  PRNG d24_s128  89.02±0.14  plain c6_12 0.575 (flash 0.212)  ->  all cnnds_c4 0.196 (ucsim 0.209, flash 0.203)  CHANGED
+  mlp h72        88.56±0.07  plain c6_12 0.708 (flash 0.205)  ->  all cnnds_c4 0.241 (ucsim 0.229, flash 0.195)  CHANGED
+    diag mean>=X: d16_s64        plain c8_16 3.183 (flash 0.387) -> all c8_16 3.183 (flash 0.387)
+    diag mean>=X: PRNG d16_s128  plain c8_16 1.345 (flash 0.365) -> all c8_16 1.345 (flash 0.365)
+    diag mean>=X: PRNG d20_s128  plain c16_32 3.437 (flash 0.514) -> all cnns4_c16_32 3.031 (flash 0.546)
+    diag mean>=X: mlp h48        plain c6_12 1.095 (flash 0.31) -> all c6_12 1.095 (flash 0.31)
+    diag mean>=X: mlp h64        plain c6_12 0.805 (flash 0.232) -> all c6_12 0.805 (flash 0.232)
+    diag mean>=X: d8_s32         plain c3_6 2.836 (flash 0.824) -> all c3_6 2.836 (flash 0.824)
+    diag mean>=X: PRNG d8_s32    plain c3_6 2.46 (flash 1.251) -> all c3_6 2.46 (flash 1.251)
+    diag mean>=X: PRNG d8_s64    plain c6_12 3.321 (flash 1.013) -> all cnns4_c4_8 1.415 (flash 0.952)
+    diag mean>=X: d8_s64         plain c6_12 3.933 (flash 0.61) -> all c6_12 3.933 (flash 0.61)
+    diag mean>=X: mlp h16        plain c3_6 1.262 (flash 0.649) -> all c3_6 1.262 (flash 0.649)
+    diag mean>=X: PRNG d16_s64   plain c6_12 1.713 (flash 0.581) -> all c6_12 1.713 (flash 0.581)
+    diag mean>=X: mlp h32        plain c6_12 1.671 (flash 0.462) -> all cnns4_c4_8 0.712 (flash 0.434)
+    diag mean>=X: d24_s64        plain c8_16 2.129 (flash 0.264) -> all c8_16 2.129 (flash 0.264)
+    diag mean>=X: PRNG d24_s64   plain c8_16 1.799 (flash 0.483) -> all c8_16 1.799 (flash 0.483)
+    diag mean>=X: PRNG d32_s96   plain c16_32 2.909 (flash 0.436) -> all cnns4_c16_32 2.566 (flash 0.464)
+    diag mean>=X: PRNG d24_s128  plain c8_16 0.898 (flash 0.252) -> all c8_16 0.898 (flash 0.252)
+    diag mean>=X: mlp h72        plain c8_16 1.105 (flash 0.243) -> all c8_16 1.105 (flash 0.243)
+  MLP: plain ratio 0.405-0.737 | all-family ratio 0.241-0.533 | all-family flash share 0.195-0.677 | ratio>1: []
+  dANN: plain ratio 0.575-1.655 | all-family ratio 0.196-1.198 | all-family flash share 0.203-1.305 | ratio>1: ['d8_s32', 'PRNG d8_s32']
+== matched, fp32val_ddof0
+  d16_s64        88.32±0.53  plain c6_12 2.039 (flash 0.326)  ->  all cnns4_c4_8 0.869 (ucsim 0.906, flash 0.306)  CHANGED
+  PRNG d16_s128  89.03±0.11  plain c6_12 0.862 (flash 0.308)  ->  all cnnds_c8 0.646 (ucsim 0.684, flash 0.301)  CHANGED
+  PRNG d20_s128  89.27±0.04  plain c8_16 1.074 (flash 0.298)  ->  all cnnds_c8 0.516 (ucsim 0.545, flash 0.245)  CHANGED
+  mlp h48        87.94±0.57  plain c3_6 0.405 (flash 0.229)  ->  all cnnds_c4 0.374 (ucsim 0.354, flash 0.296)  CHANGED
+  mlp h64        88.06±0.28  plain c6_12 0.805 (flash 0.232)  ->  all cnns4_c4_8 0.343 (ucsim 0.324, flash 0.217)  CHANGED
+  d8_s32         86.28±0.16  plain c2_4 1.655 (flash 0.73)  ->  all cnns4_c2_4 1.198 (ucsim 1.245, flash 0.86)  CHANGED
+  PRNG d8_s32    86.16±0.51  plain c2_4 1.436 (flash 1.107)  ->  all cnns4_c2_4 1.039 (ucsim 1.104, flash 1.305)  CHANGED
+  PRNG d8_s64    87.33±0.43  plain c3_6 1.229 (flash 0.749)  ->  all cnns4_c2_4 0.519 (ucsim 0.552, flash 0.782)  CHANGED
+  d8_s64         87.57±0.59  plain c3_6 1.456 (flash 0.451)  ->  all cnnds_c4 1.341 (ucsim 1.391, flash 0.583)  CHANGED
+  mlp h16        85.73±0.30  plain c2_4 0.737 (flash 0.575)  ->  all cnns4_c2_4 0.533 (ucsim 0.506, flash 0.677)  CHANGED
+  PRNG d16_s64   88.05±0.22  plain c6_12 1.713 (flash 0.581)  ->  all cnns4_c4_8 0.73 (ucsim 0.778, flash 0.546)  CHANGED
+  mlp h32        87.52±0.25  plain c3_6 0.618 (flash 0.342)  ->  all cnnds_c4 0.57 (ucsim 0.541, flash 0.442)  CHANGED
+  d24_s64        88.49±0.11  plain c6_12 1.364 (flash 0.222)  ->  all cnnds_c8 1.022 (ucsim 1.067, flash 0.217)  CHANGED
+  PRNG d24_s64   88.57±0.12  plain c6_12 1.153 (flash 0.407)  ->  all cnnds_c8 0.864 (ucsim 0.921, flash 0.398)  CHANGED
+  PRNG d32_s96   89.42±0.23  plain c8_16 0.91 (flash 0.253)  ->  all cnnds_c8 0.437 (ucsim 0.47, flash 0.208)  CHANGED
+  PRNG d24_s128  89.02±0.12  plain c6_12 0.575 (flash 0.212)  ->  all cnnds_c8 0.431 (ucsim 0.46, flash 0.207)  CHANGED
+  mlp h72        88.56±0.06  plain c6_12 0.708 (flash 0.205)  ->  all cnnds_c8 0.531 (ucsim 0.504, flash 0.2)  CHANGED
+    diag mean>=X: d16_s64        plain c8_16 3.183 (flash 0.387) -> all c8_16 3.183 (flash 0.387)
+    diag mean>=X: PRNG d16_s128  plain c8_16 1.345 (flash 0.365) -> all c8_16 1.345 (flash 0.365)
+    diag mean>=X: PRNG d20_s128  plain c16_32 3.437 (flash 0.514) -> all cnns4_c16_32 3.031 (flash 0.546)
+    diag mean>=X: mlp h48        plain c6_12 1.095 (flash 0.31) -> all c6_12 1.095 (flash 0.31)
+    diag mean>=X: mlp h64        plain c6_12 0.805 (flash 0.232) -> all c6_12 0.805 (flash 0.232)
+    diag mean>=X: d8_s32         plain c3_6 2.836 (flash 0.824) -> all c3_6 2.836 (flash 0.824)
+    diag mean>=X: PRNG d8_s32    plain c3_6 2.46 (flash 1.251) -> all c3_6 2.46 (flash 1.251)
+    diag mean>=X: PRNG d8_s64    plain c6_12 3.321 (flash 1.013) -> all cnns4_c4_8 1.415 (flash 0.952)
+    diag mean>=X: d8_s64         plain c6_12 3.933 (flash 0.61) -> all c6_12 3.933 (flash 0.61)
+    diag mean>=X: mlp h16        plain c3_6 1.262 (flash 0.649) -> all c3_6 1.262 (flash 0.649)
+    diag mean>=X: PRNG d16_s64   plain c6_12 1.713 (flash 0.581) -> all c6_12 1.713 (flash 0.581)
+    diag mean>=X: mlp h32        plain c6_12 1.671 (flash 0.462) -> all cnns4_c4_8 0.712 (flash 0.434)
+    diag mean>=X: d24_s64        plain c8_16 2.129 (flash 0.264) -> all c8_16 2.129 (flash 0.264)
+    diag mean>=X: PRNG d24_s64   plain c8_16 1.799 (flash 0.483) -> all c8_16 1.799 (flash 0.483)
+    diag mean>=X: PRNG d32_s96   plain c16_32 2.909 (flash 0.436) -> all cnns4_c16_32 2.566 (flash 0.464)
+    diag mean>=X: PRNG d24_s128  plain c8_16 0.898 (flash 0.252) -> all c8_16 0.898 (flash 0.252)
+    diag mean>=X: mlp h72        plain c8_16 1.105 (flash 0.243) -> all c8_16 1.105 (flash 0.243)
+  MLP: plain ratio 0.405-0.805 | all-family ratio 0.343-0.570 | all-family flash share 0.200-0.677 | ratio>1: []
+  dANN: plain ratio 0.575-2.039 | all-family ratio 0.431-1.341 | all-family flash share 0.207-1.305 | ratio>1: ['d8_s32', 'PRNG d8_s32', 'd8_s64', 'd24_s64']
+front_F_nocnn: 9: PRNG d8_s32 (86.16), d8_s32 (86.28), PRNG d8_s64 (87.45), d8_s64 (87.57), PRNG d16_s64 (88.05), PRNG d24_s64 (88.55), PRNG d16_s128 (89.03), PRNG d20_s128 (89.27), PRNG d32_s96 (89.42)
+front_C_nocnn: 8: d8_s32 (86.28), d8_s64 (87.57), d16_s64 (88.32), d24_s64 (88.49), PRNG d24_s64 (88.55), PRNG d16_s128 (89.03), PRNG d20_s128 (89.27), PRNG d32_s96 (89.42)
+front_3_nocnn: 11: PRNG d8_s32 (86.16), d8_s32 (86.28), PRNG d8_s64 (87.45), d8_s64 (87.57), PRNG d16_s64 (88.05), PRNG d24_s64 (88.55), d16_s64 (88.32), PRNG d16_s128 (89.03), PRNG d20_s128 (89.27), d24_s64 (88.49), PRNG d32_s96 (89.42)
+front_F_cnnplain: 7: PRNG d8_s32 (86.16), c3_6 (86.93), c4_8 (87.47), c6_12 (88.12), c8_16 (89.19), c16_32 (89.86), c32_64 (90.50)
+front_C_cnnplain: 10: d8_s32 (86.28), d8_s64 (87.57), d16_s64 (88.32), d24_s64 (88.49), PRNG d24_s64 (88.55), PRNG d16_s128 (89.03), PRNG d20_s128 (89.27), PRNG d32_s96 (89.42), c16_32 (89.86), c32_64 (90.50)
+front_3_cnnplain: 17: PRNG d8_s32 (86.16), c3_6 (86.93), c4_8 (87.47), d8_s32 (86.28), PRNG d8_s64 (87.45), c6_12 (88.12), c8_16 (89.19), d8_s64 (87.57), PRNG d16_s64 (88.05), c16_32 (89.86), PRNG d24_s64 (88.55), d16_s64 (88.32), PRNG d16_s128 (89.03), PRNG d20_s128 (89.27), c32_64 (90.50), d24_s64 (88.49), PRNG d32_s96 (89.42)
+front_F_cnnall: 9: PRNG d8_s32 (86.16), c3_6 (86.93), c4_8 (87.47), cnnpool_c8_16 (87.81), c6_12 (88.12), c8_16 (89.19), c16_32 (89.86), cnnpool_c32_64 (90.11), c32_64 (90.50)
+front_C_cnnall: 13: d8_s32 (86.28), d8_s64 (87.57), d16_s64 (88.32), d24_s64 (88.49), PRNG d24_s64 (88.55), PRNG d16_s128 (89.03), PRNG d20_s128 (89.27), PRNG d32_s96 (89.42), cnns4_c16_32 (89.56), c16_32 (89.86), cnnpool_c32_64 (90.11), cnns4_c32_64 (90.39), c32_64 (90.50)
+front_3_cnnall: 22: PRNG d8_s32 (86.16), c3_6 (86.93), c4_8 (87.47), d8_s32 (86.28), cnnpool_c8_16 (87.81), cnns4_c4_8 (87.52), PRNG d8_s64 (87.45), c6_12 (88.12), c8_16 (89.19), d8_s64 (87.57), PRNG d16_s64 (88.05), c16_32 (89.86), cnns4_c16_32 (89.56), PRNG d24_s64 (88.55), cnnpool_c32_64 (90.11), d16_s64 (88.32), PRNG d16_s128 (89.03), PRNG d20_s128 (89.27), c32_64 (90.50), cnns4_c32_64 (90.39), d24_s64 (88.49), PRNG d32_s96 (89.42)

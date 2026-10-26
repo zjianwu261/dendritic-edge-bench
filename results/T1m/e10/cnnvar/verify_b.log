@@ -1,0 +1,102 @@
+cnnpool_c2_4 1 {'tag': 'cnnpool_c2_4_lr0.003_wd0.01_t1', 'test_int8_ref': 0.8142, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [8, 7], 'acc_bound': 128551, 'table_bytes': 482, 'flash_bytes': 9833, 'xdata_bytes': 1231, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+cnnpool_c2_4 2 {'tag': 'cnnpool_c2_4_lr0.003_wd0.01_t2', 'test_int8_ref': 0.8024, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [11, 8], 'acc_bound': 156766, 'table_bytes': 482}
+cnnpool_c2_4 3 {'tag': 'cnnpool_c2_4_lr0.003_wd0.01_t3', 'test_int8_ref': 0.8128, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [8, 7], 'acc_bound': 112240, 'table_bytes': 482}
+cnnpool_c4_8 1 {'tag': 'cnnpool_c4_8_lr0.01_wd0_t1', 'test_int8_ref': 0.8272, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [6, 7], 'acc_bound': 133458, 'table_bytes': 1088, 'flash_bytes': 10471, 'xdata_bytes': 1365, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+cnnpool_c4_8 2 {'tag': 'cnnpool_c4_8_lr0.01_wd0_t2', 'test_int8_ref': 0.8487, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [6, 7], 'acc_bound': 183937, 'table_bytes': 1088}
+cnnpool_c4_8 3 {'tag': 'cnnpool_c4_8_lr0.01_wd0_t3', 'test_int8_ref': 0.8473, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0], 'shifts': [6, 7], 'acc_bound': 244714, 'table_bytes': 1088}
+cnnpool_c8_16 1 {'tag': 'cnnpool_c8_16_lr0.003_wd0_t1', 'test_int8_ref': 0.8769, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0], 'shifts': [6, 8], 'acc_bound': 264898, 'table_bytes': 2732, 'flash_bytes': 12095, 'xdata_bytes': 1633, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+cnnpool_c8_16 2 {'tag': 'cnnpool_c8_16_lr0.003_wd0_t2', 'test_int8_ref': 0.8749, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [7, 8], 'acc_bound': 352729, 'table_bytes': 2732}
+cnnpool_c8_16 3 {'tag': 'cnnpool_c8_16_lr0.003_wd0_t3', 'test_int8_ref': 0.8825, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [7, 8], 'acc_bound': 383087, 'table_bytes': 2732}
+cnnpool_c16_32 1 {'tag': 'cnnpool_c16_32_lr0.003_wd0_t1', 'test_int8_ref': 0.8877, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0], 'shifts': [6, 8], 'acc_bound': 716435, 'table_bytes': 7748, 'flash_bytes': 17113, 'xdata_bytes': 2169, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+cnnpool_c16_32 2 {'tag': 'cnnpool_c16_32_lr0.003_wd0_t2', 'test_int8_ref': 0.8895, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0], 'shifts': [6, 8], 'acc_bound': 671943, 'table_bytes': 7748}
+cnnpool_c16_32 3 {'tag': 'cnnpool_c16_32_lr0.003_wd0_t3', 'test_int8_ref': 0.8879, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [7, 7], 'acc_bound': 655073, 'table_bytes': 7748}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c4 1 {'tag': 'cnnds_c4_lr0.003_wd0_t1', 'test_int8_ref': 0.7135, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0, 0, 0, 0, 0], 'shifts': [9, 4, 6, 6, 6], 'acc_bound': 167276, 'table_bytes': 240, 'GAP_M': 646, 'flash_bytes': 12653, 'xdata_bytes': 1461, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c4 2 {'tag': 'cnnds_c4_lr0.003_wd0_t2', 'test_int8_ref': 0.7296, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0, 1, 1, 2, 0], 'shifts': [8, 5, 6, 5, 5], 'acc_bound': 76680, 'table_bytes': 240, 'GAP_M': 201}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c4 3 {'tag': 'cnnds_c4_lr0.003_wd0_t3', 'test_int8_ref': 0.748, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0, 0, 0, 0, 0], 'shifts': [8, 6, 5, 6, 7], 'acc_bound': 74286, 'table_bytes': 240, 'GAP_M': 535}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c8 1 {'tag': 'cnnds_c8_lr0.003_wd0_t1', 'test_int8_ref': 0.798, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0, 1, 0, 0, 0], 'shifts': [9, 4, 6, 6, 6], 'acc_bound': 91819, 'table_bytes': 524, 'GAP_M': 548, 'flash_bytes': 12943, 'xdata_bytes': 1857, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c8 2 {'tag': 'cnnds_c8_lr0.003_wd0_t2', 'test_int8_ref': 0.7968, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0, 0, 0, 1, 0], 'shifts': [8, 5, 7, 6, 5], 'acc_bound': 106782, 'table_bytes': 524, 'GAP_M': 187}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c8 3 {'tag': 'cnnds_c8_lr0.003_wd0_t3', 'test_int8_ref': 0.8004, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0, 2, 0, 0, 0], 'shifts': [10, 2, 5, 7, 7], 'acc_bound': 128069, 'table_bytes': 524, 'GAP_M': 649}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c16 1 {'tag': 'cnnds_c16_lr0.003_wd0_t1', 'test_int8_ref': 0.8307, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [2, 0, 0, 0, 0, 0], 'shifts': [8, 3, 6, 5, 6], 'acc_bound': 173238, 'table_bytes': 1284, 'GAP_M': 445, 'flash_bytes': 13702, 'xdata_bytes': 2649, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c16 2 {'tag': 'cnnds_c16_lr0.003_wd0_t2', 'test_int8_ref': 0.859, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0, 1, 0, 0, 0], 'shifts': [8, 4, 6, 6, 7], 'acc_bound': 105559, 'table_bytes': 1284, 'GAP_M': 523}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnnds_c16 3 {'tag': 'cnnds_c16_lr0.003_wd0_t3', 'test_int8_ref': 0.8304, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0, 0, 0, 0, 0], 'shifts': [8, 4, 7, 5, 6], 'acc_bound': 150677, 'table_bytes': 1284, 'GAP_M': 305}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnns4_c2_4 1 {'tag': 'cnns4_c2_4_lr0.01_wd0_t1', 'test_int8_ref': 0.8538, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [1, 0], 'shifts': [10, 8], 'acc_bound': 504884, 'table_bytes': 2096, 'flash_bytes': 10217, 'xdata_bytes': 1159, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnns4_c2_4 2 {'tag': 'cnns4_c2_4_lr0.01_wd0_t2', 'test_int8_ref': 0.8589, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [7, 7], 'acc_bound': 467419, 'table_bytes': 2096}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnns4_c2_4 3 {'tag': 'cnns4_c2_4_lr0.01_wd0_t3', 'test_int8_ref': 0.836, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [11, 5], 'acc_bound': 455361, 'table_bytes': 2096}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnns4_c4_8 1 {'tag': 'cnns4_c4_8_lr0.003_wd0_t1', 'test_int8_ref': 0.8776, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 0], 'shifts': [9, 7], 'acc_bound': 585536, 'table_bytes': 4316, 'flash_bytes': 12440, 'xdata_bytes': 1453, 'uart_build_ok': True, 'fits': True, 'uart_link_log': None}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnns4_c4_8 2 {'tag': 'cnns4_c4_8_lr0.003_wd0_t2', 'test_int8_ref': 0.8777, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 2], 'shifts': [8, 6], 'acc_bound': 913475, 'table_bytes': 4316}
+In file included from ~/research/dendritic-edge/src/mcu/c/infer.c:235:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc: In function ‘infer’:
+~/research/dendritic-edge/src/mcu/c/infer_cnnvar.inc:2:31: warning: unused variable ‘v’ [-Wunused-variable]
+    2 |     DATA uint8_t o, i, y, xx, v;
+      |                               ^
+cnns4_c4_8 3 {'tag': 'cnns4_c4_8_lr0.003_wd0_t3', 'test_int8_ref': 0.8704, 'pc_bitexact_logits': '10000/10000', 'pc_bitexact_class': '10000/10000', 'offsets': [0, 1], 'shifts': [8, 6], 'acc_bound': 811367, 'table_bytes': 4316}

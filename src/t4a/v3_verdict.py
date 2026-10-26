@@ -1,4 +1,4 @@
-"""v3 benchmark summary (--fix: the same rules on the v3fix runs) + pre-registered stop-loss verdict (S1 / S2).
+"""v3 benchmark summary (--fix: the same rules on the v3fix runs) + pre-specified stop-loss verdict (S1 / S2).
 
 Main metric: act_mse_gc final average over the 5 tasks (TEST split), main order, seeds 0/1/2.
   S1: dend2 (given ID, selected v3 config) final avg <= 0.95 x lora_bank r10 (given ID), and dend2 lower in >= 2 of 3 seeds.
@@ -155,7 +155,7 @@ def main():
               "val", r.get("val_final_mean", ""), "acc", r.get("ctx_infer_acc_mean", ""))
     if a.order != "main":
         return
-    ver = {"rule": "stop-loss rule (pre-registered 2026-10-03): S1 dend2 id <= 0.95 x lora_bank r10 id (test act_mse_gc final avg, "
+    ver = {"rule": "stop-loss rule (pre-specified in the internal project plan, 2026-10-03): S1 dend2 id <= 0.95 x lora_bank r10 id (test act_mse_gc final avg, "
                    "3 seeds) and lower in >= 2/3 seeds; S2 dend2 infer ctx acc >= 0.85", "dend2_selection": sel}
     if a.fix:
         ver["rule"] += "  [v3fix: post-hoc supplementary run after the segment-initialisation bug; lr per method selected on seed-0 val]"

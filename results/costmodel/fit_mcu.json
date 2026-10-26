@@ -1,0 +1,95 @@
+{
+ "tier": "mcu",
+ "model": "cycles = c0 + c_fc F_fc + c_conv F_conv + c_out N_out + c_g F_gather + c_p F_prng",
+ "n_calib": 14,
+ "calib_graphs": [
+  "cnn_c16_32",
+  "cnn_c2_4",
+  "cnn_c32_64",
+  "cnn_c3_6",
+  "cnn_c4_8",
+  "cnn_c6_12",
+  "cnn_c8_16",
+  "cnns4_c2_4",
+  "cnns4_c4_8",
+  "mlp_h16",
+  "mlp_h32",
+  "mlp_h48",
+  "mlp_h64",
+  "mlp_h72"
+ ],
+ "fit_info": {
+  "nnls_init": [
+   77053.92611824282,
+   66.77529518707084,
+   58.80763460337411,
+   111.42410923061256
+  ],
+  "cost": 0.0003029393154402055,
+  "status": 3,
+  "rmse_log": 0.006578529095693542
+ },
+ "constants": {
+  "c0": 7644.932228015665,
+  "c_fc": 67.80754744977818,
+  "c_conv": 56.74664066354737,
+  "c_out": 240.2476571516392,
+  "c_g": 67.80915035045247,
+  "c_p": 84.67842158524492
+ },
+ "c_g_c_p_note": "c_g / c_p here: fitted on all dANNs of the class (reporting only); predictions use the leave-one-out values in loo_sparse_constant",
+ "loo_sparse_constant": {
+  "dann_d16_s64": 67.91559625116336,
+  "dann_d24_s64": 67.55399895226707,
+  "dann_d8_s32": 67.63731303255653,
+  "dann_d8_s64": 68.12496723447795,
+  "dann_prng_d16_s128": 84.72707042711427,
+  "dann_prng_d16_s64": 84.6573927500943,
+  "dann_prng_d20_s128": 84.57772889404423,
+  "dann_prng_d24_s128": 84.55055367999267,
+  "dann_prng_d24_s64": 84.612510651764,
+  "dann_prng_d32_s96": 84.67823289132122,
+  "dann_prng_d8_s32": 84.8652128003413,
+  "dann_prng_d8_s64": 84.7549252081278
+ },
+ "bootstrap": {
+  "n": 1000,
+  "seed": "numpy default_rng(20261026)",
+  "note": "calibration builds resampled; c_g / c_p refitted on all dANNs of the class for each resample",
+  "ci95": {
+   "c0": [
+    1.6461380506472392,
+    31095.67753757244
+   ],
+   "c_fc": [
+    67.32737988306883,
+    68.01903403286025
+   ],
+   "c_conv": [
+    55.15145101723869,
+    57.79957107047438
+   ],
+   "c_out": [
+    200.7484384538357,
+    275.20866702374
+   ],
+   "c_g": [
+    65.94158379518146,
+    69.30750125747088
+   ],
+   "c_p": [
+    82.77203528460217,
+    86.28914559910909
+   ]
+  },
+  "median": {
+   "c0": 7705.069675173483,
+   "c_fc": 67.81392048941522,
+   "c_conv": 56.82248126746349,
+   "c_out": 239.1395862307017,
+   "c_g": 67.79643126428807,
+   "c_p": 84.73240348939018
+  }
+ },
+ "protocol_sha256": "bb3f0e1d660d3930f3ece6a135f03ba0d8220bbbde3f4fc2a49add465694c148"
+}

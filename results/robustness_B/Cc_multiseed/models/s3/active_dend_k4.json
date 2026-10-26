@@ -1,0 +1,39 @@
+{
+ "name": "active_dend_k4",
+ "group": "active_dend_pmnist",
+ "dataset": "permuted MNIST (10 tasks)",
+ "model": "ad",
+ "segments": 4,
+ "epochs_per_task": 3,
+ "lr": 0.0005,
+ "seg_scale": 1.0,
+ "seed": 2,
+ "test_acc": 0.94726,
+ "final_per_task": [
+  0.9018,
+  0.93,
+  0.9393,
+  0.9387,
+  0.9544,
+  0.9586,
+  0.9606,
+  0.9644,
+  0.9582,
+  0.9666
+ ],
+ "bwt": -0.023288888888888866,
+ "task_inference_acc": 1.0,
+ "params_effective": 15759370,
+ "params_stored": 18669578,
+ "ad_params": 15759370,
+ "ad_params_stored": 18669578,
+ "match": "effective",
+ "train_minutes": 36.1,
+ "export": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/active_dend_k4.onnx",
+  "size_MB": 71.223,
+  "nodes": 43,
+  "max_abs_err_vs_torch": 1.9073486328125e-06,
+  "export_s": 1.0
+ }
+}

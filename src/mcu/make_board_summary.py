@@ -33,6 +33,12 @@ EXP = os.path.join(os.environ.get("DEB_ROOT", os.path.dirname(os.path.dirname(os
 E10 = f"{EXP}/e10"
 E10B_BUILD = {"dann_d8_s32_t1": "dann_d8_s32_lr0.01_wd0_t1", "dann_d8_s64_t1": "dann_d8_s64_lr0.003_wd0_t1",
               "cnn_c2_4_t1": "cnn_c2_4_lr0.003_wd0.01_t1", "cnn_c3_6_t1": "cnn_c3_6_lr0.003_wd0.01_t1"}
+# the 12 remaining E-10 estimate rows, board-timed from their E-10b seed-1 builds
+E10B_BUILD.update({f"{c.split('_lr')[0]}_t1": f"{c}_t1" for c in [
+    "dann_prng_d8_s32_lr0.003_wd0.01", "dann_prng_d8_s64_lr0.003_wd0.01", "mlp_h16_lr0.003_wd0", "mlp_h32_lr0.003_wd0.01",
+    "dann_prng_d16_s64_lr0.003_wd0", "dann_d24_s64_lr0.003_wd0.01", "dann_prng_d24_s64_lr0.003_wd0",
+    "dann_prng_d32_s96_lr0.003_wd0", "dann_prng_d24_s128_lr0.003_wd0", "mlp_h72_lr0.001_wd0.01",
+    "cnn_c16_32_lr0.001_wd0", "cnn_c32_64_lr0.001_wd0.01"]})
 
 
 def e10b_info(tag, model):
@@ -70,6 +76,8 @@ def main():
         tag = os.path.basename(f)[len("board_"):-len(".csv")]
         if not re.search(r"_t\d+$", tag):
             continue
+        if tag.startswith(("cnnpool_", "cnns4_", "cnnds_")):
+            continue  # CNN variants (PROTOCOL_cnnvar.md): summarised by src/mcu/cnnvar_report.py, not here
         model, seed = re.match(r"(.+)_t(\d+)$", tag).groups()
         b = list(csv.DictReader(open(f)))
         fm = adjusted_mhz(tag)

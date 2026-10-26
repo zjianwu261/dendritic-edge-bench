@@ -1,0 +1,231 @@
+onnx active_dend_k4.onnx 29 18665472 18669578
+onnx active_dend_k4_cached.onnx 21 5828256 5873333
+onnx active_dend_k4_proto.onnx 34 18673312 18685269
+onnx active_dend_k8.onnx 29 31510528 31514634
+onnx active_dend_k8_cached.onnx 21 5828256 5873333
+onnx active_dend_k8_proto.onnx 34 31518368 31530325
+onnx dann_lrf_d32_s128.onnx 5 3736832 3741066
+onnx dhsrnn_n64_b8_seq.onnx 19977 392415232 395346
+onnx dhsrnn_n64_b8_seqloop.onnx 22005 392448000 395770
+onnx dhsrnn_n64_b8_step.onnx 19 392448 394174
+onnx dhsrnn_n64_b8_val_seqloop.onnx 22005 392448000 395770
+onnx gru_acc_val_seq.onnx 9 5063680 741140
+onnx gru_acc_val_seqloop.onnx 27013 739328000 742161
+onnx gru_acc_val_step.onnx 7 5120 740884
+onnx gru_h23_seq.onnx 9 454940 50528
+onnx gru_h23_seqloop.onnx 27013 50347000 51549
+onnx gru_h23_step.onnx 7 460 50505
+onnx gru_pm_val_seq.onnx 9 454940 50528
+onnx gru_pm_val_seqloop.onnx 27013 50347000 51549
+onnx lif_srnn_n64_seq.onnx 14978 50171904 50642
+onnx lif_srnn_n64_seqloop.onnx 22005 50176000 51706
+onnx lif_srnn_n64_step.onnx 14 50176 50430
+onnx lif_srnn_n64_val_seqloop.onnx 22005 50176000 51706
+onnx mlp_h1024_fmnist.onnx 5 1861632 1863690
+onnx mlp_h256_fmnist.onnx 5 268800 269322
+onnx mlp_h3592_match_k4.onnx 5 15754512 15761706
+onnx mlp_h3941_matchstored_k4.onnx 5 18660635 18668527
+onnx mlp_h4965_match_k8.onnx 5 28593435 28603375
+onnx mlp_h512_fmnist.onnx 5 668672 669706
+onnx mlp_h5230_matchstored_k8.onnx 5 31505520 31515990
+onnx mlp_h85_match_d32_s128.onnx 5 74715 74895
+onnx vann_same_d32_s128.onnx 5 3736832 3741066
+onnx dann24_D1024_s128__conv.onnx 7 935168 936330
+onnx dann24_D1024_s128__gemm.onnx 5 935168 936330
+onnx dann24_D1024_s256__conv.onnx 7 1067520 1068810
+onnx dann24_D2048_s128__conv.onnx 7 1869056 1871242
+onnx dann24_D2048_s128__gemm.onnx 5 1869056 1871242
+onnx dann24_D2048_s256__conv.onnx 7 2132480 2134794
+onnx dann24_D2048_s256__gemm.onnx 5 2132480 2134794
+onnx dann24_D4096_s128__conv.onnx 7 3736832 3741066
+onnx dann24_D4096_s128__gemm.onnx 5 3736832 3741066
+onnx dann24_D4096_s256__conv.onnx 7 4262400 4266762
+onnx dann24_D4096_s256__gemm.onnx 5 4262400 4266762
+onnx dann24_D512_s128__conv.onnx 7 468224 468874
+onnx dann24_D512_s256__conv.onnx 7 535040 535818
+onnx dannG_p4_m16_s128_sg1__bmm.onnx 14 114176 115098
+onnx dannG_p4_m16_s128_sg4__bmm.onnx 14 38912 39834
+onnx dannG_p4_m16_s128_sg4_sp24__bmm.onnx 14 38912 39834
+onnx dannG_p4_m16_s256_sg1__bmm.onnx 14 215808 216858
+onnx dannG_p4_m16_s256_sg4__bmm.onnx 14 65280 66330
+onnx dannG_p4_m16_s64_sg1__bmm.onnx 14 63360 64218
+onnx dannG_p4_m16_s64_sg4__bmm.onnx 14 25728 26586
+onnx dannG_p4_m32_s128_sg1__bmm.onnx 14 227072 228778
+onnx dannG_p4_m32_s128_sg4__bmm.onnx 14 76544 78250
+onnx dannG_p4_m32_s128_sg4_sp24__bmm.onnx 14 76544 78250
+onnx dannG_p4_m32_s256_sg1__bmm.onnx 14 429056 430890
+onnx dannG_p4_m32_s256_sg4__bmm.onnx 14 128000 129834
+onnx dannG_p4_m32_s64_sg1__bmm.onnx 14 126080 127722
+onnx dannG_p4_m32_s64_sg4__bmm.onnx 14 50816 52458
+onnx dannG_p4_m64_s128_sg1__bmm.onnx 14 452864 456138
+onnx dannG_p4_m64_s128_sg4__bmm.onnx 14 151808 155082
+onnx dannG_p4_m64_s128_sg4_sp24__bmm.onnx 14 151808 155082
+onnx dannG_p4_m64_s128_sg4_sp24__conv.onnx 12 151808 155082
+onnx dannG_p4_m64_s256_sg1__bmm.onnx 14 855552 858954
+onnx dannG_p4_m64_s256_sg4__bmm.onnx 14 253440 256842
+onnx dannG_p4_m64_s64_sg1__bmm.onnx 14 251520 254730
+onnx dannG_p4_m64_s64_sg4__bmm.onnx 14 100992 104202
+onnx dannG_p4_m8_s128_sg1__bmm.onnx 14 57728 58258
+onnx dannG_p4_m8_s256_sg1__bmm.onnx 14 109184 109842
+onnx dannG_p4_m8_s64_sg1__bmm.onnx 14 32000 32466
+onnx dense_D1024_s128__conv.onnx 7 935168 936330
+onnx dense_D1024_s256__conv.onnx 7 1067520 1068810
+onnx dense_D2048_s128__conv.onnx 7 1869056 1871242
+onnx dense_D2048_s128__gemm.onnx 5 1869056 1871242
+onnx dense_D2048_s256__conv.onnx 7 2132480 2134794
+onnx dense_D2048_s256__gemm.onnx 5 2132480 2134794
+onnx dense_D4096_s128__conv.onnx 7 3736832 3741066
+onnx dense_D4096_s128__gemm.onnx 5 3736832 3741066
+onnx dense_D4096_s256__conv.onnx 7 4262400 4266762
+onnx dense_D4096_s256__gemm.onnx 5 4262400 4266762
+onnx dense_D512_s128__conv.onnx 7 468224 468874
+onnx dense_D512_s256__conv.onnx 7 535040 535818
+onnx g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv.onnx 7 269696 20490
+onnx g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv.onnx 7 990976 50186
+onnx g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv.onnx 7 78400 9098
+onnx g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm.onnx 14 63360 64218
+onnx g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm.onnx 14 126080 127722
+onnx g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm.onnx 14 251520 254730
+onnx g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm.onnx 14 32000 32466
+onnx g1f_mlp_h1024_lr0.0003_wd0_fair_t1__conv.onnx 7 1861632 1863690
+onnx g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm.onnx 5 1861632 1863690
+onnx g1f_mlp_h128_lr0.001_wd0_fair_t1__conv.onnx 7 118016 118282
+onnx g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm.onnx 5 118016 118282
+onnx g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv.onnx 7 268800 269322
+onnx g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm.onnx 5 268800 269322
+onnx g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__conv.onnx 7 668672 669706
+onnx g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm.onnx 5 668672 669706
+onnx g1v2_mlp_h1024__conv.onnx 7 1861632 1863690
+onnx g1v2_mlp_h1024__gemm.onnx 5 1861632 1863690
+onnx g1v2_mlp_h128__conv.onnx 7 118016 118282
+onnx g1v2_mlp_h128__gemm.onnx 5 118016 118282
+onnx g1v2_mlp_h2048__conv.onnx 7 5820416 5824522
+onnx g1v2_mlp_h2048__gemm.onnx 5 5820416 5824522
+onnx g1v2_mlp_h256__conv.onnx 7 268800 269322
+onnx g1v2_mlp_h256__gemm.onnx 5 268800 269322
+onnx g1v2_mlp_h32__conv.onnx 7 26432 26506
+onnx g1v2_mlp_h32__gemm.onnx 5 26432 26506
+onnx g1v2_mlp_h4096__conv.onnx 7 20029440 20037642
+onnx g1v2_mlp_h4096__gemm.onnx 5 20029440 20037642
+onnx g1v2_mlp_h512__conv.onnx 7 668672 669706
+onnx g1v2_mlp_h512__gemm.onnx 5 668672 669706
+onnx g1v2_mlp_h64__conv.onnx 7 54912 55050
+onnx g1v2_mlp_h64__gemm.onnx 5 54912 55050
+onnx g1x2_lrelu_dsb_h256__gemm.onnx 5 268800 269322
+onnx g1x2_lrelu_dsb_h512__gemm.onnx 5 668672 669706
+onnx g1x2_lrelu_shz_h256__gemm.onnx 5 268800 269066
+onnx g1x2_lrelu_shz_h512__gemm.onnx 5 668672 669194
+onnx g1x2_relu_dsb_h256__gemm.onnx 5 268800 269322
+onnx g1x2_relu_dsb_h512__gemm.onnx 5 668672 669706
+onnx g1x2_relu_shz_h256__gemm.onnx 5 268800 269066
+onnx g1x2_relu_shz_h512__gemm.onnx 5 668672 669194
+onnx dhssm_L1_n128_b1_cont__K50.onnx 38 106582400 907168
+onnx dhssm_L1_n128_b1_spk__K50.onnx 39 106582400 907169
+onnx dhssm_L1_n128_b4_cont__K50.onnx 38 125936000 2040352
+onnx dhssm_L1_n128_b4_spk__K50.onnx 39 125936000 2040353
+onnx dhssm_L1_n256_b4_cont__K50.onnx 38 250864000 4021664
+onnx dhssm_L1_n256_b4_spk__K50.onnx 39 250864000 4021665
+onnx dhssm_L1_n64_b1_cont__K50.onnx 38 53795200 483104
+onnx dhssm_L1_n64_b1_spk__K50.onnx 39 53795200 483105
+onnx dhssm_L1_n64_b4_cont__K50.onnx 38 63472000 1049696
+onnx dhssm_L1_n64_b4_spk__K50.onnx 39 63472000 1049697
+onnx dhssm_L1_n64_b8_cont__K25.onnx 38 62189600 1387952
+onnx dhssm_L1_n64_b8_cont__K50.onnx 38 76374400 1805152
+onnx dhssm_L1_n64_b8_spk__K25.onnx 39 62189600 1387953
+onnx dhssm_L1_n64_b8_spk__K50.onnx 39 76374400 1805153
+onnx dhssm_L2_n128_b1_cont__K25.onnx 60 123207200 1306608
+onnx dhssm_L2_n128_b1_cont__K50.onnx 60 135868800 1679008
+onnx dhssm_L2_n128_b1_spk__K25.onnx 62 123207200 1306609
+onnx dhssm_L2_n128_b1_spk__K50.onnx 62 135868800 1679009
+onnx dhssm_L2_n128_b2_cont__K50.onnx 60 148771200 2434464
+onnx dhssm_L2_n128_b2_spk__K50.onnx 62 148771200 2434465
+onnx dhssm_L2_n128_b4_cont__K25.onnx 60 143636000 3035376
+onnx dhssm_L2_n128_b4_cont__K50.onnx 60 174576000 3945376
+onnx dhssm_L2_n128_b4_spk__K100.onnx 62 239186000 13370377
+onnx dhssm_L2_n128_b4_spk__K25.onnx 62 143636000 3035377
+onnx dhssm_L2_n128_b4_spk__K50.onnx 62 174576000 3945377
+onnx dhssm_L2_n128_b8_cont__K50.onnx 60 226185600 6967200
+onnx dhssm_L2_n128_b8_spk__K50.onnx 62 226185600 6967201
+onnx dhssm_L2_n256_b1_cont__K50.onnx 60 303497600 3331744
+onnx dhssm_L2_n256_b1_spk__K50.onnx 62 303497600 3331745
+onnx dhssm_L2_n256_b4_cont__K25.onnx 60 319508000 6058480
+onnx dhssm_L2_n256_b4_cont__K50.onnx 60 380912000 7864480
+onnx dhssm_L2_n256_b4_spk__K25.onnx 62 319508000 6058481
+onnx dhssm_L2_n256_b4_spk__K50.onnx 62 380912000 7864481
+onnx dhssm_L2_n64_b1_cont__K50.onnx 60 64342400 864928
+onnx dhssm_L2_n64_b1_spk__K50.onnx 62 64342400 864929
+onnx dhssm_L2_n64_b4_cont__K50.onnx 60 83696000 1998112
+onnx dhssm_L2_n64_b4_spk__K50.onnx 62 83696000 1998113
+onnx gru_h128__seq.onnx 9 2531840 321428
+onnx gru_h16__seq.onnx 9 316480 34820
+onnx gru_h23__seq.onnx 9 454940 50528
+onnx gru_h256__seq.onnx 9 5063680 741140
+onnx gru_h32__seq.onnx 9 632960 71156
+onnx gru_h64__seq.onnx 9 1265920 148436
+onnx dssmU_L2_n128_b4_spk_vs_t1__K50.onnx 62 494064000 4264865
+onnx gru_h768_lr0.003_vs_t1__seq.onnx 9 15191040 3403028
+onnx lru_L2_H64_N128_lr0.001_vs_t1__K50.onnx 118 172425600 3199973
+onnx adc_h1024_ff24__conv.onnx 25 1869472 1892021
+onnx adc_h1024_ff24__gemm.onnx 21 1869472 1892021
+onnx adc_h1024_ffrand__conv.onnx 25 1869472 1892021
+onnx adc_h1024_ffrand__gemm.onnx 21 1869472 1892021
+onnx adc_h2048_ff24__conv.onnx 25 5828256 5873333
+onnx adc_h2048_ff24__gemm.onnx 21 5828256 5873333
+onnx adc_h2048_ffrand__conv.onnx 25 5828256 5873333
+onnx adc_h2048_ffrand__gemm.onnx 21 5828256 5873333
+onnx adc_h256_ff24__conv.onnx 25 276640 282293
+onnx adc_h256_ff24__gemm.onnx 21 276640 282293
+onnx adc_h256_ffrand__conv.onnx 25 276640 282293
+onnx adc_h256_ffrand__gemm.onnx 21 276640 282293
+onnx adc_h4096_ff24__conv.onnx 25 20037280 20127413
+onnx adc_h4096_ff24__gemm.onnx 21 20037280 20127413
+onnx adc_h4096_ffrand__conv.onnx 25 20037280 20127413
+onnx adc_h4096_ffrand__gemm.onnx 21 20037280 20127413
+onnx adc_h512_ff24__conv.onnx 25 676512 687797
+onnx adc_h512_ff24__gemm.onnx 21 676512 687797
+onnx adc_h512_ffrand__conv.onnx 25 676512 687797
+onnx adc_h512_ffrand__gemm.onnx 21 676512 687797
+onnx mlp_h1024__conv.onnx 7 1861632 1863690
+onnx mlp_h1024__gemm.onnx 5 1861632 1863690
+onnx mlp_h128__conv.onnx 7 118016 118282
+onnx mlp_h128__gemm.onnx 5 118016 118282
+onnx mlp_h2048__conv.onnx 7 5820416 5824522
+onnx mlp_h2048__gemm.onnx 5 5820416 5824522
+onnx mlp_h256__conv.onnx 7 268800 269322
+onnx mlp_h256__gemm.onnx 5 268800 269322
+onnx mlp_h4096__conv.onnx 7 20029440 20037642
+onnx mlp_h4096__gemm.onnx 5 20029440 20037642
+onnx mlp_h512__conv.onnx 7 668672 669706
+onnx mlp_h512__gemm.onnx 5 668672 669706
+onnx mlpctx_h1024__gemm.onnx 11 1879712 1881881
+onnx mlpctx_h2048__gemm.onnx 11 5848736 5852953
+onnx mlpctx_h256__gemm.onnx 11 279200 279833
+onnx mlpctx_h4096__gemm.onnx 11 20078240 20086553
+onnx mlpctx_h512__gemm.onnx 11 681632 682777
+mcu cnn_c16_32_lr0.001_wd0_t1 {'F_fc': 15680, 'F_conv': 231696, 'F_gather': 0, 'F_prng': 0, 'N_out': 4704, 'kind': 'cnn', 'params_eff': 20490, 'F_eff': 247376, 'sha256': '2496945e676f3e3470d701471a8a9d022f8ae4f47f04ae04d9f7372e7dfff681'}
+mcu cnn_c2_4_lr0.003_wd0.01_t1 {'F_fc': 1960, 'F_conv': 6562, 'F_gather': 0, 'F_prng': 0, 'N_out': 588, 'kind': 'cnn', 'params_eff': 2066, 'F_eff': 8522, 'sha256': 'f6fe03bce501cabd2f44162478c5417d523c8732290956cae7b54432d4d62fb9'}
+mcu cnn_c32_64_lr0.001_wd0.01_t1 {'F_fc': 31360, 'F_conv': 872992, 'F_gather': 0, 'F_prng': 0, 'N_out': 9408, 'kind': 'cnn', 'params_eff': 50186, 'F_eff': 904352, 'sha256': '2760ab89ceb6bbbf2c2eb9b6a2b1b33073de64424e128f80ea08eaf68a80af5b'}
+mcu cnn_c3_6_lr0.003_wd0.01_t1 {'F_fc': 2940, 'F_conv': 12243, 'F_gather': 0, 'F_prng': 0, 'N_out': 882, 'kind': 'cnn', 'params_eff': 3148, 'F_eff': 15183, 'sha256': 'df18a183e39b6d7f4407d22bb360751a77a826ce31171682ad72e88b44b91f44'}
+mcu cnn_c4_8_lr0.003_wd0.01_t1 {'F_fc': 3920, 'F_conv': 19524, 'F_gather': 0, 'F_prng': 0, 'N_out': 1176, 'kind': 'cnn', 'params_eff': 4266, 'F_eff': 23444, 'sha256': 'c17ef249c447582cfced9106ea26211338ee44f5113305bef81c49a8a4a752d4'}
+mcu cnn_c6_12_lr0.003_wd0_t1 {'F_fc': 5880, 'F_conv': 38886, 'F_gather': 0, 'F_prng': 0, 'N_out': 1764, 'kind': 'cnn', 'params_eff': 6610, 'F_eff': 44766, 'sha256': '3a937e8ad129f94be4b446d5246e7ec8d7c47a4055b33f05bd6cee861a4fe1aa'}
+mcu cnn_c8_16_lr0.003_wd0.01_t1 {'F_fc': 7840, 'F_conv': 64648, 'F_gather': 0, 'F_prng': 0, 'N_out': 2352, 'kind': 'cnn', 'params_eff': 9098, 'F_eff': 72488, 'sha256': 'ad0633a80138de86f9f4a995b1d34026f8ecccbc048066ebcad594f6d5f6c998'}
+mcu dann_d16_s64_lr0.003_wd0_t1 {'F_fc': 1664, 'F_conv': 0, 'F_gather': 16384, 'F_prng': 0, 'N_out': 1088, 'kind': 'dann', 'params_eff': 19146, 'F_eff': 18048, 'sha256': 'd5ad8f63264372fddd9abbc7d00ebe647a11779c169661e4157ec2274911fb11'}
+mcu dann_d24_s64_lr0.003_wd0.01_t1 {'F_fc': 2176, 'F_conv': 0, 'F_gather': 24576, 'F_prng': 0, 'N_out': 1600, 'kind': 'dann', 'params_eff': 28362, 'F_eff': 26752, 'sha256': '6c1d95ec18496f5913abb827690de7fa213bd573d63c23f9d003d71ff58acfd7'}
+mcu dann_d8_s32_lr0.01_wd0_t1 {'F_fc': 576, 'F_conv': 0, 'F_gather': 4096, 'F_prng': 0, 'N_out': 288, 'kind': 'dann', 'params_eff': 4970, 'F_eff': 4672, 'sha256': '52155590b7117a96e8dbac545ae61120be0bb8edcfb6ff2712f81e1e67977bbe'}
+mcu dann_d8_s64_lr0.003_wd0_t1 {'F_fc': 1152, 'F_conv': 0, 'F_gather': 8192, 'F_prng': 0, 'N_out': 576, 'kind': 'dann', 'params_eff': 9930, 'F_eff': 9344, 'sha256': 'b220c1f60816a00a778f1a40942961c5ca6ff148fa3bf1f55cfb4cb1bed044f7'}
+mcu dann_prng_d16_s128_lr0.003_wd0.01_t1 {'F_fc': 3328, 'F_conv': 0, 'F_gather': 0, 'F_prng': 32768, 'N_out': 2176, 'kind': 'prng', 'params_eff': 38282, 'F_eff': 36096, 'sha256': '8c03f29c6bedeae09bde3886c37a883876867c58c20c5e0557fbc8dbe006f326'}
+mcu dann_prng_d16_s64_lr0.003_wd0_t1 {'F_fc': 1664, 'F_conv': 0, 'F_gather': 0, 'F_prng': 16384, 'N_out': 1088, 'kind': 'prng', 'params_eff': 19146, 'F_eff': 18048, 'sha256': '405194e0b269d1134973f95500d12bb1809ebf411a3b1c2833eb079952e36616'}
+mcu dann_prng_d20_s128_lr0.003_wd0_t1 {'F_fc': 3840, 'F_conv': 0, 'F_gather': 0, 'F_prng': 40960, 'N_out': 2688, 'kind': 'prng', 'params_eff': 47498, 'F_eff': 44800, 'sha256': '0894068ed578355a1f3359ee1fe0831532465e1cfc563850ad5598675430429c'}
+mcu dann_prng_d24_s128_lr0.003_wd0_t1 {'F_fc': 4352, 'F_conv': 0, 'F_gather': 0, 'F_prng': 49152, 'N_out': 3200, 'kind': 'prng', 'params_eff': 56714, 'F_eff': 53504, 'sha256': 'a6e07bdc508769b2b849940f4aa6e707566b32a748fff88bdff61afa9fc15369'}
+mcu dann_prng_d24_s64_lr0.003_wd0_t1 {'F_fc': 2176, 'F_conv': 0, 'F_gather': 0, 'F_prng': 24576, 'N_out': 1600, 'kind': 'prng', 'params_eff': 28362, 'F_eff': 26752, 'sha256': '28a40bf6e72b859f7d1dde744a20271bea7b4dcf30b6b5c22c211e187db570cd'}
+mcu dann_prng_d32_s96_lr0.003_wd0_t1 {'F_fc': 4032, 'F_conv': 0, 'F_gather': 0, 'F_prng': 49152, 'N_out': 3168, 'kind': 'prng', 'params_eff': 56362, 'F_eff': 53184, 'sha256': '0567389003332e33f3757e583fd2f8ae03aebb7c9596c369fdfa21b3a92cf370'}
+mcu dann_prng_d8_s32_lr0.003_wd0.01_t1 {'F_fc': 576, 'F_conv': 0, 'F_gather': 0, 'F_prng': 4096, 'N_out': 288, 'kind': 'prng', 'params_eff': 4970, 'F_eff': 4672, 'sha256': '9e1db44f81eacea74c78b8510949efb1cb0abc42a698eafd0d36a2174a4d26ad'}
+mcu dann_prng_d8_s64_lr0.003_wd0.01_t1 {'F_fc': 1152, 'F_conv': 0, 'F_gather': 0, 'F_prng': 8192, 'N_out': 576, 'kind': 'prng', 'params_eff': 9930, 'F_eff': 9344, 'sha256': 'c73d9b2fa7ebefd081561f464e782b7a37b86a17b7eb10827880a5febbbb814b'}
+mcu mlp_h16_lr0.003_wd0_t1 {'F_fc': 12960, 'F_conv': 0, 'F_gather': 0, 'F_prng': 0, 'N_out': 32, 'kind': 'mlp', 'params_eff': 13002, 'F_eff': 12960, 'sha256': '2212193ca4d8a491840f30cda4929410fc9c59175e8878140241c70991241374'}
+mcu mlp_h32_lr0.003_wd0.01_t1 {'F_fc': 26432, 'F_conv': 0, 'F_gather': 0, 'F_prng': 0, 'N_out': 64, 'kind': 'mlp', 'params_eff': 26506, 'F_eff': 26432, 'sha256': '562b1e90b4e09023bf77a18c231e840c6cbec37838ab3d4d75a9173189967b75'}
+mcu mlp_h48_lr0.001_wd0_t1 {'F_fc': 40416, 'F_conv': 0, 'F_gather': 0, 'F_prng': 0, 'N_out': 96, 'kind': 'mlp', 'params_eff': 40522, 'F_eff': 40416, 'sha256': 'b4849829b7f09894209128c1e01fdd3330178ab5b1762e159f803945b01aedbd'}
+mcu mlp_h64_lr0.003_wd0_t1 {'F_fc': 54912, 'F_conv': 0, 'F_gather': 0, 'F_prng': 0, 'N_out': 128, 'kind': 'mlp', 'params_eff': 55050, 'F_eff': 54912, 'sha256': 'a646b56354d314a95426e103e3c7436bd10d4a7c0aeff981eea1f89af245caad'}
+mcu mlp_h72_lr0.001_wd0.01_t1 {'F_fc': 62352, 'F_conv': 0, 'F_gather': 0, 'F_prng': 0, 'N_out': 144, 'kind': 'mlp', 'params_eff': 62506, 'F_eff': 62352, 'sha256': '066e6507ddb030cbc59c4f5eb9c8e768e5d80f17fa51498ae8cb4c0fea9c4ae0'}
+mcu cnns4_c2_4_lr0.01_wd0_t1 {'F_fc': 1960, 'F_conv': 4456, 'F_gather': 0, 'F_prng': 0, 'N_out': 294, 'kind': 'cnns4', 'params_eff': 2080, 'F_eff': 6416, 'sha256': '4e92a671dcaa66533f5b713b206806f579cca277f63c817160397ee1993d3294'}
+mcu cnns4_c4_8_lr0.003_wd0_t1 {'F_fc': 3920, 'F_conv': 14688, 'F_gather': 0, 'F_prng': 0, 'N_out': 588, 'kind': 'cnns4', 'params_eff': 4294, 'F_eff': 18608, 'sha256': 'a91f39ce08e8f175e98abe0a0e4404b47cc343edfab71c80a0c2918804f2b8bc'}
+wrote ~/research/dendritic-edge/experiments/costmodel/features.csv 278

@@ -1,0 +1,73 @@
+## 2026-10-26T17:48:28+08:00 before s1b1_dann_lrf_d32_s128 nocublas run 1
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## cpu governor
+schedutil
+## thermal (type temp_mC)
+CPU-therm 54812
+GPU-therm 53343
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 52687
+SOC1-therm 53406
+SOC2-therm 52843
+tj-therm 54656
+## loadavg
+0.78 0.87 0.90 1/245 489560
+## MemAvailable_MB 5949
+## other GPU/bench processes
+    541 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+   1678 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1723 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1731 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+## LOCK_CHECK OK 624750000
+## 2026-10-26T17:48:33+08:00 after run 1 rc=0
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## cpu governor
+schedutil
+## thermal (type temp_mC)
+CPU-therm 54656
+GPU-therm 53437
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 52843
+SOC1-therm 53531
+SOC2-therm 52781
+tj-therm 55000
+## loadavg
+0.72 0.85 0.89 2/245 489609
+## MemAvailable_MB 5948
+## other GPU/bench processes
+    541 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+   1678 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1723 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1731 jtop            /usr/bin/python3 /usr/local/bin/jtop --force

@@ -1,0 +1,5 @@
+seed,n_pair_seed,lat_ratio_min,lat_ratio_max,lat_build_extreme_lo,lat_build_extreme_hi,every_pair_slower_median,every_pair_slower_every_build,argmin,argmax,energy_ratio_min,energy_ratio_max,energy_run_extreme_lo,energy_run_extreme_hi,pairs_energy_below_1
+1,8,1.0819,5.8928,1.067,5.9851,True,True,DH-SRNN / GRU h23 (step),DH-SRNN / GRU-pm (fused op),0.9163,10.4806,0.9157,10.635,AD k4 / MLP h3941 s1 0.916
+2,8,1.0793,5.8069,1.0688,5.8902,True,True,DH-SRNN / GRU h23 (step),DH-SRNN / GRU-pm (fused op),0.9245,10.5103,0.9214,10.6902,AD k4 / MLP h3941 s2 0.924 ; AD k8 / MLP h5230 s2 0.947
+3,8,1.0802,5.9181,1.0718,5.9354,True,True,DH-SRNN / GRU h23 (step),DH-SRNN / GRU-pm (fused op),0.9263,10.2794,0.9236,10.4431,AD k4 / MLP h3941 s3 0.926 ; AD k8 / MLP h5230 s3 0.955
+all,24,1.0793,5.9181,1.067,5.9851,True,True,DH-SRNN / GRU h23 (step),DH-SRNN / GRU-pm (fused op),0.9163,10.5103,0.9157,10.6902,AD k4 / MLP h3941 s1 0.916 ; AD k4 / MLP h3941 s2 0.924 ; AD k4 / MLP h3941 s3 0.926 ; AD k8 / MLP h5230 s2 0.947 ; AD k8 / MLP h5230 s3 0.955

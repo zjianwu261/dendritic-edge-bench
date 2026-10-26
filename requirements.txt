@@ -24,4 +24,5 @@ requests==2.34.2
 # stcgal==1.10
 # pyserial==3.5
 # On the Jetson Orin (JetPack 5.1.5): TensorRT 8.5.2.2 python bindings from JetPack, jetson-stats (jtop) for power logging.
+# On Orin #2 (JetPack 6.2, cross-device check only): TensorRT 10.7.0.23 python bindings from JetPack.
 # On the Raspberry Pi 4B: onnxruntime==1.30.0 (CPU).

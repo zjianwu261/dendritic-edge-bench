@@ -1,0 +1,2 @@
+cnns4_c32_64 {'tag': 'cnns4_c32_64_lr0.001_wd0.01_t1', 'n': 5, 'cycles': 56852259.6, 'cycles_min': 56849779, 'cycles_max': 56853749, 'instr': 41017123.8, 'sim_flash': 58451, 'sim_xdata': 4783, 'ucsim_bitexact_logits': '5/5', 'ucsim_bitexact_class': '5/5', 'macs': 795776}
+cnnds_c32 {'tag': 'cnnds_c32_lr0.001_wd0.01_t1', 'n': 5, 'cycles': 16317367.6, 'cycles_min': 16310753, 'cycles_max': 16321810, 'instr': 11820027.2, 'sim_flash': 15767, 'sim_xdata': 3447, 'ucsim_bitexact_logits': '5/5', 'ucsim_bitexact_class': '5/5', 'macs': 180384}

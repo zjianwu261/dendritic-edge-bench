@@ -1,0 +1,78 @@
+## 2026-10-26T19:20:13+08:00 label=s2b1_mlp_h3941_matchstored_k4 tag=r2_1026192008 engine=s2b1_mlp_h3941_matchstored_k4_fp16_nocublas_e89852ab2b49.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 53843
+GPU-therm 52281
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 51968
+SOC1-therm 53031
+SOC2-therm 52031
+tj-therm 53750
+## loadavg
+0.49 0.84 0.91 1/247 806356
+## MemAvailable_MB 5998
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+ 793005  1.9     0       02:48 [kworker/0:2-events]
+ 649617  1.6     0       32:50 [kworker/0:1-events]
+ 683393  1.0     0       25:44 [kworker/4:1-events]
+ 503905  0.4     0    01:16:19 [kworker/4:0-events]
+    258  0.3     0  7-09:31:15 [nvmap-bz]
+ 708807  0.2     0       20:26 [kworker/u12:1-events_power_efficient]
+    129  0.1     0  7-09:31:23 [irq/124-host_sy]
+## trtexec processes
+## 2026-10-26T19:21:14+08:00 label=s2b1_mlp_h3941_matchstored_k4 tag=r2_1026192008 engine=s2b1_mlp_h3941_matchstored_k4_fp16_nocublas_e89852ab2b49.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 54250
+GPU-therm 53156
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 52593
+SOC1-therm 53406
+SOC2-therm 52500
+tj-therm 54375
+## loadavg
+0.33 0.73 0.87 1/249 811243
+## MemAvailable_MB 5998
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+ 793005  1.9     0       03:48 [kworker/0:2-pm]
+ 649617  1.6     0       33:50 [kworker/0:1-events]
+ 683393  1.0     0       26:44 [kworker/4:1-events]
+ 503905  0.4     0    01:17:19 [kworker/4:0-events]
+    258  0.3     0  7-09:32:15 [nvmap-bz]
+ 708807  0.2     0       21:26 [kworker/u12:1-devfreq_wq]
+    129  0.1     0  7-09:32:23 [irq/124-host_sy]
+## trtexec processes

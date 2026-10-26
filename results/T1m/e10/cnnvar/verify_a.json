@@ -1,0 +1,446 @@
+{
+ "cnnpool_c32_64": {
+  "1": {
+   "tag": "cnnpool_c32_64_lr0.001_wd0.01_t1",
+   "test_int8_ref": 0.8977,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    0,
+    1
+   ],
+   "shifts": [
+    8,
+    7
+   ],
+   "acc_bound": 953188,
+   "table_bytes": 24692,
+   "flash_bytes": 34046,
+   "xdata_bytes": 3241,
+   "uart_build_ok": true,
+   "fits": true,
+   "uart_link_log": null,
+   "tables": {
+    "w1": 288,
+    "b1": 64,
+    "w2": 18432,
+    "b2": 128,
+    "wf": 5760,
+    "bf": 20,
+    "total": 24692
+   }
+  },
+  "2": {
+   "tag": "cnnpool_c32_64_lr0.001_wd0.01_t2",
+   "test_int8_ref": 0.9051,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    1,
+    1
+   ],
+   "shifts": [
+    7,
+    8
+   ],
+   "acc_bound": 1384199,
+   "table_bytes": 24692
+  },
+  "3": {
+   "tag": "cnnpool_c32_64_lr0.001_wd0.01_t3",
+   "test_int8_ref": 0.9005,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    1,
+    0
+   ],
+   "shifts": [
+    7,
+    8
+   ],
+   "acc_bound": 1268987,
+   "table_bytes": 24692
+  }
+ },
+ "cnnds_c32": {
+  "1": {
+   "tag": "cnnds_c32_lr0.001_wd0.01_t1",
+   "test_int8_ref": 0.8532,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    2,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shifts": [
+    7,
+    4,
+    8,
+    4,
+    7
+   ],
+   "acc_bound": 212865,
+   "table_bytes": 3572,
+   "GAP_M": 351,
+   "flash_bytes": 15961,
+   "xdata_bytes": 4233,
+   "uart_build_ok": true,
+   "fits": true,
+   "uart_link_log": null,
+   "tables": {
+    "w1": 288,
+    "b1": 64,
+    "w2": 288,
+    "b2": 64,
+    "w3": 1024,
+    "b3": 64,
+    "w4": 288,
+    "b4": 64,
+    "w5": 1024,
+    "b5": 64,
+    "wf": 320,
+    "bf": 20,
+    "total": 3572
+   }
+  },
+  "2": {
+   "tag": "cnnds_c32_lr0.001_wd0.01_t2",
+   "test_int8_ref": 0.8706,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shifts": [
+    8,
+    3,
+    8,
+    5,
+    6
+   ],
+   "acc_bound": 217599,
+   "table_bytes": 3572,
+   "GAP_M": 242
+  },
+  "3": {
+   "tag": "cnnds_c32_lr0.001_wd0.01_t3",
+   "test_int8_ref": 0.8595,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "shifts": [
+    7,
+    3,
+    6,
+    4,
+    7
+   ],
+   "acc_bound": 237610,
+   "table_bytes": 3572,
+   "GAP_M": 869
+  }
+ },
+ "cnnds_c64": {
+  "1": {
+   "tag": "cnnds_c64_lr0.001_wd0.01_t1",
+   "test_int8_ref": 0.8924,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "shifts": [
+    7,
+    4,
+    6,
+    5,
+    7
+   ],
+   "acc_bound": 418750,
+   "table_bytes": 11220,
+   "GAP_M": 314,
+   "flash_bytes": 23653,
+   "xdata_bytes": 7401,
+   "uart_build_ok": true,
+   "fits": true,
+   "uart_link_log": null,
+   "tables": {
+    "w1": 576,
+    "b1": 128,
+    "w2": 576,
+    "b2": 128,
+    "w3": 4096,
+    "b3": 128,
+    "w4": 576,
+    "b4": 128,
+    "w5": 4096,
+    "b5": 128,
+    "wf": 640,
+    "bf": 20,
+    "total": 11220
+   }
+  },
+  "2": {
+   "tag": "cnnds_c64_lr0.001_wd0.01_t2",
+   "test_int8_ref": 0.8797,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    2,
+    1,
+    0,
+    2,
+    1,
+    0
+   ],
+   "shifts": [
+    7,
+    3,
+    8,
+    1,
+    7
+   ],
+   "acc_bound": 399163,
+   "table_bytes": 11220,
+   "GAP_M": 128
+  },
+  "3": {
+   "tag": "cnnds_c64_lr0.001_wd0.01_t3",
+   "test_int8_ref": 0.8845,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shifts": [
+    7,
+    3,
+    8,
+    3,
+    8
+   ],
+   "acc_bound": 449983,
+   "table_bytes": 11220,
+   "GAP_M": 501
+  }
+ },
+ "cnns4_c8_16": {
+  "1": {
+   "tag": "cnns4_c8_16_lr0.001_wd0_t1",
+   "test_int8_ref": 0.8827,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    0,
+    0
+   ],
+   "shifts": [
+    9,
+    7
+   ],
+   "acc_bound": 1384175,
+   "table_bytes": 9188,
+   "flash_bytes": 17313,
+   "xdata_bytes": 2041,
+   "uart_build_ok": true,
+   "fits": true,
+   "uart_link_log": null,
+   "tables": {
+    "w1": 128,
+    "b1": 16,
+    "w2": 1152,
+    "b2": 32,
+    "wf": 7840,
+    "bf": 20,
+    "total": 9188
+   }
+  },
+  "2": {
+   "tag": "cnns4_c8_16_lr0.001_wd0_t2",
+   "test_int8_ref": 0.8828,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    1,
+    1
+   ],
+   "shifts": [
+    8,
+    8
+   ],
+   "acc_bound": 853926,
+   "table_bytes": 9188
+  },
+  "3": {
+   "tag": "cnns4_c8_16_lr0.001_wd0_t3",
+   "test_int8_ref": 0.8777,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    0,
+    0
+   ],
+   "shifts": [
+    9,
+    8
+   ],
+   "acc_bound": 1622955,
+   "table_bytes": 9188
+  }
+ },
+ "cnns4_c16_32": {
+  "1": {
+   "tag": "cnns4_c16_32_lr0.001_wd0_t1",
+   "test_int8_ref": 0.8938,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    0,
+    1
+   ],
+   "shifts": [
+    9,
+    6
+   ],
+   "acc_bound": 3134655,
+   "table_bytes": 20660,
+   "flash_bytes": 28800,
+   "xdata_bytes": 3217,
+   "uart_build_ok": true,
+   "fits": true,
+   "uart_link_log": null,
+   "tables": {
+    "w1": 256,
+    "b1": 32,
+    "w2": 4608,
+    "b2": 64,
+    "wf": 15680,
+    "bf": 20,
+    "total": 20660
+   }
+  },
+  "2": {
+   "tag": "cnns4_c16_32_lr0.001_wd0_t2",
+   "test_int8_ref": 0.9023,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    0,
+    0
+   ],
+   "shifts": [
+    9,
+    7
+   ],
+   "acc_bound": 2314545,
+   "table_bytes": 20660
+  },
+  "3": {
+   "tag": "cnns4_c16_32_lr0.001_wd0_t3",
+   "test_int8_ref": 0.8907,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    0,
+    0
+   ],
+   "shifts": [
+    9,
+    8
+   ],
+   "acc_bound": 2199435,
+   "table_bytes": 20660
+  }
+ },
+ "cnns4_c32_64": {
+  "1": {
+   "tag": "cnns4_c32_64_lr0.001_wd0.01_t1",
+   "test_int8_ref": 0.9056,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    0,
+    0
+   ],
+   "shifts": [
+    9,
+    7
+   ],
+   "acc_bound": 5673527,
+   "table_bytes": 50516,
+   "flash_bytes": 58645,
+   "xdata_bytes": 5569,
+   "uart_build_ok": true,
+   "fits": true,
+   "uart_link_log": null,
+   "tables": {
+    "w1": 512,
+    "b1": 64,
+    "w2": 18432,
+    "b2": 128,
+    "wf": 31360,
+    "bf": 20,
+    "total": 50516
+   }
+  },
+  "2": {
+   "tag": "cnns4_c32_64_lr0.001_wd0.01_t2",
+   "test_int8_ref": 0.9098,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    1,
+    0
+   ],
+   "shifts": [
+    8,
+    8
+   ],
+   "acc_bound": 5609251,
+   "table_bytes": 50516
+  },
+  "3": {
+   "tag": "cnns4_c32_64_lr0.001_wd0.01_t3",
+   "test_int8_ref": 0.8962,
+   "pc_bitexact_logits": "10000/10000",
+   "pc_bitexact_class": "10000/10000",
+   "offsets": [
+    1,
+    0
+   ],
+   "shifts": [
+    8,
+    8
+   ],
+   "acc_bound": 4962662,
+   "table_bytes": 50516
+  }
+ }
+}

@@ -1,0 +1,18 @@
+PROTOCOL.md sha256 OK (bb3f0e1d660d3930f3ece6a135f03ba0d8220bbbde3f4fc2a49add465694c148)
+{
+ "reading": "PASS",
+ "S1": true,
+ "S2": true,
+ "S3": true,
+ "pooled_dir": "39/42",
+ "stat": {
+  "model": 1.09,
+  "P_param": 3.103,
+  "P_MAC": 2.835,
+  "blind": 1.416
+ }
+}
+orin1 33 18 {'model': 18, 'P_param': 15, 'P_MAC': 10, 'blind': 16} {'model': 1.291, 'P_param': 2.669, 'P_MAC': 3.489, 'blind': 1.497} []
+pi 14 9 {'model': 9, 'P_param': 7, 'P_MAC': 2, 'blind': 5} {'model': 1.253, 'P_param': 5.949, 'P_MAC': 6.062, 'blind': 7.393} []
+orin2 10 6 {'model': 3, 'P_param': 4, 'P_MAC': 1, 'blind': 3} {'model': 1.442, 'P_param': 2.66, 'P_MAC': 2.51, 'blind': 3.63} ['Q3', 'Q6', 'Q7']
+mcu 15 9 {'model': 9, 'P_param': 9, 'P_MAC': 8, 'blind': 9} {'model': 1.006, 'P_param': 3.171, 'P_MAC': 1.355, 'blind': 1.171} []

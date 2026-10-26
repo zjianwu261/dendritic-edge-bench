@@ -1,0 +1,56 @@
+{
+ "name": "gru_acc_val",
+ "model": "gru",
+ "args": {
+  "model": "gru",
+  "hidden": 256,
+  "lr": 0.003,
+  "dropout": 0.3,
+  "wd": 0.01,
+  "epochs": 60,
+  "seed": 1,
+  "mem_frac": 0.12,
+  "micro": 4,
+  "tag": ""
+ },
+ "dataset": "SHD",
+ "split": "train 90% / val 10% (stratified, seed 2026) / official test",
+ "selection": "best validation accuracy epoch (earliest among ties)",
+ "best_epoch": 24,
+ "val_acc": 0.9840686274509803,
+ "test_acc": 0.8710247349823321,
+ "train_acc": 0.9997275204359674,
+ "last_epoch_test_acc": 0.8626325088339223,
+ "last_epoch_val_acc": 0.9791666666666666,
+ "max_test_acc_any_epoch_NOT_FOR_SELECTION": 0.8798586572438163,
+ "params_effective": 740884,
+ "params_stored": 740884,
+ "tf32": false,
+ "train_minutes": 439.6,
+ "group": "shd",
+ "source_run": "gru_h256_lr0.003_do0.3_wd0.01_s1",
+ "T": 1000,
+ "dt_ms": 1,
+ "selection_note": "epoch chosen on the 10% validation split; test_acc = test accuracy of that epoch",
+ "export_seq": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_acc_val_seq.onnx",
+  "size_MB": 2.829,
+  "nodes": 23,
+  "max_abs_err_vs_torch": 1.239776611328125e-05,
+  "export_s": 1.1
+ },
+ "export_step": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_acc_val_step.onnx",
+  "size_MB": 2.827,
+  "nodes": 10,
+  "max_abs_err_vs_torch": 1.430511474609375e-06,
+  "export_s": 0.1
+ },
+ "export_seqloop": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_acc_val_seqloop.onnx",
+  "nodes_top": 12,
+  "source_state_dict": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_acc_val.pt",
+  "max_abs_err_ort_vs_torch_gru": 9.5367431640625e-06,
+  "max_abs_err_script_vs_torch_gru": 6.67572021484375e-06
+ }
+}

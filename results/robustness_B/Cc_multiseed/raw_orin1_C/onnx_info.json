@@ -1,0 +1,322 @@
+{
+ "s1_dhsrnn_n64_b8_val_seqloop": {
+  "seed": 1,
+  "model": "dhsrnn_n64_b8_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/dhsrnn_n64_b8_val_seqloop.onnx",
+  "onnx_sha256": "a15e61faf5b9aeb706eedf820ee76b70e0006be02b2f21bb0e4d02314eb6c1c8",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_lif_srnn_n64_val_seqloop": {
+  "seed": 1,
+  "model": "lif_srnn_n64_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/lif_srnn_n64_val_seqloop.onnx",
+  "onnx_sha256": "4f45d3c6d22f4bc032e84e4704757c76941eeb98aacc26228e0ea0a561b6b97a",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_gru_pm_val_seqloop": {
+  "seed": 1,
+  "model": "gru_pm_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_pm_val_seqloop.onnx",
+  "onnx_sha256": "5744e76c27e782e35f36be19b04cb0f47b683a88d9e40510a1e6fe869dcdae19",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_gru_acc_val_seqloop": {
+  "seed": 1,
+  "model": "gru_acc_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_acc_val_seqloop.onnx",
+  "onnx_sha256": "391a1b3a206ecfd2ba8f29df35beddd9c4355ac751c97d5c3bf8295edb9471e1",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_gru_pm_val_seq": {
+  "seed": 1,
+  "model": "gru_pm_val_seq",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_pm_val_seq.onnx",
+  "onnx_sha256": "509bbdf87b3adf78eeee30a60e4ae44ca1e81d4f98dc688d3219e300eec20961",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_gru_acc_val_seq": {
+  "seed": 1,
+  "model": "gru_acc_val_seq",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_acc_val_seq.onnx",
+  "onnx_sha256": "55041312d990ed257a7e28d5d7d7983c748280d136f479718531a6bdc1d12d77",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_dhsrnn_n64_b8_step": {
+  "seed": 1,
+  "model": "dhsrnn_n64_b8_step",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/dhsrnn_n64_b8_step.onnx",
+  "onnx_sha256": "406275af638456b46b4885cc96b385d9f13294ec640047b65afb06df815d2b4c",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_lif_srnn_n64_step": {
+  "seed": 1,
+  "model": "lif_srnn_n64_step",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/lif_srnn_n64_step.onnx",
+  "onnx_sha256": "3c6ea4ea901372915207d3a9cac39e35b3510dfac56e91ae49ecb10cd71971a1",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_gru_h23_step": {
+  "seed": 1,
+  "model": "gru_h23_step",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_h23_step.onnx",
+  "onnx_sha256": "1ef13701d651aeeafed2eacc993c7f0a415e64a48b45d38f09fe867589b5103f",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s1_gru_acc_val_step": {
+  "seed": 1,
+  "model": "gru_acc_val_step",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_acc_val_step.onnx",
+  "onnx_sha256": "6318561164f50e0060c45a0c720e9a928bcd9d481870581146ae76370f9334c8",
+  "builds": [
+   0,
+   1
+  ]
+ },
+ "s2_dhsrnn_n64_b8_val_seqloop": {
+  "seed": 2,
+  "model": "dhsrnn_n64_b8_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/dhsrnn_n64_b8_val_seqloop.onnx",
+  "onnx_sha256": "c9cec24b5f1a449f29db65c821a41dc3ad29e09d9f7fefdf1796c1c0861f4339",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_lif_srnn_n64_val_seqloop": {
+  "seed": 2,
+  "model": "lif_srnn_n64_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/lif_srnn_n64_val_seqloop.onnx",
+  "onnx_sha256": "0ad45ba4084b01e95656f31294c73662544e13971e4605053d5a60497fd798ed",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_gru_pm_val_seqloop": {
+  "seed": 2,
+  "model": "gru_pm_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_pm_val_seqloop.onnx",
+  "onnx_sha256": "a22f8687ebeb9782e8e95e85ecef60759b6321b7d6ef195ba94da7add85454c2",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_gru_acc_val_seqloop": {
+  "seed": 2,
+  "model": "gru_acc_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_acc_val_seqloop.onnx",
+  "onnx_sha256": "d157dc90c1ca2f18a6ef0d7f6facda83b55db56c67722ef545fe40bc698368d6",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_gru_pm_val_seq": {
+  "seed": 2,
+  "model": "gru_pm_val_seq",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_pm_val_seq.onnx",
+  "onnx_sha256": "fa4c12f6e00a20ecc62096cf0459f2056fec8ef86d96853c717df7e59d7b6d55",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_gru_acc_val_seq": {
+  "seed": 2,
+  "model": "gru_acc_val_seq",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_acc_val_seq.onnx",
+  "onnx_sha256": "f49f6ae6af32246008a72697c35e706e99e41d1266eb7bbe372f95c7fedb0518",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_dhsrnn_n64_b8_step": {
+  "seed": 2,
+  "model": "dhsrnn_n64_b8_step",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/dhsrnn_n64_b8_step.onnx",
+  "onnx_sha256": "8a934183377cdf492ae260a8ee4cf63b2edd1dc6d9bd03ca8bd4fc3b7b2de0c3",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_lif_srnn_n64_step": {
+  "seed": 2,
+  "model": "lif_srnn_n64_step",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/lif_srnn_n64_step.onnx",
+  "onnx_sha256": "f698f51f7c51037f3c388729dd16edd0d421ddc7205391dc811e2399b7e80ecb",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_gru_h23_step": {
+  "seed": 2,
+  "model": "gru_h23_step",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_h23_step.onnx",
+  "onnx_sha256": "3e85cfeaeeaa2e48e26c5e55a703fc7b68eb5eae83d1858f9213b79e17dfd7be",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s2_gru_acc_val_step": {
+  "seed": 2,
+  "model": "gru_acc_val_step",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/gru_acc_val_step.onnx",
+  "onnx_sha256": "32da1db2bf5e537d32f838aeb62daef48cb6b8a59c8b18ad59ea86e07824bf88",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_dhsrnn_n64_b8_val_seqloop": {
+  "seed": 3,
+  "model": "dhsrnn_n64_b8_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/dhsrnn_n64_b8_val_seqloop.onnx",
+  "onnx_sha256": "5d4dc288539a4fab2c6a617113dfefdbb2f8485a0c92cabbd070ba3d10f25646",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_lif_srnn_n64_val_seqloop": {
+  "seed": 3,
+  "model": "lif_srnn_n64_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/lif_srnn_n64_val_seqloop.onnx",
+  "onnx_sha256": "51390a01fcafb99c5b6695ed956c3cd08196e6aee833505331925673a5dce375",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_gru_pm_val_seqloop": {
+  "seed": 3,
+  "model": "gru_pm_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/gru_pm_val_seqloop.onnx",
+  "onnx_sha256": "238c41d3a168fcdbbe014194eec6a7ef29e9c131559222460eb5997ac1a167e7",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_gru_acc_val_seqloop": {
+  "seed": 3,
+  "model": "gru_acc_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/gru_acc_val_seqloop.onnx",
+  "onnx_sha256": "12d00c2dc489dcaa2dfa04fc0a456e4627409a02330cfb0974ba38954acc7bb2",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_gru_pm_val_seq": {
+  "seed": 3,
+  "model": "gru_pm_val_seq",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/gru_pm_val_seq.onnx",
+  "onnx_sha256": "e3945f54c8dba374be1610c013167dfd531b791a4c4ffa0da221bffefe904d68",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_gru_acc_val_seq": {
+  "seed": 3,
+  "model": "gru_acc_val_seq",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/gru_acc_val_seq.onnx",
+  "onnx_sha256": "57071ee3db936155491e4d574f9544591624a3a6ef8080685ff1e02f4a1f833b",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_dhsrnn_n64_b8_step": {
+  "seed": 3,
+  "model": "dhsrnn_n64_b8_step",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/dhsrnn_n64_b8_step.onnx",
+  "onnx_sha256": "26eaa0252b710fddfcdc684c11b12053ea659ab4919babd166c92ccfc46cb175",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_lif_srnn_n64_step": {
+  "seed": 3,
+  "model": "lif_srnn_n64_step",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/lif_srnn_n64_step.onnx",
+  "onnx_sha256": "40f8426767c39c12ab5fde13d08647fc760e871372fcd32cadc4b2fac31fd53f",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_gru_h23_step": {
+  "seed": 3,
+  "model": "gru_h23_step",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/gru_h23_step.onnx",
+  "onnx_sha256": "1dac46024709490661b3083200b7fc96ef7d59a91840ef6dc683e8c592407a8a",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "s3_gru_acc_val_step": {
+  "seed": 3,
+  "model": "gru_acc_val_step",
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s3/gru_acc_val_step.onnx",
+  "onnx_sha256": "ab71e2118a07411b37a27a19466e08a6ea3c4a4432c66f695a812ce657c93415",
+  "builds": [
+   1,
+   2,
+   3
+  ]
+ }
+}

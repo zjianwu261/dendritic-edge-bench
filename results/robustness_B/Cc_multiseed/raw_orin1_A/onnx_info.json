@@ -1,0 +1,266 @@
+{
+ "s1_dann_lrf_d32_s128": {
+  "seed": 1,
+  "model": "dann_lrf_d32_s128",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/dann_lrf_d32_s128.onnx",
+  "onnx_sha256": "d124a47749c7f8cd82f6cd24aba79abd1ecfe2c4ef7660b5e0fd3f3296e74dd2",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_mlp_h85_match_d32_s128": {
+  "seed": 1,
+  "model": "mlp_h85_match_d32_s128",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/mlp_h85_match_d32_s128.onnx",
+  "onnx_sha256": "4b493dde10121f31375f4eed8b4ff8e738f9d90e2eaed0ce5a1f66d8fdfab8d0",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_vann_same_d32_s128": {
+  "seed": 1,
+  "model": "vann_same_d32_s128",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/vann_same_d32_s128.onnx",
+  "onnx_sha256": "4ff6263e874011ff4f67be6ab662cf092224d2fc3bf5b2bd09b974cdb063bb96",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_mlp_h1024_fmnist": {
+  "seed": 1,
+  "model": "mlp_h1024_fmnist",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/mlp_h1024_fmnist.onnx",
+  "onnx_sha256": "cb9beb6961583b6b49546889c6d0fe9ec440305d46e62e0eb2fbf7c59a03bea9",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_dhsrnn_n64_b8_val_seqloop": {
+  "seed": 1,
+  "model": "dhsrnn_n64_b8_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/dhsrnn_n64_b8_val_seqloop.onnx",
+  "onnx_sha256": "a15e61faf5b9aeb706eedf820ee76b70e0006be02b2f21bb0e4d02314eb6c1c8",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_lif_srnn_n64_val_seqloop": {
+  "seed": 1,
+  "model": "lif_srnn_n64_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/lif_srnn_n64_val_seqloop.onnx",
+  "onnx_sha256": "4f45d3c6d22f4bc032e84e4704757c76941eeb98aacc26228e0ea0a561b6b97a",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_gru_pm_val_seqloop": {
+  "seed": 1,
+  "model": "gru_pm_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_pm_val_seqloop.onnx",
+  "onnx_sha256": "5744e76c27e782e35f36be19b04cb0f47b683a88d9e40510a1e6fe869dcdae19",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_gru_acc_val_seqloop": {
+  "seed": 1,
+  "model": "gru_acc_val_seqloop",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_acc_val_seqloop.onnx",
+  "onnx_sha256": "391a1b3a206ecfd2ba8f29df35beddd9c4355ac751c97d5c3bf8295edb9471e1",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_gru_pm_val_seq": {
+  "seed": 1,
+  "model": "gru_pm_val_seq",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_pm_val_seq.onnx",
+  "onnx_sha256": "509bbdf87b3adf78eeee30a60e4ae44ca1e81d4f98dc688d3219e300eec20961",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_gru_acc_val_seq": {
+  "seed": 1,
+  "model": "gru_acc_val_seq",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_acc_val_seq.onnx",
+  "onnx_sha256": "55041312d990ed257a7e28d5d7d7983c748280d136f479718531a6bdc1d12d77",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_dhsrnn_n64_b8_step": {
+  "seed": 1,
+  "model": "dhsrnn_n64_b8_step",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/dhsrnn_n64_b8_step.onnx",
+  "onnx_sha256": "406275af638456b46b4885cc96b385d9f13294ec640047b65afb06df815d2b4c",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_lif_srnn_n64_step": {
+  "seed": 1,
+  "model": "lif_srnn_n64_step",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/lif_srnn_n64_step.onnx",
+  "onnx_sha256": "3c6ea4ea901372915207d3a9cac39e35b3510dfac56e91ae49ecb10cd71971a1",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_gru_h23_step": {
+  "seed": 1,
+  "model": "gru_h23_step",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_h23_step.onnx",
+  "onnx_sha256": "1ef13701d651aeeafed2eacc993c7f0a415e64a48b45d38f09fe867589b5103f",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_gru_acc_val_step": {
+  "seed": 1,
+  "model": "gru_acc_val_step",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/gru_acc_val_step.onnx",
+  "onnx_sha256": "6318561164f50e0060c45a0c720e9a928bcd9d481870581146ae76370f9334c8",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_active_dend_k4": {
+  "seed": 1,
+  "model": "active_dend_k4",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/active_dend_k4.onnx",
+  "onnx_sha256": "2985b0c1112bf290cc31b87ab13fa994291c66abf4bc4a8f3d9ea7a915576c42",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_active_dend_k8": {
+  "seed": 1,
+  "model": "active_dend_k8",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/active_dend_k8.onnx",
+  "onnx_sha256": "b4329c7b4db97defbd5a722eab353832f0e537e0c5071d00838690f7e41a13fa",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_mlp_h3592_match_k4": {
+  "seed": 1,
+  "model": "mlp_h3592_match_k4",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/mlp_h3592_match_k4.onnx",
+  "onnx_sha256": "a99352069b912534f362748c24a061a7b35722644d8e551f2cf5f9d3bb3f367f",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_mlp_h4965_match_k8": {
+  "seed": 1,
+  "model": "mlp_h4965_match_k8",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/mlp_h4965_match_k8.onnx",
+  "onnx_sha256": "16a347a22f0773b7f7030cb15193ad382a03c4f31f535e1df05f93fb8e030f7b",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_mlp_h3941_matchstored_k4": {
+  "seed": 1,
+  "model": "mlp_h3941_matchstored_k4",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/mlp_h3941_matchstored_k4.onnx",
+  "onnx_sha256": "75848aa55c1ce7fb740cadefe92a9184a24725d19f45406af5c9a24c2d2e8e2e",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_mlp_h5230_matchstored_k8": {
+  "seed": 1,
+  "model": "mlp_h5230_matchstored_k8",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/mlp_h5230_matchstored_k8.onnx",
+  "onnx_sha256": "e60d4d0817b1744f3fc86e8dd478686231e2a8e04d58cc6dfe03976ffba5edbf",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_active_dend_k4_cached": {
+  "seed": 1,
+  "model": "active_dend_k4_cached",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/active_dend_k4_cached.onnx",
+  "onnx_sha256": "52bfe7e8e90e8c32885764a9a3abfaf3dd4288ba6b6bd1ef92d1965b76aff6ea",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ "s1_active_dend_k8_cached": {
+  "seed": 1,
+  "model": "active_dend_k8_cached",
+  "onnx": "~/research/dendritic-edge/experiments/T1/models/active_dend_k8_cached.onnx",
+  "onnx_sha256": "55146b15bac8218a5d048f498e02a219881550cafdf82c27f9dd9912d62d04dc",
+  "builds": [
+   0,
+   1,
+   2,
+   3
+  ]
+ }
+}

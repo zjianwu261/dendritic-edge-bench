@@ -11,10 +11,10 @@ the same pool has acc >= and every cost <= with at least one strict. Costs: F = 
 3 = flash and cycles (three objectives: acc, flash, cycles). Pools: dANN + MLP ("nocnn") and all incl. CNNs ("cnn").
 Output: results/T1m/e10/fronts_e10.csv (+ printed member lists, best MLP, Table-1 flash savings).
   python src/mcu/fronts_e10.py [--no-e10] [--e10-only] [--old-cycles]
-E-10b (2026-10-25, REVIEW R-100): e10/results.csv now holds every deployable Table-3 row (10 E-10 + 14 E-10b), so the
-  merged table is single-protocol. Cycles = ucsim of the E-10/E-10b seed-1 selected builds (ucsim_cycles_e10build,
-  R-101) unless --old-cycles (first-run builds). --e10-only reproduces the E-10 (10-row) version from
-  e10/results_e10only.csv. R-102: cnn_results.csv SDs are ddof 1 (statistics.stdev), sd_kind fixed.
+E-10b (2026-10-25): e10/results.csv now holds every deployable Table-3 row (10 E-10 + 14 E-10b), so the
+  merged table is single-protocol. Cycles = ucsim of the E-10/E-10b seed-1 selected builds (ucsim_cycles_e10build)
+  unless --old-cycles (first-run builds). --e10-only reproduces the E-10 (10-row) version from
+  e10/results_e10only.csv. cnn_results.csv SDs are ddof 1 (statistics.stdev), sd_kind fixed.
 """
 import csv
 import os

@@ -1,0 +1,39 @@
+{
+ "name": "mlp_h5230_matchstored_k8",
+ "group": "active_dend_pmnist",
+ "dataset": "permuted MNIST (10 tasks)",
+ "model": "mlp",
+ "segments": 8,
+ "epochs_per_task": 3,
+ "lr": 0.0005,
+ "seg_scale": 1.0,
+ "seed": 1,
+ "test_acc": 0.64656,
+ "final_per_task": [
+  0.2995,
+  0.323,
+  0.508,
+  0.4292,
+  0.5767,
+  0.6548,
+  0.8161,
+  0.9312,
+  0.9507,
+  0.9764
+ ],
+ "bwt": -0.3662666666666666,
+ "task_inference_acc": 1.0,
+ "params_effective": 31515990,
+ "params_stored": 31515990,
+ "ad_params": 28604426,
+ "ad_params_stored": 31514634,
+ "match": "stored",
+ "train_minutes": 64.2,
+ "export": {
+  "onnx": "~/research/dendritic-edge/experiments/robustness_B/Cc_multiseed/models/s2/mlp_h5230_matchstored_k8.onnx",
+  "size_MB": 120.225,
+  "nodes": 5,
+  "max_abs_err_vs_torch": 9.5367431640625e-07,
+  "export_s": 2.1
+ }
+}

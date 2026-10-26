@@ -1,0 +1,78 @@
+## 2026-10-27T02:52:56+08:00 label=s1b0_gru_pm_val_seqloop tag=r3_1027025251 engine=s1b0_gru_pm_val_seqloop_fp16_nocublas_5744e76c27e7.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 49531
+GPU-therm 47812
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 47500
+SOC1-therm 48437
+SOC2-therm 47593
+tj-therm 49781
+## loadavg
+0.46 0.84 0.94 1/247 1428702
+## MemAvailable_MB 5932
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+1411968  0.9     0       03:32 [kworker/4:2-events]
+1204821  0.8     0       46:53 [kworker/4:1-events]
+1085270  0.7     0    02:48:53 [kworker/0:2-events]
+    258  0.3     0  7-17:03:58 [nvmap-bz]
+   1731  0.3 11348  7-17:03:51 /usr/bin/python3 /usr/local/bin/jtop --force
+1383133  0.2     0       09:33 [kworker/u12:0-devfreq_wq]
+1428433  0.2  3412       00:05 bash ~/dendritic-edge-bench/energy/bin/energy_one.sh s1b0_gru_pm_val_seqloop ~/dendritic-edge-bench/T1/ms_cc/workC/engines/s1b0_gru_pm_val_seql
+## trtexec processes
+## 2026-10-27T02:53:57+08:00 label=s1b0_gru_pm_val_seqloop tag=r3_1027025251 engine=s1b0_gru_pm_val_seqloop_fp16_nocublas_5744e76c27e7.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 49593
+GPU-therm 47656
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 47281
+SOC1-therm 48562
+SOC2-therm 47343
+tj-therm 49531
+## loadavg
+1.36 1.04 1.00 1/251 1433598
+## MemAvailable_MB 5931
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+1411968  1.0     0       04:32 [kworker/4:2-pm]
+1085270  0.8     0    02:49:53 [kworker/0:2-events]
+1204821  0.8     0       47:53 [kworker/4:1-events]
+    258  0.3     0  7-17:04:58 [nvmap-bz]
+   1731  0.3 11348  7-17:04:51 /usr/bin/python3 /usr/local/bin/jtop --force
+1383133  0.2     0       10:33 [kworker/u12:0-events_power_efficient]
+    129  0.1     0  7-17:05:06 [irq/124-host_sy]
+## trtexec processes

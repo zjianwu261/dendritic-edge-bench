@@ -3,7 +3,7 @@ main order) per method, horizontal bars = 3-seed mean (seeds 0-2), dots = indivi
 and the per-task mean-trajectory reference.  Lower is better.
 
 Order: ORDER below (full fine-tuning family, PEFT, LoRA bank, dend2 v3, then the post-fix v3fix rows used for the
-pre-registered S1/S2 verdict).  Not plotted: dend2old_* (pre-v3 dend2 config) and bias at the non-selected lr 3e-4
+pre-specified S1/S2 verdict).  Not plotted: dend2old_* (pre-v3 dend2 config) and bias at the non-selected lr 3e-4
 (bias lr 3e-3 was selected on seed-0 validation, v3_verdict.json).
 
 Source CSVs: results/T4a/v3_summary.csv, results/T4a/v3fix_summary.csv (test_final_mean, test_final_per_seed)

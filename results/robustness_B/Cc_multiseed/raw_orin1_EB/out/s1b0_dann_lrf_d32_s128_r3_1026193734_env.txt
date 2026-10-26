@@ -1,0 +1,78 @@
+## 2026-10-26T19:37:39+08:00 label=s1b0_dann_lrf_d32_s128 tag=r3_1026193734 engine=s1b0_dann_lrf_d32_s128_fp16_nocublas_d124a47749c7.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 52000
+GPU-therm 50500
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50281
+SOC1-therm 51093
+SOC2-therm 50125
+tj-therm 52125
+## loadavg
+0.47 0.71 0.82 1/249 889621
+## MemAvailable_MB 5950
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+ 840853  1.9     0       10:12 [kworker/0:1-events]
+ 683393  1.0     0       43:09 [kworker/4:1-events]
+ 793005  0.9     0       20:13 [kworker/0:2-events]
+    258  0.3     0  7-09:48:40 [nvmap-bz]
+ 503905  0.3     0    01:33:44 [kworker/4:0-read_counters_wq]
+ 856927  0.2     0       06:51 [kworker/u12:0-devfreq_wq]
+ 889352  0.2  3280       00:05 bash ~/dendritic-edge-bench/energy/bin/energy_one.sh s1b0_dann_lrf_d32_s128 ~/dendritic-edge-bench/T1/ms_cc/workB/engines/s1b0_dann_lrf_d32_s12
+## trtexec processes
+## 2026-10-26T19:38:39+08:00 label=s1b0_dann_lrf_d32_s128 tag=r3_1026193734 engine=s1b0_dann_lrf_d32_s128_fp16_nocublas_d124a47749c7.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 52218
+GPU-therm 50250
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 50156
+SOC1-therm 50937
+SOC2-therm 50062
+tj-therm 52093
+## loadavg
+1.08 0.84 0.86 2/252 894509
+## MemAvailable_MB 5950
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+ 840853  1.9     0       11:12 [kworker/0:1-events]
+ 683393  1.0     0       44:09 [kworker/4:1-mm_percpu_wq]
+ 793005  0.9     0       21:13 [kworker/0:2-events]
+    258  0.3     0  7-09:49:40 [nvmap-bz]
+ 503905  0.3     0    01:34:44 [kworker/4:0-read_counters_wq]
+ 856927  0.2     0       07:51 [kworker/u12:0-devfreq_wq]
+    129  0.1     0  7-09:49:48 [irq/124-host_sy]
+## trtexec processes

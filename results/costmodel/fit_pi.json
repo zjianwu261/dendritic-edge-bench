@@ -1,0 +1,73 @@
+{
+ "tier": "pi",
+ "model": "T = a + kappa*K + F/phi + B/beta",
+ "n_calib": 16,
+ "calib_graphs": [
+  "gru_acc_val_seqloop",
+  "gru_h23_seqloop",
+  "gru_pm_val_seqloop",
+  "lif_srnn_n64_seq",
+  "lif_srnn_n64_seqloop",
+  "lif_srnn_n64_step",
+  "lif_srnn_n64_val_seqloop",
+  "mlp_h1024_fmnist",
+  "mlp_h256_fmnist",
+  "mlp_h3592_match_k4",
+  "mlp_h3941_matchstored_k4",
+  "mlp_h4965_match_k8",
+  "mlp_h512_fmnist",
+  "mlp_h5230_matchstored_k8",
+  "mlp_h85_match_d32_s128",
+  "vann_same_d32_s128"
+ ],
+ "fit_info": {
+  "nnls_init": [
+   0.9194240259299314,
+   0.002619004366817894,
+   2.1160284900762396e-07,
+   8.383671613996544e-07
+  ],
+  "cost": 0.15476345523709675,
+  "status": 2,
+  "rmse_log": 0.13908785678353483
+ },
+ "constants": {
+  "a_ms": 7.146376074204408e-25,
+  "kappa_ms_per_node": 0.0027592865164878977,
+  "inv_phi_ms_per_MAC": 2.0856863141079441e-07,
+  "inv_beta_ms_per_weight": 9.434969879227524e-07
+ },
+ "derived": {
+  "phi_MAC_per_ms": 4794584.848334222,
+  "beta_weights_per_ms": 1059886.7964609482
+ },
+ "bootstrap": {
+  "n": 1000,
+  "seed": "numpy default_rng(20261026)",
+  "ci95": {
+   "a_ms": [
+    3.1002090268564944e-35,
+    0.2253042486964366
+   ],
+   "kappa_ms_per_node": [
+    0.0006753175986812576,
+    0.0032611709900486475
+   ],
+   "inv_phi_ms_per_MAC": [
+    2.2537900242303864e-26,
+    1.1484910017462995e-06
+   ],
+   "inv_beta_ms_per_weight": [
+    2.287424733153002e-32,
+    1.1292478092309472e-06
+   ]
+  },
+  "median": {
+   "a_ms": 5.794986413737507e-20,
+   "kappa_ms_per_node": 0.002666896311877079,
+   "inv_phi_ms_per_MAC": 2.144928269969852e-07,
+   "inv_beta_ms_per_weight": 9.024578512621458e-07
+  }
+ },
+ "protocol_sha256": "bb3f0e1d660d3930f3ece6a135f03ba0d8220bbbde3f4fc2a49add465694c148"
+}

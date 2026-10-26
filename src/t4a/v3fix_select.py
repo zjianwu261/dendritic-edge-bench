@@ -2,7 +2,7 @@
 
 Fixes (cl_dend2.py / cl_run.py flags): --seg_eps 0.1 (segment init z / (|z|^2 + 0.1)); --std_ref normal (inferer
 standardisation from the first task's prototype sample indices on NORMAL-light frames; used ONLY for the
-dend2 segment coordinates (--seg_ref normal) -- the context inferer of dend2 and of the LoRA bank keeps the pre-registered
+dend2 segment coordinates (--seg_ref normal) -- the context inferer of dend2 and of the LoRA bank keeps the pre-specified
 v3 standardisation (--std_ref first), so S2 is judged with the v3 inferer); --seg_orth 1 (orthogonalised segment init with
 adaptive gain; needed because eps + std_ref alone did not separate the segments); both methods train in train() mode,
 prototypes / inference features /
