@@ -30,7 +30,7 @@ tj-therm 48437
 ## top CPU processes
     PID %CPU   RSS     ELAPSED COMMAND
 1103701  2.3  8796       00:06 /lib/systemd/systemd --user
-1103989  0.4  7604       00:05 sshd: maverick [priv]
+1103989  0.4  7604       00:05 sshd: user [priv]
     258  0.3     0  7-15:56:02 [nvmap-bz]
    1731  0.2 13232  7-15:55:55 /usr/bin/python3 /usr/local/bin/jtop --force
 1104049  0.2  3148       00:05 bash ~/dendritic-edge-bench/energy/bin/energy_one.sh s1b0_dhsrnn_n64_b8_val_seqloop ~/dendritic-edge-bench/T1/ms_cc/workC/engines/s1b0_dhsrnn_n

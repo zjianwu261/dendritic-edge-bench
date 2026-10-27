@@ -148,7 +148,7 @@ loadavg 0.00 0.74 4.95 1/388 801508
 garbage.service pid=0 active=inactive psr= pcpu=
 exempt_pids=801504 801503 801497
 %CPU PSR     PID USER     COMMAND
- 200   1  801516 maverick ps
+ 200   1  801516 user ps
  0.2   1     275 root     systemd-journal
  0.1   1  801497 root     sshd
  0.1   3  793324 root     kworker/u12:2-writeback
@@ -227,7 +227,7 @@ loadavg 0.22 1.79 2.88 1/389 804120
 garbage.service pid=0 active=inactive psr= pcpu=
 exempt_pids=804074 804073 804067
 %CPU PSR     PID USER     COMMAND
- 200   2  804128 maverick ps
+ 200   2  804128 user ps
  0.2   1     275 root     systemd-journal
  0.1   3  804067 root     sshd
  0.1   3  793324 root     kworker/u12:2-events_unbound
@@ -385,7 +385,7 @@ loadavg 0.21 1.74 2.46 1/390 808324
 garbage.service pid=0 active=inactive psr= pcpu=
 exempt_pids=808316 808315 808309
 %CPU PSR     PID USER     COMMAND
- 300   1  808332 maverick ps
+ 300   1  808332 user ps
  0.2   1     275 root     systemd-journal
  0.1   2  808309 root     sshd
  0.1   1  348711 root     verysync
@@ -464,7 +464,7 @@ loadavg 0.25 1.30 2.16 1/391 808678
 garbage.service pid=0 active=inactive psr= pcpu=
 exempt_pids=808675 808674 808668
 %CPU PSR     PID USER     COMMAND
- 300   3  808686 maverick ps
+ 300   3  808686 user ps
  0.2   1     275 root     systemd-journal
  0.1   2  808668 root     sshd
  0.1   3  348711 root     verysync
@@ -543,7 +543,7 @@ loadavg 0.22 1.13 1.94 1/387 809063
 garbage.service pid=0 active=inactive psr= pcpu=
 exempt_pids=809059 809058 809052
 %CPU PSR     PID USER     COMMAND
- 200   2  809071 maverick ps
+ 200   2  809071 user ps
  0.2   2     275 root     systemd-journal
  0.1   2  809052 root     sshd
  0.1   0  348711 root     verysync

@@ -31,7 +31,7 @@ tj-therm 49250
     PID %CPU   RSS     ELAPSED COMMAND
  514633  2.1  8868       00:07 /lib/systemd/systemd --user
     258  0.3     0  7-08:30:17 [nvmap-bz]
- 514920  0.2  7592       00:05 sshd: maverick [priv]
+ 514920  0.2  7592       00:05 sshd: user [priv]
     129  0.1     0  7-08:30:25 [irq/124-host_sy]
       1  0.0  7652  7-08:30:29 /sbin/init 2
       2  0.0     0  7-08:30:29 [kthreadd]
