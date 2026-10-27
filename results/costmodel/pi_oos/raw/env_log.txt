@@ -1,0 +1,3362 @@
+## baseline throttled=0x50000 boot=2026-09-30 10:12:15
+## baseline throttled=0x50000 boot=2026-09-30 10:12:15
+## before g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm run 1 2026-10-27T09:52:26+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=44.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.00 0.74 4.95 1/388 801535
+exempt_pids=801525 801524 801518
+%CPU PSR     PID USER     COMMAND
+13.8   0  801518 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-writeback
+ 0.1   0  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm run 1 2026-10-27T09:52:30+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=48.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.24 0.78 4.94 1/388 801571
+exempt_pids=801561 801560 801554
+%CPU PSR     PID USER     COMMAND
+ 9.0   0  801554 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   0  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## before g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 1 2026-10-27T09:52:30+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=48.2'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.24 0.78 4.94 1/388 801594
+exempt_pids=801584 801583 801577
+%CPU PSR     PID USER     COMMAND
+ 200   3  801598 maverick ps
+12.5   2  801584 maverick bash
+12.1   2  801577 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   0  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 1 2026-10-27T09:52:38+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=48.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.46 0.82 4.93 1/390 801632
+exempt_pids=801622 801621 801615
+%CPU PSR     PID USER     COMMAND
+ 100   2  801636 maverick ps
+17.9   1  801615 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 1 2026-10-27T09:52:38+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=47.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.46 0.82 4.93 1/390 801655
+exempt_pids=801645 801644 801638
+%CPU PSR     PID USER     COMMAND
+ 100   2  801659 maverick ps
+14.2   3  801645 maverick bash
+11.4   3  801638 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 1 2026-10-27T09:52:42+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=50.1'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.50 0.82 4.90 1/390 801692
+exempt_pids=801682 801681 801675
+%CPU PSR     PID USER     COMMAND
+ 100   2  801696 maverick ps
+14.2   0  801682 maverick bash
+10.8   1  801675 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm run 1 2026-10-27T09:52:43+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=49.1'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.50 0.82 4.90 1/390 801715
+exempt_pids=801705 801704 801698
+%CPU PSR     PID USER     COMMAND
+14.2   0  801705 maverick bash
+ 8.1   2  801698 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm run 1 2026-10-27T09:52:46+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=50.6'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.62 0.84 4.89 1/390 801751
+exempt_pids=801741 801740 801734
+%CPU PSR     PID USER     COMMAND
+ 100   0  801755 maverick ps
+11.4   2  801734 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   2  799868 root     kworker/u10:1-events_unbound
+## before g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm run 1 2026-10-27T09:52:47+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=49.1'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.62 0.84 4.89 1/390 801774
+exempt_pids=801764 801763 801757
+%CPU PSR     PID USER     COMMAND
+11.4   2  801757 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   2  799868 root     kworker/u10:1-events_unbound
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm run 1 2026-10-27T09:52:50+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=51.6'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.82 0.88 4.88 1/390 801810
+exempt_pids=801800 801799 801793
+%CPU PSR     PID USER     COMMAND
+14.2   2  801800 maverick bash
+11.4   0  801793 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   2  799868 root     kworker/u10:1-events_unbound
+## before g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm run 1 2026-10-27T09:52:51+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=50.1'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.82 0.88 4.88 1/390 801833
+exempt_pids=801823 801822 801816
+%CPU PSR     PID USER     COMMAND
+11.4   2  801816 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   2  799868 root     kworker/u10:1-events_unbound
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm run 1 2026-10-27T09:52:54+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=50.6'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.99 0.91 4.87 1/390 801871
+exempt_pids=801861 801860 801854
+%CPU PSR     PID USER     COMMAND
+ 100   3  801875 maverick ps
+14.2   1  801861 maverick bash
+ 8.8   3  801854 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm run 1 2026-10-27T09:52:55+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=51.6'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.99 0.91 4.87 1/390 801894
+exempt_pids=801884 801883 801877
+%CPU PSR     PID USER     COMMAND
+ 100   1  801898 maverick ps
+12.5   2  801884 maverick bash
+11.7   2  801877 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm run 1 2026-10-27T09:52:59+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=51.1'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.15 0.95 4.86 1/390 801930
+exempt_pids=801920 801919 801913
+%CPU PSR     PID USER     COMMAND
+ 100   0  801934 maverick ps
+11.4   2  801913 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   2  799868 root     kworker/u10:1-events_unbound
+## before g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv run 1 2026-10-27T09:52:59+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=51.6'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.15 0.95 4.86 1/391 801954
+exempt_pids=801944 801943 801936
+%CPU PSR     PID USER     COMMAND
+14.2   2  801944 maverick bash
+ 8.3   0  801936 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   2  799868 root     kworker/u10:1-events_unbound
+## after g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv run 1 2026-10-27T09:53:03+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=53.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.15 0.95 4.86 1/389 801990
+exempt_pids=801980 801979 801973
+%CPU PSR     PID USER     COMMAND
+ 100   0  801994 maverick ps
+14.2   3  801980 maverick bash
+ 8.3   2  801973 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dhssm_L2_n128_b4_cont__K50 run 1 2026-10-27T09:53:03+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=53.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.15 0.95 4.86 1/389 802013
+exempt_pids=802003 802002 801996
+%CPU PSR     PID USER     COMMAND
+14.2   0  802003 maverick bash
+11.1   1  801996 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   2  799868 root     kworker/u10:1-events_unbound
+## after dhssm_L2_n128_b4_cont__K50 run 1 2026-10-27T09:53:30+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.0'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 1.78 1.11 4.79 1/388 802065
+exempt_pids=802055 802054 802048
+%CPU PSR     PID USER     COMMAND
+ 100   1  802069 maverick ps
+12.1   2  802048 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+## before dhssm_L2_n128_b4_cont__K25 run 1 2026-10-27T09:53:31+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.78 1.11 4.79 1/388 802088
+exempt_pids=802078 802077 802071
+%CPU PSR     PID USER     COMMAND
+14.2   0  802078 maverick bash
+10.8   1  802071 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+## after dhssm_L2_n128_b4_cont__K25 run 1 2026-10-27T09:53:57+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.19 1.27 4.74 1/389 802137
+exempt_pids=802127 802126 802120
+%CPU PSR     PID USER     COMMAND
+ 100   2  802141 maverick ps
+14.2   1  802127 maverick bash
+11.1   2  802120 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-flush-179:0
+ 0.1   3  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dhssm_L2_n128_b4_spk__K25 run 1 2026-10-27T09:53:58+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.19 1.27 4.74 1/390 802161
+exempt_pids=802151 802150 802143
+%CPU PSR     PID USER     COMMAND
+ 100   3  802165 maverick ps
+14.2   1  802151 maverick bash
+ 8.3   3  802143 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-flush-179:0
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after dhssm_L2_n128_b4_spk__K25 run 1 2026-10-27T09:54:25+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.27 1.38 4.67 1/390 802209
+exempt_pids=802199 802198 802192
+%CPU PSR     PID USER     COMMAND
+ 200   3  802213 maverick ps
+11.7   3  802192 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-flush-179:0
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+## before dhssm_L2_n256_b4_cont__K25 run 1 2026-10-27T09:54:25+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.27 1.38 4.67 1/390 802232
+exempt_pids=802222 802221 802215
+%CPU PSR     PID USER     COMMAND
+ 200   0  802236 maverick ps
+14.2   2  802222 maverick bash
+ 8.8   3  802215 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-flush-179:0
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after dhssm_L2_n256_b4_cont__K25 run 1 2026-10-27T09:55:13+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.9'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.66 1.61 4.58 1/390 802280
+exempt_pids=802270 802269 802263
+%CPU PSR     PID USER     COMMAND
+ 200   1  802284 maverick ps
+ 8.8   2  802263 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-writeback
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+## before lru_L2_H64_N128_lr0.001_vs_t1__K50 run 1 2026-10-27T09:55:13+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.66 1.61 4.58 1/390 802303
+exempt_pids=802293 802292 802286
+%CPU PSR     PID USER     COMMAND
+ 9.0   1  802286 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-writeback
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after lru_L2_H64_N128_lr0.001_vs_t1__K50 run 1 2026-10-27T09:55:36+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.85 1.74 4.55 1/390 802348
+exempt_pids=802338 802337 802331
+%CPU PSR     PID USER     COMMAND
+16.6   2  802338 maverick bash
+ 9.0   2  802331 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+## before dssmU_L2_n128_b4_spk_vs_t1__K50 run 1 2026-10-27T09:55:37+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.85 1.74 4.55 2/391 802372
+exempt_pids=802362 802361 802354
+%CPU PSR     PID USER     COMMAND
+ 8.5   3  802354 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after dssmU_L2_n128_b4_spk_vs_t1__K50 run 1 2026-10-27T09:56:17+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.29 1.98 4.51 1/391 802423
+exempt_pids=802413 802412 802406
+%CPU PSR     PID USER     COMMAND
+ 100   3  802427 maverick ps
+11.1   1  802406 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+## before gru_h768_lr0.003_vs_t1__seq run 1 2026-10-27T09:56:17+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.29 1.98 4.51 1/391 802446
+exempt_pids=802436 802435 802429
+%CPU PSR     PID USER     COMMAND
+11.4   2  802429 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after gru_h768_lr0.003_vs_t1__seq run 1 2026-10-27T10:14:51+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.46 3.27 3.55 1/388 803129
+exempt_pids=803119 803118 803112
+%CPU PSR     PID USER     COMMAND
+ 100   2  803133 maverick ps
+14.2   3  803119 maverick bash
+12.5   3  802681 root     packagekitd
+ 8.3   0  803112 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+## before gru_h64__seq run 1 2026-10-27T10:14:51+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.46 3.27 3.55 1/389 803153
+exempt_pids=803143 803142 803135
+%CPU PSR     PID USER     COMMAND
+12.5   2  802681 root     packagekitd
+11.1   3  803135 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after gru_h64__seq run 1 2026-10-27T10:15:11+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.23 3.23 3.53 1/392 803198
+exempt_pids=803188 803187 803181
+%CPU PSR     PID USER     COMMAND
+ 200   1  803202 maverick ps
+11.1   2  803181 root     sshd
+10.8   3  802681 root     packagekitd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-writeback
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before gru_h256__seq run 1 2026-10-27T10:15:11+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.23 3.23 3.53 1/392 803221
+exempt_pids=803211 803210 803204
+%CPU PSR     PID USER     COMMAND
+11.7   2  803204 root     sshd
+10.8   2  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-writeback
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after gru_h256__seq run 1 2026-10-27T10:16:02+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=67.2'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.10 3.20 3.50 1/393 803270
+exempt_pids=803260 803259 803253
+%CPU PSR     PID USER     COMMAND
+ 8.3   3  803253 root     sshd
+ 7.9   3  802681 root     packagekitd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before adc_h256_ffrand__gemm run 1 2026-10-27T10:16:02+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=66.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.10 3.20 3.50 1/393 803293
+exempt_pids=803283 803282 803276
+%CPU PSR     PID USER     COMMAND
+11.4   0  803276 root     sshd
+ 7.9   0  802681 root     packagekitd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after adc_h256_ffrand__gemm run 1 2026-10-27T10:16:05+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.17 3.21 3.51 1/393 803329
+exempt_pids=803319 803318 803312
+%CPU PSR     PID USER     COMMAND
+ 8.3   3  803312 root     sshd
+ 7.8   0  802681 root     packagekitd
+ 0.2   3     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   0  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-writeback
+## before adc_h512_ffrand__gemm run 1 2026-10-27T10:16:06+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.17 3.21 3.51 1/393 803352
+exempt_pids=803342 803341 803335
+%CPU PSR     PID USER     COMMAND
+14.2   2  803342 maverick bash
+11.4   1  803335 root     sshd
+ 7.7   2  802681 root     packagekitd
+ 0.2   2     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   0  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after adc_h512_ffrand__gemm run 1 2026-10-27T10:16:10+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.92 3.16 3.49 1/393 803388
+exempt_pids=803378 803377 803371
+%CPU PSR     PID USER     COMMAND
+11.1   3  803371 root     sshd
+ 7.6   0  802681 root     packagekitd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   2  799868 root     kworker/u10:1-events_unbound
+## before adc_h1024_ffrand__gemm run 1 2026-10-27T10:16:10+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.92 3.16 3.49 1/393 803411
+exempt_pids=803401 803400 803394
+%CPU PSR     PID USER     COMMAND
+ 100   3  803415 maverick ps
+ 8.1   2  803394 root     sshd
+ 7.6   1  802681 root     packagekitd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after adc_h1024_ffrand__gemm run 1 2026-10-27T10:16:15+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.92 3.16 3.49 1/393 803447
+exempt_pids=803437 803436 803430
+%CPU PSR     PID USER     COMMAND
+ 200   3  803451 maverick ps
+11.1   1  803430 root     sshd
+ 7.4   1  802681 root     packagekitd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before adc_h2048_ffrand__gemm run 1 2026-10-27T10:16:15+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.76 3.12 3.47 1/393 803470
+exempt_pids=803460 803459 803453
+%CPU PSR     PID USER     COMMAND
+ 100   2  803474 maverick ps
+11.7   2  803453 root     sshd
+ 7.4   3  802681 root     packagekitd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after adc_h2048_ffrand__gemm run 1 2026-10-27T10:16:22+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.78 3.12 3.47 1/393 803506
+exempt_pids=803496 803495 803489
+%CPU PSR     PID USER     COMMAND
+14.2   2  803496 maverick bash
+11.1   0  803489 root     sshd
+ 7.2   1  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before adc_h4096_ffrand__gemm run 1 2026-10-27T10:16:22+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.78 3.12 3.47 1/393 803529
+exempt_pids=803519 803518 803512
+%CPU PSR     PID USER     COMMAND
+14.2   1  803519 maverick bash
+11.4   0  803512 root     sshd
+ 7.2   3  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after adc_h4096_ffrand__gemm run 1 2026-10-27T10:16:39+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.83 3.11 3.46 1/393 803571
+exempt_pids=803561 803560 803554
+%CPU PSR     PID USER     COMMAND
+ 200   0  803575 maverick ps
+11.4   0  803554 root     sshd
+ 6.6   0  802681 root     packagekitd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before mlp_h256__gemm run 1 2026-10-27T10:16:40+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.60 3.06 3.44 1/393 803594
+exempt_pids=803584 803583 803577
+%CPU PSR     PID USER     COMMAND
+ 100   0  803598 maverick ps
+ 7.8   2  803577 root     sshd
+ 6.6   2  802681 root     packagekitd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h256__gemm run 1 2026-10-27T10:16:43+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.60 3.06 3.44 1/393 803630
+exempt_pids=803620 803619 803613
+%CPU PSR     PID USER     COMMAND
+ 8.1   1  803613 root     sshd
+ 6.5   3  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before mlp_h512__gemm run 1 2026-10-27T10:16:44+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.60 3.06 3.44 1/394 803654
+exempt_pids=803644 803643 803636
+%CPU PSR     PID USER     COMMAND
+11.4   2  803636 root     sshd
+ 6.5   1  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  799868 root     kworker/u10:1-events_unbound
+## after mlp_h512__gemm run 1 2026-10-27T10:16:48+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.64 3.06 3.44 1/394 803690
+exempt_pids=803680 803679 803673
+%CPU PSR     PID USER     COMMAND
+11.1   1  803673 root     sshd
+ 6.4   3  802681 root     packagekitd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before mlp_h1024__gemm run 1 2026-10-27T10:16:48+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.64 3.06 3.44 1/394 803713
+exempt_pids=803703 803702 803696
+%CPU PSR     PID USER     COMMAND
+14.2   0  803703 maverick bash
+11.1   2  803696 root     sshd
+ 6.4   3  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h1024__gemm run 1 2026-10-27T10:16:52+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.66 3.06 3.44 1/394 803749
+exempt_pids=803739 803738 803732
+%CPU PSR     PID USER     COMMAND
+ 100   1  803753 maverick ps
+14.2   2  803739 maverick bash
+ 8.5   3  803732 root     sshd
+ 6.3   3  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+## before mlp_h2048__gemm run 1 2026-10-27T10:16:53+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.66 3.06 3.44 1/395 803773
+exempt_pids=803763 803762 803755
+%CPU PSR     PID USER     COMMAND
+ 100   0  803777 maverick ps
+12.5   1  803763 maverick bash
+11.1   2  803755 root     sshd
+ 6.3   2  802681 root     packagekitd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+## after mlp_h2048__gemm run 1 2026-10-27T10:16:59+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.69 3.06 3.44 2/395 803809
+exempt_pids=803799 803798 803792
+%CPU PSR     PID USER     COMMAND
+14.2   1  803799 maverick bash
+11.1   0  803792 root     sshd
+ 6.1   1  802681 root     packagekitd
+ 0.2   2     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before mlp_h4096__gemm run 1 2026-10-27T10:17:00+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.48 3.00 3.42 1/395 803832
+exempt_pids=803822 803821 803815
+%CPU PSR     PID USER     COMMAND
+ 200   0  803836 maverick ps
+12.5   2  803822 maverick bash
+ 8.1   1  803815 root     sshd
+ 6.1   3  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+## after mlp_h4096__gemm run 1 2026-10-27T10:17:15+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.50 2.99 3.41 1/395 803882
+exempt_pids=803872 803871 803865
+%CPU PSR     PID USER     COMMAND
+ 100   3  803886 maverick ps
+12.5   0  803872 maverick bash
+10.8   0  803865 root     sshd
+ 5.7   2  802681 root     packagekitd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+## before mlp_h85_match_d32_s128 run 1 2026-10-27T10:17:16+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.50 2.99 3.41 1/395 803905
+exempt_pids=803895 803894 803888
+%CPU PSR     PID USER     COMMAND
+14.2   3  803895 maverick bash
+11.7   3  803888 root     sshd
+ 5.7   0  802681 root     packagekitd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h85_match_d32_s128 run 1 2026-10-27T10:17:19+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.50 2.99 3.41 1/396 803942
+exempt_pids=803932 803931 803925
+%CPU PSR     PID USER     COMMAND
+14.2   2  803932 maverick bash
+12.1   2  803925 root     sshd
+ 5.6   3  802681 root     packagekitd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dann_lrf_d32_s128 run 1 2026-10-27T10:17:20+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.30 2.94 3.39 1/396 803965
+exempt_pids=803955 803954 803948
+%CPU PSR     PID USER     COMMAND
+14.2   1  803955 maverick bash
+11.4   3  803948 root     sshd
+ 5.6   1  802681 root     packagekitd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after dann_lrf_d32_s128 run 1 2026-10-27T10:17:25+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.36 2.94 3.38 1/396 804001
+exempt_pids=803991 803990 803984
+%CPU PSR     PID USER     COMMAND
+ 100   2  804005 maverick ps
+14.2   0  803991 maverick bash
+10.8   3  803984 root     sshd
+ 5.5   3  802681 root     packagekitd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+## before active_dend_k4_cached run 1 2026-10-27T10:17:26+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.36 2.94 3.38 1/396 804024
+exempt_pids=804014 804013 804007
+%CPU PSR     PID USER     COMMAND
+ 200   3  804028 maverick ps
+14.2   0  804014 maverick bash
+ 8.8   3  804007 root     sshd
+ 5.5   0  802681 root     packagekitd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+## after active_dend_k4_cached run 1 2026-10-27T10:17:32+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.41 2.94 3.38 1/396 804060
+exempt_pids=804050 804049 804043
+%CPU PSR     PID USER     COMMAND
+ 100   1  804064 maverick ps
+14.2   0  804050 maverick bash
+ 8.1   3  804043 root     sshd
+ 5.4   2  802681 root     packagekitd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+## before g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm run 2 2026-10-27T10:20:02+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=51.6'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.22 1.79 2.88 1/390 804148
+exempt_pids=804138 804137 804130
+%CPU PSR     PID USER     COMMAND
+ 8.5   3  804130 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm run 2 2026-10-27T10:20:06+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=54.0'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.44 1.81 2.88 1/390 804184
+exempt_pids=804174 804173 804167
+%CPU PSR     PID USER     COMMAND
+ 100   2  804188 maverick ps
+12.1   0  804167 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 2 2026-10-27T10:20:06+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=53.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.44 1.81 2.88 1/390 804207
+exempt_pids=804197 804196 804190
+%CPU PSR     PID USER     COMMAND
+ 100   0  804211 maverick ps
+11.1   0  804190 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 2 2026-10-27T10:20:09+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.4'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.44 1.81 2.88 1/391 804244
+exempt_pids=804234 804233 804227
+%CPU PSR     PID USER     COMMAND
+ 8.8   0  804227 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## before g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 2 2026-10-27T10:20:10+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.0'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.44 1.81 2.88 1/391 804267
+exempt_pids=804257 804256 804250
+%CPU PSR     PID USER     COMMAND
+ 200   1  804271 maverick ps
+14.2   3  804257 maverick bash
+10.8   1  804250 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 2 2026-10-27T10:20:13+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.48 1.79 2.87 1/391 804303
+exempt_pids=804293 804292 804286
+%CPU PSR     PID USER     COMMAND
+ 100   0  804307 maverick ps
+12.5   3  804293 maverick bash
+10.8   0  804286 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm run 2 2026-10-27T10:20:14+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.48 1.79 2.87 1/391 804326
+exempt_pids=804316 804315 804309
+%CPU PSR     PID USER     COMMAND
+14.2   0  804316 maverick bash
+11.1   0  804309 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm run 2 2026-10-27T10:20:18+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.61 1.80 2.86 1/391 804362
+exempt_pids=804352 804351 804345
+%CPU PSR     PID USER     COMMAND
+ 200   0  804366 maverick ps
+12.5   2  804352 maverick bash
+ 8.5   0  804345 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm run 2 2026-10-27T10:20:18+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.5'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.61 1.80 2.86 1/391 804385
+exempt_pids=804375 804374 804368
+%CPU PSR     PID USER     COMMAND
+16.6   1  804375 maverick bash
+11.4   3  804368 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm run 2 2026-10-27T10:20:24+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.80 1.82 2.86 1/391 804421
+exempt_pids=804411 804410 804404
+%CPU PSR     PID USER     COMMAND
+ 200   3  804425 maverick ps
+11.4   2  804404 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm run 2 2026-10-27T10:20:24+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.80 1.82 2.86 1/391 804444
+exempt_pids=804434 804433 804427
+%CPU PSR     PID USER     COMMAND
+ 100   3  804448 maverick ps
+ 8.1   1  804427 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm run 2 2026-10-27T10:20:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.89 1.82 2.86 1/391 804480
+exempt_pids=804470 804469 804463
+%CPU PSR     PID USER     COMMAND
+ 100   2  804484 maverick ps
+12.1   1  804463 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm run 2 2026-10-27T10:20:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.89 1.82 2.86 1/391 804503
+exempt_pids=804493 804492 804486
+%CPU PSR     PID USER     COMMAND
+ 100   3  804507 maverick ps
+14.2   0  804493 maverick bash
+10.8   0  804486 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   2  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm run 2 2026-10-27T10:20:33+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.06 1.84 2.86 1/391 804539
+exempt_pids=804529 804528 804522
+%CPU PSR     PID USER     COMMAND
+14.2   0  804529 maverick bash
+11.7   3  804522 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv run 2 2026-10-27T10:20:33+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.4'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 1.06 1.84 2.86 1/391 804562
+exempt_pids=804552 804551 804545
+%CPU PSR     PID USER     COMMAND
+14.2   3  804552 maverick bash
+ 7.8   1  804545 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv run 2 2026-10-27T10:20:37+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.22 1.86 2.86 1/390 804598
+exempt_pids=804588 804587 804581
+%CPU PSR     PID USER     COMMAND
+ 100   3  804602 maverick ps
+11.4   3  804581 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before dhssm_L2_n128_b4_cont__K50 run 2 2026-10-27T10:20:37+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.22 1.86 2.86 1/390 804621
+exempt_pids=804611 804610 804604
+%CPU PSR     PID USER     COMMAND
+11.1   3  804604 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after dhssm_L2_n128_b4_cont__K50 run 2 2026-10-27T10:21:06+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.03 2.00 2.88 1/392 804678
+exempt_pids=804668 804667 804661
+%CPU PSR     PID USER     COMMAND
+ 200   0  804682 maverick ps
+14.2   1  804668 maverick bash
+ 8.3   3  804661 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-writeback
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dhssm_L2_n128_b4_cont__K25 run 2 2026-10-27T10:21:07+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.03 2.00 2.88 1/392 804701
+exempt_pids=804691 804690 804684
+%CPU PSR     PID USER     COMMAND
+ 200   1  804705 maverick ps
+ 8.5   1  804684 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dhssm_L2_n128_b4_cont__K25 run 2 2026-10-27T10:21:35+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.4'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.36 2.08 2.88 1/392 804749
+exempt_pids=804739 804738 804732
+%CPU PSR     PID USER     COMMAND
+16.6   2  804739 maverick bash
+11.7   2  804732 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before dhssm_L2_n128_b4_spk__K25 run 2 2026-10-27T10:21:35+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.17 2.05 2.87 1/392 804772
+exempt_pids=804762 804761 804755
+%CPU PSR     PID USER     COMMAND
+ 100   2  804776 maverick ps
+14.2   0  804762 maverick bash
+ 8.3   1  804755 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after dhssm_L2_n128_b4_spk__K25 run 2 2026-10-27T10:22:01+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.45 2.12 2.87 1/391 804814
+exempt_pids=804804 804803 804797
+%CPU PSR     PID USER     COMMAND
+ 100   2  804818 maverick ps
+14.2   0  804804 maverick bash
+ 8.3   0  804797 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dhssm_L2_n256_b4_cont__K25 run 2 2026-10-27T10:22:01+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.45 2.12 2.87 1/391 804837
+exempt_pids=804827 804826 804820
+%CPU PSR     PID USER     COMMAND
+16.6   1  804827 maverick bash
+11.7   2  804820 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dhssm_L2_n256_b4_cont__K25 run 2 2026-10-27T10:22:49+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.82 2.27 2.88 1/390 804889
+exempt_pids=804879 804878 804872
+%CPU PSR     PID USER     COMMAND
+14.2   2  804879 maverick bash
+11.1   2  804872 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before lru_L2_H64_N128_lr0.001_vs_t1__K50 run 2 2026-10-27T10:22:49+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.82 2.27 2.88 1/390 804912
+exempt_pids=804902 804901 804895
+%CPU PSR     PID USER     COMMAND
+ 7.8   0  804895 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after lru_L2_H64_N128_lr0.001_vs_t1__K50 run 2 2026-10-27T10:23:11+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.77 2.29 2.88 1/390 804957
+exempt_pids=804947 804946 804940
+%CPU PSR     PID USER     COMMAND
+14.2   2  804947 maverick bash
+12.5   2  804940 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before dssmU_L2_n128_b4_spk_vs_t1__K50 run 2 2026-10-27T10:23:12+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.77 2.29 2.88 1/390 804980
+exempt_pids=804970 804969 804963
+%CPU PSR     PID USER     COMMAND
+14.2   1  804970 maverick bash
+10.8   1  804963 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dssmU_L2_n128_b4_spk_vs_t1__K50 run 2 2026-10-27T10:23:51+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.88 2.38 2.89 1/392 805033
+exempt_pids=805023 805022 805016
+%CPU PSR     PID USER     COMMAND
+14.2   0  805023 maverick bash
+ 7.8   2  805016 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-writeback
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before gru_h768_lr0.003_vs_t1__seq run 2 2026-10-27T10:23:51+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.88 2.38 2.89 1/392 805056
+exempt_pids=805046 805045 805039
+%CPU PSR     PID USER     COMMAND
+ 100   1  805060 maverick ps
+ 8.5   1  805039 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.1   1  348711 root     verysync
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after gru_h768_lr0.003_vs_t1__seq run 2 2026-10-27T10:42:26+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.02 3.02 3.00 1/388 805270
+exempt_pids=805260 805259 805253
+%CPU PSR     PID USER     COMMAND
+ 100   2  805274 maverick ps
+14.2   3  805260 maverick bash
+11.7   3  805253 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before gru_h64__seq run 2 2026-10-27T10:42:26+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.09 3.04 3.01 1/388 805293
+exempt_pids=805283 805282 805276
+%CPU PSR     PID USER     COMMAND
+16.6   3  805283 maverick bash
+12.1   0  805276 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after gru_h64__seq run 2 2026-10-27T10:42:40+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.08 3.04 3.00 1/387 805335
+exempt_pids=805325 805324 805318
+%CPU PSR     PID USER     COMMAND
+14.2   0  805325 maverick bash
+11.7   3  805318 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before gru_h256__seq run 2 2026-10-27T10:42:41+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.08 3.04 3.00 1/387 805358
+exempt_pids=805348 805347 805341
+%CPU PSR     PID USER     COMMAND
+16.6   2  805348 maverick bash
+12.5   1  805341 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after gru_h256__seq run 2 2026-10-27T10:43:33+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=68.6'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.97 3.00 3.00 1/388 805410
+exempt_pids=805400 805399 805393
+%CPU PSR     PID USER     COMMAND
+ 100   1  805414 maverick ps
+14.2   2  805400 maverick bash
+11.7   0  805393 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before adc_h256_ffrand__gemm run 2 2026-10-27T10:43:33+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=67.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.97 3.00 3.00 1/388 805433
+exempt_pids=805423 805422 805416
+%CPU PSR     PID USER     COMMAND
+14.2   2  805423 maverick bash
+12.1   2  805416 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after adc_h256_ffrand__gemm run 2 2026-10-27T10:43:37+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.97 3.00 3.00 1/388 805469
+exempt_pids=805459 805458 805452
+%CPU PSR     PID USER     COMMAND
+ 100   3  805473 maverick ps
+12.5   2  805459 maverick bash
+ 8.1   2  805452 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before adc_h512_ffrand__gemm run 2 2026-10-27T10:43:37+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.97 3.00 3.00 1/389 805493
+exempt_pids=805483 805482 805475
+%CPU PSR     PID USER     COMMAND
+ 8.8   3  805475 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## after adc_h512_ffrand__gemm run 2 2026-10-27T10:43:41+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.97 3.00 3.00 1/389 805529
+exempt_pids=805519 805518 805512
+%CPU PSR     PID USER     COMMAND
+ 200   3  805533 maverick ps
+ 8.8   3  805512 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before adc_h1024_ffrand__gemm run 2 2026-10-27T10:43:41+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.73 2.95 2.98 1/389 805552
+exempt_pids=805542 805541 805535
+%CPU PSR     PID USER     COMMAND
+ 200   1  805556 maverick ps
+12.5   0  805542 maverick bash
+ 8.8   1  805535 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after adc_h1024_ffrand__gemm run 2 2026-10-27T10:43:46+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.73 2.95 2.98 1/389 805588
+exempt_pids=805578 805577 805571
+%CPU PSR     PID USER     COMMAND
+ 100   2  805592 maverick ps
+14.2   0  805578 maverick bash
+11.7   0  805571 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before adc_h2048_ffrand__gemm run 2 2026-10-27T10:43:46+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.73 2.95 2.98 1/389 805611
+exempt_pids=805601 805600 805594
+%CPU PSR     PID USER     COMMAND
+14.2   3  805601 maverick bash
+11.4   2  805594 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   0  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after adc_h2048_ffrand__gemm run 2 2026-10-27T10:43:53+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.63 2.92 2.97 1/389 805647
+exempt_pids=805637 805636 805630
+%CPU PSR     PID USER     COMMAND
+ 100   1  805651 maverick ps
+12.5   3  805637 maverick bash
+11.4   3  805630 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before adc_h4096_ffrand__gemm run 2 2026-10-27T10:43:53+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.63 2.92 2.97 1/389 805670
+exempt_pids=805660 805659 805653
+%CPU PSR     PID USER     COMMAND
+ 200   3  805674 maverick ps
+14.2   1  805660 maverick bash
+ 8.8   1  805653 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after adc_h4096_ffrand__gemm run 2 2026-10-27T10:44:10+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.71 2.92 2.97 1/390 805715
+exempt_pids=805705 805704 805698
+%CPU PSR     PID USER     COMMAND
+ 100   3  805719 maverick ps
+11.1   2  805698 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before mlp_h256__gemm run 2 2026-10-27T10:44:10+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.71 2.92 2.97 1/390 805738
+exempt_pids=805728 805727 805721
+%CPU PSR     PID USER     COMMAND
+11.4   0  805721 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## after mlp_h256__gemm run 2 2026-10-27T10:44:15+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.57 2.89 2.96 1/390 805774
+exempt_pids=805764 805763 805757
+%CPU PSR     PID USER     COMMAND
+ 9.0   2  805757 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## before mlp_h512__gemm run 2 2026-10-27T10:44:16+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.57 2.89 2.96 1/390 805797
+exempt_pids=805787 805786 805780
+%CPU PSR     PID USER     COMMAND
+ 200   0  805801 maverick ps
+12.5   3  805787 maverick bash
+11.4   1  805780 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h512__gemm run 2 2026-10-27T10:44:21+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.56 2.88 2.96 1/389 805834
+exempt_pids=805824 805823 805817
+%CPU PSR     PID USER     COMMAND
+14.2   2  805824 maverick bash
+11.7   2  805817 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before mlp_h1024__gemm run 2 2026-10-27T10:44:22+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.56 2.88 2.96 1/389 805857
+exempt_pids=805847 805846 805840
+%CPU PSR     PID USER     COMMAND
+12.5   3  805840 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## after mlp_h1024__gemm run 2 2026-10-27T10:44:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.60 2.88 2.96 1/389 805893
+exempt_pids=805883 805882 805876
+%CPU PSR     PID USER     COMMAND
+ 9.0   2  805876 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## before mlp_h2048__gemm run 2 2026-10-27T10:44:29+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.60 2.88 2.96 1/389 805916
+exempt_pids=805906 805905 805899
+%CPU PSR     PID USER     COMMAND
+12.1   2  805899 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## after mlp_h2048__gemm run 2 2026-10-27T10:44:36+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.58 2.87 2.95 1/389 805952
+exempt_pids=805942 805941 805935
+%CPU PSR     PID USER     COMMAND
+ 8.5   1  805935 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   2  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## before mlp_h4096__gemm run 2 2026-10-27T10:44:37+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.58 2.87 2.95 1/389 805975
+exempt_pids=805965 805964 805958
+%CPU PSR     PID USER     COMMAND
+ 100   3  805979 maverick ps
+14.2   0  805965 maverick bash
+11.1   0  805958 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h4096__gemm run 2 2026-10-27T10:44:53+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.58 2.86 2.95 1/389 806020
+exempt_pids=806010 806009 806003
+%CPU PSR     PID USER     COMMAND
+ 100   1  806024 maverick ps
+14.2   3  806010 maverick bash
+11.7   0  806003 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before mlp_h85_match_d32_s128 run 2 2026-10-27T10:44:53+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.58 2.86 2.95 1/389 806043
+exempt_pids=806033 806032 806026
+%CPU PSR     PID USER     COMMAND
+ 100   0  806047 maverick ps
+14.2   1  806033 maverick bash
+ 9.0   0  806026 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h85_match_d32_s128 run 2 2026-10-27T10:44:57+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.53 2.84 2.94 1/389 806079
+exempt_pids=806069 806068 806062
+%CPU PSR     PID USER     COMMAND
+ 200   0  806083 maverick ps
+12.5   3  806069 maverick bash
+ 8.3   3  806062 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dann_lrf_d32_s128 run 2 2026-10-27T10:44:57+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.53 2.84 2.94 1/389 806102
+exempt_pids=806092 806091 806085
+%CPU PSR     PID USER     COMMAND
+14.2   3  806092 maverick bash
+ 8.5   2  806085 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dann_lrf_d32_s128 run 2 2026-10-27T10:45:02+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.57 2.85 2.94 1/389 806138
+exempt_pids=806128 806127 806121
+%CPU PSR     PID USER     COMMAND
+14.2   1  806128 maverick bash
+11.4   0  806121 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before active_dend_k4_cached run 2 2026-10-27T10:45:03+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.57 2.85 2.94 1/389 806161
+exempt_pids=806151 806150 806144
+%CPU PSR     PID USER     COMMAND
+11.7   3  806144 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## after active_dend_k4_cached run 2 2026-10-27T10:45:09+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.60 2.85 2.94 1/389 806197
+exempt_pids=806187 806186 806180
+%CPU PSR     PID USER     COMMAND
+14.2   0  806187 maverick bash
+11.7   3  806180 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm run 3 2026-10-27T10:47:39+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=50.6'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.21 1.72 2.50 1/388 806240
+exempt_pids=806230 806229 806223
+%CPU PSR     PID USER     COMMAND
+ 100   0  806244 maverick ps
+11.1   0  806223 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm run 3 2026-10-27T10:47:43+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.0'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.43 1.74 2.50 1/388 806276
+exempt_pids=806266 806265 806259
+%CPU PSR     PID USER     COMMAND
+ 100   0  806280 maverick ps
+12.5   2  806266 maverick bash
+11.7   0  806259 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 3 2026-10-27T10:47:43+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=54.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.43 1.74 2.50 1/389 806300
+exempt_pids=806290 806289 806282
+%CPU PSR     PID USER     COMMAND
+14.2   2  806290 maverick bash
+11.1   2  806282 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 3 2026-10-27T10:47:46+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.20 1.88 2.54 1/389 806336
+exempt_pids=806326 806325 806319
+%CPU PSR     PID USER     COMMAND
+11.4   0  806319 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## before g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 3 2026-10-27T10:47:47+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.0'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 1.20 1.88 2.54 2/389 806359
+exempt_pids=806349 806348 806342
+%CPU PSR     PID USER     COMMAND
+ 200   1  806363 maverick ps
+14.2   2  806349 maverick bash
+11.4   0  806342 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 3 2026-10-27T10:47:50+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.20 1.88 2.54 1/389 806395
+exempt_pids=806385 806384 806378
+%CPU PSR     PID USER     COMMAND
+ 8.5   2  806378 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## before g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm run 3 2026-10-27T10:47:51+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.20 1.88 2.54 1/389 806418
+exempt_pids=806408 806407 806401
+%CPU PSR     PID USER     COMMAND
+ 9.0   0  806401 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+ 0.0   1  348700 root     verysync
+## after g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm run 3 2026-10-27T10:47:54+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.34 1.90 2.54 1/390 806455
+exempt_pids=806445 806444 806438
+%CPU PSR     PID USER     COMMAND
+16.6   3  806445 maverick bash
+12.5   0  806438 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm run 3 2026-10-27T10:47:54+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.5'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 1.34 1.90 2.54 1/390 806478
+exempt_pids=806468 806467 806461
+%CPU PSR     PID USER     COMMAND
+ 100   3  806482 maverick ps
+11.7   2  806461 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_mlp_h256_lr0.0003_wd0_fair_t1__gemm run 3 2026-10-27T10:47:58+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.48 1.91 2.55 1/390 806514
+exempt_pids=806504 806503 806497
+%CPU PSR     PID USER     COMMAND
+14.2   3  806504 maverick bash
+11.4   2  806497 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm run 3 2026-10-27T10:47:58+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.48 1.91 2.55 1/390 806537
+exempt_pids=806527 806526 806520
+%CPU PSR     PID USER     COMMAND
+ 100   1  806541 maverick ps
+12.5   3  806527 maverick bash
+11.4   1  806520 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__gemm run 3 2026-10-27T10:48:02+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.60 1.93 2.55 1/390 806573
+exempt_pids=806563 806562 806556
+%CPU PSR     PID USER     COMMAND
+ 100   2  806577 maverick ps
+11.1   1  806556 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm run 3 2026-10-27T10:48:02+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.60 1.93 2.55 1/390 806596
+exempt_pids=806586 806585 806579
+%CPU PSR     PID USER     COMMAND
+14.2   1  806586 maverick bash
+ 8.8   0  806579 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm run 3 2026-10-27T10:48:07+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.9'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 1.55 1.92 2.54 1/390 806632
+exempt_pids=806622 806621 806615
+%CPU PSR     PID USER     COMMAND
+ 200   2  806636 maverick ps
+14.2   3  806622 maverick bash
+11.7   0  806615 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv run 3 2026-10-27T10:48:07+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=57.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.55 1.92 2.54 1/390 806655
+exempt_pids=806645 806644 806638
+%CPU PSR     PID USER     COMMAND
+ 100   0  806659 maverick ps
+14.2   1  806645 maverick bash
+ 8.8   0  806638 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv run 3 2026-10-27T10:48:10+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.9'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 1.55 1.92 2.54 1/390 806691
+exempt_pids=806681 806680 806674
+%CPU PSR     PID USER     COMMAND
+ 100   2  806695 maverick ps
+14.2   1  806681 maverick bash
+ 9.0   1  806674 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   2  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dhssm_L2_n128_b4_cont__K50 run 3 2026-10-27T10:48:11+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.55 1.92 2.54 1/390 806714
+exempt_pids=806704 806703 806697
+%CPU PSR     PID USER     COMMAND
+14.2   0  806704 maverick bash
+11.4   3  806697 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dhssm_L2_n128_b4_cont__K50 run 3 2026-10-27T10:48:38+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.02 1.99 2.55 1/391 806760
+exempt_pids=806750 806749 806743
+%CPU PSR     PID USER     COMMAND
+ 100   3  806764 maverick ps
+12.5   2  806750 maverick bash
+11.1   3  806743 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dhssm_L2_n128_b4_cont__K25 run 3 2026-10-27T10:48:38+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.02 1.99 2.55 1/391 806783
+exempt_pids=806773 806772 806766
+%CPU PSR     PID USER     COMMAND
+ 100   3  806787 maverick ps
+11.7   2  806766 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dhssm_L2_n128_b4_cont__K25 run 3 2026-10-27T10:49:07+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.9'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.16 2.04 2.55 1/390 806831
+exempt_pids=806821 806820 806814
+%CPU PSR     PID USER     COMMAND
+14.2   2  806821 maverick bash
+ 8.3   2  806814 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before dhssm_L2_n128_b4_spk__K25 run 3 2026-10-27T10:49:07+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.16 2.04 2.55 1/390 806854
+exempt_pids=806844 806843 806837
+%CPU PSR     PID USER     COMMAND
+16.6   2  806844 maverick bash
+12.1   0  806837 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.1   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dhssm_L2_n128_b4_spk__K25 run 3 2026-10-27T10:49:33+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.45 2.12 2.56 1/389 806902
+exempt_pids=806892 806891 806884
+%CPU PSR     PID USER     COMMAND
+ 100   2  806906 maverick ps
+12.5   0  806892 maverick bash
+11.7   0  806884 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before dhssm_L2_n256_b4_cont__K25 run 3 2026-10-27T10:49:34+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.45 2.12 2.56 1/389 806925
+exempt_pids=806915 806914 806908
+%CPU PSR     PID USER     COMMAND
+14.2   0  806915 maverick bash
+ 9.0   1  806908 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dhssm_L2_n256_b4_cont__K25 run 3 2026-10-27T10:50:21+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.74 2.24 2.58 1/391 807017
+exempt_pids=807007 807006 807000
+%CPU PSR     PID USER     COMMAND
+ 200   1  807021 maverick ps
+12.5   2  807007 maverick bash
+ 8.5   0  807000 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before lru_L2_H64_N128_lr0.001_vs_t1__K50 run 3 2026-10-27T10:50:22+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.60 2.22 2.57 1/391 807040
+exempt_pids=807030 807029 807023
+%CPU PSR     PID USER     COMMAND
+ 100   0  807044 maverick ps
+14.2   1  807030 maverick bash
+11.7   2  807023 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after lru_L2_H64_N128_lr0.001_vs_t1__K50 run 3 2026-10-27T10:50:43+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.72 2.27 2.58 1/391 807079
+exempt_pids=807069 807068 807062
+%CPU PSR     PID USER     COMMAND
+14.2   1  807069 maverick bash
+11.4   1  807062 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before dssmU_L2_n128_b4_spk_vs_t1__K50 run 3 2026-10-27T10:50:44+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.72 2.27 2.58 1/391 807102
+exempt_pids=807092 807091 807085
+%CPU PSR     PID USER     COMMAND
+14.2   1  807092 maverick bash
+12.1   1  807085 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dssmU_L2_n128_b4_spk_vs_t1__K50 run 3 2026-10-27T10:51:22+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.2'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.86 2.37 2.60 1/391 807147
+exempt_pids=807137 807136 807130
+%CPU PSR     PID USER     COMMAND
+ 200   2  807151 maverick ps
+14.2   3  807137 maverick bash
+ 9.0   3  807130 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before gru_h768_lr0.003_vs_t1__seq run 3 2026-10-27T10:51:22+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=66.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.86 2.37 2.60 1/391 807170
+exempt_pids=807160 807159 807153
+%CPU PSR     PID USER     COMMAND
+16.6   0  807160 maverick bash
+ 8.8   1  807153 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.1   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after gru_h768_lr0.003_vs_t1__seq run 3 2026-10-27T11:09:41+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.00 3.02 2.94 1/386 807342
+exempt_pids=807332 807331 807325
+%CPU PSR     PID USER     COMMAND
+ 200   3  807346 maverick ps
+12.5   0  807332 maverick bash
+ 9.0   1  807325 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before gru_h64__seq run 3 2026-10-27T11:09:41+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.00 3.02 2.94 1/386 807365
+exempt_pids=807355 807354 807348
+%CPU PSR     PID USER     COMMAND
+16.6   0  807355 maverick bash
+12.9   3  807348 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## after gru_h64__seq run 3 2026-10-27T11:09:55+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.00 3.02 2.94 1/387 807408
+exempt_pids=807398 807397 807390
+%CPU PSR     PID USER     COMMAND
+16.6   2  807398 maverick bash
+12.1   2  807390 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## before gru_h256__seq run 3 2026-10-27T11:09:56+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.00 3.02 2.94 1/387 807431
+exempt_pids=807421 807420 807414
+%CPU PSR     PID USER     COMMAND
+ 100   1  807435 maverick ps
+11.4   2  807414 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## after gru_h256__seq run 3 2026-10-27T11:10:48+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=67.6'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.00 3.01 2.94 1/388 807522
+exempt_pids=807512 807511 807505
+%CPU PSR     PID USER     COMMAND
+ 100   2  807526 maverick ps
+ 8.8   0  807505 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## before adc_h256_ffrand__gemm run 3 2026-10-27T11:10:48+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=67.6'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.00 3.01 2.94 1/388 807545
+exempt_pids=807535 807534 807528
+%CPU PSR     PID USER     COMMAND
+ 100   2  807549 maverick ps
+12.5   1  807535 maverick bash
+11.4   2  807528 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after adc_h256_ffrand__gemm run 3 2026-10-27T11:10:52+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=66.2'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 3.00 3.01 2.94 1/388 807581
+exempt_pids=807571 807570 807564
+%CPU PSR     PID USER     COMMAND
+16.6   0  807571 maverick bash
+12.1   2  807564 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## before adc_h512_ffrand__gemm run 3 2026-10-27T11:10:52+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 3.00 3.01 2.94 1/389 807605
+exempt_pids=807595 807594 807587
+%CPU PSR     PID USER     COMMAND
+14.2   0  807595 maverick bash
+ 9.0   0  807587 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## after adc_h512_ffrand__gemm run 3 2026-10-27T11:10:56+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.76 2.96 2.93 1/389 807641
+exempt_pids=807631 807630 807624
+%CPU PSR     PID USER     COMMAND
+14.2   0  807631 maverick bash
+12.5   1  807624 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before adc_h1024_ffrand__gemm run 3 2026-10-27T11:10:56+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=65.2'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.76 2.96 2.93 1/389 807664
+exempt_pids=807654 807653 807647
+%CPU PSR     PID USER     COMMAND
+14.2   3  807654 maverick bash
+12.1   2  807647 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## after adc_h1024_ffrand__gemm run 3 2026-10-27T11:11:01+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.78 2.96 2.93 1/389 807700
+exempt_pids=807690 807689 807683
+%CPU PSR     PID USER     COMMAND
+16.6   2  807690 maverick bash
+11.7   3  807683 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-flush-179:0
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before adc_h2048_ffrand__gemm run 3 2026-10-27T11:11:01+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=64.2'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.78 2.96 2.93 1/389 807723
+exempt_pids=807713 807712 807706
+%CPU PSR     PID USER     COMMAND
+ 100   2  807727 maverick ps
+14.2   1  807713 maverick bash
+11.1   1  807706 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-flush-179:0
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after adc_h2048_ffrand__gemm run 3 2026-10-27T11:11:08+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.81 2.97 2.93 1/389 807759
+exempt_pids=807749 807748 807742
+%CPU PSR     PID USER     COMMAND
+ 100   2  807763 maverick ps
+12.5   1  807749 maverick bash
+ 8.8   2  807742 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   0  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before adc_h4096_ffrand__gemm run 3 2026-10-27T11:11:08+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.81 2.97 2.93 1/389 807782
+exempt_pids=807772 807771 807765
+%CPU PSR     PID USER     COMMAND
+12.1   2  807765 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-flush-179:0
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after adc_h4096_ffrand__gemm run 3 2026-10-27T11:11:24+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.86 2.97 2.93 1/389 807824
+exempt_pids=807814 807813 807807
+%CPU PSR     PID USER     COMMAND
+14.2   1  807814 maverick bash
+11.7   3  807807 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before mlp_h256__gemm run 3 2026-10-27T11:11:24+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.86 2.97 2.93 1/389 807847
+exempt_pids=807837 807836 807830
+%CPU PSR     PID USER     COMMAND
+ 100   1  807851 maverick ps
+14.2   3  807837 maverick bash
+11.1   2  807830 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h256__gemm run 3 2026-10-27T11:11:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.87 2.97 2.93 1/389 807883
+exempt_pids=807873 807872 807866
+%CPU PSR     PID USER     COMMAND
+ 100   0  807887 maverick ps
+11.4   3  807866 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before mlp_h512__gemm run 3 2026-10-27T11:11:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.87 2.97 2.93 1/389 807906
+exempt_pids=807896 807895 807889
+%CPU PSR     PID USER     COMMAND
+ 100   0  807910 maverick ps
+14.2   1  807896 maverick bash
+12.1   0  807889 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h512__gemm run 3 2026-10-27T11:11:32+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.87 2.97 2.93 1/389 807942
+exempt_pids=807932 807931 807925
+%CPU PSR     PID USER     COMMAND
+ 100   0  807946 maverick ps
+11.7   0  807925 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before mlp_h1024__gemm run 3 2026-10-27T11:11:32+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.87 2.97 2.93 1/389 807965
+exempt_pids=807955 807954 807948
+%CPU PSR     PID USER     COMMAND
+ 200   2  807969 maverick ps
+14.2   1  807955 maverick bash
+ 8.8   3  807948 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after mlp_h1024__gemm run 3 2026-10-27T11:11:37+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.7'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.80 2.95 2.93 1/389 808001
+exempt_pids=807991 807990 807984
+%CPU PSR     PID USER     COMMAND
+14.2   2  807991 maverick bash
+11.7   2  807984 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before mlp_h2048__gemm run 3 2026-10-27T11:11:37+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.80 2.95 2.93 1/389 808024
+exempt_pids=808014 808013 808007
+%CPU PSR     PID USER     COMMAND
+14.2   2  808014 maverick bash
+12.1   2  808007 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## after mlp_h2048__gemm run 3 2026-10-27T11:11:44+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=63.7'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.68 2.92 2.91 1/389 808060
+exempt_pids=808050 808049 808043
+%CPU PSR     PID USER     COMMAND
+14.2   2  808050 maverick bash
+ 9.3   1  808043 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before mlp_h4096__gemm run 3 2026-10-27T11:11:44+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.68 2.92 2.91 1/389 808083
+exempt_pids=808073 808072 808066
+%CPU PSR     PID USER     COMMAND
+14.2   0  808073 maverick bash
+12.1   0  808066 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## after mlp_h4096__gemm run 3 2026-10-27T11:12:02+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.75 2.93 2.92 1/389 808125
+exempt_pids=808115 808114 808108
+%CPU PSR     PID USER     COMMAND
+14.2   0  808115 maverick bash
+12.1   1  808108 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before mlp_h85_match_d32_s128 run 3 2026-10-27T11:12:02+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.3'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.53 2.88 2.90 1/389 808148
+exempt_pids=808138 808137 808131
+%CPU PSR     PID USER     COMMAND
+14.2   0  808138 maverick bash
+ 8.8   3  808131 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## after mlp_h85_match_d32_s128 run 3 2026-10-27T11:12:06+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.53 2.88 2.90 1/389 808184
+exempt_pids=808174 808173 808167
+%CPU PSR     PID USER     COMMAND
+ 9.0   3  808167 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before dann_lrf_d32_s128 run 3 2026-10-27T11:12:06+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.53 2.88 2.90 1/389 808207
+exempt_pids=808197 808196 808190
+%CPU PSR     PID USER     COMMAND
+ 8.5   3  808190 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## after dann_lrf_d32_s128 run 3 2026-10-27T11:12:11+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.57 2.88 2.90 1/389 808243
+exempt_pids=808233 808232 808226
+%CPU PSR     PID USER     COMMAND
+ 8.8   0  808226 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before active_dend_k4_cached run 3 2026-10-27T11:12:12+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.57 2.88 2.90 1/389 808266
+exempt_pids=808256 808255 808249
+%CPU PSR     PID USER     COMMAND
+ 100   2  808270 maverick ps
+14.2   3  808256 maverick bash
+12.1   3  808249 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after active_dend_k4_cached run 3 2026-10-27T11:12:18+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.64 2.88 2.90 1/389 808302
+exempt_pids=808292 808291 808285
+%CPU PSR     PID USER     COMMAND
+14.2   1  808292 maverick bash
+ 9.0   3  808285 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## before g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 1 2026-10-27T11:14:49+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=51.6'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.21 1.74 2.46 1/390 808351
+exempt_pids=808341 808340 808334
+%CPU PSR     PID USER     COMMAND
+ 100   1  808355 maverick ps
+14.2   0  808341 maverick bash
+13.8   2  808334 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 1 2026-10-27T11:14:52+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.0'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.21 1.74 2.46 1/390 808387
+exempt_pids=808377 808376 808370
+%CPU PSR     PID USER     COMMAND
+ 100   1  808391 maverick ps
+12.5   3  808377 maverick bash
+11.7   1  808370 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   2  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv run 1 2026-10-27T11:14:52+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.21 1.74 2.46 1/391 808411
+exempt_pids=808401 808400 808393
+%CPU PSR     PID USER     COMMAND
+14.2   3  808401 maverick bash
+ 9.3   1  808393 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+## after g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv run 1 2026-10-27T11:14:55+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.5'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.68 1.81 2.48 1/391 808447
+exempt_pids=808437 808436 808430
+%CPU PSR     PID USER     COMMAND
+ 200   3  808451 maverick ps
+14.2   1  808437 maverick bash
+11.7   3  808430 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   2  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv run 1 2026-10-27T11:14:56+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.68 1.81 2.48 1/391 808470
+exempt_pids=808460 808459 808453
+%CPU PSR     PID USER     COMMAND
+ 100   0  808474 maverick ps
+12.5   3  808460 maverick bash
+11.7   3  808453 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   2  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv run 1 2026-10-27T11:14:59+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.78 1.81 2.48 1/391 808506
+exempt_pids=808496 808495 808489
+%CPU PSR     PID USER     COMMAND
+ 8.8   2  808489 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   0  348700 root     verysync
+ 0.0   1  799868 root     kworker/u10:1-events_unbound
+## before dhssm_L2_n128_b4_spk__K50 run 1 2026-10-27T11:14:59+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=56.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.78 1.81 2.48 1/391 808529
+exempt_pids=808519 808518 808512
+%CPU PSR     PID USER     COMMAND
+ 200   2  808533 maverick ps
+12.5   3  808519 maverick bash
+11.4   0  808512 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after dhssm_L2_n128_b4_spk__K50 run 1 2026-10-27T11:15:27+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.60 1.93 2.50 1/389 808580
+exempt_pids=808570 808569 808563
+%CPU PSR     PID USER     COMMAND
+14.2   3  808570 maverick bash
+ 9.0   1  808563 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## before dhssm_L2_n256_b4_cont__K50 run 1 2026-10-27T11:15:27+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.3'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.60 1.93 2.50 1/389 808603
+exempt_pids=808593 808592 808586
+%CPU PSR     PID USER     COMMAND
+16.6   0  808593 maverick bash
+12.1   2  808586 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## after dhssm_L2_n256_b4_cont__K50 run 1 2026-10-27T11:16:18+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=62.8'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 2.37 2.08 2.52 1/388 808651
+exempt_pids=808641 808640 808634
+%CPU PSR     PID USER     COMMAND
+14.2   1  808641 maverick bash
+12.1   1  808634 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-writeback
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## before g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 2 2026-10-27T11:18:48+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=51.1'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.25 1.30 2.16 1/391 808705
+exempt_pids=808695 808694 808688
+%CPU PSR     PID USER     COMMAND
+14.2   0  808695 maverick bash
+12.1   0  808688 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## after g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 2 2026-10-27T11:18:52+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=54.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.25 1.30 2.16 1/391 808741
+exempt_pids=808731 808730 808724
+%CPU PSR     PID USER     COMMAND
+ 100   1  808745 maverick ps
+11.4   3  808724 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## before g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv run 2 2026-10-27T11:18:52+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=53.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.25 1.30 2.16 1/391 808764
+exempt_pids=808754 808753 808747
+%CPU PSR     PID USER     COMMAND
+14.2   1  808754 maverick bash
+11.4   1  808747 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## after g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv run 2 2026-10-27T11:18:55+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=52.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.31 1.30 2.15 1/391 808800
+exempt_pids=808790 808789 808783
+%CPU PSR     PID USER     COMMAND
+ 100   2  808804 maverick ps
+14.2   1  808790 maverick bash
+11.4   3  808783 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv run 2 2026-10-27T11:18:56+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=53.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.31 1.30 2.15 1/391 808823
+exempt_pids=808813 808812 808806
+%CPU PSR     PID USER     COMMAND
+14.2   1  808813 maverick bash
+ 9.0   3  808806 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## after g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv run 2 2026-10-27T11:18:59+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=55.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.45 1.31 2.15 1/391 808859
+exempt_pids=808849 808848 808842
+%CPU PSR     PID USER     COMMAND
+ 200   1  808863 maverick ps
+11.7   3  808842 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## before dhssm_L2_n128_b4_spk__K50 run 2 2026-10-27T11:18:59+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=54.0'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.45 1.31 2.15 1/391 808882
+exempt_pids=808872 808871 808865
+%CPU PSR     PID USER     COMMAND
+ 100   1  808886 maverick ps
+11.4   3  808865 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## after dhssm_L2_n128_b4_spk__K50 run 2 2026-10-27T11:19:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=59.9'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 1.98 1.62 2.23 1/390 808932
+exempt_pids=808922 808921 808914
+%CPU PSR     PID USER     COMMAND
+ 200   2  808936 maverick ps
+ 9.0   3  808914 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   1  348700 root     verysync
+## before dhssm_L2_n256_b4_cont__K50 run 2 2026-10-27T11:19:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.9'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.98 1.62 2.23 1/390 808955
+exempt_pids=808945 808944 808938
+%CPU PSR     PID USER     COMMAND
+ 100   0  808959 maverick ps
+12.5   2  808945 maverick bash
+ 8.5   3  808938 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after dhssm_L2_n256_b4_cont__K50 run 2 2026-10-27T11:20:19+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=61.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.61 1.85 2.28 1/389 809046
+exempt_pids=809036 809035 809028
+%CPU PSR     PID USER     COMMAND
+ 200   1  809050 maverick ps
+12.5   3  809036 maverick bash
+11.7   3  809028 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   1  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 3 2026-10-27T11:22:49+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=49.6'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.22 1.13 1.94 1/387 809090
+exempt_pids=809080 809079 809073
+%CPU PSR     PID USER     COMMAND
+ 200   0  809094 maverick ps
+ 9.0   0  809073 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## after g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm run 3 2026-10-27T11:22:52+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=52.1'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.22 1.13 1.94 1/387 809126
+exempt_pids=809116 809115 809109
+%CPU PSR     PID USER     COMMAND
+12.1   1  809109 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.0   3  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## before g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv run 3 2026-10-27T11:22:53+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=52.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.22 1.13 1.94 1/387 809149
+exempt_pids=809139 809138 809132
+%CPU PSR     PID USER     COMMAND
+ 100   2  809153 maverick ps
+14.2   1  809139 maverick bash
+ 8.8   2  809132 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   0  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## after g1f_cnn_c8_16_lr0.001_wd0_fair_t1__conv run 3 2026-10-27T11:22:56+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=53.0'C
+frequency(48)=1800404352
+throttled=0x50000
+ondemand
+loadavg 0.36 1.14 1.94 1/388 809186
+exempt_pids=809176 809175 809169
+%CPU PSR     PID USER     COMMAND
+ 200   2  809190 maverick ps
+14.2   3  809176 maverick bash
+ 8.5   0  809169 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+## before g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv run 3 2026-10-27T11:22:56+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=52.1'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.36 1.14 1.94 1/388 809209
+exempt_pids=809199 809198 809192
+%CPU PSR     PID USER     COMMAND
+14.2   2  809199 maverick bash
+11.7   0  809192 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## after g1f_cnn_c16_32_lr0.001_wd0_fair_t1__conv run 3 2026-10-27T11:23:00+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=53.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.49 1.16 1.94 1/388 809245
+exempt_pids=809235 809234 809228
+%CPU PSR     PID USER     COMMAND
+ 200   3  809249 maverick ps
+11.7   2  809228 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## before dhssm_L2_n128_b4_spk__K50 run 3 2026-10-27T11:23:00+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=54.5'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 0.49 1.16 1.94 1/388 809268
+exempt_pids=809258 809257 809251
+%CPU PSR     PID USER     COMMAND
+14.2   2  809258 maverick bash
+ 8.8   3  809251 root     sshd
+ 0.2   2     275 root     systemd-journal
+ 0.1   2  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## after dhssm_L2_n128_b4_spk__K50 run 3 2026-10-27T11:23:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.35 1.31 1.97 1/388 809319
+exempt_pids=809309 809308 809302
+%CPU PSR     PID USER     COMMAND
+16.6   0  809309 maverick bash
+12.1   1  809302 root     sshd
+ 0.2   3     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+## before dhssm_L2_n256_b4_cont__K50 run 3 2026-10-27T11:23:28+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=58.4'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 1.24 1.28 1.96 1/388 809342
+exempt_pids=809332 809331 809325
+%CPU PSR     PID USER     COMMAND
+ 9.0   1  809325 root     sshd
+ 0.2   0     275 root     systemd-journal
+ 0.1   3  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound
+ 0.0   3  348700 root     verysync
+ 0.0   3  799879 root     kworker/3:0H-kblockd
+## after dhssm_L2_n256_b4_cont__K50 run 3 2026-10-27T11:24:19+08:00
+garbage.service pid=0 active=inactive psr= pcpu=
+temp=60.8'C
+frequency(48)=1800457088
+throttled=0x50000
+ondemand
+loadavg 2.24 1.55 2.01 1/389 809396
+exempt_pids=809386 809385 809379
+%CPU PSR     PID USER     COMMAND
+ 100   1  809400 maverick ps
+12.5   3  809386 maverick bash
+11.7   0  809379 root     sshd
+ 0.2   1     275 root     systemd-journal
+ 0.1   1  348711 root     verysync
+ 0.0   2  793324 root     kworker/u12:2-events_unbound
+ 0.0   0  793952 root     kworker/u9:0-events_unbound

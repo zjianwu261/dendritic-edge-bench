@@ -169,6 +169,12 @@ byte for byte. `features.csv` itself is computed by `src/costmodel/build_feature
 the SDCC builds of the 8051 models, which are not included; the unit tests that need them are skipped without them
 (the synthetic-graph tests always run).
 
+**Post-hoc Raspberry Pi check (E-12, outside the pre-specified E-11 protocol):** frozen `fit_pi.json` constants predict
+19 pairs before timing on the Pi 4B, `results/costmodel/pi_oos/` (pre-registered `PROTOCOL.md`, `PROTOCOL_A1.md`,
+`graphs_pre.csv`, `pairs_pre.csv`, `pre.sha256`; timing `raw/`, `timing.csv`, `pairs_pred.csv`, `verdict.json`).
+`python src/costmodel/pi_oos.py verdict --out <dir>` checks `pre.sha256` and reproduces `timing.csv`, `pairs_pred.csv`
+and all verdict numbers; without the research git history the commit checks are skipped and noted in `verdict.json`.
+
 Re-running experiments:
 
 - **T1** (one model per row): e.g. `python src/t1/dann_fmnist.py --model dann`, `--model mlp`;
