@@ -1,0 +1,216 @@
+{"Layers": [{
+  "Name": "/Reshape",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "x",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_output_0",
+    "Location": "Device",
+    "Dimensions": [1,1,28,28],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to /c1/Conv + /Relu",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/Reshape_output_0",
+    "Location": "Device",
+    "Dimensions": [1,1,28,28],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to /c1/Conv + /Relu",
+    "Location": "Device",
+    "Dimensions": [1,1,28,28],
+    "Format/Datatype": "Channel major FP16 format where channel % 4 == 0"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/c1/Conv + /Relu",
+  "LayerType": "CaskConvolution",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to /c1/Conv + /Relu",
+    "Location": "Device",
+    "Dimensions": [1,1,28,28],
+    "Format/Datatype": "Channel major FP16 format where channel % 4 == 0"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Relu_output_0",
+    "Location": "Device",
+    "Dimensions": [1,32,14,14],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [3,3],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [1,1],
+  "PostPadding": [1,1],
+  "Stride": [2,2],
+  "Dilation": [1,1],
+  "OutMaps": 32,
+  "Groups": 1,
+  "Weights": {"Type": "Half", "Count": 288},
+  "Bias": {"Type": "Half", "Count": 32},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "RELU",
+  "HasBias": 1,
+  "HasReLU": 1,
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f16_f16_nhwckrsc_nhwc_tilesize128x16x64_stage1_warpsize4x1x1_g1_tensor16x8x16_aligna8_alignc8",
+  "TacticValue": "0x112767cf498572ea"
+},{
+  "Name": "/c2/Conv + /Relu_1",
+  "LayerType": "CaskConvolution",
+  "Inputs": [
+  {
+    "Name": "/Relu_output_0",
+    "Location": "Device",
+    "Dimensions": [1,32,14,14],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Relu_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,64,7,7],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [3,3],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [1,1],
+  "PostPadding": [1,1],
+  "Stride": [2,2],
+  "Dilation": [1,1],
+  "OutMaps": 64,
+  "Groups": 1,
+  "Weights": {"Type": "Half", "Count": 18432},
+  "Bias": {"Type": "Half", "Count": 64},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "RELU",
+  "HasBias": 1,
+  "HasReLU": 1,
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f16f16_f16f16_f16_nhwckrsc_nhwc_tilesize128x32x32_stage4_warpsize4x1x1_g1_tensor16x8x16_t1r3s3",
+  "TacticValue": "0x3e7eb35b91b9fa63"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to /Flatten + reshape_before_/fc/Gemm",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/Relu_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,64,7,7],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to /Flatten + reshape_before_/fc/Gemm",
+    "Location": "Device",
+    "Dimensions": [1,64,7,7],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/Flatten + reshape_before_/fc/Gemm",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to /Flatten + reshape_before_/fc/Gemm",
+    "Location": "Device",
+    "Dimensions": [1,64,7,7],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "reshape_before_/fc/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,3136,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/fc/Gemm",
+  "LayerType": "CaskGemmConvolution",
+  "Inputs": [
+  {
+    "Name": "reshape_before_/fc/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,3136,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/fc/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,10,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 10,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 31360},
+  "Bias": {"Type": "Float", "Count": 10},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "NONE",
+  "TacticName": "sm50_xmma_cublas_gemvx_f32f32_f32_f32_tn_n_int32_unit_n_launch_param4x32x32_strided_unit_stride",
+  "TacticValue": "0x00000000000206a6"
+},{
+  "Name": "reshape_after_/fc/Gemm",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/fc/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,10,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "y",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+}],
+"Bindings": ["x"
+,"y"
+]}

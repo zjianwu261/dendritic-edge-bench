@@ -1,0 +1,212 @@
+{"Layers": [{
+  "Name": "reshape_before_/l1/Gemm",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "x",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "reshape_before_/l1/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,784,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to /l1/Gemm + /Relu",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "reshape_before_/l1/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,784,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to /l1/Gemm + /Relu",
+    "Location": "Device",
+    "Dimensions": [1,784,1,1],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/l1/Gemm + /Relu",
+  "LayerType": "CaskGemmConvolution",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to /l1/Gemm + /Relu",
+    "Location": "Device",
+    "Dimensions": [1,784,1,1],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Relu_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,3072,1,1],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 3072,
+  "Groups": 1,
+  "Weights": {"Type": "Half", "Count": 2408448},
+  "Bias": {"Type": "Half", "Count": 3072},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "RELU",
+  "TacticName": "ampere_h16816gemm_128x64_ldg8_relu_nn_v1",
+  "TacticValue": "0x00000000000200d9"
+},{
+  "Name": "/l2/Gemm + /Relu_1",
+  "LayerType": "CaskGemmConvolution",
+  "Inputs": [
+  {
+    "Name": "/Relu_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,3072,1,1],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Relu_1_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,3072,1,1],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 3072,
+  "Groups": 1,
+  "Weights": {"Type": "Half", "Count": 9437184},
+  "Bias": {"Type": "Half", "Count": 3072},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "RELU",
+  "TacticName": "ampere_h16816gemm_128x64_ldg8_relu_stages_32x6_nn_v1",
+  "TacticValue": "0x00000000000201c2"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to /out/Gemm",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Relu_1_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,3072,1,1],
+    "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to /out/Gemm",
+    "Location": "Device",
+    "Dimensions": [1,3072,1,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/out/Gemm",
+  "LayerType": "CaskGemmConvolution",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to /out/Gemm",
+    "Location": "Device",
+    "Dimensions": [1,3072,1,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/out/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,10,1,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 10,
+  "Groups": 1,
+  "Weights": {"Type": "Half", "Count": 30720},
+  "Bias": {"Type": "Half", "Count": 10},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "NONE",
+  "TacticName": "sm50_xmma_cublas_gemvx_f16f16_f32_f32_tn_n_int32_unit_n_launch_param4x32x32_strided_unit_stride",
+  "TacticValue": "0x00000000000202e8"
+},{
+  "Name": "reshape_after_/out/Gemm",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/out/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,10,1,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Output Tensor 0 to reshape_after_/out/Gemm",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Output Tensor 0 to reshape_after_/out/Gemm",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "Reformatted Output Tensor 0 to reshape_after_/out/Gemm",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "y",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+}],
+"Bindings": ["x"
+,"y"
+]}

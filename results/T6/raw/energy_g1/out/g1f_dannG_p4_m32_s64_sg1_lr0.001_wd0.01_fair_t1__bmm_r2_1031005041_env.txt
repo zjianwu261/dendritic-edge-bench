@@ -1,0 +1,78 @@
+## 2026-10-31T00:50:46+08:00 label=g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm tag=r2_1031005041 engine=bv5_g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm_nocublas_635d795b1227.engine before
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 49375
+GPU-therm 47281
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 46937
+SOC1-therm 47843
+SOC2-therm 46875
+tj-therm 49125
+## loadavg
+0.56 0.93 0.90 1/247 1710938
+## MemAvailable_MB 5814
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+1651649  0.9     0       16:16 [kworker/0:1-read_counters_wq]
+1651956  0.9     0       12:14 [kworker/4:0-events]
+1657779  0.7     0       11:02 [kworker/0:0-events]
+    258  0.2     0 11-15:01:48 [nvmap-bz]
+   1731  0.2 11360 11-15:01:41 /usr/bin/python3 /usr/local/bin/jtop --force
+1710576  0.2  3268       00:05 bash ~/dendritic-edge-bench/energy/bin/energy_one.sh g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm ~/dendritic-edge-bench/T6/work_bv1/en
+1651550  0.1     0       19:18 [kworker/u12:1-devfreq_wq]
+## trtexec processes
+## 2026-10-31T00:51:46+08:00 label=g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm tag=r2_1031005041 engine=bv5_g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm_nocublas_635d795b1227.engine after
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Orin Nano Developer Kit
+Error: Run this script(/usr/bin/jetson_clocks) as a root user
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## thermal (type temp_mC)
+CPU-therm 49218
+GPU-therm 47343
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 47093
+SOC1-therm 47968
+SOC2-therm 47125
+tj-therm 49406
+## loadavg
+1.50 1.13 0.97 2/250 1715833
+## MemAvailable_MB 5813
+## top CPU processes
+    PID %CPU   RSS     ELAPSED COMMAND
+1651956  0.9     0       13:14 [kworker/4:0-read_counters_wq]
+1651649  0.8     0       17:16 [kworker/0:1-read_counters_wq]
+1657779  0.8     0       12:02 [kworker/0:0-pm]
+    258  0.2     0 11-15:02:48 [nvmap-bz]
+   1731  0.2 11360 11-15:02:41 /usr/bin/python3 /usr/local/bin/jtop --force
+1651550  0.1     0       20:18 [kworker/u12:1-flush-259:0]
+      1  0.0  8116 11-15:03:00 /sbin/init 2
+## trtexec processes

@@ -1,0 +1,101 @@
+[
+ {
+  "graph": "g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm",
+  "flag": "nocublas",
+  "k": 3,
+  "phase": "1",
+  "sha": "98b0deee416342618f2e3469d2ed7ac4508aec09d648957be1afd7b4e5cb56cd",
+  "buildvar_p50": 0.114,
+  "buildvar_median": 0.114,
+  "e11_target_ms": 0.114,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv1/engines/bv3_g1f_dannG_p4_m8_s64_sg1_lr0.001_wd0_fair_t1__bmm_nocublas_98b0deee4163.engine"
+ },
+ {
+  "graph": "g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm",
+  "flag": "nocublas",
+  "k": 3,
+  "phase": "1",
+  "sha": "74c46ae7bafba4b80ea33374e66536ca5889b292ef92966de8fbe80ee85f43fc",
+  "buildvar_p50": 0.1151,
+  "buildvar_median": 0.1151,
+  "e11_target_ms": 0.1151,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv1/engines/bv3_g1f_dannG_p4_m16_s64_sg1_lr0.001_wd0.01_fair_t1__bmm_nocublas_74c46ae7bafb.engine"
+ },
+ {
+  "graph": "g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm",
+  "flag": "nocublas",
+  "k": 5,
+  "phase": "1",
+  "sha": "635d795b1227a5f4f0df92a094a0edc4850bd4f73b4f3372019d15182e1c2c71",
+  "buildvar_p50": 0.1171,
+  "buildvar_median": 0.1171,
+  "e11_target_ms": 0.1171,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv1/engines/bv5_g1f_dannG_p4_m32_s64_sg1_lr0.001_wd0.01_fair_t1__bmm_nocublas_635d795b1227.engine"
+ },
+ {
+  "graph": "g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm",
+  "flag": "default",
+  "k": 5,
+  "phase": "1",
+  "sha": "564cf85449527dd2bb0dedd54059ea2362f5da6a493312f835fa69a89a0cd283",
+  "buildvar_p50": 0.143,
+  "buildvar_median": 0.143,
+  "e11_target_ms": 0.143,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv1/engines/bv5_g1f_dannG_p4_m64_s64_sg1_lr0.001_wd0.01_fair_t1__bmm_default_564cf8544952.engine"
+ },
+ {
+  "graph": "g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm",
+  "flag": "nocublas",
+  "k": 2,
+  "phase": "1",
+  "sha": "388f70812cef0d500ee6a05712edc69e60fc1a319197900395b4802c7ccf4c35",
+  "buildvar_p50": 0.0979,
+  "buildvar_median": 0.0979,
+  "e11_target_ms": 0.0979,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv1/engines/bv2_g1f_mlp_h128_lr0.001_wd0_fair_t1__gemm_nocublas_388f70812cef.engine"
+ },
+ {
+  "graph": "g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv",
+  "flag": "nocublas",
+  "k": 1,
+  "phase": "1",
+  "sha": "41834681a2136ba75996ef9b0a396270dbea74c5317551aa7d832c25582bd33b",
+  "buildvar_p50": 0.1041,
+  "buildvar_median": 0.1041,
+  "e11_target_ms": 0.1041,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv1/engines/bv1_g1f_mlp_h256_lr0.0003_wd0_fair_t1__conv_nocublas_41834681a213.engine"
+ },
+ {
+  "graph": "g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__conv",
+  "flag": "nocublas",
+  "k": 4,
+  "phase": "1",
+  "sha": "5a345f9b819aa1c280770f7c0c8f586518b851a72d664b6a65166b62c7e9a7a2",
+  "buildvar_p50": 0.1665,
+  "buildvar_median": 0.1665,
+  "e11_target_ms": 0.1665,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv1/engines/bv4_g1f_mlp_h512_lr0.0003_wd0.01_fair_t1__conv_nocublas_5a345f9b819a.engine"
+ },
+ {
+  "graph": "g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm",
+  "flag": "nocublas",
+  "k": 2,
+  "phase": "1",
+  "sha": "5aa228cd128c5a813d6ff3f4b3a13cce7765e5c86a8492a8902fc0d2d898e5dc",
+  "buildvar_p50": 0.2036,
+  "buildvar_median": 0.2036,
+  "e11_target_ms": 0.2036,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv1/engines/bv2_g1f_mlp_h1024_lr0.0003_wd0_fair_t1__gemm_nocublas_5aa228cd128c.engine"
+ },
+ {
+  "graph": "g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv",
+  "flag": "default",
+  "k": 1,
+  "phase": "2",
+  "sha": "da2ef2368c2c810a805728750326935b3378f481429b937392d35a4565170669",
+  "buildvar_p50": 0.118,
+  "buildvar_median": 0.118,
+  "e11_target_ms": 0.118,
+  "engine": "$HOME/dendritic-edge-bench/T6/work_bv2/engines/bv1_g1f_cnn_c32_64_lr0.001_wd0.01_fair_t1__conv_default_da2ef2368c2c.engine"
+ }
+]

@@ -1,0 +1,32 @@
+2026-10-30T22:15:42+08:00 batch start work_g2b/manifest_abs.txt
+2026-10-30T22:15:42+08:00 built g2b1_dhssm_L2_n128_b4_cont__K50
+2026-10-30T22:15:42+08:00 built g2b1_dhssm_L2_n128_b4_cont__K25
+2026-10-30T22:15:43+08:00 built g2b1_dhssm_L2_n128_b4_spk__K25
+2026-10-30T22:15:43+08:00 built g2b1_dhssm_L2_n256_b4_cont__K25
+2026-10-30T22:15:43+08:00 built g2b1_lru_L2_H64_N128_lr0.001_vs_t1__K50
+2026-10-30T22:15:43+08:00 built g2b1_dssmU_L2_n128_b4_spk_vs_t1__K50
+2026-10-30T22:15:43+08:00 built g2b1_gru_h768_lr0.003_vs_t1__seq
+2026-10-30T22:15:43+08:00 built g2b1_gru_h64__seq
+2026-10-30T22:15:43+08:00 built g2b1_gru_h256__seq
+2026-10-30T22:18:53+08:00 built g2b2_dhssm_L2_n128_b4_cont__K50
+2026-10-30T22:22:06+08:00 built g2b2_dhssm_L2_n128_b4_cont__K25
+2026-10-30T22:24:52+08:00 built g2b2_dhssm_L2_n128_b4_spk__K25
+2026-10-30T22:28:22+08:00 built g2b2_dhssm_L2_n256_b4_cont__K25
+2026-10-30T22:34:26+08:00 built g2b2_lru_L2_H64_N128_lr0.001_vs_t1__K50
+2026-10-30T22:37:22+08:00 built g2b2_dssmU_L2_n128_b4_spk_vs_t1__K50
+2026-10-30T22:37:41+08:00 built g2b2_gru_h768_lr0.003_vs_t1__seq
+2026-10-30T22:37:57+08:00 built g2b2_gru_h64__seq
+2026-10-30T22:38:12+08:00 built g2b2_gru_h256__seq
+2026-10-30T22:41:24+08:00 built g2b3_dhssm_L2_n128_b4_cont__K50
+2026-10-30T22:44:37+08:00 built g2b3_dhssm_L2_n128_b4_cont__K25
+2026-10-30T22:47:23+08:00 built g2b3_dhssm_L2_n128_b4_spk__K25
+2026-10-30T22:50:53+08:00 built g2b3_dhssm_L2_n256_b4_cont__K25
+2026-10-30T22:56:58+08:00 built g2b3_lru_L2_H64_N128_lr0.001_vs_t1__K50
+2026-10-30T22:59:53+08:00 built g2b3_dssmU_L2_n128_b4_spk_vs_t1__K50
+2026-10-30T23:00:13+08:00 built g2b3_gru_h768_lr0.003_vs_t1__seq
+2026-10-30T23:00:28+08:00 built g2b3_gru_h64__seq
+2026-10-30T23:00:44+08:00 built g2b3_gru_h256__seq
+2026-10-30T23:10:52+08:00 round 1 done
+2026-10-30T23:21:01+08:00 round 2 done
+2026-10-30T23:31:09+08:00 round 3 done
+2026-10-30T23:31:09+08:00 batch done work_g2b/manifest_abs.txt

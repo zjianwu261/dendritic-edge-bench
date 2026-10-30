@@ -1,0 +1,347 @@
+{"Layers": [{
+  "Name": "Reformatting CopyNode for Network Input x",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "x",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted x",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "reshape_before_/dep/MatMul",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "Reformatted x",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "reshape_before_/dep/MatMul_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,784,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/dep/MatMul + /dep/Constant_output_0 + (Unnamed Layer* 3) [Shuffle] + unsqueeze_node_after_/dep/Constant_output_0 + (Unnamed Layer* 3) [Shuffle]_(Unnamed Layer* 3) [Shuffle]_output + /dep/Mul",
+  "LayerType": "CublasConvolution",
+  "Inputs": [
+  {
+    "Name": "reshape_before_/dep/MatMul_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,784,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/dep/Mul_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,10,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 10,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 7840},
+  "Bias": {"Type": "Float", "Count": 0},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "NONE",
+  "HasBias": 0,
+  "CublasConvolutionTacticIndex": 2,
+  "TacticValue": "0x0000000000000002"
+},{
+  "Name": "copied_squeeze_after_/dep/Mul",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/dep/Mul_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,10,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/dep/Mul_output_0",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "dep.pn",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 5) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 10},
+  "dimensions": [1,10],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/dep/Sub",
+  "LayerType": "ElementWise",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 5) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/dep/Mul_output_0",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/dep/Sub_output_0",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "ElementWise",
+  "ElementWiseOperation": "SUB",
+  "Activation": "NONE",
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "/dep/ArgMin",
+  "LayerType": "TopK",
+  "Inputs": [
+  {
+    "Name": "/dep/Sub_output_0",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 7) [TopK]_output_1",
+    "Location": "Device",
+    "Dimensions": [1,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 7) [TopK]_output_2",
+    "Location": "Device",
+    "Dimensions": [1,1],
+    "Format/Datatype": "Row major linear Int32"
+  }],
+  "ParameterType": "TopK",
+  "Operation": "MIN",
+  "K": 1,
+  "ReduceAxes": [0,1],
+  "TacticValue": "0x0000000000000003"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[(Unnamed Layer* 8) [Shuffle].../dep/Mul_1]}",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "Reformatted x",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 1 to {ForeignNode[(Unnamed Layer* 8) [Shuffle].../dep/Mul_1]}",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "{ForeignNode[(Unnamed Layer* 8) [Shuffle].../dep/Mul_1]}",
+  "LayerType": "Myelin",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 7) [TopK]_output_2",
+    "Location": "Device",
+    "Dimensions": [1,1],
+    "Format/Datatype": "Row major linear Int32"
+  },
+  {
+    "Name": "Reformatted Input Tensor 1 to {ForeignNode[(Unnamed Layer* 8) [Shuffle].../dep/Mul_1]}",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/dep/ArgMin_output_0",
+    "Location": "Device",
+    "Dimensions": [1],
+    "Format/Datatype": "Row major linear Int32"
+  },
+  {
+    "Name": "/dep/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,384],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/dep/TopK",
+  "LayerType": "TopK",
+  "Inputs": [
+  {
+    "Name": "/dep/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,384],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/dep/TopK_output_0",
+    "Location": "Device",
+    "Dimensions": [1,19],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "/dep/TopK_output_1",
+    "Location": "Device",
+    "Dimensions": [1,19],
+    "Format/Datatype": "Row major linear Int32"
+  }],
+  "ParameterType": "TopK",
+  "Operation": "MAX",
+  "K": 19,
+  "ReduceAxes": [0,1],
+  "TacticValue": "0x0000000000000002"
+},{
+  "Name": "{ForeignNode[dep.g2.../dep/Mul_3]}",
+  "LayerType": "Myelin",
+  "Inputs": [
+  {
+    "Name": "/dep/ArgMin_output_0",
+    "Location": "Device",
+    "Dimensions": [1],
+    "Format/Datatype": "Row major linear Int32"
+  },
+  {
+    "Name": "/dep/TopK_output_0",
+    "Location": "Device",
+    "Dimensions": [1,19],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "/dep/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,384],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/dep/Mul_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,384],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/dep/TopK_1",
+  "LayerType": "TopK",
+  "Inputs": [
+  {
+    "Name": "/dep/Mul_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,384],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/dep/TopK_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,19],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "/dep/TopK_1_output_1",
+    "Location": "Device",
+    "Dimensions": [1,19],
+    "Format/Datatype": "Row major linear Int32"
+  }],
+  "ParameterType": "TopK",
+  "Operation": "MAX",
+  "K": 19,
+  "ReduceAxes": [0,1],
+  "TacticValue": "0x0000000000000002"
+},{
+  "Name": "{ForeignNode[/dep/Slice_1...(Unnamed Layer* 43) [ElementWise]]}",
+  "LayerType": "Myelin",
+  "Inputs": [
+  {
+    "Name": "/dep/TopK_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,19],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "/dep/Mul_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,384],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Output Tensor 0 to {ForeignNode[/dep/Slice_1...(Unnamed Layer* 43) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[/dep/Slice_1...(Unnamed Layer* 43) [ElementWise]]}",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "Reformatted Output Tensor 0 to {ForeignNode[/dep/Slice_1...(Unnamed Layer* 43) [ElementWise]]}",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "y",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+}],
+"Bindings": ["x"
+,"y"
+]}

@@ -1,0 +1,158 @@
+{"Layers": [{
+  "Name": "reshape_before_/l1/Gemm",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "x",
+    "Location": "Device",
+    "Dimensions": [1,784],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "reshape_before_/l1/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,784,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/l1/Gemm + /Relu",
+  "LayerType": "CaskConvolution",
+  "Inputs": [
+  {
+    "Name": "reshape_before_/l1/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,784,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Relu_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,384,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 384,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 301056},
+  "Bias": {"Type": "Float", "Count": 384},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "RELU",
+  "HasBias": 1,
+  "HasReLU": 1,
+  "TacticName": "sm70_xmma_fprop_conv1x1_f32f32_f32_f32_nchwkcrs_nchw_simt_small_batch_bias_relu",
+  "TacticValue": "0xaa0953b1a73b0b9b"
+},{
+  "Name": "/l2/Gemm + /Relu_1",
+  "LayerType": "CaskConvolution",
+  "Inputs": [
+  {
+    "Name": "/Relu_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,384,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Relu_1_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,384,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 384,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 147456},
+  "Bias": {"Type": "Float", "Count": 384},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "RELU",
+  "HasBias": 1,
+  "HasReLU": 1,
+  "TacticName": "sm70_xmma_fprop_conv1x1_f32f32_f32_f32_nchwkcrs_nchw_simt_small_batch_bias_relu",
+  "TacticValue": "0xaa0953b1a73b0b9b"
+},{
+  "Name": "/out/Gemm",
+  "LayerType": "CaskGemmConvolution",
+  "Inputs": [
+  {
+    "Name": "/Relu_1_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,384,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/out/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,10,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 10,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 3840},
+  "Bias": {"Type": "Float", "Count": 10},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "NONE",
+  "TacticName": "sm50_xmma_cublas_gemvx_f32f32_f32_f32_tn_n_int32_unit_n_launch_param16x32x32_strided_unit_stride",
+  "TacticValue": "0x000000000002024c"
+},{
+  "Name": "reshape_after_/out/Gemm",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/out/Gemm_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,10,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "y",
+    "Location": "Device",
+    "Dimensions": [1,10],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+}],
+"Bindings": ["x"
+,"y"
+]}

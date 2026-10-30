@@ -1,0 +1,2267 @@
+{"Layers": [{
+  "Name": "m.layers.0.tau_n",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 21) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 768},
+  "dimensions": [768],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "m.layers.0.tau_m",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 23) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [192],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 192},
+  "dimensions": [192],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "m.layers.0.proj.weight",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 29) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768,176],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 135168},
+  "dimensions": [768,176],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "m.layers.0.proj.bias",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 31) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 768},
+  "dimensions": [768],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::MatMul_518 + (Unnamed Layer* 58) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 58) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 480000},
+  "dimensions": [1,768,25,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "inter_b0 + (Unnamed Layer* 62) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 62) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,40,40],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 1228800},
+  "dimensions": [1,768,40,40],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::Mul_532 + (Unnamed Layer* 86) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 86) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 19200},
+  "dimensions": [1,768,1,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::MatMul_534 + (Unnamed Layer* 122) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 122) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 120000},
+  "dimensions": [1,192,25,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "inter_a0 + (Unnamed Layer* 126) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 126) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,40,40],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 307200},
+  "dimensions": [1,192,40,40],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::Mul_548 + (Unnamed Layer* 150) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 150) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 4800},
+  "dimensions": [1,192,1,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "m.layers.1.tau_n",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 159) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 768},
+  "dimensions": [768],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "m.layers.1.tau_m",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 161) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [192],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 192},
+  "dimensions": [192],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "m.layers.1.proj.weight",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 167) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768,48],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 36864},
+  "dimensions": [768,48],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "m.layers.1.proj.bias",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 169) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 768},
+  "dimensions": [768],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::MatMul_550 + (Unnamed Layer* 196) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 196) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 480000},
+  "dimensions": [1,768,25,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "inter_b1 + (Unnamed Layer* 200) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 200) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,40,40],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 1228800},
+  "dimensions": [1,768,40,40],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::Mul_564 + (Unnamed Layer* 224) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 224) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 19200},
+  "dimensions": [1,768,1,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::MatMul_566 + (Unnamed Layer* 260) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 260) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 120000},
+  "dimensions": [1,192,25,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "inter_a1 + (Unnamed Layer* 264) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 264) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,40,40],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 307200},
+  "dimensions": [1,192,40,40],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::Mul_580 + (Unnamed Layer* 288) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 288) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 4800},
+  "dimensions": [1,192,1,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "m.ro_tau",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 297) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 20},
+  "dimensions": [20],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::MatMul_582 + (Unnamed Layer* 328) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 328) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 12500},
+  "dimensions": [1,20,25,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "inter_ro + (Unnamed Layer* 332) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 332) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,40,40],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 32000},
+  "dimensions": [1,20,40,40],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "onnx::Mul_596 + (Unnamed Layer* 356) [Shuffle]",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 356) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 500},
+  "dimensions": [1,20,1,25],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/Transpose",
+  "LayerType": "Shuffle",
+  "Inputs": [
+  {
+    "Name": "x",
+    "Location": "Device",
+    "Dimensions": [1,1000,700],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Transpose_output_0",
+    "Location": "Device",
+    "Dimensions": [1,700,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Shuffle",
+  "FirstTranspose": [0,2,1],
+  "Reshape": "nbDims=-1",
+  "SecondTranspose": [0,1,2],
+  "ZeroIsPlaceholder": 1,
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "PWN(PWN(/Sigmoid), PWN(/Constant_8_output_0 + (Unnamed Layer* 26) [Shuffle], /Sub))",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 21) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Sub_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 1,
+  "InputArgs": ["arg0"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var4"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 6,
+  "Literals": ["0.000000e+00f", "1.000000e+00f", "0.000000e+00f", "0.000000e+00f", "5.000000e-01f", "1.000000e+00f"],
+  "NbOperations": 5,
+  "Operations": ["auto const var0 = pwgen::iMul(literal4, arg0);", "auto const var1 = pwgen::iTanh(var0);", "auto const var2 = pwgen::iMul(var1, literal4);", "auto const var3 = pwgen::iPlus(var2, literal4);", "auto const var4 = pwgen::iMinus(literal5, var3);"],
+  "TacticValue": "0x0000000000000009"
+},{
+  "Name": "PWN(PWN(/Sigmoid_1), PWN(/Constant_31_output_0 + (Unnamed Layer* 97) [Shuffle], /Sub_1))",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 23) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [192],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Sub_1_output_0",
+    "Location": "Device",
+    "Dimensions": [192],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 1,
+  "InputArgs": ["arg0"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var4"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 6,
+  "Literals": ["0.000000e+00f", "1.000000e+00f", "0.000000e+00f", "0.000000e+00f", "5.000000e-01f", "1.000000e+00f"],
+  "NbOperations": 5,
+  "Operations": ["auto const var0 = pwgen::iMul(literal4, arg0);", "auto const var1 = pwgen::iTanh(var0);", "auto const var2 = pwgen::iMul(var1, literal4);", "auto const var3 = pwgen::iPlus(var2, literal4);", "auto const var4 = pwgen::iMinus(literal5, var3);"],
+  "TacticValue": "0x0000000000000002"
+},{
+  "Name": "PWN(PWN(/Sigmoid_2), PWN(/Constant_54_output_0 + (Unnamed Layer* 164) [Shuffle], /Sub_2))",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 159) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Sub_2_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 1,
+  "InputArgs": ["arg0"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var4"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 6,
+  "Literals": ["0.000000e+00f", "1.000000e+00f", "0.000000e+00f", "0.000000e+00f", "5.000000e-01f", "1.000000e+00f"],
+  "NbOperations": 5,
+  "Operations": ["auto const var0 = pwgen::iMul(literal4, arg0);", "auto const var1 = pwgen::iTanh(var0);", "auto const var2 = pwgen::iMul(var1, literal4);", "auto const var3 = pwgen::iPlus(var2, literal4);", "auto const var4 = pwgen::iMinus(literal5, var3);"],
+  "TacticValue": "0x0000000000000009"
+},{
+  "Name": "PWN(PWN(/Sigmoid_3), PWN(/Constant_77_output_0 + (Unnamed Layer* 235) [Shuffle], /Sub_3))",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 161) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [192],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Sub_3_output_0",
+    "Location": "Device",
+    "Dimensions": [192],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 1,
+  "InputArgs": ["arg0"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var4"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 6,
+  "Literals": ["0.000000e+00f", "1.000000e+00f", "0.000000e+00f", "0.000000e+00f", "5.000000e-01f", "1.000000e+00f"],
+  "NbOperations": 5,
+  "Operations": ["auto const var0 = pwgen::iMul(literal4, arg0);", "auto const var1 = pwgen::iTanh(var0);", "auto const var2 = pwgen::iMul(var1, literal4);", "auto const var3 = pwgen::iPlus(var2, literal4);", "auto const var4 = pwgen::iMinus(literal5, var3);"],
+  "TacticValue": "0x0000000000000002"
+},{
+  "Name": "PWN(PWN(/Sigmoid_4), PWN(/Constant_100_output_0 + (Unnamed Layer* 300) [Shuffle], /Sub_4))",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 297) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Sub_4_output_0",
+    "Location": "Device",
+    "Dimensions": [20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 1,
+  "InputArgs": ["arg0"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var4"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 6,
+  "Literals": ["0.000000e+00f", "1.000000e+00f", "0.000000e+00f", "0.000000e+00f", "5.000000e-01f", "1.000000e+00f"],
+  "NbOperations": 5,
+  "Operations": ["auto const var0 = pwgen::iMul(literal4, arg0);", "auto const var1 = pwgen::iTanh(var0);", "auto const var2 = pwgen::iMul(var1, literal4);", "auto const var3 = pwgen::iPlus(var2, literal4);", "auto const var4 = pwgen::iMinus(literal5, var3);"],
+  "TacticValue": "0x000000000000001c"
+},{
+  "Name": "/proj/Unsqueeze",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Sub_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/proj/Unsqueeze_output_0",
+    "Location": "Device",
+    "Dimensions": [768,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/proj/Mul_1",
+  "LayerType": "ElementWise",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 31) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/Sub_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/proj/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "ElementWise",
+  "ElementWiseOperation": "PROD",
+  "Activation": "NONE",
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "/proj_1/Unsqueeze",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Sub_2_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/proj_1/Unsqueeze_output_0",
+    "Location": "Device",
+    "Dimensions": [768,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/proj_1/Mul_1",
+  "LayerType": "ElementWise",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 169) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/Sub_2_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/proj_1/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "ElementWise",
+  "ElementWiseOperation": "PROD",
+  "Activation": "NONE",
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "/proj/Mul",
+  "LayerType": "ElementWise",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 29) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768,176],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/proj/Unsqueeze_output_0",
+    "Location": "Device",
+    "Dimensions": [768,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/proj/Mul_output_0",
+    "Location": "Device",
+    "Dimensions": [768,176],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "ElementWise",
+  "ElementWiseOperation": "PROD",
+  "Activation": "NONE",
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "/Unsqueeze_6 + (Unnamed Layer* 100) [Shuffle]",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Sub_1_output_0",
+    "Location": "Device",
+    "Dimensions": [192],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 100) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/proj_1/Mul",
+  "LayerType": "ElementWise",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 167) [Constant]_output",
+    "Location": "Device",
+    "Dimensions": [768,48],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/proj_1/Unsqueeze_output_0",
+    "Location": "Device",
+    "Dimensions": [768,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/proj_1/Mul_output_0",
+    "Location": "Device",
+    "Dimensions": [768,48],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "ElementWise",
+  "ElementWiseOperation": "PROD",
+  "Activation": "NONE",
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "/Unsqueeze_19 + (Unnamed Layer* 238) [Shuffle]",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Sub_3_output_0",
+    "Location": "Device",
+    "Dimensions": [192],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 238) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/Unsqueeze_26 + (Unnamed Layer* 306) [Shuffle] + unsqueeze_node_after_/Unsqueeze_26 + (Unnamed Layer* 306) [Shuffle]_(Unnamed Layer* 306) [Shuffle]_output",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Sub_4_output_0",
+    "Location": "Device",
+    "Dimensions": [20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "unsqueeze_tensor_after_/Unsqueeze_26 + (Unnamed Layer* 306) [Shuffle]_(Unnamed Layer* 306) [Shuffle]_output_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,20,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/proj/Unsqueeze_1 + (Unnamed Layer* 35) [Shuffle]",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/proj/Mul_output_0",
+    "Location": "Device",
+    "Dimensions": [768,176],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 35) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [768,176,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/proj_1/Unsqueeze_1 + (Unnamed Layer* 173) [Shuffle]",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/proj_1/Mul_output_0",
+    "Location": "Device",
+    "Dimensions": [768,48],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 173) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [768,48,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/Pad",
+  "LayerType": "Padding",
+  "Inputs": [
+  {
+    "Name": "/Transpose_output_0",
+    "Location": "Device",
+    "Dimensions": [1,700,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Pad_output_0",
+    "Location": "Device",
+    "Dimensions": [1,704,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Slice",
+  "Start": [0,0,0],
+  "Size": [1,704,1000],
+  "Stride": [1,1,1],
+  "Mode": "FILL",
+  "negativeInfinityPadding": 0,
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "(Unnamed Layer* 34) [Shuffle]",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Pad_output_0",
+    "Location": "Device",
+    "Dimensions": [1,704,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 34) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,704,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/proj/Conv",
+  "LayerType": "CaskConvolution",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 34) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,704,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 35) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [768,176,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/proj/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 36) [Convolution]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 768,
+  "Groups": 4,
+  "Weights": {"Type": "Float", "Count": 0},
+  "Bias": {"Type": "Float", "Count": 0},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 1,
+  "HasDynamicBias": 1,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "NONE",
+  "HasBias": 0,
+  "HasReLU": 0,
+  "TacticName": "ampere_scudnn_128x64_relu_interior_nn_v1",
+  "TacticValue": "0xc3cf6e1d1c6aff27"
+},{
+  "Name": "(Unnamed Layer* 37) [Shuffle] + /Reshape_2",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 36) [Convolution]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/MatMul",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "/Reshape_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 58) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "TacticValue": "0x000000000002044c"
+},{
+  "Name": "/Slice_1",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/MatMul_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Slice_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "SLICE",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "/MatMul_1",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 62) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,40,40],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "/Slice_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm50_xmma_cublas_gemvx_f16f16_f32_f32_nn_n_int32_unit_m_launch_param64x2x1_strided_copyx_unit_stride",
+  "TacticValue": "0x0000000000020510"
+},{
+  "Name": "/Pad_1",
+  "LayerType": "Padding",
+  "Inputs": [
+  {
+    "Name": "/MatMul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,39,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Pad_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Slice",
+  "Start": [0,0,-1,0],
+  "Size": [1,768,40,1],
+  "Stride": [1,1,1,1],
+  "Mode": "FILL",
+  "negativeInfinityPadding": 0,
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to PWN(/Mul, /Add)",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/Pad_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to PWN(/Mul, /Add)",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "PWN(/Mul, /Add)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to PWN(/Mul, /Add)",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 86) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/MatMul_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Add_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 3,
+  "InputArgs": ["arg0", "arg1", "arg2"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var1"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 0,
+  "Literals": [],
+  "NbOperations": 2,
+  "Operations": ["auto const var0 = pwgen::iMul(arg0, arg1);", "auto const var1 = pwgen::iPlus(arg2, var0);"],
+  "TacticValue": "0x000000000000001c"
+},{
+  "Name": "/Reshape_5 + /Reshape_6",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Add_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_6_output_0",
+    "Location": "Device",
+    "Dimensions": [1,4,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/ReduceSum",
+  "LayerType": "Reduce",
+  "Inputs": [
+  {
+    "Name": "/Reshape_6_output_0",
+    "Location": "Device",
+    "Dimensions": [1,4,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/ReduceSum_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reduce",
+  "Operation": "SUM",
+  "ReduceAxes": [0,1,0,0],
+  "KeepDimensions": 0,
+  "TacticValue": "0x0000000000000005"
+},{
+  "Name": "/Mul_1",
+  "LayerType": "ElementWise",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 100) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/ReduceSum_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "ElementWise",
+  "ElementWiseOperation": "PROD",
+  "Activation": "NONE",
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "/Reshape_7",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_7_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/MatMul_2",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "/Reshape_7_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 122) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "TacticValue": "0x000000000002044c"
+},{
+  "Name": "/Slice_4",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/MatMul_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Slice_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "SLICE",
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/MatMul_3",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 126) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,40,40],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "/Slice_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm50_xmma_cublas_gemvx_f16f16_f32_f32_nn_n_int32_unit_m_launch_param64x2x1_strided_copyx_unit_stride",
+  "TacticValue": "0x0000000000020510"
+},{
+  "Name": "/Pad_2",
+  "LayerType": "Padding",
+  "Inputs": [
+  {
+    "Name": "/MatMul_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,39,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Pad_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Slice",
+  "Start": [0,0,-1,0],
+  "Size": [1,192,40,1],
+  "Stride": [1,1,1,1],
+  "Mode": "FILL",
+  "negativeInfinityPadding": 0,
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to PWN(/Mul_2, /Add_1)",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/Pad_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to PWN(/Mul_2, /Add_1)",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "PWN(/Mul_2, /Add_1)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to PWN(/Mul_2, /Add_1)",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 150) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/MatMul_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Add_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 3,
+  "InputArgs": ["arg0", "arg1", "arg2"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var1"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 0,
+  "Literals": [],
+  "NbOperations": 2,
+  "Operations": ["auto const var0 = pwgen::iMul(arg0, arg1);", "auto const var1 = pwgen::iPlus(arg2, var0);"],
+  "TacticValue": "0x000000000000001c"
+},{
+  "Name": "/Reshape_10",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Add_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_10_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "PWN(/Relu)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "/Reshape_10_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Relu_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 1,
+  "InputArgs": ["arg0"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var0"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 4,
+  "Literals": ["0.000000e+00f", "1.000000e+00f", "0.000000e+00f", "0.000000e+00f"],
+  "NbOperations": 1,
+  "Operations": ["auto const var0 = pwgen::iMax(arg0, literal0);"],
+  "TacticValue": "0x0000000000000007"
+},{
+  "Name": "(Unnamed Layer* 172) [Shuffle]",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Relu_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 172) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/proj_1/Conv",
+  "LayerType": "CaskConvolution",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 172) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 173) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [768,48,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/proj_1/Mul_1_output_0",
+    "Location": "Device",
+    "Dimensions": [768],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 174) [Convolution]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 768,
+  "Groups": 4,
+  "Weights": {"Type": "Float", "Count": 0},
+  "Bias": {"Type": "Float", "Count": 0},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 1,
+  "HasDynamicBias": 1,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "NONE",
+  "HasBias": 0,
+  "HasReLU": 0,
+  "TacticName": "ampere_scudnn_128x64_relu_interior_nn_v1",
+  "TacticValue": "0xc3cf6e1d1c6aff27"
+},{
+  "Name": "(Unnamed Layer* 175) [Shuffle] + /Reshape_11",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 174) [Convolution]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_11_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/MatMul_4",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "/Reshape_11_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 196) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "TacticValue": "0x000000000002044c"
+},{
+  "Name": "/Slice_7",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/MatMul_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Slice_7_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "SLICE",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "/MatMul_5",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 200) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,40,40],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "/Slice_7_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_5_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm50_xmma_cublas_gemvx_f16f16_f32_f32_nn_n_int32_unit_m_launch_param64x2x1_strided_copyx_unit_stride",
+  "TacticValue": "0x0000000000020510"
+},{
+  "Name": "/Pad_3",
+  "LayerType": "Padding",
+  "Inputs": [
+  {
+    "Name": "/MatMul_5_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,39,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Pad_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Slice",
+  "Start": [0,0,-1,0],
+  "Size": [1,768,40,1],
+  "Stride": [1,1,1,1],
+  "Mode": "FILL",
+  "negativeInfinityPadding": 0,
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to PWN(/Mul_3, /Add_2)",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/Pad_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to PWN(/Mul_3, /Add_2)",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "PWN(/Mul_3, /Add_2)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to PWN(/Mul_3, /Add_2)",
+    "Location": "Device",
+    "Dimensions": [1,768,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 224) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,768,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/MatMul_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Add_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 3,
+  "InputArgs": ["arg0", "arg1", "arg2"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var1"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 0,
+  "Literals": [],
+  "NbOperations": 2,
+  "Operations": ["auto const var0 = pwgen::iMul(arg0, arg1);", "auto const var1 = pwgen::iPlus(arg2, var0);"],
+  "TacticValue": "0x000000000000001c"
+},{
+  "Name": "/Reshape_14 + /Reshape_15",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Add_2_output_0",
+    "Location": "Device",
+    "Dimensions": [1,768,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_15_output_0",
+    "Location": "Device",
+    "Dimensions": [1,4,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/ReduceSum_1",
+  "LayerType": "Reduce",
+  "Inputs": [
+  {
+    "Name": "/Reshape_15_output_0",
+    "Location": "Device",
+    "Dimensions": [1,4,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/ReduceSum_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reduce",
+  "Operation": "SUM",
+  "ReduceAxes": [0,1,0,0],
+  "KeepDimensions": 0,
+  "TacticValue": "0x0000000000000005"
+},{
+  "Name": "/Mul_4",
+  "LayerType": "ElementWise",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 238) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/ReduceSum_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Mul_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "ElementWise",
+  "ElementWiseOperation": "PROD",
+  "Activation": "NONE",
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "/Reshape_16",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Mul_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_16_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/MatMul_6",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "/Reshape_16_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 260) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_6_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "TacticValue": "0x000000000002044c"
+},{
+  "Name": "/Slice_10",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/MatMul_6_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Slice_10_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "SLICE",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "/MatMul_7",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 264) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,40,40],
+    "Format/Datatype": "Row major linear FP16 format"
+  },
+  {
+    "Name": "/Slice_10_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_7_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm50_xmma_cublas_gemvx_f16f16_f32_f32_nn_n_int32_unit_m_launch_param64x2x1_strided_copyx_unit_stride",
+  "TacticValue": "0x0000000000020510"
+},{
+  "Name": "/Pad_4",
+  "LayerType": "Padding",
+  "Inputs": [
+  {
+    "Name": "/MatMul_7_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,39,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Pad_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "ParameterType": "Slice",
+  "Start": [0,0,-1,0],
+  "Size": [1,192,40,1],
+  "Stride": [1,1,1,1],
+  "Mode": "FILL",
+  "negativeInfinityPadding": 0,
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "Reformatting CopyNode for Input Tensor 0 to PWN(/Mul_5, /Add_3)",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/Pad_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP16 format"
+  }],
+  "Outputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to PWN(/Mul_5, /Add_3)",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "REFORMAT",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "PWN(/Mul_5, /Add_3)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "Reformatted Input Tensor 0 to PWN(/Mul_5, /Add_3)",
+    "Location": "Device",
+    "Dimensions": [1,192,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 288) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/MatMul_6_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Add_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 3,
+  "InputArgs": ["arg0", "arg1", "arg2"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var1"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 0,
+  "Literals": [],
+  "NbOperations": 2,
+  "Operations": ["auto const var0 = pwgen::iMul(arg0, arg1);", "auto const var1 = pwgen::iPlus(arg2, var0);"],
+  "TacticValue": "0x000000000000001c"
+},{
+  "Name": "/Reshape_19",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Add_3_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_19_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "PWN(/Relu_1)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "/Reshape_19_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Relu_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 1,
+  "InputArgs": ["arg0"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var0"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 4,
+  "Literals": ["0.000000e+00f", "1.000000e+00f", "0.000000e+00f", "0.000000e+00f"],
+  "NbOperations": 1,
+  "Operations": ["auto const var0 = pwgen::iMax(arg0, literal0);"],
+  "TacticValue": "0x0000000000000007"
+},{
+  "Name": "(Unnamed Layer* 303) [Shuffle]",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Relu_1_output_0",
+    "Location": "Device",
+    "Dimensions": [1,192,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 303) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "shuffle_between_(Unnamed Layer* 303) [Shuffle]_output_and_/readout/Conv",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 303) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,192,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "shuffle_between_(Unnamed Layer* 303) [Shuffle]_output_and_/readout/Conv_out_region",
+    "Location": "Device",
+    "Dimensions": [1,192,1,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/readout/Conv",
+  "LayerType": "CaskConvolution",
+  "Inputs": [
+  {
+    "Name": "shuffle_between_(Unnamed Layer* 303) [Shuffle]_output_and_/readout/Conv_out_region",
+    "Location": "Device",
+    "Dimensions": [1,192,1,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/readout/Conv_new_out_region",
+    "Location": "Device",
+    "Dimensions": [1,20,1,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 20,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 3840},
+  "Bias": {"Type": "Float", "Count": 20},
+  "HasSparseWeights": 0,
+  "HasDynamicFilter": 0,
+  "HasDynamicBias": 0,
+  "HasResidual": 0,
+  "ConvXAsActInputIdx": -1,
+  "BiasAsActInputIdx": -1,
+  "ResAsActInputIdx": -1,
+  "Activation": "NONE",
+  "HasBias": 1,
+  "HasReLU": 0,
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_tf32f32_f32_nchwkrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_simple_t1r1s1_aligna4_alignc4",
+  "TacticValue": "0x09aeee2f1beac383"
+},{
+  "Name": "shuffle_after_(Unnamed Layer* 304) [Convolution]_output",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/readout/Conv_new_out_region",
+    "Location": "Device",
+    "Dimensions": [1,20,1,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 304) [Convolution]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/Mul_6",
+  "LayerType": "ElementWise",
+  "Inputs": [
+  {
+    "Name": "unsqueeze_tensor_after_/Unsqueeze_26 + (Unnamed Layer* 306) [Shuffle]_(Unnamed Layer* 306) [Shuffle]_output_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,20,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 304) [Convolution]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Mul_6_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,20,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "ElementWise",
+  "ElementWiseOperation": "PROD",
+  "Activation": "NONE",
+  "TacticValue": "0x0000000000000001"
+},{
+  "Name": "copied_squeeze_after_/Mul_6 + /Reshape_20",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Mul_6_out_tensor",
+    "Location": "Device",
+    "Dimensions": [1,20,1000,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_20_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/MatMul_8",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "/Reshape_20_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 328) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,25,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_8_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "TacticValue": "0x000000000002020d"
+},{
+  "Name": "/Slice_13",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/MatMul_8_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Slice_13_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "SLICE",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "/MatMul_9",
+  "LayerType": "CaskGemmMatrixMultiply",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 332) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,40,40],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/Slice_13_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/MatMul_9_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "MatrixMultiply",
+  "MatrixOpA": "NONE",
+  "MatrixOpB": "NONE",
+  "Alpha": 1,
+  "Beta": 0,
+  "TacticName": "sm50_xmma_cublas_gemvx_f32f32_f32_f32_nn_n_int32_unit_m_launch_param64x2x1_strided_unit_stride",
+  "TacticValue": "0x00000000000201dd"
+},{
+  "Name": "/Pad_5",
+  "LayerType": "Padding",
+  "Inputs": [
+  {
+    "Name": "/MatMul_9_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,39,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Pad_5_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Slice",
+  "Start": [0,0,-1,0],
+  "Size": [1,20,40,1],
+  "Stride": [1,1,1,1],
+  "Mode": "FILL",
+  "negativeInfinityPadding": 0,
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "PWN(/Mul_7, /Add_4)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "/Pad_5_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 356) [Shuffle]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,1,25],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "/MatMul_8_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Add_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 3,
+  "InputArgs": ["arg0", "arg1", "arg2"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var1"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 0,
+  "Literals": [],
+  "NbOperations": 2,
+  "Operations": ["auto const var0 = pwgen::iMul(arg0, arg1);", "auto const var1 = pwgen::iPlus(arg2, var0);"],
+  "TacticValue": "0x000000000000001c"
+},{
+  "Name": "/Reshape_23",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "/Add_4_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,40,25],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Reshape_23_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,1000],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0000000000000000"
+},{
+  "Name": "/Slice_16",
+  "LayerType": "Reformat",
+  "Inputs": [
+  {
+    "Name": "/Reshape_23_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,989],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "/Slice_16_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,989],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reformat",
+  "Origin": "SLICE",
+  "TacticValue": "0x00000000000003e8"
+},{
+  "Name": "/Softmax",
+  "LayerType": "CudaSoftMax",
+  "Inputs": [
+  {
+    "Name": "/Slice_16_output_0",
+    "Location": "Device",
+    "Dimensions": [1,20,989],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 365) [Softmax]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,989],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "SoftMax",
+  "Axes": 2,
+  "HasLog": 0,
+  "TacticValue": "0x00000000000003ea"
+},{
+  "Name": "/ReduceSum_2",
+  "LayerType": "Reduce",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 365) [Softmax]_output",
+    "Location": "Device",
+    "Dimensions": [1,20,989],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "y",
+    "Location": "Device",
+    "Dimensions": [1,20],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Reduce",
+  "Operation": "SUM",
+  "ReduceAxes": [0,0,1],
+  "KeepDimensions": 0,
+  "TacticValue": "0x0000000000000002"
+}],
+"Bindings": ["x"
+,"y"
+]}

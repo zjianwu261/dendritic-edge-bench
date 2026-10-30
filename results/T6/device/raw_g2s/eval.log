@@ -1,0 +1,16 @@
+~/dendritic-edge-bench/T6/work_g2s/engines/dhssm_L2_n128_b4_cont_vs_t2__K50_default_d561899c1c1b.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/dhssm_L2_n128_b4_cont_vs_t2__K50_default.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/dhssm_L2_n128_b4_cont_vs_t2__K50_nocublas_d561899c1c1b.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/dhssm_L2_n128_b4_cont_vs_t2__K50_nocublas.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/lru_L2_H64_N128_lr0.001_vs_t2__K50_default_47124d7fa84f.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/lru_L2_H64_N128_lr0.001_vs_t2__K50_default.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/lru_L2_H64_N128_lr0.001_vs_t2__K50_nocublas_47124d7fa84f.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/lru_L2_H64_N128_lr0.001_vs_t2__K50_nocublas.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/dssmU_L2_n128_b4_spk_vs_t2__K50_default_cf280fee991b.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/dssmU_L2_n128_b4_spk_vs_t2__K50_default.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/dssmU_L2_n128_b4_spk_vs_t2__K50_nocublas_cf280fee991b.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/dssmU_L2_n128_b4_spk_vs_t2__K50_nocublas.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/gru_h768_lr0.003_vs_t2__seq_default_a149a1aa624b.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/gru_h768_lr0.003_vs_t2__seq_default.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/gru_h768_lr0.003_vs_t2__seq_nocublas_a149a1aa624b.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/gru_h768_lr0.003_vs_t2__seq_nocublas.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/dhssm_L2_n128_b4_cont_vs_t3__K50_default_58d96412b95a.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/dhssm_L2_n128_b4_cont_vs_t3__K50_default.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/dhssm_L2_n128_b4_cont_vs_t3__K50_nocublas_58d96412b95a.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/dhssm_L2_n128_b4_cont_vs_t3__K50_nocublas.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/lru_L2_H64_N128_lr0.001_vs_t3__K50_default_f22068d6e2bc.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/lru_L2_H64_N128_lr0.001_vs_t3__K50_default.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/lru_L2_H64_N128_lr0.001_vs_t3__K50_nocublas_f22068d6e2bc.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/lru_L2_H64_N128_lr0.001_vs_t3__K50_nocublas.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/dssmU_L2_n128_b4_spk_vs_t3__K50_default_67f02a98ebcb.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/dssmU_L2_n128_b4_spk_vs_t3__K50_default.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/dssmU_L2_n128_b4_spk_vs_t3__K50_nocublas_67f02a98ebcb.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/dssmU_L2_n128_b4_spk_vs_t3__K50_nocublas.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/gru_h768_lr0.003_vs_t3__seq_default_aca5cf0e7fa7.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/gru_h768_lr0.003_vs_t3__seq_default.npy
+~/dendritic-edge-bench/T6/work_g2s/engines/gru_h768_lr0.003_vs_t3__seq_nocublas_aca5cf0e7fa7.engine: 2264 samples -> ~/dendritic-edge-bench/T6/device/g2s/devout/gru_h768_lr0.003_vs_t3__seq_nocublas.npy

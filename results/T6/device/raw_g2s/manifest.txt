@@ -1,0 +1,8 @@
+~/dendritic-edge-bench/T6/onnx/g2s/dhssm_L2_n128_b4_cont_vs_t2__K50.onnx dhssm_L2_n128_b4_cont_vs_t2__K50 default,nocublas
+~/dendritic-edge-bench/T6/onnx/g2s/lru_L2_H64_N128_lr0.001_vs_t2__K50.onnx lru_L2_H64_N128_lr0.001_vs_t2__K50 default,nocublas
+~/dendritic-edge-bench/T6/onnx/g2s/dssmU_L2_n128_b4_spk_vs_t2__K50.onnx dssmU_L2_n128_b4_spk_vs_t2__K50 default,nocublas
+~/dendritic-edge-bench/T6/onnx/g2s/gru_h768_lr0.003_vs_t2__seq.onnx gru_h768_lr0.003_vs_t2__seq default,nocublas
+~/dendritic-edge-bench/T6/onnx/g2s/dhssm_L2_n128_b4_cont_vs_t3__K50.onnx dhssm_L2_n128_b4_cont_vs_t3__K50 default,nocublas
+~/dendritic-edge-bench/T6/onnx/g2s/lru_L2_H64_N128_lr0.001_vs_t3__K50.onnx lru_L2_H64_N128_lr0.001_vs_t3__K50 default,nocublas
+~/dendritic-edge-bench/T6/onnx/g2s/dssmU_L2_n128_b4_spk_vs_t3__K50.onnx dssmU_L2_n128_b4_spk_vs_t3__K50 default,nocublas
+~/dendritic-edge-bench/T6/onnx/g2s/gru_h768_lr0.003_vs_t3__seq.onnx gru_h768_lr0.003_vs_t3__seq default,nocublas

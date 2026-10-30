@@ -2,9 +2,9 @@ family,tier,energy_measured,configs_with_energy,latency_measured,note
 "dANN-LRF (T1, mask)",Orin,yes,dann_lrf_d32_s128,yes,"T1/energy_orin1.csv, 3 runs, locked"
 vANN same-shape (T1),Orin,yes,vann_same_d32_s128,yes,T1/energy_orin1.csv
 MLP G1 (T1 recipe),Orin,yes,"h85, h256, h512, h1024",yes,T1/energy_orin1.csv
-dANN-G grouped GEMM (T6 G1 fair),Orin,no,-,yes (5 builds),fair_summary orin_energy = not_measured
-MLP G1 fair (T6),Orin,no,-,yes (5 builds),
-CNN G1 fair (T6),Orin,no,-,yes (5 builds),
+dANN-G grouped GEMM (T6 G1 fair),Orin,yes,"m8 0.1145 mJ, m16 0.1198 mJ, m32 0.1308 mJ, m64 0.1686 mJ",yes (5 builds),"T6/g1_energy.csv (E_net per inference, median of 3 runs; median-latency build of 5)"
+MLP G1 fair (T6),Orin,yes,"h128 0.1078 mJ, h256 0.1359 mJ, h512 0.4960 mJ, h1024 0.7143 mJ",yes (5 builds),"T6/g1_energy.csv (E_net per inference, median of 3 runs; median-latency build of 5)"
+CNN G1 fair (T6),Orin,partial,c32_64 0.1216 mJ,yes (5 builds),"T6/g1_energy.csv (E_net per inference, median of 3 runs; median-latency build of 5); not_measured: c8_16, c16_32"
 dann24 / dense_D / dANN-G sp24 LUT (T6 G1),Orin,no,-,yes,
 sparse MLP h1024 (E-4),Orin,no,-,no,accuracy only
 DH-SRNN (T1),Orin,yes,"val seqloop, step",yes,

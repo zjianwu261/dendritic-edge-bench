@@ -1,11 +1,15 @@
-"""Robustness audit of the Paper B headline claims C-a .. C-f (2026-10-25).
+"""Robustness audit of the Paper B headline claims C-a .. C-f (planner request 2026-10-25).
 
 Reads only existing experiment files (plus results/robustness_B/g3_buildvar_builds.csv from bv_g3.py, the new
 G3 build-variance session); writes results/robustness_B/C{a..f}_*.csv and energy_coverage.csv.  Nothing else is
 modified.  Long format: claim, section (seed | build | sensitivity | energy), item, n, value, lo, hi, holds, source, note.
-  python src/robustness_B/audit.py
+  python src/robustness_B/audit.py [--only-coverage] [--g1-energy results/T6/g1_energy.csv]
+
+Release notes. Paths are results/<exp>/ (the research repository used experiments/<exp>/); the unlocked-DVFS
+session (T6/lut/lut_g1f_unlocked.csv) is not part of the release and its descriptive row is skipped.
 """
 import csv
+from decimal import Decimal, ROUND_HALF_UP
 import glob
 import json
 import os
@@ -538,14 +542,52 @@ def claim_f():
 
 
 # ================================================================== energy coverage
+G1_ENERGY = f"{T6}/g1_energy.csv"        # BS-1 (2026-10-31): G1 fair-protocol energy, median-latency build of 5, 3 runs
+FAIR_SUMMARY = f"{T6}/fair_summary.csv"
+G1_FAIR_FAMILIES = (("dannG", "dANN-G grouped GEMM (T6 G1 fair)"), ("mlp", "MLP G1 fair (T6)"), ("cnn", "CNN G1 fair (T6)"))
+G1_FALLBACK_NOTE = {"dannG": "fair_summary orin_energy = not_measured"}
+
+
+def _g1_size(cfg, fam):
+    """'dannG_p4_m32_s64_sg1_lr..._fair' -> 'm32'; 'mlp_h128_lr...' -> 'h128'; 'cnn_c8_16_lr...' -> 'c8_16'."""
+    head = cfg.split("_lr")[0]
+    return head.split("_")[2] if fam == "dannG" else head.split("_", 1)[1]
+
+
+def g1_fair_energy_rows(energy_csv=None, fair_csv=None):
+    """Coverage rows for the three G1 fair-protocol families.  Configs with 5-build latency in fair_summary.csv
+    (orin_n_builds = 5) are the denominator; a config counts as measured if its g1f_<cfg>_t1 graph is in
+    g1_energy.csv.  If g1_energy.csv is absent the pre-BS-1 'no / not_measured' rows are returned unchanged."""
+    energy_csv = energy_csv or G1_ENERGY; fair_csv = fair_csv or FAIR_SUMMARY
+    lat = {f: [] for f, _ in G1_FAIR_FAMILIES}
+    for r in rcsv(fair_csv):
+        if r["group"] == "G1" and r["kind"] == "per_size" and r["family"] in lat and r["orin_n_builds"] == "5":
+            lat[r["family"]].append(r["cfg"])
+    en = {}
+    if os.path.exists(energy_csv):
+        for r in rcsv(energy_csv):
+            en[r["graph"].split("__")[0].removeprefix("g1f_").removesuffix("_t1")] = r["E_net_mJ"]
+    out = []
+    for fam, label in G1_FAIR_FAMILIES:
+        got = [c for c in lat[fam] if c in en]
+        if not got:
+            out.append((label, "Orin", "no", "-", "yes (5 builds)", G1_FALLBACK_NOTE.get(fam, "")))
+            continue
+        miss = [_g1_size(c, fam) for c in lat[fam] if c not in en]
+        cfgs = ", ".join(f"{_g1_size(c, fam)} {Decimal(en[c]).quantize(Decimal('0.0001'), ROUND_HALF_UP)} mJ" for c in got)
+        note = "T6/g1_energy.csv (E_net per inference, median of 3 runs; median-latency build of 5)"
+        if miss:
+            note += "; not_measured: " + ", ".join(miss)
+        out.append((label, "Orin", "partial" if miss else "yes", cfgs, "yes (5 builds)", note))
+    return out
+
+
 def coverage():
     M = [  # family, tier, energy_measured, configs with energy, latency measured, source / note
         ("dANN-LRF (T1, mask)", "Orin", "yes", "dann_lrf_d32_s128", "yes", "T1/energy_orin1.csv, 3 runs, locked"),
         ("vANN same-shape (T1)", "Orin", "yes", "vann_same_d32_s128", "yes", "T1/energy_orin1.csv"),
         ("MLP G1 (T1 recipe)", "Orin", "yes", "h85, h256, h512, h1024", "yes", "T1/energy_orin1.csv"),
-        ("dANN-G grouped GEMM (T6 G1 fair)", "Orin", "no", "-", "yes (5 builds)", "fair_summary orin_energy = not_measured"),
-        ("MLP G1 fair (T6)", "Orin", "no", "-", "yes (5 builds)", ""),
-        ("CNN G1 fair (T6)", "Orin", "no", "-", "yes (5 builds)", ""),
+        *g1_fair_energy_rows(),
         ("dann24 / dense_D / dANN-G sp24 LUT (T6 G1)", "Orin", "no", "-", "yes", ""),
         ("sparse MLP h1024 (E-4)", "Orin", "no", "-", "no", "accuracy only"),
         ("DH-SRNN (T1)", "Orin", "yes", "val seqloop, step", "yes", ""),
@@ -571,5 +613,12 @@ def coverage():
 
 
 if __name__ == "__main__":
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only-coverage", action="store_true", help="regenerate energy_coverage.csv only (R-158)")
+    ap.add_argument("--g1-energy", default=G1_ENERGY, help="G1 fair-protocol energy CSV (default T6/g1_energy.csv)")
+    a = ap.parse_args(); G1_ENERGY = a.g1_energy
     os.makedirs(OUT, exist_ok=True)
-    claim_a(); claim_b(); claim_c(); claim_d(); claim_e(); claim_f(); coverage()
+    if not a.only_coverage:
+        claim_a(); claim_b(); claim_c(); claim_d(); claim_e(); claim_f()
+    coverage()

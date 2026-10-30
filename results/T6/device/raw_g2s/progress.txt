@@ -1,0 +1,18 @@
+2026-10-30T23:32:14+08:00 start
+2026-10-31T00:22:31+08:00 evaluated dhssm_L2_n128_b4_cont_vs_t2__K50 default dhssm_L2_n128_b4_cont_vs_t2__K50_default_d561899c1c1b.engine
+2026-10-31T00:22:40+08:00 evaluated dhssm_L2_n128_b4_cont_vs_t2__K50 nocublas dhssm_L2_n128_b4_cont_vs_t2__K50_nocublas_d561899c1c1b.engine
+2026-10-31T00:22:51+08:00 evaluated lru_L2_H64_N128_lr0.001_vs_t2__K50 default lru_L2_H64_N128_lr0.001_vs_t2__K50_default_47124d7fa84f.engine
+2026-10-31T00:23:02+08:00 evaluated lru_L2_H64_N128_lr0.001_vs_t2__K50 nocublas lru_L2_H64_N128_lr0.001_vs_t2__K50_nocublas_47124d7fa84f.engine
+2026-10-31T00:23:15+08:00 evaluated dssmU_L2_n128_b4_spk_vs_t2__K50 default dssmU_L2_n128_b4_spk_vs_t2__K50_default_cf280fee991b.engine
+2026-10-31T00:23:26+08:00 evaluated dssmU_L2_n128_b4_spk_vs_t2__K50 nocublas dssmU_L2_n128_b4_spk_vs_t2__K50_nocublas_cf280fee991b.engine
+2026-10-31T00:26:50+08:00 evaluated gru_h768_lr0.003_vs_t2__seq default gru_h768_lr0.003_vs_t2__seq_default_a149a1aa624b.engine
+2026-10-31T00:30:19+08:00 evaluated gru_h768_lr0.003_vs_t2__seq nocublas gru_h768_lr0.003_vs_t2__seq_nocublas_a149a1aa624b.engine
+2026-10-31T00:30:30+08:00 evaluated dhssm_L2_n128_b4_cont_vs_t3__K50 default dhssm_L2_n128_b4_cont_vs_t3__K50_default_58d96412b95a.engine
+2026-10-31T00:30:39+08:00 evaluated dhssm_L2_n128_b4_cont_vs_t3__K50 nocublas dhssm_L2_n128_b4_cont_vs_t3__K50_nocublas_58d96412b95a.engine
+2026-10-31T00:30:51+08:00 evaluated lru_L2_H64_N128_lr0.001_vs_t3__K50 default lru_L2_H64_N128_lr0.001_vs_t3__K50_default_f22068d6e2bc.engine
+2026-10-31T00:31:02+08:00 evaluated lru_L2_H64_N128_lr0.001_vs_t3__K50 nocublas lru_L2_H64_N128_lr0.001_vs_t3__K50_nocublas_f22068d6e2bc.engine
+2026-10-31T00:31:14+08:00 evaluated dssmU_L2_n128_b4_spk_vs_t3__K50 default dssmU_L2_n128_b4_spk_vs_t3__K50_default_67f02a98ebcb.engine
+2026-10-31T00:31:25+08:00 evaluated dssmU_L2_n128_b4_spk_vs_t3__K50 nocublas dssmU_L2_n128_b4_spk_vs_t3__K50_nocublas_67f02a98ebcb.engine
+2026-10-31T00:34:49+08:00 evaluated gru_h768_lr0.003_vs_t3__seq default gru_h768_lr0.003_vs_t3__seq_default_aca5cf0e7fa7.engine
+2026-10-31T00:38:17+08:00 evaluated gru_h768_lr0.003_vs_t3__seq nocublas gru_h768_lr0.003_vs_t3__seq_nocublas_aca5cf0e7fa7.engine
+2026-10-31T00:38:17+08:00 done

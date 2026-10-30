@@ -1,0 +1,65 @@
+## 2026-10-30T23:14:14+08:00 before g2b2_dhssm_L2_n128_b4_cont__K50 nocublas run 2
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## thermal (type temp_mC)
+CPU-therm 52968
+GPU-therm 51343
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 51093
+SOC1-therm 52000
+SOC2-therm 51156
+tj-therm 53281
+## loadavg
+0.68 0.61 0.72 1/254 1643546
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## gpu min_freq (locked if == max)
+624750000
+## other GPU/bench processes
+    541 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+   1678 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1723 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1731 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+## LOCK_CHECK OK 624750000
+## 2026-10-30T23:14:22+08:00 after run 2 rc=0
+## nvpmodel -q
+NV Power Mode: 15W
+0
+NVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13
+NVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap
+## gpu devfreq governor/cur/min/max
+nvhost_podgov
+624750000
+624750000
+624750000
+## thermal (type temp_mC)
+CPU-therm 53531
+GPU-therm 52468
+CV0-therm -256000
+CV1-therm -256000
+CV2-therm -256000
+SOC0-therm 51531
+SOC1-therm 52156
+SOC2-therm 51718
+tj-therm 53406
+## loadavg
+0.73 0.62 0.72 1/254 1643590
+## cpu cur freq (kHz)
+1510400 1510400 1510400 1510400 1510400 1510400 
+## gpu min_freq (locked if == max)
+624750000
+## other GPU/bench processes
+    541 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+   1678 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1723 jtop            /usr/bin/python3 /usr/local/bin/jtop --force
+   1731 jtop            /usr/bin/python3 /usr/local/bin/jtop --force

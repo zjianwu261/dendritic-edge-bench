@@ -1,0 +1,83 @@
+[
+ {
+  "graph": "dhssm_L2_n128_b4_cont__K50",
+  "flag": "nocublas",
+  "sha": "5a5be86157fce01306a4fc8379e5c314bdba1bb70ceec27b9a46fc592059a6f9",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2/dhssm_L2_n128_b4_cont__K50.onnx",
+  "onnx_orin": "onnx/g2/dhssm_L2_n128_b4_cont__K50.onnx",
+  "e11_target_ms": 2.7631,
+  "e11_source": "T6/lut/lut_g2.csv p50_nocublas (fmax_frac 1.0)"
+ },
+ {
+  "graph": "dhssm_L2_n128_b4_cont__K25",
+  "flag": "nocublas",
+  "sha": "f40710605fe11285929cd60b5dda2b33bcc7ca00e4e64f2dc28b458dac2c5f32",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2/dhssm_L2_n128_b4_cont__K25.onnx",
+  "onnx_orin": "onnx/g2/dhssm_L2_n128_b4_cont__K25.onnx",
+  "e11_target_ms": 2.5917,
+  "e11_source": "T6/lut/lut_g2.csv p50_nocublas (fmax_frac 1.0)"
+ },
+ {
+  "graph": "dhssm_L2_n128_b4_spk__K25",
+  "flag": "nocublas",
+  "sha": "9571deec5ebd17fa6afadcd2b6e9bda23c992986b9eb4d921cf8121b554a1310",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2/dhssm_L2_n128_b4_spk__K25.onnx",
+  "onnx_orin": "onnx/g2/dhssm_L2_n128_b4_spk__K25.onnx",
+  "e11_target_ms": 2.7327,
+  "e11_source": "T6/lut/lut_g2.csv p50_nocublas (fmax_frac 1.0)"
+ },
+ {
+  "graph": "dhssm_L2_n256_b4_cont__K25",
+  "flag": "default",
+  "sha": "9336805c92abe1fd5335475ad8869cff78c9d84b8332e2568a70207f90258149",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2/dhssm_L2_n256_b4_cont__K25.onnx",
+  "onnx_orin": "onnx/g2/dhssm_L2_n256_b4_cont__K25.onnx",
+  "e11_target_ms": 4.1782,
+  "e11_source": "T6/lut/lut_g2.csv p50_default (fmax_frac 1.0)"
+ },
+ {
+  "graph": "lru_L2_H64_N128_lr0.001_vs_t1__K50",
+  "flag": "nocublas",
+  "sha": "be71ee2b3897b380e349dc62364645b35e5d28885763fabb9eb246c3522a9748",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2x/lru_L2_H64_N128_lr0.001_vs_t1__K50.onnx",
+  "onnx_orin": "onnx/g2x/lru_L2_H64_N128_lr0.001_vs_t1__K50.onnx",
+  "e11_target_ms": 2.7771,
+  "e11_source": "T6/lut/lut_g2x.csv p50_nocublas (fmax_frac 1.0)"
+ },
+ {
+  "graph": "dssmU_L2_n128_b4_spk_vs_t1__K50",
+  "flag": "nocublas",
+  "sha": "508ac738a421bc4d495b42240068ca1a9d624bc4c690854ba67b2cab87b2d255",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2x/dssmU_L2_n128_b4_spk_vs_t1__K50.onnx",
+  "onnx_orin": "onnx/g2x/dssmU_L2_n128_b4_spk_vs_t1__K50.onnx",
+  "e11_target_ms": 3.5319,
+  "e11_source": "T6/lut/lut_g2x.csv p50_nocublas (fmax_frac 1.0)"
+ },
+ {
+  "graph": "gru_h768_lr0.003_vs_t1__seq",
+  "flag": "default",
+  "sha": "980bf1e011b808d538dc569e2bd2c383518be6c4762625c17c9b272afc9fe48b",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2x/gru_h768_lr0.003_vs_t1__seq.onnx",
+  "onnx_orin": "onnx/g2x/gru_h768_lr0.003_vs_t1__seq.onnx",
+  "e11_target_ms": 88.4487,
+  "e11_source": "T6/lut/lut_g2x.csv p50_default (fmax_frac 1.0)"
+ },
+ {
+  "graph": "gru_h64__seq",
+  "flag": "nocublas",
+  "sha": "f1f4a292c4434122cd8020f894dc12547a05189f9a3fb80e94f32e09d9482f4c",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2/gru_h64__seq.onnx",
+  "onnx_orin": "onnx/g2/gru_h64__seq.onnx",
+  "e11_target_ms": 17.0439,
+  "e11_source": "T6/lut/lut_g2.csv p50_nocublas (fmax_frac 1.0)"
+ },
+ {
+  "graph": "gru_h256__seq",
+  "flag": "default",
+  "sha": "b13bc404201a9993f4656c7e1daa6fdc7aa1ea04763fbeefe98613c1ccb3b185",
+  "onnx_local": "~/research/dendritic-edge/experiments/T6/lut/onnx/g2/gru_h256__seq.onnx",
+  "onnx_orin": "onnx/g2/gru_h256__seq.onnx",
+  "e11_target_ms": 24.051,
+  "e11_source": "T6/lut/lut_g2.csv p50_default (fmax_frac 1.0)"
+ }
+]

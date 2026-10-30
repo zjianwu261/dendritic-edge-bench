@@ -17,7 +17,7 @@ Release notes. Paths are results/costmodel/pi_oos/ (the research repository used
 The commits H1 (PLAN.md with the protocol), H2 (pre.sha256) and H3 (PROTOCOL_A1.md) live in the research
 repository's git history, which is not part of the release. `verdict` looks for that history in DEB_RESEARCH_ROOT
 (default: ROOT); without it the commit checks are skipped and verdict.json records the commit hashes as
-`recorded, not verified` together with a note. The SHA-256 of the pre-registered files (pre.sha256) and of
+`recorded, not verified` together with a note. The SHA-256 of the pre-specified files (pre.sha256) and of
 PROTOCOL_A1.md are always checked. `--out DIR` writes timing.csv / pairs_pred.csv / verdict.json to DIR instead of
 pi_oos/ (inputs are still read from pi_oos/). `predict` needs the exported ONNX graphs and the research git history
 (neither is in the release) and refuses to run because pi_oos/raw/ exists.

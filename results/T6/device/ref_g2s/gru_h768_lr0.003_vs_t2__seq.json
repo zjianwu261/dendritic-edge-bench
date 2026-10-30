@@ -1,0 +1,37 @@
+{
+ "label": "gru_h768_lr0.003_vs_t2__seq",
+ "model": "gru_h768_lr0.003_vs_t2",
+ "cfg": "gru_h768_lr0.003",
+ "seed": 2,
+ "n_eval": 2264,
+ "acc_meta_test": 0.8758833922261484,
+ "val_acc_meta": 0.8417450812660393,
+ "acc_torch_fp32": 0.8758833922261484,
+ "acc_torch_export_graph_fp32": 0.8758833922261484,
+ "acc_ort_fp32": 0.8758833922261484,
+ "argmax_agree_ort_vs_torch": 1.0,
+ "max_abs_ort_vs_export_graph": 6.29425048828125e-05,
+ "onnx": "device/onnx_g2s/gru_h768_lr0.003_vs_t2__seq.onnx",
+ "onnx_ops": {
+  "Constant": 10,
+  "Transpose": 2,
+  "Shape": 1,
+  "Gather": 1,
+  "Unsqueeze": 1,
+  "Concat": 1,
+  "Expand": 1,
+  "GRU": 1,
+  "Squeeze": 1,
+  "Slice": 1,
+  "MatMul": 1,
+  "Add": 1,
+  "ReduceMean": 1
+ },
+ "export_info": {
+  "onnx": "gru_h768_lr0.003_vs_t2__seq.onnx",
+  "size_MB": 12.984,
+  "nodes": 23,
+  "export_s": 0.5,
+  "max_abs_err_vs_torch": 9.5367431640625e-06
+ }
+}
