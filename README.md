@@ -21,7 +21,8 @@ re-run.
 replaced by `~/` and `orin`. The dated protocol and plan records (`results/T1m/e10/PROTOCOL.md`,
 `results/T1m/e10/PROTOCOL_cnnvar.md`, `results/costmodel/PROTOCOL.md`, `docs/prespecified_rules.md`) are released
 unchanged, so they still mention internal plan versions, review items and project-log entries that are not part of
-the release; `results/costmodel/PROTOCOL.md` is byte-identical to the file whose SHA-256 the paper cites and `fit.py`
+the release (the role names `dn-plan` and `dn-exec` in those records are the planning and the implementation roles of
+the project's internal workflow); `results/costmodel/PROTOCOL.md` is byte-identical to the file whose SHA-256 the paper cites and `fit.py`
 checks.
 
 ## Contents

@@ -1,6 +1,6 @@
 """E-13 (BS-2): post-hoc out-of-sample check of the Orin #1 cost-model constants on NEW graph shapes
 (PLAN.md section 3g-12 BS-2; protocol results/costmodel/orin1_oos/PROTOCOL.md = P1-P9 of commit H1 plus the
-implementation rules P2 / P5 leave to dn-exec, written before any timing and committed with H2).
+implementation rules P2 / P5 leave to the implementer, written before any timing and committed with H2).
 
   export   random-weight ONNX of the new shapes -> orin1_oos/onnx/ + onnx/manifest.csv (sha256, ops, params_eff,
            ORT check). Existing files are never overwritten. Asserts: op multiset of every new graph == op multiset of
