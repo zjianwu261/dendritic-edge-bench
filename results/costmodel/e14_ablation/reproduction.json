@@ -1,0 +1,31 @@
+{
+ "max_abs_ln_diff_rhat": 0.0,
+ "max_abs_ln_diff_rhat_fold_vs_blind_mcu": 0.0,
+ "constants_max_rel_diff": {
+  "orin1": 0.0,
+  "pi": 0.0,
+  "orin2": 0.0,
+  "mcu": 0.0
+ },
+ "ci95_max_rel_diff": {
+  "orin1": 0.0,
+  "pi": 0.0,
+  "orin2": 0.0,
+  "mcu": 0.0
+ },
+ "direction": "39/42",
+ "verdict_direction": "39/42",
+ "pooled_median": 0.08606341303551523,
+ "verdict_pooled_median": 0.08606341303551523,
+ "per_device_median": {
+  "orin1": 0.2554269070020663,
+  "pi": 0.22529776288033299,
+  "mcu": 0.005848787422515822
+ },
+ "verdict_per_device_median": {
+  "orin1": 0.2554269070020663,
+  "pi": 0.22529776288033299,
+  "mcu": 0.005848787422515822
+ },
+ "ok": true
+}
